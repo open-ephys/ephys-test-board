@@ -1,0 +1,412 @@
+{
+  "board": {
+    "3dviewports": [],
+    "design_settings": {
+      "defaults": {
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "other_line_width": 0.15,
+        "silk_line_width": 0.15,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.15
+      },
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "rules": {
+        "min_copper_edge_clearance": 0.0,
+        "solder_mask_clearance": 0.0,
+        "solder_mask_min_width": 0.0
+      },
+      "track_widths": [],
+      "via_dimensions": []
+    },
+    "layer_presets": [],
+    "viewports": []
+  },
+  "boards": [],
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
+      "extra_units": "error",
+      "global_label_dangling": "warning",
+      "hier_label_mismatch": "error",
+      "label_dangling": "error",
+      "lib_symbol_issues": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
+      "similar_labels": "warning",
+      "simulation_model_issue": "ignore",
+      "unannotated": "error",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "ephys-test-board.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      }
+    ],
+    "meta": {
+      "version": 3
+    },
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": []
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "",
+      "specctra_dsn": "",
+      "step": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.375,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "net_format_name": "",
+    "page_layout_descr_file": "C:\\Users\\after\\public\\open-ephys-kicad-library\\sheets\\open-ephys.kicad_wks",
+    "plot_directory": "",
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0
+  },
+  "sheets": [
+    [
+      "ffaa6ffd-73fa-4da3-9ff1-78fa7369281f",
+      ""
+    ],
+    [
+      "f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a",
+      "Headstage IO"
+    ],
+    [
+      "72625ec8-68e6-44fb-ba42-4cf3e0d4f05e",
+      "MCU"
+    ],
+    [
+      "1ab7afc2-763d-4bd2-a38f-d0a9d7531368",
+      "Signal Routing 0"
+    ],
+    [
+      "15764d43-d18b-4f1f-a3da-a0684d130fd3",
+      "Signal Routing 1"
+    ],
+    [
+      "edfcc767-12d9-44c7-8ac3-452820f5e943",
+      "Signal Routing 2"
+    ],
+    [
+      "8a6f4ec3-44dc-4aaa-ac6f-fae21b43be83",
+      "Signal Routing 3"
+    ],
+    [
+      "084f258c-76c2-447d-a204-cf4210f20f4a",
+      "Signal Routing 4"
+    ],
+    [
+      "2c93e5dd-df01-4fcd-8c08-543f017c1d40",
+      "Signal Routing 5"
+    ],
+    [
+      "31a23a2f-12f2-4518-970b-c7c4ad869e69",
+      "Signal Routing 6"
+    ],
+    [
+      "89abcb2b-b936-4713-8697-38139e1de3b3",
+      "Signal Routing 7"
+    ],
+    [
+      "31da5f38-72d9-41a6-a7f5-3d14ebd7f384",
+      "Signal Routing 8"
+    ],
+    [
+      "a8f69cab-ce55-440e-9232-e2e540305ea1",
+      "Signal Routing 9"
+    ],
+    [
+      "bee460c5-b329-45dc-9844-d5b72bba8023",
+      "Signal Routing 10"
+    ],
+    [
+      "d87e727f-7383-4e5e-b1ee-f1f1572d7c79",
+      "Signal Routing 11"
+    ],
+    [
+      "9d22f25e-e27f-4c76-9f46-dfb552ac950c",
+      "Signal Routing 12"
+    ],
+    [
+      "7c27ccfb-37a4-4bb5-8ff0-523189b295a6",
+      "Signal Routing 13"
+    ],
+    [
+      "965b0a50-444f-477a-9e6d-6e8637b95b81",
+      "Signal Routing 14"
+    ],
+    [
+      "977b92e8-91d5-4007-a8b2-d02870a773a7",
+      "Signal Routing 15"
+    ],
+    [
+      "a1b553e6-360f-440c-99f8-5680e9dd5803",
+      "Test Singal"
+    ],
+    [
+      "3204537c-edba-465e-8dbf-7f75aa43b711",
+      "USB & Battery"
+    ]
+  ],
+  "text_variables": {}
+}

@@ -8665,7 +8665,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14dafb5e-29cd-4fab-8c1d-744c560db501")
-		(property "Reference" "#PWR0612"
+		(property "Reference" "#PWR04"
 			(at 184.15 152.4 0)
 			(effects
 				(font
@@ -8715,7 +8715,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR0612")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -9022,7 +9022,7 @@
 			)
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9039,7 +9039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "284b37d9-acfa-46e7-9036-5eff936f5a1e")
-		(property "Reference" "#PWR0611"
+		(property "Reference" "#PWR03"
 			(at 96.52 152.4 0)
 			(effects
 				(font
@@ -9089,7 +9089,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR0611")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -9106,7 +9106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84517c33-6bcd-4854-9d97-1d67f6cae54c")
-		(property "Reference" "#PWR0571"
+		(property "Reference" "#PWR02"
 			(at 78.74 152.4 0)
 			(effects
 				(font
@@ -9156,7 +9156,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR0571")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -9173,7 +9173,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fb66290-3402-4877-90c1-0ac5943deb5b")
-		(property "Reference" "#PWR0742"
+		(property "Reference" "#PWR05"
 			(at 201.93 152.4 0)
 			(effects
 				(font
@@ -9223,7 +9223,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR0742")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -9530,7 +9530,7 @@
 			)
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)

@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -89,7 +89,7 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "warning",
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "npth_inside_courtyard": "ignore",
@@ -101,7 +101,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "warning",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -183,6 +183,7 @@
         0.0,
         0.15,
         0.2,
+        0.3,
         0.5,
         1.0
       ],
@@ -610,7 +611,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "C:\\Users\\after\\public\\open-ephys-kicad-library\\sheets\\open-ephys.kicad_wks",
+    "page_layout_descr_file": "${OE_SHEET_DIR}/open-ephys.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -700,7 +701,7 @@
     ],
     [
       "a1b553e6-360f-440c-99f8-5680e9dd5803",
-      "Test Singal"
+      "Test Signal"
     ],
     [
       "3204537c-edba-465e-8dbf-7f75aa43b711",

@@ -2048,7 +2048,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45ef2069-ea58-44d0-afc5-b6c8888ef161")
-		(property "Reference" "#PWR0608"
+		(property "Reference" "#PWR01"
 			(at 261.62 86.36 0)
 			(effects
 				(font
@@ -2098,7 +2098,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
-					(reference "#PWR0608")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -2114,7 +2114,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4b3e7233-3dd6-4e11-81ea-3f48789b01fa")
-		(property "Reference" "J5"
+		(property "Reference" "J1"
 			(at 251.46 48.26 0)
 			(effects
 				(font
@@ -2220,7 +2220,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
-					(reference "J5")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -3250,7 +3250,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "a1b553e6-360f-440c-99f8-5680e9dd5803")
-		(property "Sheetname" "Test Singal"
+		(property "Sheetname" "Test Signal"
 			(at 189.23 89.4584 0)
 			(effects
 				(font

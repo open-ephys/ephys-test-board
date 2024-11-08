@@ -706,6 +706,10 @@
     [
       "3204537c-edba-465e-8dbf-7f75aa43b711",
       "USB"
+    ],
+    [
+      "0564b576-016f-4657-a76f-817e9e3dffb1",
+      "User IO"
     ]
   ],
   "text_variables": {}

@@ -1283,6 +1283,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 26.67) (xy 93.98 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11aae92d-def0-4720-b581-eac04a92ab27")
+	)
+	(wire
+		(pts
 			(xy 257.81 93.98) (xy 261.62 93.98)
 		)
 		(stroke
@@ -1360,6 +1370,16 @@
 			(type default)
 		)
 		(uuid "202deae2-3413-4465-a501-8f8301ed976b")
+	)
+	(wire
+		(pts
+			(xy 96.52 29.21) (xy 201.93 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "215ea6f3-2c50-4da9-9576-9f4a5fddedd9")
 	)
 	(wire
 		(pts
@@ -1480,6 +1500,16 @@
 			(type default)
 		)
 		(uuid "303a7829-1c14-4a37-813d-9e03deb8b37a")
+	)
+	(wire
+		(pts
+			(xy 204.47 35.56) (xy 204.47 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32ab237a-0ee4-4245-81eb-70e900f31584")
 	)
 	(bus
 		(pts
@@ -1833,6 +1863,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 33.02) (xy 96.52 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82aad72a-aae0-43bf-8c5c-696e44cf92ef")
+	)
+	(wire
+		(pts
 			(xy 29.21 87.63) (xy 38.1 87.63)
 		)
 		(stroke
@@ -1870,6 +1910,16 @@
 			(type default)
 		)
 		(uuid "84cae788-b181-4ca6-a95c-e729d39811db")
+	)
+	(wire
+		(pts
+			(xy 93.98 26.67) (xy 93.98 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "860a3896-bbc4-4570-afe2-d24b8d2fcd86")
 	)
 	(wire
 		(pts
@@ -1980,6 +2030,16 @@
 			(type default)
 		)
 		(uuid "aa20baea-1112-40f9-affc-b86f50523f26")
+	)
+	(wire
+		(pts
+			(xy 201.93 29.21) (xy 201.93 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae22e9db-ec83-49db-bcde-92f69c1b93ac")
 	)
 	(bus
 		(pts
@@ -3555,6 +3615,26 @@
 			)
 			(uuid "1e4fa1a0-34ad-455f-93d9-8230596e6933")
 		)
+		(pin "SDA" bidirectional
+			(at 201.93 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cea9a845-d0d6-480a-b26e-3ca4d3468c96")
+		)
+		(pin "SCL" bidirectional
+			(at 204.47 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "10f64194-6a09-4150-a7e4-0287503d5186")
+		)
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
@@ -4490,6 +4570,26 @@
 				(justify left)
 			)
 			(uuid "5a5f2f19-ddbc-44c3-b1c4-a91f4c4c31ea")
+		)
+		(pin "SCL" bidirectional
+			(at 93.98 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "bdc2913e-98d8-4987-9614-d7d98062847a")
+		)
+		(pin "SDA" bidirectional
+			(at 96.52 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "82fadbe3-437b-477c-925b-76c4bc30909a")
 		)
 		(instances
 			(project "ephys-test-board"

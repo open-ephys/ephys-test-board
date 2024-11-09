@@ -14,19 +14,21 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 2.54 7.62 0)
+				(at 0 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "74LVC1G17"
-				(at 5.08 -7.62 0)
+				(at 0 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -39,11 +41,12 @@
 				)
 			)
 			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf"
-				(at 0 0 0)
+				(at 0 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
@@ -65,7 +68,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*"
+			(property "ki_fp_filters" "SOT?23* SOT?553* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -75,18 +78,6 @@
 				)
 			)
 			(symbol "74LVC1G17_0_1"
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(polyline
 					(pts
 						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
@@ -101,7 +92,19 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 1.27) (xy -2.54 1.27) (xy -2.54 -1.27) (xy 0 -1.27)
+						(xy -3.81 -1.27) (xy -2.54 -1.27) (xy -2.54 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -1.27 -1.27) (xy -1.27 1.27) (xy 0 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -113,13 +116,13 @@
 				)
 			)
 			(symbol "74LVC1G17_1_1"
-				(pin free line
-					(at -2.54 -10.16 90)
-					(length 6.35)
+				(pin no_connect line
+					(at -7.62 5.08 180)
+					(length 5.08) hide
 					(name "NC"
 						(effects
 							(font
-								(size 0.762 0.762)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -132,8 +135,8 @@
 					)
 				)
 				(pin input line
-					(at -15.24 0 0)
-					(length 7.62)
+					(at -12.7 0 0)
+					(length 5.08)
 					(name "~"
 						(effects
 							(font
@@ -168,8 +171,8 @@
 					)
 				)
 				(pin output line
-					(at 12.7 0 180)
-					(length 7.62)
+					(at 10.16 0 180)
+					(length 5.08)
 					(name "~"
 						(effects
 							(font
@@ -1669,9 +1672,9 @@
 		)
 		(symbol "power:VPP"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1685,7 +1688,7 @@
 				)
 			)
 			(property "Value" "VPP"
-				(at 0 3.81 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1769,8 +1772,8 @@
 			(symbol "VPP_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "VPP"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1964,6 +1967,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 130.81) (xy 207.01 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "122b5f22-8a9d-4394-8fd7-e323c1ef4a9e")
+	)
+	(wire
+		(pts
 			(xy 173.99 116.84) (xy 173.99 115.57)
 		)
 		(stroke
@@ -1974,7 +1987,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 140.97) (xy 175.26 143.51)
+			(xy 175.26 140.97) (xy 175.26 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2064,7 +2077,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 130.81) (xy 179.07 130.81)
+			(xy 175.26 130.81) (xy 181.61 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2144,7 +2157,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 133.35) (xy 127 140.97)
+			(xy 127 133.35) (xy 127 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2214,7 +2227,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 140.97) (xy 189.23 143.51)
+			(xy 189.23 140.97) (xy 189.23 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2604,6 +2617,7 @@
 	)
 	(label "~{D{slash}C}"
 		(at 149.86 48.26 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2614,6 +2628,7 @@
 	)
 	(label "~{CS}"
 		(at 149.86 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2646,6 +2661,7 @@
 	)
 	(label "MOSI"
 		(at 149.86 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2827,7 +2843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 173.99 116.84 0)
 			(effects
 				(font
@@ -2961,7 +2977,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 109.22 158.75 0)
 			(effects
 				(font
@@ -3289,7 +3305,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/790/FH26-xxS-0.3SHW%2805%29_Dwg.pdf"
+		(property "Datasheet" "~"
 			(at 142.24 45.72 0)
 			(effects
 				(font
@@ -3299,6 +3315,15 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 15 pins, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 142.24 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4998/MCOT128032CY-WS.pdf"
 			(at 142.24 45.72 0)
 			(effects
 				(font
@@ -3410,7 +3435,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 87.63 168.91 0)
 			(effects
 				(font
@@ -3433,7 +3458,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 143.51 0)
+		(at 189.23 144.78 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3443,7 +3468,7 @@
 		(fields_autoplaced yes)
 		(uuid "449e8fc5-4526-4e13-8df8-97b187a3175c")
 		(property "Reference" "#PWR0745"
-			(at 189.23 149.86 0)
+			(at 189.23 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3452,7 +3477,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 148.59 0)
+			(at 189.23 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3460,7 +3485,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 143.51 0)
+			(at 189.23 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3469,7 +3494,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 143.51 0)
+			(at 189.23 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3477,8 +3502,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 189.23 143.51 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 189.23 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3543,7 +3568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VPP\""
 			(at 113.03 35.56 0)
 			(effects
 				(font
@@ -3566,7 +3591,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 175.26 143.51 0)
+		(at 175.26 144.78 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3576,7 +3601,7 @@
 		(fields_autoplaced yes)
 		(uuid "4cac1005-82c3-41ea-a24b-b31bd4156b6c")
 		(property "Reference" "#PWR0750"
-			(at 175.26 149.86 0)
+			(at 175.26 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3585,7 +3610,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 175.26 148.59 0)
+			(at 175.26 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3593,7 +3618,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 143.51 0)
+			(at 175.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3602,7 +3627,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 143.51 0)
+			(at 175.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3610,8 +3635,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 175.26 143.51 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,7 +3702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 153.67 144.78 0)
 			(effects
 				(font
@@ -3744,7 +3769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 175.26 58.42 0)
 			(effects
 				(font
@@ -3770,7 +3795,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 140.97 0)
+		(at 127 144.78 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3780,7 +3805,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c05475c-c500-4298-83f5-f5d678be095e")
 		(property "Reference" "#PWR0769"
-			(at 127 147.32 0)
+			(at 127 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3789,7 +3814,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 146.05 0)
+			(at 127 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3797,7 +3822,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 140.97 0)
+			(at 127 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3806,7 +3831,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 140.97 0)
+			(at 127 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3814,8 +3839,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 127 140.97 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3881,7 +3906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 109.22 168.91 0)
 			(effects
 				(font
@@ -4015,7 +4040,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 175.26 137.16 0)
 			(effects
 				(font
@@ -4273,7 +4298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1731095042391&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fsn74lvc1g14"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf"
 			(at 194.31 130.81 0)
 			(effects
 				(font
@@ -4282,7 +4307,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single Schmitt Buffer Gate, Low-Voltage CMOS"
 			(at 194.31 130.81 0)
 			(effects
 				(font
@@ -4697,7 +4722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 87.63 158.75 0)
 			(effects
 				(font
@@ -4833,7 +4858,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 113.03 63.5 0)
 			(effects
 				(font
@@ -4902,7 +4927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 181.61 115.57 0)
 			(effects
 				(font
@@ -5164,7 +5189,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf"
+		(property "Datasheet" "~"
 			(at 139.7 126.746 0)
 			(effects
 				(font

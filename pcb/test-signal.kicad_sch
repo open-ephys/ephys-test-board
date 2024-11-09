@@ -2150,7 +2150,7 @@
 		)
 	)
 	(hierarchical_label "{MCP4821_{SPI}}"
-		(shape bidirectional)
+		(shape input)
 		(at 181.61 104.14 0)
 		(fields_autoplaced yes)
 		(effects

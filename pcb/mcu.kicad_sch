@@ -2394,10 +2394,6 @@
 		(uuid "f1aa23b3-d6a6-41a6-9ec0-b5351ca24236")
 	)
 	(no_connect
-		(at 163.83 66.04)
-		(uuid "1494449c-bb8b-42c0-bf21-b8558bd38093")
-	)
-	(no_connect
 		(at 163.83 78.74)
 		(uuid "25c4e4c0-6c42-45f9-b5dc-cf58345100f7")
 	)
@@ -2408,10 +2404,6 @@
 	(no_connect
 		(at 163.83 91.44)
 		(uuid "90a5bcf2-2aac-452a-a29b-81d98c914bba")
-	)
-	(no_connect
-		(at 163.83 63.5)
-		(uuid "cb6ceb18-61c1-45b7-aa59-f2b2f4d262c9")
 	)
 	(bus_entry
 		(at 186.69 127)
@@ -9169,6 +9161,18 @@
 		)
 		(uuid "27453681-d81d-4551-be81-7d8d57a69acc")
 	)
+	(hierarchical_label "SCL"
+		(shape bidirectional)
+		(at 163.83 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3e8530f8-a627-4ef8-a42f-afe8c2e22a32")
+	)
 	(hierarchical_label "~{RESET}"
 		(shape input)
 		(at 90.17 58.42 180)
@@ -9240,6 +9244,18 @@
 			(justify right)
 		)
 		(uuid "6bda8069-67b7-4565-9a69-de481f629a1a")
+	)
+	(hierarchical_label "SDA"
+		(shape bidirectional)
+		(at 163.83 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93bce56a-3505-4ebb-b8d3-bdc524575f31")
 	)
 	(hierarchical_label "SWCLK"
 		(shape input)

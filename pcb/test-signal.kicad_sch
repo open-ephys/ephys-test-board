@@ -178,6 +178,108 @@
 				)
 			)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -1607,6 +1709,12 @@
 		(uuid "9c5a76c7-50ae-4c4f-9607-c17e115ab77a")
 	)
 	(junction
+		(at 80.01 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3f8c973-46e0-4301-912b-4772db8de32a")
+	)
+	(junction
 		(at 127 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1699,6 +1807,16 @@
 			(type default)
 		)
 		(uuid "0cb5487f-5a0c-4c9b-b87e-76771baf7735")
+	)
+	(wire
+		(pts
+			(xy 80.01 55.88) (xy 80.01 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "201001db-4155-4850-9ba8-3eb396852e31")
 	)
 	(wire
 		(pts
@@ -1832,7 +1950,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 58.42) (xy 105.41 58.42)
+			(xy 71.12 58.42) (xy 80.01 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1939,6 +2057,16 @@
 			(type default)
 		)
 		(uuid "a86974d4-2c14-4369-800b-9e32c9c84bc0")
+	)
+	(wire
+		(pts
+			(xy 80.01 58.42) (xy 105.41 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2a14e66-ec28-4216-a356-1a7b9e41758c")
 	)
 	(wire
 		(pts
@@ -2129,7 +2257,7 @@
 	)
 	(global_label "TESTSIG"
 		(shape output)
-		(at 87.63 58.42 180)
+		(at 71.12 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2139,7 +2267,7 @@
 		)
 		(uuid "7aff5ebd-f001-4d42-b347-8587f0e12ece")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.2668 58.42 0)
+			(at 60.7568 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2863,6 +2991,73 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/a1b553e6-360f-440c-99f8-5680e9dd5803"
 					(reference "#PWR0730")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a71ef5c-7485-4ba1-b40d-b736b7b99041")
+		(property "Reference" "TP13"
+			(at 80.772 51.308 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VCC"
+			(at 80.772 53.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 85.09 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a32fe85e-4789-4de0-a685-07ed2619fe8c")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/a1b553e6-360f-440c-99f8-5680e9dd5803"
+					(reference "TP13")
 					(unit 1)
 				)
 			)

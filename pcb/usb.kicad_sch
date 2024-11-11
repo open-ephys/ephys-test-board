@@ -7237,7 +7237,7 @@
 			(uuid "2bdf95ca-c4c6-4ff0-881b-11cf03fe1a85")
 		)
 		(instances
-			(project ""
+			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
 					(reference "#FLG03")
 					(unit 1)

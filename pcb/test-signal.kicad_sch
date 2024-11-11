@@ -42,7 +42,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" " ~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3082,7 +3082,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "731000105"
 			(at 185.42 57.4432 0)
 			(effects
 				(font
@@ -3091,7 +3091,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal"
+		(property "Footprint" "open-ephys:BNC_MOLEX_0731000105"
 			(at 181.61 55.88 0)
 			(effects
 				(font
@@ -3100,7 +3100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/731/73100/731000105_sd.pdf?inline"
 			(at 181.61 55.88 0)
 			(effects
 				(font

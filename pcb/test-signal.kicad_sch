@@ -2200,7 +2200,7 @@
 		)
 		(uuid "14aa83d0-b6db-47bd-b558-7a789ef772ec")
 	)
-	(label "~{CS}"
+	(label "~{CS0}"
 		(at 167.64 109.22 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2356,6 +2356,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 152.4 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b1f33b49-2567-44de-9be1-2e72597aba05")
 		)
@@ -2491,6 +2500,24 @@
 				(hide yes)
 			)
 		)
+		(property "TempCo" "X7R"
+			(at 187.96 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 187.96 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c1782a83-4ebd-4d07-a6a4-84a2f6405e56")
 		)
@@ -2532,7 +2559,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 168.656 54.864 90)
 			(effects
 				(font
@@ -2551,6 +2578,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 168.91 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 168.91 55.88 0)
 			(effects
 				(font
@@ -2760,6 +2796,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 147.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "96569d2f-dfc9-45ec-9af9-6a3f9e36837b")
 		)
@@ -2916,6 +2961,24 @@
 				(hide yes)
 			)
 		)
+		(property "TempCo" "X7R"
+			(at 118.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 118.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "45180fa2-b3d8-4f4b-92a0-ee0a59e595b8")
 		)
@@ -3051,6 +3114,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 80.01 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a32fe85e-4789-4de0-a685-07ed2619fe8c")
 		)
@@ -3100,7 +3172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/731/73100/731000105_sd.pdf?inline"
+		(property "Datasheet" " ~"
 			(at 181.61 55.88 0)
 			(effects
 				(font
@@ -3110,6 +3182,15 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 181.61 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 181.61 55.88 0)
 			(effects
 				(font
@@ -3226,7 +3307,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 178.7652 93.98 0)
 			(effects
 				(font
@@ -3245,6 +3326,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 177.8 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TempCo" "X5R"
+			(at 177.8 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "16V"
 			(at 177.8 90.17 0)
 			(effects
 				(font
@@ -3444,6 +3543,15 @@
 			)
 		)
 		(property "Description" "Single-Pole Double-Throw Analog Switch"
+			(at 111.76 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 111.76 59.69 0)
 			(effects
 				(font
@@ -3668,6 +3776,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 152.4 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bf16efe9-ffd2-4c60-9b99-ae456eb923ca")
 		)
@@ -3793,6 +3910,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 127 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TempCo" "X7R"
+			(at 127 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 127 115.57 0)
 			(effects
 				(font

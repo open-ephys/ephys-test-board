@@ -9030,7 +9030,7 @@
 				)
 			)
 		)
-		(property "Value" "BTE-040-02-F-D-A"
+		(property "Value" "BTE-040-03-L-D-A"
 			(at 87.63 40.64 0)
 			(effects
 				(font
@@ -9057,6 +9057,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x40, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 88.9 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 88.9 92.71 0)
 			(effects
 				(font
@@ -9532,7 +9541,7 @@
 				)
 			)
 		)
-		(property "Value" "BTE-040-02-F-D-A"
+		(property "Value" "BTE-040-03-L-D-A"
 			(at 193.04 40.64 0)
 			(effects
 				(font
@@ -9559,6 +9568,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x40, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 194.31 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 194.31 92.71 0)
 			(effects
 				(font
@@ -10068,6 +10086,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 114.3 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c16a71ec-a544-4c16-be2e-f935a71abaf3")
 		)
@@ -10127,6 +10154,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 123.19 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 123.19 134.62 0)
 			(effects
 				(font

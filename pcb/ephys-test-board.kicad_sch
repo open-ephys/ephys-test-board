@@ -2816,6 +2816,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 236.22 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
@@ -2872,6 +2881,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 201.93 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 201.93 151.13 0)
 			(effects
 				(font
@@ -2958,16 +2976,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x10_Odd_Even")
-		(at 252.73 99.06 0)
+		(at 252.73 101.6 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "4b3e7233-3dd6-4e11-81ea-3f48789b01fa")
+		(uuid "53b12fab-bb4e-4400-b8dd-83192460db93")
 		(property "Reference" "J1"
-			(at 254 82.55 0)
+			(at 254 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2975,7 +2993,7 @@
 			)
 		)
 		(property "Value" "Conn_02x10_Odd_Even"
-			(at 254 85.09 0)
+			(at 254 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2983,7 +3001,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical"
-			(at 252.73 99.06 0)
+			(at 252.73 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2992,7 +3010,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 99.06 0)
+			(at 252.73 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3001,7 +3019,16 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 252.73 99.06 0)
+			(at 252.73 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 252.73 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3010,64 +3037,64 @@
 			)
 		)
 		(pin "1"
-			(uuid "f0432d64-ef4b-4fd1-949e-57d5300a6815")
+			(uuid "5548c82a-9886-484a-ba37-01bc2b22bb78")
 		)
 		(pin "10"
-			(uuid "bbaebda0-952b-4f65-819d-b467828bf9ba")
+			(uuid "d32a74db-6881-4518-a84b-fc46f1c35539")
 		)
 		(pin "11"
-			(uuid "186ff69c-1181-414e-8db5-8623b6f8de4a")
+			(uuid "0565c457-215f-4ad5-a2ca-f1301f4f74b3")
 		)
 		(pin "12"
-			(uuid "fdb76bb7-1420-4180-b55f-037f559a3560")
+			(uuid "fe7e360e-1ac7-42b7-b47a-d115ba3a0f1b")
 		)
 		(pin "13"
-			(uuid "4bec96d3-5bc1-428c-9abf-125151d1f148")
+			(uuid "8cfd2b58-213a-45d1-9040-b1012f3cd153")
 		)
 		(pin "14"
-			(uuid "99feef8c-ee86-42a9-8120-cf4a83b96797")
+			(uuid "3d3a7f55-42c6-4f5d-849e-e2253f210f81")
 		)
 		(pin "15"
-			(uuid "b6c0f23d-b250-438e-a813-77236ec30d1c")
+			(uuid "5e4dada3-b052-4fb4-901c-ccc7f2fe7d9a")
 		)
 		(pin "16"
-			(uuid "89b15640-ad9b-4114-8d75-d2b30bac5b8d")
+			(uuid "fe6c7b2b-4291-4e9e-9c35-01dbd12a750f")
 		)
 		(pin "17"
-			(uuid "7f2b78ac-68f1-4515-9664-bfb708cf6f5a")
+			(uuid "21a20af2-6fbb-4dc0-a8c9-842665bc7abf")
 		)
 		(pin "18"
-			(uuid "0b64a034-f2aa-4211-a957-c1af02bb2378")
+			(uuid "2e7a015e-2d02-4fdb-9404-20ae1f062e0a")
 		)
 		(pin "19"
-			(uuid "539b04e9-3afd-4309-8d70-553b71ad8262")
+			(uuid "2f903ba6-5d72-4dcf-8ee3-f4f2cf5f9509")
 		)
 		(pin "2"
-			(uuid "975c4a04-81a3-4802-8eed-fb781b56011e")
+			(uuid "29b05690-0434-47d4-bfd5-9e6c36031399")
 		)
 		(pin "20"
-			(uuid "f36a3bca-c4b6-402d-94dc-075ea715fc63")
+			(uuid "fd5d73ea-b3b6-4123-afda-16ff483c1fb9")
 		)
 		(pin "3"
-			(uuid "20ef6f6e-f3e1-41cb-b6a5-d81c9df5b914")
+			(uuid "d847a909-c4c8-4e56-b5f7-f3d603519db2")
 		)
 		(pin "4"
-			(uuid "8b697f70-4961-4c7b-9497-d79e0ca114a9")
+			(uuid "1067ec43-480f-407a-bbfe-d9f6fb985c81")
 		)
 		(pin "5"
-			(uuid "4b4f14b1-f4fd-45bb-992e-cfabc3c88c70")
+			(uuid "b08805a3-9355-4f1f-a1d4-80f673f8188e")
 		)
 		(pin "6"
-			(uuid "a7707c0f-b3af-46d9-ac1b-a63fc35fd559")
+			(uuid "54955770-3f19-4860-a161-5cf0a317a94d")
 		)
 		(pin "7"
-			(uuid "b8ccf6a4-6d0e-48ac-95ac-9203777ea02d")
+			(uuid "a0d4b204-67e3-4dd9-bc60-3e7886535335")
 		)
 		(pin "8"
-			(uuid "ff190da5-7618-4a50-a43d-7678b32b0520")
+			(uuid "8fec7f51-b43e-4af9-ac79-9b74166f34b6")
 		)
 		(pin "9"
-			(uuid "2df14284-7b5c-448d-bba4-c5869a87b688")
+			(uuid "03d9ae32-42fe-4367-b69f-859b69d81e56")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -3133,6 +3160,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 213.36 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
@@ -3186,6 +3222,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 252.73 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 252.73 121.92 0)
 			(effects
 				(font
@@ -3267,6 +3312,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 190.5 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d8a66693-b3cd-4d30-9458-e401aecfe0d6")
 		)
@@ -3334,6 +3388,15 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" ""
+			(at 224.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
@@ -3390,6 +3453,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 182.88 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
 			(at 182.88 26.67 0)
 			(effects
 				(font
@@ -3993,7 +4065,7 @@
 				(justify left top)
 			)
 		)
-		(pin "D_{-}" bidirectional
+		(pin "D-" bidirectional
 			(at 241.3 43.18 180)
 			(effects
 				(font
@@ -4003,7 +4075,7 @@
 			)
 			(uuid "5f3d2a22-f501-461c-b0f0-214557bef649")
 		)
-		(pin "D_{+}" bidirectional
+		(pin "D+" bidirectional
 			(at 241.3 40.64 180)
 			(effects
 				(font
@@ -4071,7 +4143,7 @@
 				(justify left top)
 			)
 		)
-		(pin "D_{-}" bidirectional
+		(pin "D-" bidirectional
 			(at 219.71 43.18 0)
 			(effects
 				(font
@@ -4081,7 +4153,7 @@
 			)
 			(uuid "fb69e921-f63b-4254-94c1-cee67903cd80")
 		)
-		(pin "D_{+}" bidirectional
+		(pin "D+" bidirectional
 			(at 219.71 40.64 0)
 			(effects
 				(font

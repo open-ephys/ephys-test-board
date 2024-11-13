@@ -3172,7 +3172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" ""
 			(at 181.61 55.88 0)
 			(effects
 				(font

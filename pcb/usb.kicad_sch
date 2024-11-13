@@ -1864,6 +1864,175 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers hide)
 			(pin_names
@@ -3756,12 +3925,6 @@
 		(uuid "38f289b7-fbb5-4850-9202-6f511a6e21a0")
 	)
 	(junction
-		(at 205.74 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "44ce3835-dfd6-45b4-a326-0939aa9946fb")
-	)
-	(junction
 		(at 186.69 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3808,12 +3971,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "900620df-72ca-4ace-a274-1e8ffb7f7d64")
-	)
-	(junction
-		(at 212.09 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9dff8555-220e-4ea4-8f45-3fe12d2b4ffa")
 	)
 	(junction
 		(at 149.86 172.72)
@@ -3894,7 +4051,7 @@
 		(uuid "f36e40ec-22a9-4c0c-b8e7-978e9653aa5f")
 	)
 	(no_connect
-		(at 66.04 172.72)
+		(at 66.04 176.53)
 		(uuid "57788a91-faf4-45e1-b6c8-3ca9c022516c")
 	)
 	(no_connect
@@ -3902,11 +4059,11 @@
 		(uuid "5f0fabb9-29dc-4710-a442-c718bbb2b6a7")
 	)
 	(no_connect
-		(at 66.04 177.8)
+		(at 66.04 171.45)
 		(uuid "75a8bf06-f973-4431-a3fe-eeda56d1ad8f")
 	)
 	(no_connect
-		(at 55.88 175.26)
+		(at 55.88 173.99)
 		(uuid "c441bdad-5577-43cf-b7b9-3e9805de1ef1")
 	)
 	(no_connect
@@ -4025,6 +4182,26 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 36.83) (xy 205.74 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dbe5607-e939-4513-99af-caec49a0b223")
+	)
+	(wire
+		(pts
+			(xy 207.01 54.61) (xy 205.74 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e286973-ddb8-40f2-b919-88274580e3b1")
+	)
+	(wire
+		(pts
 			(xy 196.85 140.97) (xy 196.85 144.78)
 		)
 		(stroke
@@ -4052,16 +4229,6 @@
 			(type default)
 		)
 		(uuid "21b90d41-fd47-41d5-8d8f-9ba75b409a6a")
-	)
-	(wire
-		(pts
-			(xy 205.74 36.83) (xy 205.74 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22738314-2190-4817-846a-14e86be22de3")
 	)
 	(wire
 		(pts
@@ -4162,6 +4329,16 @@
 			(type default)
 		)
 		(uuid "39b17a1b-9bce-4492-8106-9d24c2404b55")
+	)
+	(wire
+		(pts
+			(xy 205.74 54.61) (xy 205.74 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ba44710-fa33-4ae3-b7e4-0eea2057659c")
 	)
 	(wire
 		(pts
@@ -4425,16 +4602,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 80.01) (xy 212.09 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "709298e9-ccc8-4c05-a25b-7c01f05265ad")
-	)
-	(wire
-		(pts
 			(xy 91.44 171.45) (xy 107.95 171.45)
 		)
 		(stroke
@@ -4675,16 +4842,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 54.61) (xy 218.44 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a55d6613-eaf3-4d74-83ce-cb24a9dc03f8")
-	)
-	(wire
-		(pts
 			(xy 273.05 100.33) (xy 273.05 106.68)
 		)
 		(stroke
@@ -4855,16 +5012,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 46.99) (xy 205.74 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c31149ec-fd91-4ccd-b419-9bd2f4cc8dc1")
-	)
-	(wire
-		(pts
 			(xy 139.7 165.1) (xy 139.7 172.72)
 		)
 		(stroke
@@ -4972,6 +5119,16 @@
 			(type default)
 		)
 		(uuid "db6581cf-caec-4781-b3ab-09f820b651a6")
+	)
+	(wire
+		(pts
+			(xy 214.63 54.61) (xy 218.44 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e13a5c73-00aa-4007-9588-bebc42b064fe")
 	)
 	(wire
 		(pts
@@ -5293,16 +5450,6 @@
 		)
 		(uuid "ff220ec6-8cdb-4e97-8caf-5e23c6c73eb6")
 	)
-	(wire
-		(pts
-			(xy 200.66 54.61) (xy 205.74 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff297044-dff1-48aa-a635-1df8761589a6")
-	)
 	(text "NB: Configure in\ndevice mode."
 		(exclude_from_sim no)
 		(at 97.79 58.42 0)
@@ -5348,18 +5495,6 @@
 			(justify left)
 		)
 		(uuid "5c7debc2-2e91-461c-b6be-c40a68c95a8b")
-	)
-	(hierarchical_label "~{Charging}"
-		(shape output)
-		(at 200.66 54.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5eb0f7f4-2eb2-46a9-a239-dd8d86911fdd")
 	)
 	(hierarchical_label "D+"
 		(shape bidirectional)
@@ -5913,6 +6048,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_DPDT_x2")
+		(at 60.96 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "283bff9f-2193-4f40-be9e-e6b0e079ef7d")
+		(property "Reference" "SW1"
+			(at 58.42 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LC2251EENP"
+			(at 58.42 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "open-ephys:ESWITCH_LC2251EENP"
+			(at 60.96 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/htmldatasheets/production/45702/0/0/1/lc2251eenp-drawing.pdf"
+			(at 60.96 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, dual pole double throw, separate symbols"
+			(at 60.96 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 60.96 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1d677c0-9741-4cc4-a599-7d2293a3dfaf")
+		)
+		(pin "2"
+			(uuid "236e9d58-a37c-4e7e-a5dd-5ab407ebf1ab")
+		)
+		(pin "3"
+			(uuid "2e60ff76-216b-479a-a281-a2ec9ad46aa3")
+		)
+		(pin "4"
+			(uuid "150b65f8-429c-47b1-92e3-1ce72bdb9ad1")
+		)
+		(pin "5"
+			(uuid "d06d8551-fe2b-4484-bea0-a1c0d14c4bf7")
+		)
+		(pin "6"
+			(uuid "82050f2d-e049-400f-828c-1c24e4252b3d")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 68.58 115.57 0)
 		(unit 1)
@@ -5983,6 +6209,76 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
 					(reference "R265")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 205.74 43.18 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2865679e-7e7d-471f-b686-0f335604758a")
+		(property "Reference" "D4"
+			(at 201.93 43.4974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 201.93 46.0374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "open-ephys:KINGBRIGHT_WP934CBGD"
+			(at 205.74 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/WP934CB-GD.pdf"
+			(at 205.74 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 205.74 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7b776e46-4eeb-4690-8696-b23bee9b115f")
+		)
+		(pin "1"
+			(uuid "ff47f953-d36f-487c-a233-50c8b06f4647")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -7518,6 +7814,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_DPDT_x2")
+		(at 60.96 161.29 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c320760-ecaa-4efe-9934-631f5af23e63")
+		(property "Reference" "SW1"
+			(at 63.5 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LC2251EENP"
+			(at 69.85 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "open-ephys:ESWITCH_LC2251EENP"
+			(at 60.96 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/htmldatasheets/production/45702/0/0/1/lc2251eenp-drawing.pdf"
+			(at 60.96 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, dual pole double throw, separate symbols"
+			(at 60.96 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 60.96 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51e71e01-b406-4983-9ef9-9a28e1e03425")
+		)
+		(pin "2"
+			(uuid "d6b934bb-707d-4c9a-bc3d-7130616ab1db")
+		)
+		(pin "3"
+			(uuid "c9df44ae-ee91-4104-b0a7-8b82db03bdf6")
+		)
+		(pin "4"
+			(uuid "d52c31f9-7652-415a-bbff-a85c5b380305")
+		)
+		(pin "5"
+			(uuid "26b5bcf2-32c7-482a-b2bd-7e1bac866b63")
+		)
+		(pin "6"
+			(uuid "b08f4518-41dd-4c83-90f7-b505cc7d4caa")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
+					(reference "SW1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 273.05 106.68 0)
 		(mirror y)
@@ -7646,97 +8032,6 @@
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
 					(reference "#PWR0740")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPDT_x2")
-		(at 60.96 175.26 0)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "72521180-7217-446f-8202-70b057dc5e0b")
-		(property "Reference" "SW1"
-			(at 63.5 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PBH2UEESNPNAGX"
-			(at 69.85 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "open-ephys:ESWITCH_PBH2UxxNAGX"
-			(at 60.96 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, dual pole double throw, separate symbols"
-			(at 60.96 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 60.96 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "51e71e01-b406-4983-9ef9-9a28e1e03425")
-		)
-		(pin "2"
-			(uuid "d6b934bb-707d-4c9a-bc3d-7130616ab1db")
-		)
-		(pin "3"
-			(uuid "c9df44ae-ee91-4104-b0a7-8b82db03bdf6")
-		)
-		(pin "4"
-			(uuid "529d0fae-46b0-4d62-91dd-f27840d3b313")
-		)
-		(pin "5"
-			(uuid "2901f63e-6c33-4ae7-841b-2b10a1618f47")
-		)
-		(pin "6"
-			(uuid "1d28c7fa-4e40-42d9-81a6-4114b89f9910")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
-					(reference "SW1")
-					(unit 2)
 				)
 			)
 		)
@@ -8174,6 +8469,71 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
 					(reference "#PWR0739")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 205.74 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7dcbbc3a-afd7-4ab5-8dc0-5c458f4e64d7")
+		(property "Reference" "#PWR0770"
+			(at 205.74 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 209.55 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 205.74 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7348339-ea15-41dc-90b3-c9773051b8f0")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
+					(reference "#PWR0770")
 					(unit 1)
 				)
 			)
@@ -8666,7 +9026,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 205.74 43.18 0)
+		(at 210.82 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8674,15 +9034,15 @@
 		(dnp no)
 		(uuid "89ef6376-a25a-480b-a8b5-e797f9de23ea")
 		(property "Reference" "R283"
-			(at 201.93 44.45 0)
+			(at 210.82 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 201.93 41.91 0)
+		(property "Value" "1k"
+			(at 210.82 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8690,7 +9050,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 206.756 43.434 90)
+			(at 211.074 53.594 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8699,7 +9059,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 43.18 0)
+			(at 210.82 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8708,7 +9068,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 205.74 43.18 0)
+			(at 210.82 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8717,7 +9077,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 205.74 43.18 0)
+			(at 210.82 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10229,72 +10589,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 205.74 36.83 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e2836466-17dc-4e6a-8c0c-f80a87274b71")
-		(property "Reference" "#PWR0770"
-			(at 205.74 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 205.74 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 205.74 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a9e720c-afde-4083-855e-7d410cd5a35b")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
-					(reference "#PWR0770")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VPP")
 		(at 118.11 96.52 0)
 		(unit 1)
@@ -10727,98 +11021,6 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
 					(reference "#PWR0752")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPDT_x2")
-		(at 60.96 161.29 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f80d74f8-dcad-4f19-a970-9e7a750fc1f7")
-		(property "Reference" "SW1"
-			(at 58.42 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PBH2UEESNPNAGX"
-			(at 58.42 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "open-ephys:ESWITCH_PBH2UxxNAGX"
-			(at 60.96 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, dual pole double throw, separate symbols"
-			(at 60.96 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 60.96 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ec89145-bfa1-4475-9ddb-ba471b52b3df")
-		)
-		(pin "2"
-			(uuid "6a51d406-91ce-454c-b3ca-5b1ebd66853e")
-		)
-		(pin "3"
-			(uuid "ee001119-9ce6-4114-b81b-1389ffb031a0")
-		)
-		(pin "4"
-			(uuid "150b65f8-429c-47b1-92e3-1ce72bdb9ad1")
-		)
-		(pin "5"
-			(uuid "d06d8551-fe2b-4484-bea0-a1c0d14c4bf7")
-		)
-		(pin "6"
-			(uuid "82050f2d-e049-400f-828c-1c24e4252b3d")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
-					(reference "SW1")
 					(unit 1)
 				)
 			)

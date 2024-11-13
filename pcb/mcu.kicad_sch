@@ -2402,6 +2402,10 @@
 		(uuid "66d2b1ae-db77-4f3b-8a8f-d431264e136d")
 	)
 	(no_connect
+		(at 158.75 74.93)
+		(uuid "762d926c-a8e3-4761-b014-ed9dd82cf0a1")
+	)
+	(no_connect
 		(at 158.75 135.89)
 		(uuid "8d6c47df-a3de-44e7-842d-e25481c13cea")
 	)
@@ -9237,18 +9241,6 @@
 			(justify left)
 		)
 		(uuid "cf8bbd20-b616-425b-8438-5aef30f4388f")
-	)
-	(hierarchical_label "~{Charging}"
-		(shape input)
-		(at 158.75 74.93 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dd7bac29-f869-4874-a423-2ba740b86ccb")
 	)
 	(hierarchical_label "RP2040_{TX}"
 		(shape output)

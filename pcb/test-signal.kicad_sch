@@ -1715,12 +1715,6 @@
 		(uuid "a3f8c973-46e0-4301-912b-4772db8de32a")
 	)
 	(junction
-		(at 127 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae8fc5d3-dbfd-4702-9f3f-0bbb5625f09b")
-	)
-	(junction
 		(at 167.64 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1910,16 +1904,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 119.38) (xy 127 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b3dc398-29ec-4894-a964-02ac747574d5")
-	)
-	(wire
-		(pts
 			(xy 177.8 86.36) (xy 177.8 83.82)
 		)
 		(stroke
@@ -1977,16 +1961,6 @@
 			(type default)
 		)
 		(uuid "6d617a09-170d-4c9e-b027-52470ba6fd71")
-	)
-	(wire
-		(pts
-			(xy 127 107.95) (xy 127 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e304f64-1d44-4e6b-8022-284498d2914f")
 	)
 	(bus
 		(pts
@@ -2178,9 +2152,9 @@
 		)
 		(uuid "f7b15b77-f8b6-4156-9cb1-4c0038972065")
 	)
-	(text "NB: Pg. 25, section 6.3\nindicates that this cap\nworks with output Z of\namp to create LPF that\ncan reduce noise caused\nby internal reference\nand smooth output. However\nno obvious indication\nof the corner freq. for a\ngiven value. Only states\nthat 1nF to 4.7uF are stable."
+	(text "DAC can drive 1 kOhm with zero capacitive load. Currently, if all switches are turn on, we need to drive ~0.7 kOhm with some parasitic capacitance. We will need a buffer stage. Might be nice to have  optional filter on that."
 		(exclude_from_sim no)
-		(at 120.142 129.032 0)
+		(at 172.72 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2375,73 +2349,6 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/a1b553e6-360f-440c-99f8-5680e9dd5803"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 127 125.73 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ac76f57-4929-478e-805c-5809f6597f62")
-		(property "Reference" "#PWR0723"
-			(at 127 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 127 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fb8a16d6-5e87-466e-89c2-bcfb628fa0ca")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/a1b553e6-360f-440c-99f8-5680e9dd5803"
-					(reference "#PWR0723")
 					(unit 1)
 				)
 			)
@@ -2778,7 +2685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD5683R_5682R_5681R_5683.pdf"
 			(at 124.46 110.49 0)
 			(effects
 				(font
@@ -3860,92 +3767,6 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/a1b553e6-360f-440c-99f8-5680e9dd5803"
 					(reference "#PWR0724")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 127 115.57 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e212e155-4aed-45b3-bb0c-b499ef3e2418")
-		(property "Reference" "C289"
-			(at 130.81 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 130.81 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 126.0348 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 127 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "TempCo" "X7R"
-			(at 127 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 127 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "03f8e496-635d-4be9-b378-f6b2d2186996")
-		)
-		(pin "2"
-			(uuid "b45b5af1-2f00-44e1-9b6c-cba08b3e8ab5")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/a1b553e6-360f-440c-99f8-5680e9dd5803"
-					(reference "C289")
 					(unit 1)
 				)
 			)

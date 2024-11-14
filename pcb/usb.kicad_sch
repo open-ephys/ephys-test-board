@@ -5461,6 +5461,16 @@
 		)
 		(uuid "8acc2809-99a3-42ea-876a-1e8f8f4519cf")
 	)
+	(text "Replace with SMD + light pipe"
+		(exclude_from_sim no)
+		(at 205.74 35.56 90)
+		(effects
+			(font
+				(size 5 5)
+			)
+		)
+		(uuid "e5e581ec-c17a-4c28-902d-077ae0e4421f")
+	)
 	(label "Pow_{En}"
 		(at 133.35 102.87 180)
 		(fields_autoplaced yes)

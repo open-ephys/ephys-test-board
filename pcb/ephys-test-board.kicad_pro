@@ -525,7 +525,7 @@
       "plot": "manufacturing/gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "ephys-test-board.step",
+      "step": "../case/ephys-test-board.step",
       "svg": "",
       "vrml": ""
     },

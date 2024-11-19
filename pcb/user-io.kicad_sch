@@ -5,7 +5,7 @@
 	(uuid "76d6e312-1b52-407d-bf9d-9436fed0140e")
 	(paper "A4")
 	(title_block
-		(rev "A")
+		(rev "B")
 		(comment 1 "Jonathan P. Newman")
 	)
 	(lib_symbols
@@ -2814,6 +2814,16 @@
 		)
 		(uuid "200447e6-2ab5-4fae-8300-4b7d3e09802e")
 	)
+	(text "Knob:\nACCKMR1316NLT14"
+		(exclude_from_sim no)
+		(at 139.7 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c09b512f-2a61-43d9-a4b2-4d824454d8a1")
+	)
 	(label "~{D{slash}C}"
 		(at 161.29 57.15 0)
 		(fields_autoplaced yes)
@@ -3532,7 +3542,7 @@
 				)
 			)
 		)
-		(property "Value" "FH26-15S-0.3SHW(05)"
+		(property "Value" "FH26W-15S-0.3SHW(60)"
 			(at 154.94 43.18 0)
 			(effects
 				(font

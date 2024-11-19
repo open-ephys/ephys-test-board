@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "A")
+		(rev "B")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -12149,7 +12149,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d5710265-76a3-4a0d-a833-bc9656d867e7")
-		(property "Reference" "S1"
+		(property "Reference" "SW3"
 			(at 63.5 74.9299 90)
 			(effects
 				(font
@@ -12212,7 +12212,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e"
-					(reference "S1")
+					(reference "SW3")
 					(unit 1)
 				)
 			)

@@ -14,6 +14,8 @@
 #define STR_BUFFER_BYTES    256
 #define MAX_COMMANDS        256
 
+void knob_turned();
+
 int main()
 {
     // // I2C Initialisation. Using it at 400Khz.
@@ -38,11 +40,11 @@ int main()
         .pio = ENC_PIO,
         .sm = 0,
         .dma_chan = 0,
-        .counter = 0
+        .counter = 0,
+        .counter_update_handler = knob_turned
     };
 
     quad_init(&quad_dec);
-
 
     // // Command interface
     // stdio_init_all();
@@ -89,7 +91,8 @@ int main()
 
     // while(1)
     // {
-    //     printf("Count: %ld\n", quad_get_count(&quad_dec));
+    //     // NB: 4 pulses per detent using the PEC12R-4222F-S0024
+    //     printf("Count: %ld\n", quad_get_count(&quad_dec) / 4);
     // }
 
     // while (1) {

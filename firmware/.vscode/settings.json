@@ -42,7 +42,8 @@
         "parse.h": "c",
         "pio_spi.h": "c",
         "cstdint": "c",
-        "quadrature c": "cpp"
+        "quadrature c": "cpp",
+        "quadrature.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": false
 }

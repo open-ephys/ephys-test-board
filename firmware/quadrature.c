@@ -1,11 +1,12 @@
 #include "ephys-tester.h"
 #include "quadrature.h"
+#include "hardware/irq.h"
 
 
 int quad_init(pio_quad_inst_t *quad)
 {
     uint quadrature_prog_offs = pio_add_program(quad->pio, &quadrature_decoder_program);
-    pio_quadrature_init(quad->pio, quad->sm, ENC_A, &quad->dma_chan, &quad->counter);
+    pio_quadrature_init(quad->pio, quad->sm, ENC_A, &quad->dma_chan, &quad->counter, quad->counter_update_handler);
     return 0;
 }
 
@@ -22,5 +23,5 @@ int quad_get_count(const pio_quad_inst_t *quad)
         dma_channel_start(quad->dma_chan);
     }
 
-    return count / 4 ; // NB: 4 pulses per detent using the PEC12R-4222F-S0024
+    return count; 
 }

@@ -3459,6 +3459,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 137.16 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 137.16 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "90d29b09-b818-4917-aa56-abd77a949d9e")
 		)
@@ -3856,6 +3874,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 63.5 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 63.5 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "77518b64-b9ed-4d8f-bedd-6937091ebddd")
 		)
@@ -3985,6 +4021,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 128.27 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 128.27 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 128.27 170.18 0)
 			(effects
 				(font
@@ -4383,6 +4437,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4476efe9-ef98-4498-b7da-fadda52c5799")
 		)
@@ -4540,6 +4612,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 83.82 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 83.82 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9b9f9e18-5d64-4f88-a141-cd7819e29ec8")
 		)
@@ -4677,6 +4767,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 46.99 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 46.99 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "612fad88-99f4-43c6-ba8e-3589cb6e1ac0")
 		)
@@ -4806,6 +4914,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 54.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 54.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 54.61 81.28 0)
 			(effects
 				(font
@@ -5077,6 +5203,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 54.61 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 54.61 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c35543d8-ee0b-4c9b-a07e-080c375ed45b")
 		)
@@ -5206,6 +5350,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 46.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 46.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 46.99 43.18 0)
 			(effects
 				(font
@@ -5360,6 +5522,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 204.47 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 204.47 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4cbca1cf-74ff-40ab-9afb-72176023dedf")
 		)
@@ -5489,6 +5669,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 120.65 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 120.65 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 120.65 176.53 0)
 			(effects
 				(font
@@ -5634,6 +5832,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 83.82 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 83.82 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 83.82 111.76 0)
 			(effects
 				(font
@@ -6151,6 +6367,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 120.65 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 120.65 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 120.65 132.08 0)
 			(effects
 				(font
@@ -6811,6 +7045,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 158.75 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 158.75 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "898192af-5a72-4ee9-acb9-612f1a8c7bf4")
 		)
@@ -7337,6 +7589,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 63.5 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 63.5 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d3987bf9-bd96-4f39-a739-e423f50d8414")
 		)
@@ -7735,6 +8005,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 137.16 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 137.16 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "30d74677-3ade-4467-9b1c-00cf362288ce")
 		)
@@ -7981,7 +8269,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Shift Register With Schmitt-Trigger Inputs and 3-State Output Registers "
+		(property "Description" "8-Bit Shift Register With Schmitt-Trigger Inputs and 3-State Output Registers"
 			(at 233.68 90.17 0)
 			(effects
 				(font
@@ -7991,6 +8279,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 233.68 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 233.68 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 233.68 90.17 0)
 			(effects
 				(font
@@ -8186,6 +8492,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dfa447e3-8fed-4f30-aec6-5847c55c897c")
 		)
@@ -8315,6 +8639,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 128.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 128.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 128.27 125.73 0)
 			(effects
 				(font
@@ -8460,6 +8802,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 83.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 83.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 83.82 67.31 0)
 			(effects
 				(font
@@ -8994,6 +9354,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 158.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 158.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c8c89dfe-499e-4e3e-8412-4622fb2555f7")
 		)
@@ -9249,6 +9627,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 54.61 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 54.61 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 54.61 170.18 0)
 			(effects
 				(font
@@ -9774,6 +10170,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 137.16 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 137.16 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 137.16 125.73 0)
 			(effects
 				(font
@@ -10433,6 +10847,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 83.82 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 83.82 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2938b78e-109e-474d-a480-c764847e7664")
 		)
@@ -10578,6 +11010,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 137.16 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 137.16 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "49d61df2-0fd2-44eb-affd-f8e6c806d0d7")
 		)
@@ -10707,6 +11157,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 54.61 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 54.61 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 54.61 125.73 0)
 			(effects
 				(font
@@ -10852,6 +11320,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 63.5 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 63.5 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 63.5 36.83 0)
 			(effects
 				(font
@@ -11123,6 +11609,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 120.65 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 120.65 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "735f1336-3c96-474c-88de-d5be424d3f9f")
 		)
@@ -11260,6 +11764,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 46.99 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 46.99 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5db3cee1-91c9-482e-a3be-a5979850f0dd")
 		)
@@ -11388,6 +11910,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 77.47 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 77.47 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 77.47 127 0)
 			(effects
 				(font
@@ -11798,6 +12338,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 128.27 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 128.27 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9ebdbdd0-d442-4850-a1fe-8ad53c428b89")
 		)
@@ -11943,6 +12501,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 63.5 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 63.5 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e16ae043-0663-4457-9543-0ed9c2c3eba1")
 		)
@@ -12071,6 +12647,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 77.47 82.55 0)
 			(effects
 				(font
@@ -12987,6 +13581,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 152.4 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 152.4 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7d3bd914-82b7-4ce6-93b4-cc0f803fc786")
 		)
@@ -13127,6 +13739,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 77.47 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 77.47 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 77.47 171.45 0)
 			(effects
 				(font
@@ -13284,6 +13914,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 158.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 158.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 158.75 67.31 0)
 			(effects
 				(font
@@ -13681,6 +14329,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 46.99 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 46.99 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "509a3b94-c6c3-4d10-924b-d57892bc7ea9")
 		)
@@ -13944,6 +14610,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "05e21d39-4606-4a7e-8a79-1480d2f66143")
 		)
@@ -14085,6 +14769,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 128.27 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 128.27 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 128.27 81.28 0)
 			(effects
 				(font
@@ -14355,6 +15057,24 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet1" ""
+			(at 77.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 77.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7f033f05-8af3-4593-b34d-e03d2da864bb")
 		)
@@ -14495,6 +15215,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 152.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 152.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 152.4 38.1 0)
 			(effects
 				(font
@@ -14771,6 +15509,24 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
 			(at 120.65 87.63 0)
 			(effects
 				(font

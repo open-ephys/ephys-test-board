@@ -62,7 +62,7 @@ output:
 % c-sdk {
 #include "hardware/gpio.h"
 #include "hardware/dma.h"
-static inline void pio_quadrature_init(PIO pio, uint sm, uint enc_a, int *dma_chan, volatile uint32_t* counter) {
+static inline void pio_quadrature_init(PIO pio, uint sm, uint enc_a, int *dma_chan, volatile uint32_t* counter, irq_handler_t dma_handler) {
     
     // Configure PIO
     pio_sm_config c = quadrature_decoder_program_get_default_config(0);
@@ -72,18 +72,27 @@ static inline void pio_quadrature_init(PIO pio, uint sm, uint enc_a, int *dma_ch
     pio_sm_init(pio, sm, quadrature_decoder_offset_start, &c);
 
     // Configure DMA
-    *dma_chan = dma_claim_unused_channel(true); // return value
+    *dma_chan = dma_claim_unused_channel(true);
     dma_channel_config dc = dma_channel_get_default_config(*dma_chan);
+    channel_config_set_transfer_data_size(&dc, DMA_SIZE_32);
     channel_config_set_read_increment(&dc, false);
     channel_config_set_write_increment(&dc, false);
     channel_config_set_dreq(&dc, pio_get_dreq(pio, sm, false));
     dma_channel_configure(*dma_chan, &dc,
         counter,           // Destination pointer
         &pio->rxf[sm],     // Source pointer
-        0xFFFFFFFF,        // Largest possible number of transfers
+        1,                 // Trigger IRQ when count changes
         true               // Start immediately
     );
 
+    // Tell the DMA to raise IRQ line 0 when the channel finishes a block
+    dma_channel_set_irq0_enabled(*dma_chan, true);
+
+    // Configure the processor to run dma_handler() when DMA IRQ 0 is asserted
+    irq_set_exclusive_handler(DMA_IRQ_0, dma_handler);
+    irq_set_enabled(DMA_IRQ_0, true);
+
+    // Enable the PIO state machine
     pio_sm_set_enabled(pio, sm, true);
 }
 %}

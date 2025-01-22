@@ -8,6 +8,7 @@ typedef struct pio_quad_inst {
     uint sm;
     int dma_chan;
     volatile int32_t counter;
+    irq_handler_t counter_update_handler;
 } pio_quad_inst_t;
 
 int quad_init(pio_quad_inst_t *quad);

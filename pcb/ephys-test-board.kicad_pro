@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -456,7 +456,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "jonnew"
+    ],
     "pinned_symbol_libs": [
       "temp"
     ]
@@ -613,6 +615,12 @@
           "label": "Voltage",
           "name": "Voltage",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Part No.",
+          "name": "Part No.",
+          "show": false
         }
       ],
       "filter_string": "",

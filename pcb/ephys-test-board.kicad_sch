@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20241209)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ffaa6ffd-73fa-4da3-9ff1-78fa7369281f")
 	(paper "A4")
 	(title_block
@@ -12,9 +12,13 @@
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -112,10 +116,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -182,8 +189,19 @@
 			)
 			(symbol "Conn_01x03_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -204,25 +222,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
 					)
 				)
 				(pin passive line
@@ -280,10 +287,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_02x05_Odd_Even"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -350,30 +360,19 @@
 			)
 			(symbol "Conn_02x05_Odd_Even_1_1"
 				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
+					(start -1.27 6.35)
+					(end 3.81 -6.35)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
+					(start -1.27 5.207)
+					(end 0 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -394,8 +393,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
+					(start -1.27 0.127)
+					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -405,19 +404,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 6.35)
-					(end 3.81 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start 3.81 -4.953)
-					(end 2.54 -5.207)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -427,8 +415,8 @@
 					)
 				)
 				(rectangle
-					(start 3.81 -2.413)
-					(end 2.54 -2.667)
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -438,8 +426,8 @@
 					)
 				)
 				(rectangle
-					(start 3.81 0.127)
-					(end 2.54 -0.127)
+					(start 3.81 5.207)
+					(end 2.54 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -460,8 +448,30 @@
 					)
 				)
 				(rectangle
-					(start 3.81 5.207)
-					(end 2.54 4.953)
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -4.953)
+					(end 2.54 -5.207)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -489,42 +499,6 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
-					(length 3.81)
-					(name "Pin_10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 5.08 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
@@ -535,24 +509,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -579,24 +535,6 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_7"
@@ -607,6 +545,78 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 5.08 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -633,16 +643,16 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 7.62 -5.08 180)
 					(length 3.81)
-					(name "Pin_9"
+					(name "Pin_10"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -651,11 +661,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
@@ -753,6 +768,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "open-ephys:OEPS-SN"
 			(exclude_from_sim no)
@@ -835,12 +851,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -931,12 +952,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1008,7 +1034,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1020,7 +1046,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1051,6 +1077,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -3608,6 +3635,10 @@
 	(sheet
 		(at 241.3 59.69)
 		(size 22.86 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3637,53 +3668,53 @@
 		)
 		(pin "{OLED_{SPI}}" input
 			(at 241.3 62.23 180)
+			(uuid "88e95c71-799a-48de-8833-2ca0a8decae5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "88e95c71-799a-48de-8833-2ca0a8decae5")
 		)
 		(pin "Encoder_{A}" output
 			(at 241.3 71.12 180)
+			(uuid "543aa097-6429-4596-8722-52764e6115bc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "543aa097-6429-4596-8722-52764e6115bc")
 		)
 		(pin "Encoder_{B}" output
 			(at 241.3 73.66 180)
+			(uuid "e2180478-3372-4d7c-bf65-96332d83de91")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e2180478-3372-4d7c-bf65-96332d83de91")
 		)
 		(pin "Button" output
 			(at 241.3 76.2 180)
+			(uuid "c508a17b-3f82-4256-94a1-968cbfe3edfd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c508a17b-3f82-4256-94a1-968cbfe3edfd")
 		)
 		(pin "OLED_{POW}" input
 			(at 241.3 64.77 180)
+			(uuid "d1e5ecb7-c621-4410-a575-f4c3180ec2cd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d1e5ecb7-c621-4410-a575-f4c3180ec2cd")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -3696,6 +3727,10 @@
 	(sheet
 		(at 132.08 104.14)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3725,33 +3760,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 153.67 111.76 0)
+			(uuid "ddaf0e8c-5d65-427d-ae1f-2297ef4c6e7a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ddaf0e8c-5d65-427d-ae1f-2297ef4c6e7a")
 		)
 		(pin "SR_{IN}" input
 			(at 153.67 106.68 0)
+			(uuid "9c10fb1e-57b0-4d49-9f29-87805419739d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9c10fb1e-57b0-4d49-9f29-87805419739d")
 		)
 		(pin "{TRODES}" output
 			(at 132.08 109.22 180)
+			(uuid "cf00e9a2-aab9-405d-8d2e-bb300b4d35eb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cf00e9a2-aab9-405d-8d2e-bb300b4d35eb")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -3764,6 +3799,10 @@
 	(sheet
 		(at 132.08 54.61)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3793,33 +3832,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 153.67 62.23 0)
+			(uuid "fd759960-a48d-4fb8-a5d3-9df406ae5983")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fd759960-a48d-4fb8-a5d3-9df406ae5983")
 		)
 		(pin "SR_{IN}" input
 			(at 153.67 57.15 0)
+			(uuid "f1014dfc-7a4b-4681-93f8-3f7ea2f054b3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f1014dfc-7a4b-4681-93f8-3f7ea2f054b3")
 		)
 		(pin "{TRODES}" output
 			(at 132.08 59.69 180)
+			(uuid "35f87cd1-6f48-47ff-a7fb-8ef83501b774")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "35f87cd1-6f48-47ff-a7fb-8ef83501b774")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -3832,6 +3871,10 @@
 	(sheet
 		(at 132.08 38.1)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3861,33 +3904,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 153.67 45.72 0)
+			(uuid "47b50d0b-4f15-47db-944b-f7d82c976e89")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "47b50d0b-4f15-47db-944b-f7d82c976e89")
 		)
 		(pin "SR_{IN}" input
 			(at 153.67 40.64 0)
+			(uuid "b87cd591-9f7c-4907-a7f6-c3396feb4cf7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b87cd591-9f7c-4907-a7f6-c3396feb4cf7")
 		)
 		(pin "{TRODES}" output
 			(at 132.08 43.18 180)
+			(uuid "8a812f32-ddbf-4523-86a1-d0cc37e9e955")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8a812f32-ddbf-4523-86a1-d0cc37e9e955")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -3900,6 +3943,10 @@
 	(sheet
 		(at 132.08 120.65)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3929,33 +3976,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 153.67 128.27 0)
+			(uuid "b1c729f2-2b86-4588-8868-21b9eba07056")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b1c729f2-2b86-4588-8868-21b9eba07056")
 		)
 		(pin "SR_{IN}" input
 			(at 153.67 123.19 0)
+			(uuid "dda371ce-c674-4c10-be3a-dbd35868e80e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "dda371ce-c674-4c10-be3a-dbd35868e80e")
 		)
 		(pin "{TRODES}" output
 			(at 132.08 125.73 180)
+			(uuid "b62773f0-0493-4cee-a304-07e374132da6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b62773f0-0493-4cee-a304-07e374132da6")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -3968,6 +4015,10 @@
 	(sheet
 		(at 132.08 137.16)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3997,33 +4048,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 153.67 144.78 0)
+			(uuid "1f60381c-8917-48ce-abe1-5feeffa920a8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1f60381c-8917-48ce-abe1-5feeffa920a8")
 		)
 		(pin "SR_{IN}" input
 			(at 153.67 139.7 0)
+			(uuid "4bf191de-95f7-4b15-97d4-c92c76cdfeb9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4bf191de-95f7-4b15-97d4-c92c76cdfeb9")
 		)
 		(pin "{TRODES}" output
 			(at 132.08 142.24 180)
+			(uuid "e5db77b4-55b2-4449-97e9-a870b2c0dd22")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e5db77b4-55b2-4449-97e9-a870b2c0dd22")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4036,6 +4087,10 @@
 	(sheet
 		(at 40.64 153.67)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4065,33 +4120,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 40.64 156.21 180)
+			(uuid "bab68585-3032-4751-a124-cac09ef0b850")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bab68585-3032-4751-a124-cac09ef0b850")
 		)
 		(pin "SR_{IN}" input
 			(at 40.64 161.29 180)
+			(uuid "e0dc9222-bc82-4463-ac72-826c1205229a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e0dc9222-bc82-4463-ac72-826c1205229a")
 		)
 		(pin "{TRODES}" output
 			(at 62.23 158.75 0)
+			(uuid "b40c231c-16b5-4745-bdc6-13d572b58e5a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b40c231c-16b5-4745-bdc6-13d572b58e5a")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4104,6 +4159,10 @@
 	(sheet
 		(at 241.3 38.1)
 		(size 22.86 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4133,33 +4192,33 @@
 		)
 		(pin "D-" bidirectional
 			(at 241.3 43.18 180)
+			(uuid "5f3d2a22-f501-461c-b0f0-214557bef649")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5f3d2a22-f501-461c-b0f0-214557bef649")
 		)
 		(pin "D+" bidirectional
 			(at 241.3 40.64 180)
+			(uuid "cb5bc7ac-a051-406f-ae10-8a85bf10cb61")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cb5bc7ac-a051-406f-ae10-8a85bf10cb61")
 		)
 		(pin "VBus_{Detect}" output
 			(at 241.3 46.99 180)
+			(uuid "3533d07e-746a-4d21-86c3-d7cb6521fe74")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3533d07e-746a-4d21-86c3-d7cb6521fe74")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4172,6 +4231,10 @@
 	(sheet
 		(at 191.77 38.1)
 		(size 27.94 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4201,173 +4264,173 @@
 		)
 		(pin "D-" bidirectional
 			(at 219.71 43.18 0)
+			(uuid "fb69e921-f63b-4254-94c1-cee67903cd80")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fb69e921-f63b-4254-94c1-cee67903cd80")
 		)
 		(pin "D+" bidirectional
 			(at 219.71 40.64 0)
+			(uuid "5b175edb-3c88-4d41-a171-b330a92c2a92")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5b175edb-3c88-4d41-a171-b330a92c2a92")
 		)
 		(pin "RP2040_{TX}" output
 			(at 219.71 92.71 0)
+			(uuid "c0325dc2-f23d-46b6-8ea5-cfdaa8c3b483")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c0325dc2-f23d-46b6-8ea5-cfdaa8c3b483")
 		)
 		(pin "SR_{SER}" output
 			(at 191.77 40.64 180)
+			(uuid "2c58fd39-5c48-4031-97ca-f08980485223")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2c58fd39-5c48-4031-97ca-f08980485223")
 		)
 		(pin "{MCP4821_{SPI}}" bidirectional
 			(at 191.77 82.55 180)
+			(uuid "ad614776-f79a-46bf-b1eb-b01c15219cca")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ad614776-f79a-46bf-b1eb-b01c15219cca")
 		)
 		(pin "TEST_{SEL}" output
 			(at 191.77 78.74 180)
+			(uuid "ce438d43-6e7c-44f8-bfcc-d482bc380c27")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ce438d43-6e7c-44f8-bfcc-d482bc380c27")
 		)
 		(pin "SWD" bidirectional
 			(at 219.71 97.79 0)
+			(uuid "ac5f9277-2dc3-43d3-93fd-7a0fb249b120")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ac5f9277-2dc3-43d3-93fd-7a0fb249b120")
 		)
 		(pin "SWCLK" input
 			(at 219.71 100.33 0)
+			(uuid "58f85958-17a1-4dfc-92f2-e8431bfaf6ea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "58f85958-17a1-4dfc-92f2-e8431bfaf6ea")
 		)
 		(pin "RP2040_{RX}" input
 			(at 219.71 95.25 0)
+			(uuid "b298f1de-3d78-44b7-a042-ea0e99226845")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b298f1de-3d78-44b7-a042-ea0e99226845")
 		)
 		(pin "Encoder_{B}" input
 			(at 219.71 73.66 0)
+			(uuid "40fc97c0-720d-4313-9510-9eade4909ceb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "40fc97c0-720d-4313-9510-9eade4909ceb")
 		)
 		(pin "Encoder_{A}" input
 			(at 219.71 71.12 0)
+			(uuid "498807cd-62e7-49aa-bd87-0c2711db6f61")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "498807cd-62e7-49aa-bd87-0c2711db6f61")
 		)
 		(pin "{OLED_{SPI}}" output
 			(at 219.71 62.23 0)
+			(uuid "5334c4b7-2cbf-4e9e-85e1-ab90292cfb28")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5334c4b7-2cbf-4e9e-85e1-ab90292cfb28")
 		)
 		(pin "Button" input
 			(at 219.71 76.2 0)
+			(uuid "e1689344-99aa-472c-93ec-c525bb8b0fe4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e1689344-99aa-472c-93ec-c525bb8b0fe4")
 		)
 		(pin "VBus_{Detect}" input
 			(at 219.71 46.99 0)
+			(uuid "d624728d-0a38-4863-8ac7-06b79b1810d7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d624728d-0a38-4863-8ac7-06b79b1810d7")
 		)
 		(pin "SDA" bidirectional
 			(at 204.47 38.1 90)
+			(uuid "cea9a845-d0d6-480a-b26e-3ca4d3468c96")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cea9a845-d0d6-480a-b26e-3ca4d3468c96")
 		)
 		(pin "SCL" bidirectional
 			(at 207.01 38.1 90)
+			(uuid "10f64194-6a09-4150-a7e4-0287503d5186")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "10f64194-6a09-4150-a7e4-0287503d5186")
 		)
 		(pin "OLED_{POW}" output
 			(at 219.71 64.77 0)
+			(uuid "1147987d-f883-4bdd-8c7f-3b2fde66aa38")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1147987d-f883-4bdd-8c7f-3b2fde66aa38")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4380,6 +4443,10 @@
 	(sheet
 		(at 40.64 71.12)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4409,33 +4476,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 40.64 73.66 180)
+			(uuid "268cf20b-eedd-45f2-bbac-6316d2ce665a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "268cf20b-eedd-45f2-bbac-6316d2ce665a")
 		)
 		(pin "SR_{IN}" input
 			(at 40.64 78.74 180)
+			(uuid "f577138b-55ea-4105-abcd-585f0cc5b355")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f577138b-55ea-4105-abcd-585f0cc5b355")
 		)
 		(pin "{TRODES}" output
 			(at 62.23 76.2 0)
+			(uuid "2c279311-cd4a-47b3-a918-e5000d7fab90")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2c279311-cd4a-47b3-a918-e5000d7fab90")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4448,6 +4515,10 @@
 	(sheet
 		(at 132.08 153.67)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4477,33 +4548,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 153.67 161.29 0)
+			(uuid "bb07e36d-3615-4fd0-ab71-b1a7a66f0599")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bb07e36d-3615-4fd0-ab71-b1a7a66f0599")
 		)
 		(pin "SR_{IN}" input
 			(at 153.67 156.21 0)
+			(uuid "d5e9fb6e-935f-4366-877f-4c481e594400")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d5e9fb6e-935f-4366-877f-4c481e594400")
 		)
 		(pin "{TRODES}" output
 			(at 132.08 158.75 180)
+			(uuid "d4c06ae6-dbc6-4aaf-bbff-89c0435a66f3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d4c06ae6-dbc6-4aaf-bbff-89c0435a66f3")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4516,6 +4587,10 @@
 	(sheet
 		(at 132.08 87.63)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4545,33 +4620,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 153.67 95.25 0)
+			(uuid "395dae11-82a6-4139-995d-067eae834a55")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "395dae11-82a6-4139-995d-067eae834a55")
 		)
 		(pin "SR_{IN}" input
 			(at 153.67 90.17 0)
+			(uuid "51d1c430-5966-4fa8-aa45-4b4ad5e7704b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "51d1c430-5966-4fa8-aa45-4b4ad5e7704b")
 		)
 		(pin "{TRODES}" output
 			(at 132.08 92.71 180)
+			(uuid "182efb64-b353-46af-a7a7-3f1820f998d1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "182efb64-b353-46af-a7a7-3f1820f998d1")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4584,6 +4659,10 @@
 	(sheet
 		(at 40.64 54.61)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4613,33 +4692,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 40.64 57.15 180)
+			(uuid "a220074d-ca06-40bd-bf6b-25a1a08c0c87")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a220074d-ca06-40bd-bf6b-25a1a08c0c87")
 		)
 		(pin "SR_{IN}" input
 			(at 40.64 62.23 180)
+			(uuid "9ee6cf6e-1e62-4015-8d75-6d87443a4598")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9ee6cf6e-1e62-4015-8d75-6d87443a4598")
 		)
 		(pin "{TRODES}" output
 			(at 62.23 59.69 0)
+			(uuid "8567d863-4903-4064-895f-efb3892609ba")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8567d863-4903-4064-895f-efb3892609ba")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4652,6 +4731,10 @@
 	(sheet
 		(at 40.64 38.1)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4681,33 +4764,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 40.64 40.64 180)
+			(uuid "55047d59-9ee3-4885-91b0-35460313a908")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "55047d59-9ee3-4885-91b0-35460313a908")
 		)
 		(pin "SR_{IN}" input
 			(at 40.64 45.72 180)
+			(uuid "735936ae-b44b-44e4-a438-4677c7ae7a88")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "735936ae-b44b-44e4-a438-4677c7ae7a88")
 		)
 		(pin "{TRODES}" output
 			(at 62.23 43.18 0)
+			(uuid "e9e8e7c5-3b50-43b6-804b-f2863ad6c657")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e9e8e7c5-3b50-43b6-804b-f2863ad6c657")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4720,6 +4803,10 @@
 	(sheet
 		(at 40.64 87.63)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4749,33 +4836,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 40.64 90.17 180)
+			(uuid "5bc1b65c-6343-447f-be05-54713881ff2f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5bc1b65c-6343-447f-be05-54713881ff2f")
 		)
 		(pin "SR_{IN}" input
 			(at 40.64 95.25 180)
+			(uuid "685972f8-8e51-4830-bb31-784cab59b40e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "685972f8-8e51-4830-bb31-784cab59b40e")
 		)
 		(pin "{TRODES}" output
 			(at 62.23 92.71 0)
+			(uuid "1576f04b-da9d-4e98-85db-dcaa04305c6b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1576f04b-da9d-4e98-85db-dcaa04305c6b")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4788,6 +4875,10 @@
 	(sheet
 		(at 191.77 113.03)
 		(size 27.94 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4817,23 +4908,23 @@
 		)
 		(pin "{MCP4821_{SPI}}" bidirectional
 			(at 191.77 118.11 180)
+			(uuid "a3936bb8-7484-4b8e-944b-aaf009b4202c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a3936bb8-7484-4b8e-944b-aaf009b4202c")
 		)
 		(pin "TEST_{SEL}" input
 			(at 191.77 123.19 180)
+			(uuid "36f7dc59-da37-45f5-9fc1-abae476becdd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "36f7dc59-da37-45f5-9fc1-abae476becdd")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4846,6 +4937,10 @@
 	(sheet
 		(at 40.64 137.16)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4875,33 +4970,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 40.64 139.7 180)
+			(uuid "30b70ca1-f81b-4454-83e0-d6c012da75ec")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "30b70ca1-f81b-4454-83e0-d6c012da75ec")
 		)
 		(pin "SR_{IN}" input
 			(at 40.64 144.78 180)
+			(uuid "745a44cb-c57f-4745-9c3c-999e04bf31e4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "745a44cb-c57f-4745-9c3c-999e04bf31e4")
 		)
 		(pin "{TRODES}" output
 			(at 62.23 142.24 0)
+			(uuid "73c4bc03-7289-436b-9ddb-1c29ec1e1db3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "73c4bc03-7289-436b-9ddb-1c29ec1e1db3")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4914,6 +5009,10 @@
 	(sheet
 		(at 40.64 120.65)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4943,33 +5042,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 40.64 123.19 180)
+			(uuid "97c5402c-ed0f-4469-b927-0a4ca7f7bc49")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "97c5402c-ed0f-4469-b927-0a4ca7f7bc49")
 		)
 		(pin "SR_{IN}" input
 			(at 40.64 128.27 180)
+			(uuid "3aef6837-3285-496a-9732-f120f17a830c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3aef6837-3285-496a-9732-f120f17a830c")
 		)
 		(pin "{TRODES}" output
 			(at 62.23 125.73 0)
+			(uuid "2dbb7f50-21a2-423b-912f-1a0f5b125f78")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2dbb7f50-21a2-423b-912f-1a0f5b125f78")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -4982,6 +5081,10 @@
 	(sheet
 		(at 40.64 104.14)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5011,33 +5114,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 40.64 106.68 180)
+			(uuid "c52c3eaf-1b1f-4465-a93c-d5fbfbca5f5c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c52c3eaf-1b1f-4465-a93c-d5fbfbca5f5c")
 		)
 		(pin "SR_{IN}" input
 			(at 40.64 111.76 180)
+			(uuid "630eda5b-f417-4b8b-af16-a891477c9590")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "630eda5b-f417-4b8b-af16-a891477c9590")
 		)
 		(pin "{TRODES}" output
 			(at 62.23 109.22 0)
+			(uuid "96761944-1974-42b3-8d77-ba5c689cc0eb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "96761944-1974-42b3-8d77-ba5c689cc0eb")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -5050,6 +5153,10 @@
 	(sheet
 		(at 132.08 71.12)
 		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5079,33 +5186,33 @@
 		)
 		(pin "SR_{OUT}" output
 			(at 153.67 78.74 0)
+			(uuid "1a6b5cfe-f85e-4771-a893-babed0a96e85")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1a6b5cfe-f85e-4771-a893-babed0a96e85")
 		)
 		(pin "SR_{IN}" input
 			(at 153.67 73.66 0)
+			(uuid "513f528d-5424-4217-a59e-11107ca1054c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "513f528d-5424-4217-a59e-11107ca1054c")
 		)
 		(pin "{TRODES}" output
 			(at 132.08 76.2 180)
+			(uuid "a4907c65-f0fc-47b8-94a1-4e0f47507e21")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a4907c65-f0fc-47b8-94a1-4e0f47507e21")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -5118,6 +5225,10 @@
 	(sheet
 		(at 77.47 35.56)
 		(size 39.37 130.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5147,183 +5258,183 @@
 		)
 		(pin "B1{TRODES}" output
 			(at 116.84 59.69 0)
+			(uuid "97f8db0e-d5fb-4725-993f-c58ab913c4cc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "97f8db0e-d5fb-4725-993f-c58ab913c4cc")
 		)
 		(pin "B0{TRODES}" output
 			(at 116.84 43.18 0)
+			(uuid "fb457849-5647-4ea3-ba26-d5005183e2f1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fb457849-5647-4ea3-ba26-d5005183e2f1")
 		)
 		(pin "B5{TRODES}" input
 			(at 116.84 125.73 0)
+			(uuid "9d661105-7d1f-4254-9a1a-393c95d1db31")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9d661105-7d1f-4254-9a1a-393c95d1db31")
 		)
 		(pin "B10{TRODES}" input
 			(at 77.47 125.73 180)
+			(uuid "3f1f02ab-6e99-4a6c-9014-23136a04df2e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3f1f02ab-6e99-4a6c-9014-23136a04df2e")
 		)
 		(pin "B6{TRODES}" input
 			(at 116.84 142.24 0)
+			(uuid "559fc9b1-e71d-41c7-917d-89490331b116")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "559fc9b1-e71d-41c7-917d-89490331b116")
 		)
 		(pin "B7{TRODES}" input
 			(at 116.84 158.75 0)
+			(uuid "54fd8807-f7de-452a-8fc1-1dd8899c3b70")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "54fd8807-f7de-452a-8fc1-1dd8899c3b70")
 		)
 		(pin "B9{TRODES}" input
 			(at 77.47 142.24 180)
+			(uuid "bd682177-bed9-483a-89c9-4844c10d0d36")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bd682177-bed9-483a-89c9-4844c10d0d36")
 		)
 		(pin "B11{TRODES}" input
 			(at 77.47 109.22 180)
+			(uuid "fddb0162-653d-4eb2-94d7-a2ddf250ef9d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fddb0162-653d-4eb2-94d7-a2ddf250ef9d")
 		)
 		(pin "B4{TRODES}" input
 			(at 116.84 109.22 0)
+			(uuid "7573e01e-2857-462f-825a-fc3664f7f8c6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7573e01e-2857-462f-825a-fc3664f7f8c6")
 		)
 		(pin "B8{TRODES}" input
 			(at 77.47 158.75 180)
+			(uuid "82ed92ab-0337-4f59-950a-6ff3537f97c8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "82ed92ab-0337-4f59-950a-6ff3537f97c8")
 		)
 		(pin "B3{TRODES}" input
 			(at 116.84 92.71 0)
+			(uuid "f3d312c5-e0de-4c1e-8e87-b86879e8a7b6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f3d312c5-e0de-4c1e-8e87-b86879e8a7b6")
 		)
 		(pin "B2{TRODES}" input
 			(at 116.84 76.2 0)
+			(uuid "c0b1182b-3ebd-47c8-9c1b-893fb7bcff64")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c0b1182b-3ebd-47c8-9c1b-893fb7bcff64")
 		)
 		(pin "B12{TRODES}" input
 			(at 77.47 92.71 180)
+			(uuid "a7a4040e-e6e0-426b-a4a2-529b2186957f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a7a4040e-e6e0-426b-a4a2-529b2186957f")
 		)
 		(pin "B15{TRODES}" input
 			(at 77.47 43.18 180)
+			(uuid "d01aa3f5-e235-4662-b543-393779ee6a19")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d01aa3f5-e235-4662-b543-393779ee6a19")
 		)
 		(pin "B13{TRODES}" input
 			(at 77.47 76.2 180)
+			(uuid "da85793f-5396-470b-af4f-ec9133beec28")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "da85793f-5396-470b-af4f-ec9133beec28")
 		)
 		(pin "B14{TRODES}" input
 			(at 77.47 59.69 180)
+			(uuid "5a5f2f19-ddbc-44c3-b1c4-a91f4c4c31ea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5a5f2f19-ddbc-44c3-b1c4-a91f4c4c31ea")
 		)
 		(pin "SCL" bidirectional
 			(at 96.52 35.56 90)
+			(uuid "bdc2913e-98d8-4987-9614-d7d98062847a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bdc2913e-98d8-4987-9614-d7d98062847a")
 		)
 		(pin "SDA" bidirectional
 			(at 99.06 35.56 90)
+			(uuid "82fadbe3-437b-477c-925b-76c4bc30909a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "82fadbe3-437b-477c-925b-76c4bc30909a")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -5338,4 +5449,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

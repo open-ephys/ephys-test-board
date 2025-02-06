@@ -70,6 +70,7 @@ target_link_libraries(ephys-tester
         hardware_i2c
         hardware_pio
         hardware_dma
+        hardware_irq
         )
 
 

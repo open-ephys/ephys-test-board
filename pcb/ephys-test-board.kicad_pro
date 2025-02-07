@@ -78,6 +78,94 @@
         [
           "missing_courtyard|256000000|159700000|15f3cf78-d005-45b1-9f7a-5a5ec0788fd6|00000000-0000-0000-0000-000000000000",
           ""
+        ],
+        [
+          "silk_edge_clearance|226050015|65899375|4f67fae5-6e16-49d7-9d50-3e5cceb134f5|0414f972-c8b4-4f22-a52f-d297dd516fd2",
+          ""
+        ],
+        [
+          "silk_edge_clearance|226100000|61900000|4f67fae5-6e16-49d7-9d50-3e5cceb134f5|f718c26c-3453-48d5-8ac4-f45bb6363e2e",
+          ""
+        ],
+        [
+          "silk_edge_clearance|237349984|65899375|219fe560-aeaf-4856-8a97-8eb34efa0f06|885bc18f-9fc6-4f70-9b90-16916fb055ca",
+          ""
+        ],
+        [
+          "silk_edge_clearance|262200000|60000000|c4a84001-4e85-48c6-b2c7-39eba4114197|02def7f4-e1a9-42a4-ad06-e28687a775fb",
+          ""
+        ],
+        [
+          "starved_thermal|177025000|119405000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|c7bc00ac-4f9a-4adf-a49e-c8ed4a8d0b2d|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|177025000|122405000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|df48f48f-4495-4de7-9d4d-64b303462d3f|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|177025000|126605000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|130494a1-7c18-46a4-a3e6-bc1146c329ca|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|177025000|129605000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|bfa675ed-b03e-4c8f-bc91-47efd4d19c74|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|177025000|133805000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|06194f7f-4903-4f4a-ae37-f7b1a55449a3|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|177025000|136805000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|e2fa895e-9a12-4b1a-91c0-44d1a140d7e2|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|177025000|141005000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|8a9c2595-6adf-4a95-91c6-05937267ca8a|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|177025000|144005000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|bbe162bd-1a20-4f22-ac7b-eb121962ff92|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|203200000|61390000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|e66e9729-f47e-4ba0-9182-4cb2f2735ad3|F.Cu",
+          "Manually added secon connection"
+        ],
+        [
+          "starved_thermal|203200000|61390000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|f2f99769-d1e0-43d9-b332-97d91dc34de6|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|247025000|119405000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|5faff124-d11a-484d-8279-5934bee404e4|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|247025000|122405000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|45b8c0c6-0d2b-43c0-bc6f-71e2e8074807|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|247025000|126605000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|460235ba-9aa7-4248-8a4c-19215ae57997|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|247025000|129605000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|d9882c2e-3ee3-4784-8fc0-c9314a59c514|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|247025000|133805000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|06e3b334-c904-4f09-8114-26df0162250f|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|247025000|136805000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|626831bc-e1f1-475e-a50f-307fe9451d7c|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|247025000|141005000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|f5fd1c5a-2fc6-4ab7-8485-1a1bfc811042|B.Cu",
+          "Direct to GND via"
+        ],
+        [
+          "starved_thermal|247025000|144005000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|e2c906b7-1cbd-4ea4-b967-2c569cc15405|B.Cu",
+          "Direct to GND via"
         ]
       ],
       "meta": {

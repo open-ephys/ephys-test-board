@@ -5,7 +5,9 @@
 	(uuid "76d6e312-1b52-407d-bf9d-9436fed0140e")
 	(paper "A4")
 	(title_block
-		(rev "B")
+		(title "Extracellular Electrophysiology Test Board")
+		(rev "C")
+		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
 	(lib_symbols
@@ -7208,7 +7210,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FH12-24S-0.5SH(55)"
+		(property "Value" "FH12-16S-0.5SH(55)"
 			(at 195.58 56.2355 0)
 			(effects
 				(font

@@ -7210,7 +7210,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FH12-24S-0.5SH(55)"
+		(property "Value" "FH12-16S-0.5SH(55)"
 			(at 195.58 56.2355 0)
 			(effects
 				(font

@@ -60,19 +60,19 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|196950000|60965000|a4ab7148-1c2f-4c10-9884-cc98e37b4158|abde6294-c541-44f3-82dc-0da387a6b11f",
+          "hole_clearance|196950000|60965000|abde6294-c541-44f3-82dc-0da387a6b11f|a4ab7148-1c2f-4c10-9884-cc98e37b4158",
           ""
         ],
         [
-          "hole_clearance|196950000|60965000|a4ab7148-1c2f-4c10-9884-cc98e37b4158|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
+          "hole_clearance|196950000|60965000|acd17e66-e52e-4e58-a294-e7a2b805e7b2|a4ab7148-1c2f-4c10-9884-cc98e37b4158",
           ""
         ],
         [
-          "hole_clearance|203050000|60965000|dd75cd59-c3f4-4bef-8b51-c13cbcb150f4|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
+          "hole_clearance|203050000|60965000|e66e9729-f47e-4ba0-9182-4cb2f2735ad3|dd75cd59-c3f4-4bef-8b51-c13cbcb150f4",
           ""
         ],
         [
-          "hole_clearance|203050000|60965000|dd75cd59-c3f4-4bef-8b51-c13cbcb150f4|f2f99769-d1e0-43d9-b332-97d91dc34de6",
+          "hole_clearance|203050000|60965000|f2f99769-d1e0-43d9-b332-97d91dc34de6|dd75cd59-c3f4-4bef-8b51-c13cbcb150f4",
           ""
         ],
         [
@@ -190,7 +190,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
-        "hole_to_hole": "warning",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -594,7 +594,7 @@
   },
   "meta": {
     "filename": "ephys-test-board.kicad_pro",
-    "version": 2
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -755,7 +755,7 @@
           "group_by": false,
           "label": "Part No.",
           "name": "Part No.",
-          "show": true
+          "show": false
         }
       ],
       "filter_string": "",
@@ -763,7 +763,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Value"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {

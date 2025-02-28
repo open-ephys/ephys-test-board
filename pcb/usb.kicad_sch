@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20241209)
+	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "6adf9d3e-633e-447d-a038-6eab6681359b")
@@ -1035,7 +1035,7 @@
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(arc
@@ -1047,7 +1047,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
@@ -1945,6 +1945,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -2139,7 +2148,7 @@
 			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2151,7 +2160,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 0 2.54)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -6272,7 +6281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/WP934CB-GD.pdf"
+		(property "Datasheet" "~"
 			(at 203.2 43.18 0)
 			(effects
 				(font
@@ -6300,6 +6309,15 @@
 			)
 		)
 		(property "Part No." ""
+			(at 203.2 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 203.2 43.18 0)
 			(effects
 				(font

@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20241209)
+	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "76d6e312-1b52-407d-bf9d-9436fed0140e")
@@ -1012,7 +1012,7 @@
 			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1024,7 +1024,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 0 2.54)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -2327,7 +2327,7 @@
 	)
 	(text "Display:\nZJY130-2864KSWLG22"
 		(exclude_from_sim no)
-		(at 196.342 73.152 0)
+		(at 195.58 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2347,6 +2347,17 @@
 			(href "https://www.vishay.com/docs/51101/acck.pdf")
 		)
 		(uuid "c09b512f-2a61-43d9-a4b2-4d824454d8a1")
+	)
+	(text "NB: connector pinout\nis mirrored on datasheet"
+		(exclude_from_sim no)
+		(at 195.58 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fbbead4d-719a-4f85-bf86-78ff408a391d")
 	)
 	(junction
 		(at 139.7 45.72)
@@ -2443,12 +2454,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "efb90c32-e82d-43fa-b78b-2b428c00a628")
-	)
-	(junction
-		(at 193.04 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa6d5d11-401f-4263-b231-d431d681c610")
 	)
 	(bus_entry
 		(at 171.45 55.88)
@@ -2627,6 +2632,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 30.48) (xy 199.39 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f8c6f7f-efb0-4bc5-be58-14a2225dafee")
+	)
+	(wire
+		(pts
 			(xy 100.33 64.77) (xy 109.22 64.77)
 		)
 		(stroke
@@ -2704,6 +2719,16 @@
 			(type default)
 		)
 		(uuid "2de2d262-3777-43e0-94fb-1f617290bc09")
+	)
+	(wire
+		(pts
+			(xy 193.04 30.48) (xy 199.39 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2effbcf6-05f6-4d1d-a413-d3c19a968b33")
 	)
 	(wire
 		(pts
@@ -3077,7 +3102,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 73.66) (xy 186.69 80.01)
+			(xy 186.69 73.66) (xy 186.69 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3225,16 +3250,6 @@
 		)
 		(uuid "b78a04ef-76d5-44e0-9267-716f84eb7067")
 	)
-	(wire
-		(pts
-			(xy 193.04 80.01) (xy 193.04 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba2bc910-f334-4597-94ad-d2cca1b21dd0")
-	)
 	(bus
 		(pts
 			(xy 171.45 50.8) (xy 171.45 53.34)
@@ -3287,16 +3302,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 78.74) (xy 193.04 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce120954-116b-4040-933d-6296f630b053")
-	)
-	(wire
-		(pts
 			(xy 87.63 148.59) (xy 87.63 151.13)
 		)
 		(stroke
@@ -3314,16 +3319,6 @@
 			(type default)
 		)
 		(uuid "d0b8d8ae-8bfa-4f37-867f-8d877eb98cf5")
-	)
-	(wire
-		(pts
-			(xy 186.69 80.01) (xy 193.04 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d181aa3c-f122-4df1-a5f4-52f183d05883")
 	)
 	(wire
 		(pts
@@ -4830,7 +4825,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 193.04 82.55 0)
+		(at 186.69 82.55 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4840,7 +4835,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e56605a-2590-4f66-aa2d-25dc1a71b1fc")
 		(property "Reference" "#PWR0791"
-			(at 193.04 88.9 0)
+			(at 186.69 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4849,7 +4844,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.04 87.63 0)
+			(at 186.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4857,7 +4852,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.04 82.55 0)
+			(at 186.69 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4866,7 +4861,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 82.55 0)
+			(at 186.69 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4875,7 +4870,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.04 82.55 0)
+			(at 186.69 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5597,6 +5592,73 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
 					(reference "C294")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 199.39 35.56 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83e309e4-9f1a-41af-ab6d-fc17109ce0a8")
+		(property "Reference" "#PWR0793"
+			(at 199.39 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83bf4969-754a-4a03-99cf-ee2d62aec1ad")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
+					(reference "#PWR0793")
 					(unit 1)
 				)
 			)
@@ -7193,16 +7255,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x16_MountingPin")
-		(at 193.04 53.34 0)
+		(at 193.04 55.88 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ef4f38e1-6175-453d-8d71-6861c7df9973")
 		(property "Reference" "J4"
-			(at 195.58 53.6955 0)
+			(at 195.58 55.5245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7211,7 +7273,7 @@
 			)
 		)
 		(property "Value" "FH12-16S-0.5SH(55)"
-			(at 195.58 56.2355 0)
+			(at 195.58 52.9845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7220,7 +7282,7 @@
 			)
 		)
 		(property "Footprint" "Connector_FFC-FPC:Hirose_FH12-16S-0.5SH_1x16-1MP_P0.50mm_Horizontal"
-			(at 193.04 53.34 0)
+			(at 193.04 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7229,7 +7291,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 53.34 0)
+			(at 193.04 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7238,7 +7300,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 193.04 53.34 0)
+			(at 193.04 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7247,7 +7309,7 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 193.04 53.34 0)
+			(at 193.04 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7256,7 +7318,7 @@
 			)
 		)
 		(property "Part No." ""
-			(at 193.04 53.34 0)
+			(at 193.04 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)

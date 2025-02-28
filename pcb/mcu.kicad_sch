@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20241209)
+	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "5c30473b-6949-4ec6-9c22-563961217de5")
@@ -1713,7 +1713,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm"
+			(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 				(at 0 22.86 0)
 				(effects
 					(font
@@ -1731,7 +1731,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+			(property "Description" "128Mbit / 16MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8"
 				(at 0 27.94 0)
 				(effects
 					(font
@@ -1749,7 +1749,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*5.23x5.23mm*P1.27mm*"
+			(property "ki_fp_filters" "*SOIC*5.3x5.3mm*P1.27mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1761,7 +1761,7 @@
 			(symbol "W25Q128JVS_0_1"
 				(rectangle
 					(start -7.62 10.16)
-					(end 7.62 -10.16)
+					(end 10.16 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1811,7 +1811,7 @@
 				(pin bidirectional line
 					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "DI(IO0)"
+					(name "DI/IO_{0}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1829,7 +1829,7 @@
 				(pin bidirectional line
 					(at -10.16 0 0)
 					(length 2.54)
-					(name "DO(IO1)"
+					(name "DO/IO_{1}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1847,7 +1847,7 @@
 				(pin bidirectional line
 					(at -10.16 -2.54 0)
 					(length 2.54)
-					(name "IO2"
+					(name "~{WP}/IO_{2}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1865,7 +1865,7 @@
 				(pin bidirectional line
 					(at -10.16 -5.08 0)
 					(length 2.54)
-					(name "IO3"
+					(name "~{HOLD}/~{RESET}/IO_{3}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7456,7 +7456,25 @@
 			"+ysVTXQyt0RP0+ZJChuDimYnmFv2hKnMoK8GvW69YWXRsES72WgtMpXnE+QgX/4MjazjXZSgoWeK"
 			"nn16oXsDE20RirS9sXGrXrG8QahA26gnrKx6yKyjqfMThfpcLvLjw/96ztAkpkKhUCgUCoVCoVDe"
 			"hSbbFAqFQqFQKBRKM0GTbQqFQqFQKBQKpZmgyTaFQqFQKBQKhdIsAP8fPZc3Zc/CT3kAAAAASUVO"
-			"RK5CYII="
+			"RK5CYII+kq/zbaBrasnqHXUbrYl6+ysVTXQyt0RP0+ZJChuDimYnmFv2hKnMoK8GvW69YWXRsES7"
+			"2WgtMpXnE+QgX/4MjazjXZSgoWeKnn16oXsDE20RirS9sXGrXrG8QahA26gnrKx6yKyjqfMThfpc"
+			"LvLjw/96ztAkpkKhUCgUCoVCoVDehSbbFAqFQqFQKBRKM0GTbQqFQqFQKBQKpZmgyTaFQqFQKBQK"
+			"hdIsAP8fPZc3Zc/CT3kAAAAASUVORK5CYIIrAEIAWAAzAFQAQQBvADMALwB6AHIAWQBBADIAUgBH"
+			"AEgAYwBUAFIAdABBAEwANgBjADYAUQBoAE4AMABYAFoAdwBYACsAQgBPAGMAQgBDAHUAUAAzAGsA"
+			"TgBvAFoAbwBoADcARgB6AGMATQBkAHgAUQA2AGkAWgBTAFQAYwBWAEMAdABaAGEAMQBUADgAdABp"
+			"AG4AZwBXAFcAdgBEAEsANgA5ADcAYQBBAHcANQBqAFIAcwBOAEgAdABJAHYAbABqAGEAVwAvAGkA"
+			"OABmAGUAZQBJAEEAagBHAC8AaABlAFQAcABEAHUAOABGAFIAcgAvAG4AVwAwACsAVQBnAEoALwB4"
+			"AGEAbAA3AHgAWgBBAE0AUAB6AHAAdQBsAEQAVgBoAE8ATQBnAEoAYgBpAE4ATQBvAFUAcABsADQA"
+			"TwBMACsAVQAzAGoAdAA4AEYAOQBNAEgAYwB5ADAAQQBqADgASgAvAHIAOABFAGcAKwAyACsAQwBP"
+			"ADUAOQBKAFgAZABDAEYAZQBaAGQAdwB4AEgAZgBCAEoAagBNAG0AZwBtADkAbQBQADAANABkAGIA"
+			"OABMAEgARwBaAC8AaQBWAEYAMQBCADQAYwBnAEgAUwBIADcAVAB5AEMAYQBaAFkAZQBaAEMAOABa"
+			"AEMAVAA3AFMAWQBtADQAbgBiAEEAUQBHADQALwByAFEASQBjAGwAcgBtAEcARAA3AHUARQAzAHkA"
+			"ZwBLADQAbgBFAHgAagBRADIAQgBsAHEAagBxAGQALwBaAGIAcQByAHYAUgBPAFAAeQA4AE4ARQAw"
+			"AEQAUABoAHkASgBoAHoARgBRAFMAWAArAEEANgBSAGMARABjAEwAbAAyAE8AYwBvADUAVwBqAEIA"
+			"WQBwAGcAYgB4AHQAagBvAGcASgBrAHgAVwBxAFgAUgAzADkAawBXAHoAMABXAG4AYwBFADgAeQBV"
+			"AFkASQBsAHgANABHAHkAcABpAEUARwBPAGIAbABoAGgASwBrAHEAUABXADgAMABFAE8AOAAwAFkA"
+			"VQBrAEsAcgBnAFoAZABSAHUAegB6AFUAbgBDADAATABEAEQATQBiAFEAeABzAGQASwBSAHIASgBr"
+			"AEIAKw=="
 		)
 	)
 	(image
@@ -8639,7 +8657,25 @@
 			"y6iGuM6IderUSfLftqK8vFxSpzt37symtA98Pl+Sdy0tLTalfRC3DXG/3KVLFzaFam/E9U4oFLa5"
 			"tkw1D4fDwcyZM9G1a1c2RTHNCsApiqIoiqIoimoeeg84RVEURVEURbUiGoBTFEVRFEVRVCuiAThF"
 			"URRFURRFtSIagFMURVEURVFUK6IBOEVRFEVRFEW1IhqAUxRFURRFUVQrogE4RVEURVEURbUa4P8B"
-			"65C3O7MQdOoAAAAASUVORK5CYII="
+			"65C3O7MQdOoAAAAASUVORK5CYILCycwgwMLJzCDEwsnMIMjCycwgzMLJzCDQwsnMINTCycwg2MLJ"
+			"zCDcwsnMIODCycwg5MLJzCDowsnMIOzCycwg8MLJzCD0wsnMIPgCyswg/MLJzCCAw8nMIITDycwg"
+			"iMPJzCCMw8nMIJBDycwglMPJzCCYw8nMIJzDycwgoMPJzCCkw8nMUA6FzdwMzuSMzuwMz/SMz/wM"
+			"2ISN2IwN2ZSN2ZwN2qSN2qwN27SN27wN3MSN3MwN3dSN3dwN3uSN3uwN3/SN3/wN6ISO6IwO6ZSO"
+			"6ZwO6qSO6qwO67SO67wO7MSO7MwO7dSO7dwO7uSO7uwO7/SO7/wO+ISP+IwP+ZSP+ZwP+qSP+qwP"
+			"+7SP+7wP/MSP/MwP/dSP/dwP/uTPDMI6kMwMQTvMILxDycwgwEPJzCDEQ8nMQLhD//jP/8wQyMMM"
+			"wjzQwwxBPcwQ2MMMwT3MEODDDII+7MMMAj+czAxCP5zMDII/nMwMwj+czAwCSJTMDEJIrMwMgkiM"
+			"xAwCSYzEDEJJsMwMgkmUzAzCSZTMDAFKzBCkxAyCSpTMDAFLzBC0xAyBS8xArIQN3RAOzRC8xAwC"
+			"TJTMDFQ+nBAKpZAKrRALtZALvRAMxZAMzRAN1VAO6dAOqc8MgkyUzAzCTJTMDAJNlMwMQU3MENjE"
+			"DEZM9JAP/RAYhdEMwU3MIODEycwg5MTJzCDoRMnMIOzEycwg8ETJzCD0xMnMIPjEycwg/ETJzCCA"
+			"RcnMIITFycwgiMXJzCCMxcnMIJDFycwglMXJzBCYxQzBWcwQoMUMQVrMEKjFDMFazBCwxQxBW8wg"
+			"vAVczCDEhVzMIMwFXcxAuIUe7REfzTAG7MA/IBRCIjRCJFRCJsRDYjRGZFRGZnRGaJRGarRGbNRG"
+			"bvRGcBRHcjRHdFRHdnRHeJRHfTTDoA7740czBHYxQ3AXMwh5UTIzCHpRMjMIe3EyMxB4IUqjREoz"
+			"CHxRMjMIfaEyMwh+oTIzCH+hMjMEoDFDEBozBKIxg1AaJTODYBoqM4NwGiozg4AaJTODkBolM4Og"
+			"Giczg7AaJzNDwBozJKTRSq70SrAUS7I0S7Q0Q9IareRKrwRLsSRLs0RLMySu0Uqu9EqwFEuyNEu0"
+			"NEPyGq3kSq8ES7EkS7NESzMUo1FLtnRLuDSDABslM0MQGzMIslEyMwizUTIzQHUBSqFUSqZ0SqiU"
+			"Sqq0SqyUS7q0S7zUSzMItHEyMwi2oTIzCLehMjMIuFEyMxC1AU7hJE4zCLoxEjMIuzESMwy5QU7l"
+			"NIPAG+I0g9Ab4jSD8BstM4MAHiczgxAeJzODIB4nM4MwHiczg0AeJzODUB4nM4NgHiczg3AeJzOD"
+			"gB4nM4OQHiczg6AeJzODsB4nMw=="
 		)
 	)
 	(label "~{RES}"
@@ -11557,7 +11593,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 52.07 157.48 0)
 			(effects
 				(font
@@ -11575,7 +11611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+		(property "Description" "128Mbit / 16MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8"
 			(at 52.07 157.48 0)
 			(effects
 				(font

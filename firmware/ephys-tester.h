@@ -19,22 +19,23 @@
 
 #define TEST_SEL            16
 
-#define DEBUG_0             17
-#define DEBUG_1             18
-#define DEBUG_2             19
-#define DEBUG_3             20
+#define OLED_PWR             19
 
 #define ENC_PIO             pio1
 #define ENC_A               21
 #define ENC_B               22
 #define ENC_BUT             23
 
-//#define OLED_SPI            spi1
+#define OLED_SPI            spi1
 #define OLED_nDC            24
 #define OLED_nRES           25
 #define OLED_SCLK           26
 #define OLED_MOSI           27
 #define OLED_nCS            29
+
+// Screen constants
+#define SCREEN_WIDTH        128
+#define SCREEN_HEIGHT       64
 
 // Shift register bit array
 #define sr_bit_arr_t        int32_t                     // Bit array element data type

@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(ephys-tester )
+add_executable(ephys-tester)
 
 pico_generate_pio_header(ephys-tester  ${CMAKE_CURRENT_LIST_DIR}/spi.pio)
 pico_generate_pio_header(ephys-tester  ${CMAKE_CURRENT_LIST_DIR}/quadrature.pio)
@@ -56,12 +56,19 @@ target_include_directories(ephys-tester  PRIVATE
 )
 
 target_sources(ephys-tester PRIVATE
-        main.c
+        main.cpp
+        oled.c
         parse.c
         sr.c
         tiny-json.c
         ad5683.c
         quadrature.c
+        Adafruit_SH110X.cpp
+        Adafruit_SH1106G.cpp
+        Adafruit_GrayOLED_PicoSPI.cpp
+        Adafruit_GrayOLED_PicoSPI.cpp
+        Adafruit_GFX.cpp
+        Print.cpp
         )
 
 # Add any user requested libraries
@@ -74,6 +81,5 @@ target_link_libraries(ephys-tester
         )
 
 
-
-pico_add_extra_outputs(ephys-tester )
+pico_add_extra_outputs(ephys-tester)
 

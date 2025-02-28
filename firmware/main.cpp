@@ -1,20 +1,26 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 
+extern "C"
+{
 #include "ephys-tester.h"
-
 #include "ad5683.h"
 #include "quadrature.h"
+#include "oled.h"
 #include "parse.h"
 #include "sr.h"
 #include "tiny-json.h"
 #include "sine.h"
+}
+
+//#include "Adafruit_GFX.h"
+#include "Adafruit_SH110X.h"
 
 // TODO: Create command specification
 #define STR_BUFFER_BYTES    256
 #define MAX_COMMANDS        256
 
-void knob_turned();
+static void knob_turned() { }
 
 int main()
 {
@@ -23,6 +29,17 @@ int main()
 
     // gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
     // gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
+
+    // OLED
+    oled_init();
+    Adafruit_SH1106G display(SCREEN_WIDTH, SCREEN_HEIGHT,
+        OLED_MOSI, OLED_SCLK, OLED_nDC, OLED_nRES, OLED_nCS, OLED_SPI);
+
+    // Splash
+    display.setRotation(2);
+    display.begin(0, 1);
+    display.display();
+    sleep_ms(500);
 
     // Signal select initialization
     sr_init();

@@ -3,6 +3,8 @@
 #include "sr.h"
 #include "ephys-tester.h"
 
+// TODO: This delay may not even been needed
+#define BB_SETTLE_USEC 10
 
 // TODO: All this bit banging should probably be moved to PIO1
 int sr_init()
@@ -27,30 +29,29 @@ int sr_init()
     return 0;
 }
 
-int sr_update(sr_bit_arr_t const *bit_arr, size_t bit_arr_len)
+int sr_update(sr_bit_arr_t const *bit_arr) //, size_t bit_arr_len)
 {
-
     // Shift bits into shift register
     gpio_put(SR_RCLK, 0);
-    sleep_us(100);
+    sleep_us(BB_SETTLE_USEC);
 
-    int total_bits = bit_arr_len * 8 * sizeof(sr_bit_arr_t);
+    int total_bits = 8 * sizeof(sr_bit_arr_t); // bit_arr_len * 8 * sizeof(sr_bit_arr_t);
 
     for (int i = total_bits - 1; i >= 0; i--) { // MSB first -- this is a shift register
-        gpio_put(SR_SRCLK, 0); sleep_us(100);
-        gpio_put(SR_SER, sr_read_bit(bit_arr, bit_arr_len, i)); sleep_us(100);
-        gpio_put(SR_SRCLK, 1); sleep_us(100);
+        gpio_put(SR_SRCLK, 0); sleep_us(BB_SETTLE_USEC);
+        gpio_put(SR_SER, sr_get_bit(bit_arr, i)); sleep_us(BB_SETTLE_USEC);
+        gpio_put(SR_SRCLK, 1); sleep_us(BB_SETTLE_USEC);
     }
 
     // Move shift register to output register
-    gpio_put(SR_SRCLK, 0); sleep_us(100);
-    gpio_put(SR_RCLK, 1); sleep_us(100);
-    gpio_put(SR_RCLK, 0); sleep_us(100);
+    gpio_put(SR_SRCLK, 0); sleep_us(BB_SETTLE_USEC);
+    gpio_put(SR_RCLK, 1); sleep_us(BB_SETTLE_USEC);
+    gpio_put(SR_RCLK, 0); sleep_us(BB_SETTLE_USEC);
 
     return 0;
 }
 
-int sr_source(SIGNAL_SOURCE source)
+int sr_source(signal_source_t source)
 {
     gpio_put(TEST_SEL, source);
     return 0;

@@ -37,7 +37,7 @@
  */
 
 #include "Adafruit_SH110X.h"
-#include "splash.h"
+#include "oe-splash.h"
 #include "algorithm"
 #include "pico/stdlib.h"
 

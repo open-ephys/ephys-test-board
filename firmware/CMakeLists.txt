@@ -57,8 +57,9 @@ target_include_directories(ephys-tester  PRIVATE
 
 target_sources(ephys-tester PRIVATE
         main.cpp
-        oled.c
-        parse.c
+        mode.c
+        oled.cpp
+        channels.c
         sr.c
         tiny-json.c
         ad5683.c
@@ -73,6 +74,9 @@ target_sources(ephys-tester PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(ephys-tester
+        pico_stdlib
+        pico_multicore
+        pico_bootsel_via_double_reset
         hardware_spi
         hardware_i2c
         hardware_pio

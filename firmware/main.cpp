@@ -1,48 +1,28 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "pico/multicore.h"
+
+#include "oled.h"
 
 extern "C"
 {
 #include "ephys-tester.h"
+#include "channels.h"
 #include "ad5683.h"
 #include "quadrature.h"
-#include "oled.h"
-#include "parse.h"
-#include "sr.h"
+#include "mode.h"
+
+//#include "parse.h"
 #include "tiny-json.h"
 #include "sine.h"
 }
 
-//#include "Adafruit_GFX.h"
-#include "Adafruit_SH110X.h"
-
 // TODO: Create command specification
-#define STR_BUFFER_BYTES    256
-#define MAX_COMMANDS        256
+// #define STR_BUFFER_BYTES    256
+// #define MAX_COMMANDS        256
 
-static void knob_turned() { }
-
-int main()
+void core1_entry()
 {
-    // // I2C Initialisation. Using it at 400Khz.
-    // i2c_init(I2C_PORT, 400*1000);
-
-    // gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-    // gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
-
-    // OLED
-    oled_init();
-    Adafruit_SH1106G display(SCREEN_WIDTH, SCREEN_HEIGHT,
-        OLED_MOSI, OLED_SCLK, OLED_nDC, OLED_nRES, OLED_nCS, OLED_SPI);
-
-    // Splash
-    display.setRotation(2);
-    display.begin(0, 1);
-    display.display();
-    sleep_ms(500);
-
-    // Signal select initialization
-    sr_init();
 
     // DAC initialization
     pio_spi_inst_t dac_spi = {
@@ -52,19 +32,36 @@ int main()
 
     ad5683_init(&dac_spi);
 
+    // TODO: Should we use a timer here? It seems like the best performance would actually be as below. 
+    // i guess the downside would be that the updates would not be regular or at least their period will not be well known so its hard to make a lookup table work?
+    //add_repeating_timer_us()
+
+    uint i = 0;
+    uint step = 2;
+    while (1) {
+        ad5683_write_dac(&dac_spi, SINE1024[i % 1024]);
+        i += step;
+    }
+}
+
+int main()
+{
+    // OLED
+    oled_init();
+
     // Quadrature encoder initialization
-    pio_quad_inst_t quad_dec = {
-        .pio = ENC_PIO,
-        .sm = 0,
-        .dma_chan = 0,
-        .counter = 0,
-        .counter_update_handler = knob_turned
-    };
+    quad_init();
 
-    quad_init(&quad_dec);
+    // Setup user IO context
+    mode_context_t mode_ctx;
+    mode_init(&mode_ctx);
 
-    // // Command interface
-    // stdio_init_all();
+    // Command interface
+    //stdio_init_all();
+
+    // Channels
+    channels_init(&mode_ctx);
+
 
     // // JSON parser buffer initialization
     // char str[STR_BUFFER_BYTES];
@@ -99,22 +96,26 @@ int main()
     //     sr_update(chs, BIT_ARR_LEN);
     // }
 
-    uint i = 0;
-    uint step = 2;
-    while (1) {
-        ad5683_write_dac(&dac_spi, SINE1024[i % 1024]);
-        i += step;
+    // Launch the second core to handle the DAC
+    multicore_launch_core1(core1_entry); 
+  
+    // Force first mode update
+    mode_update(&mode_ctx, quad_get_delta(), quad_get_button());
+
+    // Let splash screen hang around for a while
+    sleep_ms(1000);
+    oled_update(&mode_ctx);
+
+    while(1)
+    {
+        if (quad_pending_turn())
+        {
+            mode_update(&mode_ctx, quad_get_delta(), quad_get_button());
+            oled_update(&mode_ctx);
+
+            // TODO: Do this for every turn? Probably not because it will introduce noise when e.g. they are just changing the amplitude or waveform. 
+            channels_update(&mode_ctx);
+            quad_acknowledge_turn();
+        } 
     }
-
-    // while(1)
-    // {
-    //     // NB: 4 pulses per detent using the PEC12R-4222F-S0024
-    //     printf("Count: %ld\n", quad_get_count(&quad_dec) / 4);
-    // }
-
-    // while (1) {
-    //     uint16_t abscount = 100 * (uint16_t)quad_get_count(&quad_dec);
-    //     ad5683_write_dac(&dac_spi, abscount);
-    // }
-
 }

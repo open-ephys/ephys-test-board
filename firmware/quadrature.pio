@@ -20,6 +20,7 @@
 ; 'mov pc, isr' instruction.
 .origin 0
     ; 16 element jump table based on 4-bit encoder last state and current state.
+    ;                 previous-current
     jmp delta0      ; 00-00
     jmp minus1      ; 00-01
     jmp plus1       ; 00-10
@@ -78,7 +79,9 @@ static inline void pio_quadrature_init(PIO pio, uint sm, uint enc_a, int *dma_ch
     channel_config_set_read_increment(&dc, false);
     channel_config_set_write_increment(&dc, false);
     channel_config_set_dreq(&dc, pio_get_dreq(pio, sm, false));
-    dma_channel_configure(*dma_chan, &dc,
+    dma_channel_configure(
+        *dma_chan,
+        &dc,
         counter,           // Destination pointer
         &pio->rxf[sm],     // Source pointer
         1,                 // Trigger IRQ when count changes

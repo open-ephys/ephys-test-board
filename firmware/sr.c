@@ -4,7 +4,7 @@
 #include "ephys-tester.h"
 
 // TODO: This delay may not even been needed
-#define BB_SETTLE_USEC 10
+#define BB_SETTLE_USEC 1
 
 // TODO: All this bit banging should probably be moved to PIO1
 int sr_init()

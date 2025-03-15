@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "pico/multicore.h"
+#include "pico/util/queue.h"
 
 #include "oled.h"
 
@@ -14,16 +15,41 @@ extern "C"
 
 //#include "parse.h"
 #include "tiny-json.h"
-#include "sine.h"
+#include "lut.h"
 }
 
 // TODO: Create command specification
 // #define STR_BUFFER_BYTES    256
 // #define MAX_COMMANDS        256
 
+// int64_t alarm_callback(alarm_id_t id, __unused void *user_data) {
+//     printf("Timer %d fired!\n", (int) id);
+//     timer_fired = true;
+//     // Can return a value here in us to fire in the future
+//     return 0;
+// }
+
+
+queue_t signal_generator_cmd_queue;
+
+typedef struct timer_callback_data_t {
+    pio_spi_inst_t *dac_spi;
+    float scale;
+    int step;
+    int offset;
+} timer_callback_data_t;
+
+bool repeating_timer_callback(struct repeating_timer *t) {
+
+    static size_t i = 0;
+    timer_callback_data_t *timer_data = (timer_callback_data_t *)t->user_data;
+    ad5683_write_dac(timer_data->dac_spi, SINE[i % LUT_LENGTH]);
+    i += timer_data->step;
+    return true;
+}
+
 void core1_entry()
 {
-
     // DAC initialization
     pio_spi_inst_t dac_spi = {
         .pio = DAC_PIO,
@@ -32,15 +58,43 @@ void core1_entry()
 
     ad5683_init(&dac_spi);
 
-    // TODO: Should we use a timer here? It seems like the best performance would actually be as below. 
-    // i guess the downside would be that the updates would not be regular or at least their period will not be well known so its hard to make a lookup table work?
-    //add_repeating_timer_us()
+    struct repeating_timer timer;
+    timer_callback_data_t timer_data;
+    mode_signal_t signal;
+    bool first = true;
 
-    uint i = 0;
-    uint step = 2;
-    while (1) {
-        ad5683_write_dac(&dac_spi, SINE1024[i % 1024]);
-        i += step;
+    while (true)
+    {
+        queue_remove_blocking(&signal_generator_cmd_queue, &signal);
+        timer_data.dac_spi = &dac_spi;
+        timer_data.scale = 1.0; // TODO
+        timer_data.step = FREQ_LUT[signal.freq_lut_idx][3];
+
+    //     switch (signal.waveform)
+    //     {
+    //         WAVEFORM_GND,
+    //         WAVEFORM_EXTERNAL,
+    //             ad5683_write_dac(&dac_spi, 0);
+
+
+    //         WAVEFORM_SINE,
+    // WAVEFORM_SAW,
+    // WAVEFORM_SPIKES,
+
+
+
+    //         case SIGNAL
+    //     }
+
+        timer_data.offset = (int)signal.waveform; // TODO
+
+        if (!first)
+        {
+            cancel_repeating_timer(&timer);
+        }
+
+        add_repeating_timer_us(-FREQ_LUT[signal.freq_lut_idx][2], repeating_timer_callback, &timer_data, &timer);
+        first = false;
     }
 }
 
@@ -56,55 +110,24 @@ int main()
     mode_context_t mode_ctx;
     mode_init(&mode_ctx);
 
-    // Command interface
-    //stdio_init_all();
-
     // Channels
     channels_init(&mode_ctx);
 
+    // Queue for conveying settings to waveform generator
+    queue_init(&signal_generator_cmd_queue, sizeof(mode_signal_t), 10);
 
-    // // JSON parser buffer initialization
-    // char str[STR_BUFFER_BYTES];
-    // json_t buff[MAX_COMMANDS];
+    // Launch the second core to handle the waveform generator
+    multicore_launch_core1(core1_entry);
 
-    // while (1) {
-
-    //     char *rv = fgets(str, sizeof str, stdin);
-
-    //     if (rv == NULL) {
-    //         puts("Invalid JSON command string.");
-    //         continue;
-    //     }
-
-    //     // NB: this call modifies str, so dont try to use it again!
-    //     json_t const *root = json_create(str, buff, sizeof buff / sizeof *buff);
-
-    //     if (root == NULL) {
-    //         puts("Invalid JSON formatting.");
-    //         continue;
-    //     }
-
-    //     // Bit array (128 bits)
-    //     bit_arr_t chs[BIT_ARR_LEN];
-
-    //     int rc = parse_channels(root, chs, BIT_ARR_LEN);
-    //     if (rc) {
-    //         puts(parse_error(rc));
-    //         continue;
-    //     }
-
-    //     sr_update(chs, BIT_ARR_LEN);
-    // }
-
-    // Launch the second core to handle the DAC
-    multicore_launch_core1(core1_entry); 
-  
     // Force first mode update
     mode_update(&mode_ctx, quad_get_delta(), quad_get_button());
 
     // Let splash screen hang around for a while
     sleep_ms(1000);
     oled_update(&mode_ctx);
+
+    // Send default state to waveform generator
+    queue_add_blocking(&signal_generator_cmd_queue, &(mode_ctx.signal));
 
     while(1)
     {
@@ -113,9 +136,11 @@ int main()
             mode_update(&mode_ctx, quad_get_delta(), quad_get_button());
             oled_update(&mode_ctx);
 
-            // TODO: Do this for every turn? Probably not because it will introduce noise when e.g. they are just changing the amplitude or waveform. 
+            // TODO: Do this for every turn? Probably not because it will introduce noise when e.g. they are just changing the amplitude or waveform.
             channels_update(&mode_ctx);
             quad_acknowledge_turn();
-        } 
+
+            queue_try_add(&signal_generator_cmd_queue, &(mode_ctx.signal));
+        }
     }
 }

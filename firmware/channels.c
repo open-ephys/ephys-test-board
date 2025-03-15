@@ -41,23 +41,6 @@ int channels_init(mode_context_t *ctx)
     sr_update(&switches);
 }
 
-// int channels_reset(mode_context_t *ctx, uint *channel_map, uint num_channels)
-// {
-//     if (num_channels > MAX_NUM_CHANNELS)
-//         return -1; // TODO: Error codes
-    
-//     // TODO: should this always default to zero or open?
-//     if (ctx->channel_idx > num_channels - 1)
-//         ctx->channel_idx = 0;
-
-//     for (int i = 0; i++; i < num_channels)
-//         ctx->channel_map[i] = channel_map[i];
-
-//     ctx->num_channels = num_channels;
-
-//     return 0;
-// }
-
 int channels_update(mode_context_t *ctx)
 {
     sr_bit_arr_t switches;
@@ -74,7 +57,7 @@ int channels_update(mode_context_t *ctx)
             break;
         case TEST_ALL_CHANNEL:
             sr_clear(&switches);
-            channels_to_bitarr(ctx->channel_map, MAX_NUM_CHANNELS, &switches);
+            channels_to_bitarr(ctx->channel_map, ctx->num_channels, &switches);
             break;
         case TEST_CYCLE_CHANNEL:
             // TODO: set up callback

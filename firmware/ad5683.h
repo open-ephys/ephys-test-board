@@ -9,6 +9,5 @@ typedef struct pio_spi_inst {
     uint cs_pin;
 } pio_spi_inst_t;
 
-
 int ad5683_init(const pio_spi_inst_t *spi);
-int ad5683_write_dac(const pio_spi_inst_t *spi, uint16_t code);
+int ad5683_write_dac(const pio_spi_inst_t *spi, uint16_t code, uint16_t rshift);

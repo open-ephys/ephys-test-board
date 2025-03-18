@@ -20,15 +20,37 @@ static void knob_turned_handler()
 {
     dma_channel_acknowledge_irq0(pio_quad.dma_chan); // Acknowledge
 
-    // Four raw counts between each detent
-    // NB: we dont want to do integer division here because this will round toward zero
-    // for both positive and negative numbers. We want to always round towards
-    // negative infinity. Otherwise when we transition to negative numbers, 7
-    // raw_counter values [-3 to 3] will be mapped to 0 . 
-    int current_count = pio_quad.raw_counter >> 2;
-    if (pio_quad.count != current_count)
+    // Hysteresis 
+    static int32_t hyst_rising = 4;
+    static int32_t hyst_falling = 4;
+    static bool rising = false;
+    static int32_t last_count = 0;
+
+    bool change_detected = false;
+    
+    if (pio_quad.raw_counter >= (last_count + hyst_rising))
     {
-        // TODO: Disable callbacks until this is taken care of
+        hyst_rising = 4;
+        hyst_falling = 6;
+        last_count = pio_quad.raw_counter;
+        change_detected = true;
+
+    } else if (pio_quad.raw_counter <= (last_count - hyst_falling))
+    {
+        hyst_rising = 6;
+        hyst_falling = 4;
+        last_count = pio_quad.raw_counter;
+        change_detected = true;
+    }
+
+    if (change_detected)
+    {
+        // Four raw counts between each detent
+        // NB: we dont want to do integer division here because this will round toward zero
+        // for both positive and negative numbers. We want to always round towards
+        // negative infinity. Otherwise when we transition to negative numbers, 7
+        // raw_counter values [-3 to 3] will be mapped to 0. 
+        int current_count = pio_quad.raw_counter >> 2;
         pio_quad.update = true;
         pio_quad.delta = current_count - pio_quad.count;
         pio_quad.count = current_count;

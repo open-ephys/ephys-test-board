@@ -24,7 +24,7 @@ int sr_init()
     gpio_put(SR_nSRCLR, 1);
 
     // Set signal select to internal
-    gpio_put(TEST_SEL, INT_SIGNAL);
+    gpio_put(TEST_SEL, SIGNAL_INTERNAL);
 
     return 0;
 }

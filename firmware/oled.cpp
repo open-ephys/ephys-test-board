@@ -21,7 +21,7 @@ static void print_mode(const mode_context_t *const ctx)
 
 static void print_channel(const mode_context_t *const ctx)
 {
-    display.print("Channel:");
+    display.print(" Channel:");
     if (mode_selection(ctx) == SELECTION_CHANNEL) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
     display.print(" ");
     display.print(mode_str(ctx, SELECTION_CHANNEL));
@@ -41,7 +41,7 @@ static void print_signal(const mode_context_t *const ctx)
 
 static void print_amplitude_uV(const mode_context_t *const ctx)
 {
-    display.print("Amp. (uV):");
+    display.print(" Amp. (uV):");
     if (mode_selection(ctx) == SELECTION_AMPLITUDE) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
     display.print(" ");
     display.print(mode_str(ctx, SELECTION_AMPLITUDE));
@@ -51,7 +51,7 @@ static void print_amplitude_uV(const mode_context_t *const ctx)
 
 static void print_freq_hz(const mode_context_t *const ctx)
 {
-    display.print("Freq. (Hz):");
+    display.print(" Freq. (Hz):");
     if (mode_selection(ctx) == SELECTION_FREQHZ) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
     display.print(" ");
     display.print(mode_str(ctx, SELECTION_FREQHZ));
@@ -80,19 +80,25 @@ int oled_update(const mode_context_t *const ctx)
 {
     display.clearDisplay();
 
-    display.setCursor(0,0);
+    display.setCursor(0, 0);
+    display.print(ctx->module.name);
+    display.println(ctx->module.pcb_rev);
+    display.drawLine(0, 9, SCREEN_WIDTH, 9, SH110X_WHITE);
+    display.drawLine(SCREEN_WIDTH - 12, 0, SCREEN_WIDTH - 12, 9, SH110X_WHITE);
+
+    display.setCursor(0, 12);
     print_mode(ctx);
 
-    display.setCursor(0, 10);
-    print_signal(ctx);
-
-    display.setCursor(0, 20);
+    display.setCursor(0, 22);
     print_channel(ctx);
 
-    display.setCursor(0, 30);
+    display.setCursor(0, 32);
+    print_signal(ctx);
+
+    display.setCursor(0, 42);
     print_amplitude_uV(ctx);
 
-    display.setCursor(0, 40);
+    display.setCursor(0, 52);
     print_freq_hz(ctx);
 
     display.display();

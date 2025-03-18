@@ -2,40 +2,53 @@
 #include "lut.h"
 
 #include <stdio.h>
+#include <string.h>
 
 static inline void increment_selection(mode_context_t *ctx)
 {
-    ctx->selection = (mode_selection_t)((ctx->selection + 1) % SELECTION_NUM_SELECTIONS);
+    ctx->selection = ctx->selection == SELECTION_NUM_SELECTIONS - 1 ? 
+        ctx->selection : 
+        (mode_selection_t)(ctx->selection + 1);
 }
 
 static inline void decrement_selection(mode_context_t *ctx)
 {
-    ctx->selection = (mode_selection_t)((ctx->selection) == 0 ? SELECTION_NUM_SELECTIONS - 1 : ctx->selection - 1);
+    ctx->selection = ctx->selection == SELECTION_MODE ? 
+        ctx->selection : 
+        (mode_selection_t)(ctx->selection - 1);
 }
 
 static inline void increment_mode(mode_context_t *ctx)
 {
-    ctx->test_dest = (mode_test_t)((ctx->test_dest + 1) % TEST_NUM_DESTINATIONS);
+    ctx->test_dest = ctx->test_dest == TEST_NUM_DESTINATIONS - 1 ?
+        ctx->test_dest :
+        (mode_test_t)((ctx->test_dest + 1));
 }
 
 static inline void decrement_mode(mode_context_t *ctx)
 {
-    ctx->test_dest = (mode_test_t)((ctx->test_dest) == 0 ? TEST_NUM_DESTINATIONS - 1 : ctx->test_dest - 1);
+    ctx->test_dest = ctx->test_dest == TEST_OPEN ?
+        ctx->test_dest :
+        (mode_test_t)((ctx->test_dest - 1));
 }
 
 static inline void increment_waveform(mode_signal_t *sig)
 {
-    sig->waveform = (mode_waveform_t)((sig->waveform + 1) % WAVEFORM_NUM_WAVEFORMS);
+    sig->waveform = sig->waveform == WAVEFORM_NUM_WAVEFORMS - 1 ?
+        sig->waveform :
+        (mode_waveform_t)(sig->waveform + 1);
 }
 
 static inline void decrement_waveform(mode_signal_t *sig)
 {
-    sig->waveform = (mode_waveform_t)((sig->waveform) == 0 ? WAVEFORM_NUM_WAVEFORMS - 1 : sig->waveform - 1);
+    sig->waveform = sig->waveform == WAVEFORM_GND ?
+        sig->waveform :
+        (mode_waveform_t)(sig->waveform - 1);
 }
 
-static inline void change_channel_idx(mode_context_t *ctx, int delta)
+static inline void change_channel_idx(mode_context_t *ctx, int delta, bool override)
 {
-    if (ctx->test_dest != TEST_SINGLE_CHANNEL)
+    if (ctx->test_dest != TEST_SINGLE_CHANNEL && !override)
         return;
 
     int new_channel_idx = (int)ctx->channel_idx + delta;
@@ -47,28 +60,22 @@ static inline void change_channel_idx(mode_context_t *ctx, int delta)
         ctx->channel_idx = new_channel_idx;
 }
 
-// TODO: place: 1, 10, 100, 1000
-// TODO: MAX_UV
-static inline void change_amplitude(mode_signal_t *sig, int delta, int place)
+static inline void increment_amplitude(mode_signal_t *sig)
 {
-    if (sig->waveform == WAVEFORM_EXTERNAL)
-        return;
-
-    int new_amplitude_uV = sig->amplitude_uV + delta * place;
-
-    if (new_amplitude_uV < 0)
-        sig->amplitude_uV = MAX_AMPLITUDE_UV;
-    else if (new_amplitude_uV > MAX_AMPLITUDE_UV)
-        sig->amplitude_uV = 0;
-    else
-        sig->amplitude_uV = new_amplitude_uV;
+    sig->amp_rshift = sig->amp_rshift == 0 ?
+        0 :
+        sig->amp_rshift - 1;
 }
 
-// TODO: place: 1, 10, 100, 1000
-// TODO: MAX_UV
+static inline void decrement_amplitude(mode_signal_t *sig)
+{
+    sig->amp_rshift = sig->amp_rshift == 10 ?
+        10 :
+        sig->amp_rshift + 1;
+}
+
 static inline void increment_freq_hz(mode_signal_t *sig)
 {
-
     if (sig->waveform == WAVEFORM_EXTERNAL)
         return;
 
@@ -125,7 +132,7 @@ static const char* string_waveform(const mode_signal_t *const sig)
 
 static char *string_channel_idx(const mode_context_t *const ctx)
 {
-    if (ctx->test_dest == TEST_SINGLE_CHANNEL)
+    if (ctx->test_dest == TEST_SINGLE_CHANNEL || ctx->test_dest == TEST_CYCLE_CHANNEL)
     {
         static char str[5];
         snprintf(str, 5, "%u",ctx->channel_idx);
@@ -139,8 +146,8 @@ static char *string_amplitude_uV(const mode_signal_t *const sig)
 {
     if (sig->waveform != WAVEFORM_GND && sig->waveform != WAVEFORM_EXTERNAL)
     {
-        static char str[5];
-        snprintf(str, 5, "%u", sig->amplitude_uV);
+        static char str[8];
+        snprintf(str, 8, "%f3.4", MAX_AMPLITUDE_UV / (1 << sig->amp_rshift));
         return str;
     } else {
         return "~";
@@ -151,8 +158,8 @@ static char *string_freq_hz(const mode_signal_t *const sig)
 {
     if (sig->waveform != WAVEFORM_GND && sig->waveform != WAVEFORM_EXTERNAL)
     {
-        static char str[7];
-        snprintf(str, 7, "%f4.1", (float)FREQ_LUT[sig->freq_lut_idx][0] / (float)FREQ_LUT[sig->freq_lut_idx][1]);
+        static char str[8];
+        snprintf(str, 8, "%f4.1", (float)FREQ_LUT[sig->freq_lut_idx][0] / (float)FREQ_LUT[sig->freq_lut_idx][1]);
         return str;
     } else {
         return "~";
@@ -167,40 +174,45 @@ void mode_init(mode_context_t *ctx)
     ctx->num_channels = MAX_NUM_CHANNELS;
     for (int i = 0; i++; i < MAX_NUM_CHANNELS) { ctx->channel_map[i] = i; }
     ctx->signal.waveform = WAVEFORM_SINE;
-    ctx->signal.amplitude_uV = 200;
+    ctx->signal.amp_rshift = 0;
     ctx->signal.freq_lut_idx = DEFAULT_FREQ_INDEX;
 }
 
-int mode_update(mode_context_t *ctx, int delta, bool button_pushed)
+int mode_update_from_knob(mode_context_t *ctx, int delta, bool button_pushed)
 {
     if (button_pushed)
     {
         delta > 0 ? increment_selection(ctx) : decrement_selection(ctx);
+
+        return 0; // Selection changed
     } else
     {
         switch (ctx->selection)
         {
             case SELECTION_MODE:
                 delta > 0 ? increment_mode(ctx) : decrement_mode(ctx);
-                break;
+                return 1; // Input routing mode changed
             case SELECTION_WAVEFORM:
                 delta > 0 ? increment_waveform(&ctx->signal) : decrement_waveform(&ctx->signal);
-                break;
+                return 2; // Signal changed
             case SELECTION_CHANNEL:
-                change_channel_idx(ctx, delta);
-                break;
+                change_channel_idx(ctx, delta, false);
+                return 3; // Channel selection changed
             case SELECTION_AMPLITUDE:
-                change_amplitude(&ctx->signal, delta, 10);
-                break;
+                delta > 0 ? increment_amplitude(&ctx->signal) : decrement_amplitude(&ctx->signal);
+                return 2; // Signal changed
             case SELECTION_FREQHZ:
                 delta > 0 ? increment_freq_hz(&ctx->signal) : decrement_freq_hz(&ctx->signal);
-                break;
+                return 2; // Signal changed
             default : // Invalid
                 return -1; // TODO: error codes
         }
     }
+}
 
-    return 0;
+inline int mode_increment_channel(mode_context_t *ctx)
+{
+    change_channel_idx(ctx, 1, true);
 }
 
 inline mode_selection_t mode_selection(const mode_context_t *const ctx)

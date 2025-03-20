@@ -1,5 +1,7 @@
 #pragma once
 
+#include "pico/stdlib.h"
+
 // Pin defintions
 #define SDA                 2
 #define SCL                 3
@@ -19,24 +21,33 @@
 
 #define TEST_SEL            16
 
-#define DEBUG_0             17
-#define DEBUG_1             18
-#define DEBUG_2             19
-#define DEBUG_3             20
+#define OLED_PWR             19
 
 #define ENC_PIO             pio1
 #define ENC_A               21
 #define ENC_B               22
 #define ENC_BUT             23
 
-//#define OLED_SPI            spi1
+#define OLED_SPI            spi1
 #define OLED_nDC            24
 #define OLED_nRES           25
 #define OLED_SCLK           26
 #define OLED_MOSI           27
 #define OLED_nCS            29
 
+// Screen constants
+#define SCREEN_WIDTH        128
+#define SCREEN_HEIGHT       64
+
+// Signal constants
+#define MAX_AMPLITUDE_UV    250 // TODO: see issue #30
+
+#define MIN_FREQ_HZ         0.1
+#define MAX_FREQ_HZ         1000
+
 // Shift register bit array
-#define sr_bit_arr_t        int32_t                     // Bit array element data type
-#define SR_BITS_PER_ELEMENT (8 * sizeof(sr_bit_arr_t))  // Bits per array element
-#define SR_BIT_ARR_LEN      4                           // Number of bit_arr_t's required to hold 128 bits, one for each channel switch
+#define MAX_NUM_CHANNELS    128                                     // 128 channels max
+typedef struct sr_bit_arr_t { int32_t bits[4]; } sr_bit_arr_t;
+//#define sr_bit_arr_t        int32_t                               // Bit array element data type
+#define SR_BITS_PER_ELEMENT (8 * sizeof(int32_t))                   // Bits per array element of sr_bit_arr_t
+//#define SR_BIT_ARR_LEN      4                                     // Number of bit_arr_t's required to hold 128 bits, one for each channel switch

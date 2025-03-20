@@ -609,7 +609,6 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
         "via_diameter": 0.5,
@@ -626,7 +625,6 @@
         "microvia_drill": 0.1,
         "name": "l1-diff-90_jlc4161h",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
         "via_diameter": 0.5,
@@ -635,17 +633,10 @@
       }
     ],
     "meta": {
-      "version": 4
+      "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/MCU/D+": [
-        "l1-diff-90_jlc4161h"
-      ],
-      "/MCU/D-": [
-        "l1-diff-90_jlc4161h"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": [
       {
         "netclass": "l1-diff-90_jlc4161h",

@@ -42,7 +42,7 @@
 #define SCREEN_HEIGHT       64
 
 // Signal constants
-#define MAX_AMPLITUDE_UV    250.0f // TODO: see issue #30
+#define MAX_AMPLITUDE_UV    2500.0f // TODO: see issue #30
 #define DAC_MAX_SHIFT       10 // Max bit shift for DAC attenuation
 
 // Automatic channel increment dwell time in milliseconds

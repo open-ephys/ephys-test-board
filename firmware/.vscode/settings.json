@@ -50,7 +50,10 @@
         "pio.h": "c",
         "*.tcc": "c",
         "cstdio": "c",
-        "sr.h": "c"
+        "sr.h": "c",
+        "quadrature.pio.h": "c",
+        "eeprom.h": "c",
+        "typeinfo": "c"
     },
-    "cortex-debug.variableUseNaturalFormat": false
+    "cortex-debug.variableUseNaturalFormat": true
 }

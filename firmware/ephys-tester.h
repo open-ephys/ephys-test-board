@@ -3,8 +3,10 @@
 #include "pico/stdlib.h"
 
 // Pin defintions
-#define SDA                 2
-#define SCL                 3
+#define MODULE_I2C          i2c1
+#define MODULE_SDA          2
+#define MODULE_SCL          3
+#define MODULE_nDETECT      7 // TODO: Rev. C
 
 #define VBUS_DETECT         4
 
@@ -40,14 +42,16 @@
 #define SCREEN_HEIGHT       64
 
 // Signal constants
-#define MAX_AMPLITUDE_UV    250 // TODO: see issue #30
+#define MAX_AMPLITUDE_UV    2500.0f // TODO: see issue #30
+#define DAC_MAX_SHIFT       10 // Max bit shift for DAC attenuation
 
-#define MIN_FREQ_HZ         0.1
-#define MAX_FREQ_HZ         1000
+// Automatic channel increment dwell time in milliseconds
+#define AUTO_CHAN_DWELL_MS  200
+
+// Module EEPROM constants
+#define MODULE_NAME_BYTES   20
 
 // Shift register bit array
 #define MAX_NUM_CHANNELS    128                                     // 128 channels max
 typedef struct sr_bit_arr_t { int32_t bits[4]; } sr_bit_arr_t;
-//#define sr_bit_arr_t        int32_t                               // Bit array element data type
 #define SR_BITS_PER_ELEMENT (8 * sizeof(int32_t))                   // Bits per array element of sr_bit_arr_t
-//#define SR_BIT_ARR_LEN      4                                     // Number of bit_arr_t's required to hold 128 bits, one for each channel switch

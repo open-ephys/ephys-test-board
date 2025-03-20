@@ -20,22 +20,22 @@
 ; 'mov pc, isr' instruction.
 .origin 0
     ; 16 element jump table based on 4-bit encoder last state and current state.
-    ;                 previous-current
+    ;               previous-current
     jmp delta0      ; 00-00
-    jmp minus1      ; 00-01
-    jmp plus1       ; 00-10
+    jmp plus1       ; 00-01
+    jmp minus1      ; 00-10
     jmp delta0      ; 00-11
-    jmp plus1       ; 01-00
+    jmp minus1      ; 01-00
     jmp delta0      ; 01-01
     jmp delta0      ; 01-10
-    jmp minus1      ; 01-11
-    jmp minus1      ; 10-00
+    jmp plus1       ; 01-11
+    jmp plus1       ; 10-00
     jmp delta0      ; 10-01
     jmp delta0      ; 10-10
-    jmp plus1       ; 10-11
+    jmp minus1      ; 10-11
     jmp delta0      ; 11-00
-    jmp plus1       ; 11-01
-    jmp minus1      ; 11-10
+    jmp minus1      ; 11-01
+    jmp plus1       ; 11-10
     jmp delta0      ; 11-11
 
 ; Program actually starts here.
@@ -64,12 +64,13 @@ output:
 #include "hardware/gpio.h"
 #include "hardware/dma.h"
 static inline void pio_quadrature_init(PIO pio, uint sm, uint enc_a, int *dma_chan, volatile uint32_t* counter, irq_handler_t dma_handler) {
-    
+
     // Configure PIO
     pio_sm_config c = quadrature_decoder_program_get_default_config(0);
     sm_config_set_in_shift(&c, false, false, 32);
     sm_config_set_in_pins(&c, enc_a);
     sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
+    sm_config_set_clkdiv(&c, 65535); // slow it down as much as possible for human interaction to prevent glitching
     pio_sm_init(pio, sm, quadrature_decoder_offset_start, &c);
 
     // Configure DMA

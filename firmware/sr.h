@@ -3,8 +3,8 @@
 #include "ephys-tester.h"
 
 typedef enum {
-  EXT_SIGNAL = 0,
-  INT_SIGNAL = 1,
+  SIGNAL_EXTERNAL = 0,
+  SIGNAL_INTERNAL = 1,
 } signal_source_t;
 
 int sr_init();

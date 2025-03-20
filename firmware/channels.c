@@ -5,7 +5,7 @@
 // TODO: cant this be made on the fly? Why do we need to have it hangingin around??
 // static sr_bit_arr_t switches;
 
-static int channels_to_bitarr(uint *channels, size_t num_channels, sr_bit_arr_t *bit_arr)
+static int channels_to_bitarr(const uint8_t *channels, uint8_t num_channels, sr_bit_arr_t *bit_arr)
 {
     // Clear all bits
     sr_clear(bit_arr);
@@ -22,63 +22,32 @@ static int channels_to_bitarr(uint *channels, size_t num_channels, sr_bit_arr_t 
     return 0;
 }
 
-int channels_init(mode_context_t *ctx)
+int channels_init(const mode_context_t *ctx)
 {
-    // TODO: Load map from EEPROM
-    // TODO: detected when module is attached and removed to reload
-    // // I2C Initialisation. Using it at 400Khz.
-    // i2c_init(I2C_PORT, 400*1000);
-    // gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-    // gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
-
-    // TODO: Place holder for above
-    ctx->num_channels = MAX_NUM_CHANNELS;
-    for (uint i = 0; i < MAX_NUM_CHANNELS; i++) { ctx->channel_map[i] = i; }
-
     sr_bit_arr_t switches;
     sr_init();
     sr_clear(&switches);
     sr_update(&switches);
 }
 
-// int channels_reset(mode_context_t *ctx, uint *channel_map, uint num_channels)
-// {
-//     if (num_channels > MAX_NUM_CHANNELS)
-//         return -1; // TODO: Error codes
-    
-//     // TODO: should this always default to zero or open?
-//     if (ctx->channel_idx > num_channels - 1)
-//         ctx->channel_idx = 0;
-
-//     for (int i = 0; i++; i < num_channels)
-//         ctx->channel_map[i] = channel_map[i];
-
-//     ctx->num_channels = num_channels;
-
-//     return 0;
-// }
-
-int channels_update(mode_context_t *ctx)
+int channels_update(const mode_context_t *ctx)
 {
     sr_bit_arr_t switches;
 
     switch (ctx->test_dest)
     {
-
         case TEST_OPEN:
             sr_clear(&switches);
             break;
+        case TEST_CYCLE_CHANNEL:
         case TEST_SINGLE_CHANNEL:
             sr_clear(&switches);
-            channels_to_bitarr(&ctx->channel_idx, 1, &switches);
+            channels_to_bitarr(&ctx->channel_map[ctx->channel_idx], 1, &switches);
             break;
         case TEST_ALL_CHANNEL:
             sr_clear(&switches);
-            channels_to_bitarr(ctx->channel_map, MAX_NUM_CHANNELS, &switches);
+            channels_to_bitarr(ctx->channel_map, ctx->num_channels, &switches);
             break;
-        case TEST_CYCLE_CHANNEL:
-            // TODO: set up callback
-            return 0; // Callback handles updates
         default:
             return -1; // Invalid
     }

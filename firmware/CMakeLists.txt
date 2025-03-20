@@ -40,7 +40,7 @@ add_executable(ephys-tester)
 pico_generate_pio_header(ephys-tester  ${CMAKE_CURRENT_LIST_DIR}/spi.pio)
 pico_generate_pio_header(ephys-tester  ${CMAKE_CURRENT_LIST_DIR}/quadrature.pio)
 pico_set_program_name(ephys-tester  "ephys-tester")
-pico_set_program_version(ephys-tester  "0.1")
+pico_set_program_version(ephys-tester  "0.1.0")
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(ephys-tester  0)
@@ -60,6 +60,7 @@ target_sources(ephys-tester PRIVATE
         mode.c
         oled.cpp
         channels.c
+        eeprom.c
         sr.c
         tiny-json.c
         ad5683.c

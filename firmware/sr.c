@@ -4,7 +4,7 @@
 #include "ephys-tester.h"
 
 // TODO: This delay may not even been needed
-#define BB_SETTLE_USEC 10
+#define BB_SETTLE_USEC 1
 
 // TODO: All this bit banging should probably be moved to PIO1
 int sr_init()
@@ -24,7 +24,7 @@ int sr_init()
     gpio_put(SR_nSRCLR, 1);
 
     // Set signal select to internal
-    gpio_put(TEST_SEL, INT_SIGNAL);
+    gpio_put(TEST_SEL, SIGNAL_INTERNAL);
 
     return 0;
 }

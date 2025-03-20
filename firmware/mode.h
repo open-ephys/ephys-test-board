@@ -52,8 +52,8 @@ typedef struct mode_context_t {
 } mode_context_t;
 
 void mode_init(mode_context_t *ctx);
-int mode_update_from_knob(mode_context_t *ctx, int delta, bool button_pushed);
-int mode_increment_channel(mode_context_t *ctx);
+int mode_update_from_knob(mode_context_t *ctx, int delta);
+void mode_increment_channel(mode_context_t *ctx);
 mode_selection_t mode_selection(const mode_context_t *ctx);
 
 /// @brief Gets a string representing the value of a selection within a given mode context.
@@ -63,6 +63,12 @@ mode_selection_t mode_selection(const mode_context_t *ctx);
 /// again may mutate the previously returned string. Make sure to copy this or
 /// apply it hardware prior to that.
 char *mode_str(const mode_context_t *ctx, mode_selection_t selection);
+
+static inline void mode_cycle_selection(mode_context_t *ctx)
+{
+    ctx->selection = (mode_selection_t)((ctx->selection + 1) % SELECTION_NUM_SELECTIONS);
+}
+
 
 
 

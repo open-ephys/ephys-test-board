@@ -4,20 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
-static inline void increment_selection(mode_context_t *ctx)
-{
-    ctx->selection = ctx->selection == SELECTION_NUM_SELECTIONS - 1 ? 
-        ctx->selection : 
-        (mode_selection_t)(ctx->selection + 1);
-}
-
-static inline void decrement_selection(mode_context_t *ctx)
-{
-    ctx->selection = ctx->selection == SELECTION_MODE ? 
-        ctx->selection : 
-        (mode_selection_t)(ctx->selection - 1);
-}
-
 static inline void increment_mode(mode_context_t *ctx)
 {
     ctx->test_dest = ctx->test_dest == TEST_NUM_DESTINATIONS - 1 ?
@@ -178,39 +164,32 @@ void mode_init(mode_context_t *ctx)
     ctx->signal.freq_lut_idx = DEFAULT_FREQ_INDEX;
 }
 
-int mode_update_from_knob(mode_context_t *ctx, int delta, bool button_pushed)
+int mode_update_from_knob(mode_context_t *ctx, int delta) //, bool button_pushed)
 {
-    if (button_pushed)
-    {
-        delta > 0 ? increment_selection(ctx) : decrement_selection(ctx);
 
-        return 0; // Selection changed
-    } else
+    switch (ctx->selection)
     {
-        switch (ctx->selection)
-        {
-            case SELECTION_MODE:
-                delta > 0 ? increment_mode(ctx) : decrement_mode(ctx);
-                return 1; // Input routing mode changed
-            case SELECTION_WAVEFORM:
-                delta > 0 ? increment_waveform(&ctx->signal) : decrement_waveform(&ctx->signal);
-                return 2; // Signal changed
-            case SELECTION_CHANNEL:
-                change_channel_idx(ctx, delta, false);
-                return 3; // Channel selection changed
-            case SELECTION_AMPLITUDE:
-                delta > 0 ? increment_amplitude(&ctx->signal) : decrement_amplitude(&ctx->signal);
-                return 2; // Signal changed
-            case SELECTION_FREQHZ:
-                delta > 0 ? increment_freq_hz(&ctx->signal) : decrement_freq_hz(&ctx->signal);
-                return 2; // Signal changed
-            default : // Invalid
-                return -1; // TODO: error codes
-        }
+        case SELECTION_MODE:
+            delta > 0 ? increment_mode(ctx) : decrement_mode(ctx);
+            return 1; // Input routing mode changed
+        case SELECTION_WAVEFORM:
+            delta > 0 ? increment_waveform(&ctx->signal) : decrement_waveform(&ctx->signal);
+            return 2; // Signal changed
+        case SELECTION_CHANNEL:
+            change_channel_idx(ctx, delta, false);
+            return 3; // Channel selection changed
+        case SELECTION_AMPLITUDE:
+            delta > 0 ? increment_amplitude(&ctx->signal) : decrement_amplitude(&ctx->signal);
+            return 2; // Signal changed
+        case SELECTION_FREQHZ:
+            delta > 0 ? increment_freq_hz(&ctx->signal) : decrement_freq_hz(&ctx->signal);
+            return 2; // Signal changed
+        default : // Invalid
+            return -1; // TODO: error codes
     }
 }
 
-inline int mode_increment_channel(mode_context_t *ctx)
+inline void mode_increment_channel(mode_context_t *ctx)
 {
     change_channel_idx(ctx, 1, true);
 }

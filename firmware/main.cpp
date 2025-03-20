@@ -20,6 +20,7 @@ extern "C"
 
 queue_t signal_generator_cmd_queue;
 volatile bool channel_increment_request = false;
+volatile bool knob_press_detected = false;
 
 typedef struct timer_callback_data_t {
     pio_spi_inst_t *dac_spi;
@@ -38,7 +39,7 @@ bool dac_update_callback(struct repeating_timer *t)
 
     ad5683_write_dac(timer_data->dac_spi, WAVEFORM_LUT[timer_data->offset + (i % LUT_WAVEFORM_LENGTH)], timer_data->rshift);
     i += timer_data->step;
-    
+
     return true;
 }
 
@@ -46,6 +47,11 @@ bool channel_increment_callback(struct repeating_timer *t)
 {
     channel_increment_request = true;
     return true;
+}
+
+void knob_press_callback(uint gpio, uint32_t events)
+{
+    knob_press_detected = true;
 }
 
 // TODO: Calling cancel_repeating_timer on a timer that has not had alarm added
@@ -77,7 +83,7 @@ void core1_entry()
 
     while (true)
     {
-        queue_remove_blocking(&signal_generator_cmd_queue, &signal);    
+        queue_remove_blocking(&signal_generator_cmd_queue, &signal);
 
         timer_data.dac_spi = &dac_spi;
         timer_data.rshift = signal.amp_rshift;
@@ -140,12 +146,17 @@ int main()
 
     // Queue for conveying settings to waveform generator and send default state
     queue_init(&signal_generator_cmd_queue, sizeof(mode_signal_t), 10);
-    
+
     // Launch the second core to handle the waveform generator
     multicore_launch_core1(core1_entry);
 
     // Force first mode update
-    mode_update_from_knob(&ctx, quad_get_delta(), quad_get_button());
+    mode_update_from_knob(&ctx, quad_get_delta());
+
+    // Setup knob button callback
+    gpio_init(ENC_BUT);
+    gpio_set_dir(ENC_BUT, GPIO_IN);
+    gpio_set_irq_enabled_with_callback(ENC_BUT, GPIO_IRQ_EDGE_RISE, true, &knob_press_callback);
 
     // Let splash screen hang around for a while
     sleep_ms(1000);
@@ -160,34 +171,48 @@ int main()
 
     while(true)
     {
-        // Decode user input
+
+        bool update_oled_required = false;
+
+        if (knob_press_detected)
+        {
+            mode_cycle_selection(&ctx);
+            knob_press_detected = false;
+            update_oled_required = true;
+        }
+
         if (quad_pending_turn())
         {
             quad_acknowledge_turn();
-            int what_changed = mode_update_from_knob(&ctx, quad_get_delta(), quad_get_button());
+            int what_changed = mode_update_from_knob(&ctx, quad_get_delta());
 
-            if (what_changed == 1)  
+            if (what_changed == 1)
                 if (ctx.test_dest == TEST_CYCLE_CHANNEL){
                     channel_timer_cancelled = cancel_repeating_timer_safe(&channel_timer, channel_timer_cancelled);
                     channel_timer_cancelled = !add_repeating_timer_ms(-AUTO_CHAN_DWELL_MS, channel_increment_callback, NULL, &channel_timer);
                 } else {
                     // NB: Prevent multiple, overlapping timers
                     channel_timer_cancelled = cancel_repeating_timer_safe(&channel_timer, channel_timer_cancelled);
+                    channels_update(&ctx);
                 }
-            else if (what_changed == 2) 
+            else if (what_changed == 2)
                 queue_try_add(&signal_generator_cmd_queue, &(ctx.signal));
             else if (what_changed == 3)
                 channels_update(&ctx);
 
-            oled_update(&ctx);
+            update_oled_required = true;
         }
 
         // Handle auto channel increment
         if (channel_increment_request)
-        {   
+        {
             channel_increment_request = false;
             mode_increment_channel(&ctx);
             channels_update(&ctx);
+            update_oled_required = true;
+        }
+
+        if (update_oled_required) {
             oled_update(&ctx);
         }
     }

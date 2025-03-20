@@ -48,13 +48,15 @@ int eeprom_read_module(mode_context_t *ctx)
         int rc = eeprom_read(MODULE_I2C, EEPROM_SN_ADDRESS, 0x80, &ctx->module.sn, 16);
         if (rc != 16) goto default_config;
 
-        char buf[EEPROM_NAME_OFFSET];
+        char buf[EEPROM_NAME_OFFSET + 1];
         rc = eeprom_read(MODULE_I2C, EEPROM_ADDRESS, EEPROM_MAGIC_OFFSET, buf, EEPROM_NAME_OFFSET);
-        if (rc != 10 || strcmp(buf, "open-ephys")) goto default_config;
+        buf[EEPROM_NAME_OFFSET] = '\0'; // Null terminate
+        int lala = strcmp(buf, "open-ephys");
+        if (rc != EEPROM_NAME_OFFSET || lala) goto default_config;
 
         rc = eeprom_read(MODULE_I2C, EEPROM_ADDRESS, EEPROM_NAME_OFFSET, &ctx->module.name, MODULE_NAME_BYTES);
         if (rc != MODULE_NAME_BYTES) goto default_config;
-        ctx->module.name[MODULE_NAME_BYTES + 1] = '\0'; // Null terminate
+        ctx->module.name[MODULE_NAME_BYTES] = '\0'; // Null terminate
 
         rc = eeprom_read(MODULE_I2C, EEPROM_ADDRESS, EEPROM_PCB_REV_OFFSET, &ctx->module.pcb_rev, 1);
         if (rc != 1) goto default_config;

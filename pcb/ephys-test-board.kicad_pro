@@ -190,7 +190,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
-        "hole_to_hole": "warning",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -594,7 +594,7 @@
   },
   "meta": {
     "filename": "ephys-test-board.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -619,7 +619,6 @@
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.2032,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.1554,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -747,6 +746,18 @@
           "label": "Part No.",
           "name": "Part No.",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -784,7 +795,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "${OE_SHEET_DIR}/open-ephys.kicad_wks",
+    "page_layout_descr_file": "kicad-embed://open-ephys.kicad_wks",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,

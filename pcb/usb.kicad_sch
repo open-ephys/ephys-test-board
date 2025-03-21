@@ -5569,7 +5569,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 2e7f3bc6-9e42-47d8-ae86-17f81f3230f0)
+			(uuid 3639fed5-9da7-47ad-baab-e1ac63afbf55)
 		)
 	)
 	(netclass_flag ""
@@ -5583,7 +5583,7 @@
 			(justify right bottom)
 		)
 		(uuid "e6110793-6e76-4739-952b-e513d62796b5")
-		(property "Netclass" "l1-diff-90_jlc4161h"
+		(property "Netclass" "l1-diff-90_jlc04161H-3313"
 			(at 69.85 40.64 0)
 			(effects
 				(font

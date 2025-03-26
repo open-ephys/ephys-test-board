@@ -3922,6 +3922,17 @@
 		)
 		(uuid "8acc2809-99a3-42ea-876a-1e8f8f4519cf")
 	)
+	(text "Light Pipe: \nPLPC3-125"
+		(exclude_from_sim no)
+		(at 203.2 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.bivar.com/parts_content/Datasheets/PLPC3-XXX.pdf")
+		)
+		(uuid "d8c5b403-dc8d-4639-9ffd-082d40fb5255")
+	)
 	(junction
 		(at 82.55 163.83)
 		(diameter 0)
@@ -5569,7 +5580,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 3639fed5-9da7-47ad-baab-e1ac63afbf55)
+			(uuid e72097c1-94d7-4a9a-ba26-79bf6646c66d)
 		)
 	)
 	(netclass_flag ""

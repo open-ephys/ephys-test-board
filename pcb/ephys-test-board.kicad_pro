@@ -76,15 +76,19 @@
           ""
         ],
         [
-          "missing_courtyard|256000000|159700000|15f3cf78-d005-45b1-9f7a-5a5ec0788fd6|00000000-0000-0000-0000-000000000000",
+          "missing_courtyard|244900000|62500000|bb550672-1391-4a75-996f-a81aa10c3465|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "silk_edge_clearance|226050015|65899375|4f67fae5-6e16-49d7-9d50-3e5cceb134f5|0414f972-c8b4-4f22-a52f-d297dd516fd2",
+          "missing_courtyard|250000000|155300000|15f3cf78-d005-45b1-9f7a-5a5ec0788fd6|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "silk_edge_clearance|226100000|61900000|4f67fae5-6e16-49d7-9d50-3e5cceb134f5|f718c26c-3453-48d5-8ac4-f45bb6363e2e",
+          "silk_edge_clearance|226050000|65900000|bc91b038-d4e9-407f-ba4f-7c33b372802f|0414f972-c8b4-4f22-a52f-d297dd516fd2",
+          ""
+        ],
+        [
+          "silk_edge_clearance|237300000|61900000|219fe560-aeaf-4856-8a97-8eb34efa0f06|f718c26c-3453-48d5-8ac4-f45bb6363e2e",
           ""
         ],
         [
@@ -774,7 +778,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {

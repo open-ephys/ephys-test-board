@@ -3763,9 +3763,20 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "NB: Wire to\nboard option"
+		(exclude_from_sim no)
+		(at 162.56 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2af9ab3c-0a00-43cb-9058-805892eac64b")
+	)
 	(text "Battery:\nAdafruit-258\n"
 		(exclude_from_sim no)
-		(at 152.4 50.8 0)
+		(at 152.4 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3839,6 +3850,12 @@
 		(uuid "38f289b7-fbb5-4850-9202-6f511a6e21a0")
 	)
 	(junction
+		(at 163.83 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41ccb590-d030-421d-943f-eb2644ae4f14")
+	)
+	(junction
 		(at 182.88 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3863,12 +3880,6 @@
 		(uuid "5e423b3e-ba6c-4e07-9add-c984a29daa39")
 	)
 	(junction
-		(at 170.18 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73c4c01f-2d98-4f5a-bc64-2e721da7f571")
-	)
-	(junction
 		(at 118.11 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3891,6 +3902,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "900620df-72ca-4ace-a274-1e8ffb7f7d64")
+	)
+	(junction
+		(at 170.18 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aed59f3c-dc85-4339-8ca2-b7c28c40c187")
 	)
 	(junction
 		(at 64.77 41.91)
@@ -3963,6 +3980,16 @@
 	(no_connect
 		(at 62.23 26.67)
 		(uuid "fc4d563a-4854-42b5-8f87-d7e7514cea37")
+	)
+	(wire
+		(pts
+			(xy 163.83 41.91) (xy 182.88 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02a0ef79-3261-4ca6-ab0f-145a9d92671f")
 	)
 	(wire
 		(pts
@@ -4116,7 +4143,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 44.45) (xy 173.99 44.45)
+			(xy 157.48 44.45) (xy 170.18 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4326,6 +4353,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 44.45) (xy 173.99 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64987e01-6171-40e8-b011-f40a11a14ac9")
+	)
+	(wire
+		(pts
 			(xy 97.79 143.51) (xy 97.79 146.05)
 		)
 		(stroke
@@ -4373,6 +4410,16 @@
 			(type default)
 		)
 		(uuid "6d21c344-2786-48ea-8d93-8ac8687999fa")
+	)
+	(wire
+		(pts
+			(xy 170.18 35.56) (xy 170.18 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e5347b8-ea53-441e-bc5b-e9235dfa0dd7")
 	)
 	(wire
 		(pts
@@ -4456,16 +4503,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 41.91) (xy 182.88 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83aed023-dbdb-4fdb-8656-9b0e39a370b7")
-	)
-	(wire
-		(pts
 			(xy 200.66 92.71) (xy 210.82 92.71)
 		)
 		(stroke
@@ -4476,7 +4513,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 41.91) (xy 170.18 41.91)
+			(xy 157.48 41.91) (xy 163.83 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4486,7 +4523,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 39.37) (xy 170.18 41.91)
+			(xy 163.83 35.56) (xy 163.83 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5219,7 +5256,7 @@
 			(fill
 				(type none)
 			)
-			(uuid e72097c1-94d7-4a9a-ba26-79bf6646c66d)
+			(uuid 8084a2b9-1c0d-43de-8dc4-3694d6040cd6)
 		)
 	)
 	(netclass_flag ""
@@ -10130,7 +10167,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 170.18 39.37 0)
+		(at 163.83 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10138,7 +10175,7 @@
 		(dnp no)
 		(uuid "b2885669-2e71-4149-a06c-b8ac731a2b6f")
 		(property "Reference" "TP8"
-			(at 170.942 34.798 0)
+			(at 164.592 30.988 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10146,8 +10183,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 170.942 37.338 0)
+		(property "Value" "~"
+			(at 164.592 33.528 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10156,8 +10193,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 175.26 39.37 0)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
+			(at 168.91 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10166,7 +10203,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 175.26 39.37 0)
+			(at 168.91 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10175,7 +10212,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 170.18 39.37 0)
+			(at 163.83 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10184,7 +10221,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 170.18 39.37 0)
+			(at 163.83 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10193,7 +10230,7 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 170.18 39.37 0)
+			(at 163.83 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10202,7 +10239,7 @@
 			)
 		)
 		(property "Part No." ""
-			(at 170.18 39.37 0)
+			(at 163.83 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10211,7 +10248,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 170.18 39.37 0)
+			(at 163.83 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10435,6 +10472,108 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
 					(reference "#PWR0735")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 170.18 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bed20b18-2f4b-46a7-b51d-789f3003d279")
+		(property "Reference" "TP16"
+			(at 170.942 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 170.942 33.528 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
+			(at 175.26 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21f7bc03-37ab-4b46-a36f-73f74bc40973")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
+					(reference "TP16")
 					(unit 1)
 				)
 			)

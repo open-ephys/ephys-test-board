@@ -6257,7 +6257,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 9797aeff-1ec1-4343-86b6-421843080886)
+			(uuid 16360c29-ec45-4914-9d6c-16456bc0bc35)
 		)
 	)
 	(netclass_flag ""
@@ -6568,6 +6568,24 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW040210K0FKED"
+			(at 68.58 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020030"
+			(at 68.58 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "441c3253-39e4-4384-acc7-efcac1439298")
 		)
@@ -6638,6 +6656,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "APX803L05-35SA-7"
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080168"
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "fe512b42-e2ba-46b6-83db-866b0e1baae9")
 		)
@@ -6661,7 +6697,7 @@
 		(at 165.1 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "191426ff-ef09-48cf-b941-79a84f443b6a")
@@ -6746,6 +6782,22 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 165.1 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
+			(at 165.1 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4afcbe8e-b262-442c-afae-d0dd9ce64e3d")
 		)
@@ -6763,7 +6815,7 @@
 		(at 118.11 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "19effc03-dda1-4385-a8fd-02f28b4cf546")
@@ -6841,6 +6893,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 118.11 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 118.11 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 118.11 143.51 0)
 			(effects
 				(font
@@ -6957,6 +7025,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "C1005X7R1E104K050BB"
+			(at 153.67 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010050"
+			(at 153.67 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7128,6 +7214,24 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW040210K0FKED"
+			(at 68.58 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020030"
+			(at 68.58 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7253a089-6ed2-4b14-b45b-cacd96a0c14b")
 		)
@@ -7162,7 +7266,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "150060GS75000"
+		(property "Value" "LED Green"
 			(at 200.66 35.56 90)
 			(effects
 				(font
@@ -7231,6 +7335,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "150060GS75000"
+			(at 203.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS030033"
+			(at 203.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7414,6 +7536,24 @@
 				)
 			)
 		)
+		(property "MPN" "CL31B475KOHNNNE"
+			(at 195.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010081"
+			(at 195.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d8f3773c-e6b3-4b5f-b392-23a7783ba573")
 		)
@@ -7527,6 +7667,24 @@
 				)
 			)
 		)
+		(property "MPN" "CL10A105KA8NNNC"
+			(at 157.48 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010022"
+			(at 157.48 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c52f45c9-06c1-417a-a7b0-7cdb66c921d9")
 		)
@@ -7614,7 +7772,7 @@
 		(at 58.42 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "34b57940-a49e-4b51-b8e2-a73b4b650e36")
@@ -7692,6 +7850,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 58.42 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 58.42 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 58.42 81.28 0)
 			(effects
 				(font
@@ -8002,6 +8176,24 @@
 				)
 			)
 		)
+		(property "MPN" "DMG3418L-7"
+			(at 260.35 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS060019"
+			(at 260.35 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dabb17e1-a5fb-401a-a52e-90ddcff614a4")
 		)
@@ -8106,6 +8298,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "USB4105-GF-A"
+			(at 46.99 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS070105"
+			(at 46.99 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "A1"
@@ -8322,6 +8532,24 @@
 				)
 			)
 		)
+		(property "MPN" "CDBW140-G"
+			(at 74.93 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS030034"
+			(at 74.93 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "23994823-f6b9-4544-921b-7180afc5945e")
 		)
@@ -8489,6 +8717,24 @@
 				)
 			)
 		)
+		(property "MPN" "ERJ-2RKF2201X"
+			(at 273.05 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020174"
+			(at 273.05 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "371fb6a8-5624-4519-b8d4-93859b9022b2")
 		)
@@ -8509,7 +8755,7 @@
 		(at 234.95 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "566372b2-fcfc-4188-b160-dcfc3cdec779")
@@ -8586,6 +8832,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 234.95 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 234.95 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 234.95 153.67 0)
 			(effects
 				(font
@@ -8702,6 +8964,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "C1005X7R1E104K050BB"
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010050"
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8876,6 +9156,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "DMP3099L-7"
+			(at 82.55 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS060020"
+			(at 82.55 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9376,7 +9674,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "330R"
 			(at 186.69 62.23 0)
 			(effects
 				(font
@@ -9446,6 +9744,24 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW0603330RFKEAC"
+			(at 182.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020139"
+			(at 182.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a1ea013c-1ec5-4a1b-89a7-12444b026bc3")
 		)
@@ -9466,7 +9782,7 @@
 		(at 219.71 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "75c53145-cffe-4995-9068-876749ecb63a")
@@ -9543,6 +9859,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 219.71 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 219.71 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 219.71 153.67 0)
 			(effects
 				(font
@@ -9793,6 +10125,24 @@
 				)
 			)
 		)
+		(property "MPN" "CL10A105KA8NNNC"
+			(at 118.11 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010022"
+			(at 118.11 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ebe360f8-d68b-46a2-a475-6fe92e46b15d")
 		)
@@ -10011,7 +10361,7 @@
 		(at 227.33 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "7ed74ca3-99db-48da-9e9b-c9078a2f3e5a")
@@ -10088,6 +10438,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 227.33 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 227.33 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 227.33 153.67 0)
 			(effects
 				(font
@@ -10180,7 +10546,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "83bd14ec-4e2a-4877-94fd-c360ae416393")
@@ -10258,6 +10624,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 200.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 200.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 200.66 91.44 0)
 			(effects
 				(font
@@ -10392,6 +10774,24 @@
 			)
 		)
 		(property "Description" "4-Channel ESD Protection for Super-Speed USB 3.0 Interface, USON-10"
+			(at 124.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TPD4E05U06DQAR"
+			(at 124.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS030037"
 			(at 124.46 58.42 0)
 			(effects
 				(font
@@ -10659,6 +11059,24 @@
 				)
 			)
 		)
+		(property "MPN" "ERJ-2RKF4701X"
+			(at 210.82 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020010"
+			(at 210.82 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ce9c6687-0a05-4c94-9062-ed8d5289bb77")
 		)
@@ -10763,6 +11181,24 @@
 				)
 			)
 		)
+		(property "MPN" "S2B-PH-SM4-TB"
+			(at 152.4 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS070106"
+			(at 152.4 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "13c22f31-3d07-4c0a-bf66-6b973868f4b6")
 		)
@@ -10783,7 +11219,7 @@
 		(at 196.85 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "91b82d64-90b0-481d-a4ad-975862b376ad")
@@ -10860,6 +11296,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 196.85 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 196.85 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 196.85 153.67 0)
 			(effects
 				(font
@@ -11033,6 +11485,24 @@
 				)
 			)
 		)
+		(property "MPN" "ERJ-2RKF5101X"
+			(at 88.9 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020173"
+			(at 88.9 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7dae048-75ab-49ce-a120-d0d01da2d2f3")
 		)
@@ -11136,6 +11606,24 @@
 				)
 			)
 		)
+		(property "MPN" "AP2112K-3.3TRG1"
+			(at 140.97 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080155"
+			(at 140.97 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "80ebdecf-ad30-435b-ba55-664819144c62")
 		)
@@ -11231,7 +11719,7 @@
 		(at 204.47 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a2a06960-e366-4fae-a51b-b3b783d7af63")
@@ -11315,6 +11803,22 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 204.47 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
+			(at 204.47 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dfa3adc8-3279-4e4f-9892-7ab0c2bbfd10")
 		)
@@ -11332,7 +11836,7 @@
 		(at 163.83 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b2885669-2e71-4149-a06c-b8ac731a2b6f")
@@ -11417,6 +11921,22 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 163.83 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
+			(at 163.83 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "285259c4-63f8-49ee-a27a-59eeb36c0fb1")
 		)
@@ -11488,6 +12008,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "400MSP1R6BLKM6QE"
+			(at 85.09 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS070112"
+			(at 85.09 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11644,7 +12182,7 @@
 		(at 170.18 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "bed20b18-2f4b-46a7-b51d-789f3003d279")
@@ -11722,6 +12260,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 170.18 35.56 0)
 			(effects
 				(font
@@ -11813,7 +12367,7 @@
 		(at 212.09 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "bfaf2952-03b5-4b78-82ee-5982d53ebf91")
@@ -11890,6 +12444,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 212.09 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 212.09 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 212.09 153.67 0)
 			(effects
 				(font
@@ -11996,6 +12566,24 @@
 				)
 			)
 		)
+		(property "MPN" "ERJ-2RKF4701X"
+			(at 241.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020010"
+			(at 241.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "800171d7-691c-4134-aaa5-39af58c4401e")
 		)
@@ -12016,7 +12604,7 @@
 		(at 105.41 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d7ac5976-4443-4064-8889-c51a750befc8")
@@ -12094,6 +12682,22 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPSPN" ""
 			(at 105.41 91.44 0)
 			(effects
 				(font
@@ -12198,6 +12802,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "BQ29700DSER"
+			(at 222.25 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080156"
+			(at 222.25 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12324,6 +12946,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CL31B106KBHNNNE"
+			(at 251.46 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010032"
+			(at 251.46 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12496,6 +13136,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "DMG3418L-7"
+			(at 243.84 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS060019"
+			(at 243.84 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12672,6 +13330,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "MCP73831T-2ACI/OT"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080157"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12864,6 +13540,24 @@
 				)
 			)
 		)
+		(property "MPN" "C1005X7R1E104K050BB"
+			(at 97.79 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010050"
+			(at 97.79 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "91c79414-5898-4070-bad8-32ace38c6a28")
 		)
@@ -12964,6 +13658,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "ERJ-2RKF4702X"
+			(at 97.79 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020017"
+			(at 97.79 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13067,6 +13779,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "ERJ-2RKF5101X"
+			(at 80.01 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020173"
+			(at 80.01 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"

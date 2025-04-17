@@ -879,6 +879,18 @@
           "label": "Tolerance",
           "name": "Tolerance",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "OEPSPN",
+          "name": "OEPSPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
         }
       ],
       "filter_string": "",

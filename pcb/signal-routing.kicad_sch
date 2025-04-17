@@ -3477,6 +3477,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "90d29b09-b818-4917-aa56-abd77a949d9e")
 		)
@@ -3900,6 +3918,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 45.72 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 45.72 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "77518b64-b9ed-4d8f-bedd-6937091ebddd")
 		)
@@ -4056,6 +4092,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 135.89 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1005P-104-B-T5"
+			(at 135.89 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020175"
 			(at 135.89 170.18 0)
 			(effects
 				(font
@@ -4479,6 +4533,24 @@
 				)
 			)
 		)
+		(property "MPN" "SN74LVC1G3157DCKR"
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080161"
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4476efe9-ef98-4498-b7da-fadda52c5799")
 		)
@@ -4662,6 +4734,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 83.82 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 83.82 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9b9f9e18-5d64-4f88-a141-cd7819e29ec8")
 		)
@@ -4755,7 +4845,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "200R"
 			(at 53.34 176.53 90)
 			(effects
 				(font
@@ -4818,6 +4908,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 55.88 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-2AEB201X"
+			(at 55.88 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020171"
 			(at 55.88 176.53 0)
 			(effects
 				(font
@@ -4982,6 +5090,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 62.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1005P-104-B-T5"
+			(at 62.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020175"
 			(at 62.23 81.28 0)
 			(effects
 				(font
@@ -5280,6 +5406,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RG1005P-104-B-T5"
+			(at 62.23 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020175"
+			(at 62.23 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c35543d8-ee0b-4c9b-a07e-080c375ed45b")
 		)
@@ -5373,7 +5517,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "200R"
 			(at 53.34 43.18 90)
 			(effects
 				(font
@@ -5436,6 +5580,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-2AEB201X"
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020171"
 			(at 55.88 43.18 0)
 			(effects
 				(font
@@ -5615,6 +5777,24 @@
 				)
 			)
 		)
+		(property "MPN" "C1005X7R1E104K050BB"
+			(at 245.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010050"
+			(at 245.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4cbca1cf-74ff-40ab-9afb-72176023dedf")
 		)
@@ -5708,7 +5888,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "200R"
 			(at 127 176.53 90)
 			(effects
 				(font
@@ -5771,6 +5951,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 129.54 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-2AEB201X"
+			(at 129.54 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020171"
 			(at 129.54 176.53 0)
 			(effects
 				(font
@@ -5948,6 +6146,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 83.82 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 83.82 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6422,7 +6638,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "200R"
 			(at 127 132.08 90)
 			(effects
 				(font
@@ -6485,6 +6701,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 129.54 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-2AEB201X"
+			(at 129.54 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020171"
 			(at 129.54 132.08 0)
 			(effects
 				(font
@@ -7171,6 +7405,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 158.75 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 158.75 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "898192af-5a72-4ee9-acb9-612f1a8c7bf4")
 		)
@@ -7723,6 +7975,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 45.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 45.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d3987bf9-bd96-4f39-a739-e423f50d8414")
 		)
@@ -8147,6 +8417,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 119.38 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 119.38 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "30d74677-3ade-4467-9b1c-00cf362288ce")
 		)
@@ -8438,6 +8726,24 @@
 				)
 			)
 		)
+		(property "MPN" "SN74HCS595PWR"
+			(at 215.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080159"
+			(at 215.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7ce1c8d7-7fe9-464f-89cd-0e495b7e6a19")
 		)
@@ -8651,6 +8957,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dfa447e3-8fed-4f30-aec6-5847c55c897c")
 		)
@@ -8807,6 +9131,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 135.89 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1005P-104-B-T5"
+			(at 135.89 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020175"
 			(at 135.89 125.73 0)
 			(effects
 				(font
@@ -8984,6 +9326,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 83.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 83.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9538,6 +9898,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 158.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 158.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c8c89dfe-499e-4e3e-8412-4622fb2555f7")
 		)
@@ -9820,6 +10198,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 62.23 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1005P-104-B-T5"
+			(at 62.23 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020175"
 			(at 62.23 170.18 0)
 			(effects
 				(font
@@ -10376,6 +10772,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 119.38 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 119.38 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11055,6 +11469,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 83.82 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 83.82 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2938b78e-109e-474d-a480-c764847e7664")
 		)
@@ -11226,6 +11658,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 119.38 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 119.38 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "49d61df2-0fd2-44eb-affd-f8e6c806d0d7")
 		)
@@ -11382,6 +11832,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 62.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1005P-104-B-T5"
+			(at 62.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020175"
 			(at 62.23 125.73 0)
 			(effects
 				(font
@@ -11559,6 +12027,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 45.72 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 45.72 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11780,7 +12266,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "200R"
 			(at 127 43.18 90)
 			(effects
 				(font
@@ -11843,6 +12329,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 129.54 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-2AEB201X"
+			(at 129.54 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020171"
 			(at 129.54 43.18 0)
 			(effects
 				(font
@@ -11944,7 +12448,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "200R"
 			(at 53.34 87.63 90)
 			(effects
 				(font
@@ -12007,6 +12511,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 55.88 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-2AEB201X"
+			(at 55.88 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020171"
 			(at 55.88 87.63 0)
 			(effects
 				(font
@@ -12175,6 +12697,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "SN74LVC1G3157DCKR"
+			(at 77.47 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080161"
+			(at 77.47 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12606,6 +13146,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RG1005P-104-B-T5"
+			(at 135.89 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020175"
+			(at 135.89 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9ebdbdd0-d442-4850-a1fe-8ad53c428b89")
 		)
@@ -12777,6 +13335,24 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 45.72 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 45.72 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e16ae043-0663-4457-9543-0ed9c2c3eba1")
 		)
@@ -12937,6 +13513,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "SN74LVC1G3157DCKR"
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080161"
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13873,6 +14467,24 @@
 				)
 			)
 		)
+		(property "MPN" "SN74LVC1G3157DCKR"
+			(at 152.4 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080161"
+			(at 152.4 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7d3bd914-82b7-4ce6-93b4-cc0f803fc786")
 		)
@@ -14045,6 +14657,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "SN74LVC1G3157DCKR"
+			(at 77.47 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080161"
+			(at 77.47 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14228,6 +14858,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "GRM155R71E103KA01D"
+			(at 158.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS010067"
+			(at 158.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14575,7 +15223,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "200R"
 			(at 53.34 132.08 90)
 			(effects
 				(font
@@ -14638,6 +15286,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 55.88 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-2AEB201X"
+			(at 55.88 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020171"
 			(at 55.88 132.08 0)
 			(effects
 				(font
@@ -14935,6 +15601,24 @@
 				)
 			)
 		)
+		(property "MPN" "SN74LVC1G3157DCKR"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080161"
+			(at 152.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "05e21d39-4606-4a7e-8a79-1480d2f66143")
 		)
@@ -15103,6 +15787,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 135.89 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1005P-104-B-T5"
+			(at 135.89 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020175"
 			(at 135.89 81.28 0)
 			(effects
 				(font
@@ -15399,6 +16101,24 @@
 				)
 			)
 		)
+		(property "MPN" "SN74LVC1G3157DCKR"
+			(at 77.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080161"
+			(at 77.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7f033f05-8af3-4593-b34d-e03d2da864bb")
 		)
@@ -15571,6 +16291,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "SN74LVC1G3157DCKR"
+			(at 152.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080161"
+			(at 152.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15805,7 +16543,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "200R"
 			(at 127 87.63 90)
 			(effects
 				(font
@@ -15868,6 +16606,24 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
+			(at 129.54 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-2AEB201X"
+			(at 129.54 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020171"
 			(at 129.54 87.63 0)
 			(effects
 				(font

@@ -7,7 +7,7 @@ Follow these steps to assemble the case for your device, which includes a top li
 - [3D-printed base](./case/stl/base.STL) in ABS or Nylon
 - [3D-printed top](./case/stl/top.STL) in ABS or Nylon
 - OLED screen: [Adafruit 5228](https://www.adafruit.com/product/5228)
-- 4x 12mm M3 x 0.5 Flat Head Screws (e.g. [McMaster-Carr 92125A132](https://www.mcmaster.com/92125A132/))
+- 4x 15mm M3 x 0.5 Flat Head Screws (e.g. [McMaster-Carr 92125A103](https://www.mcmaster.com/92125A103/))
 - Battery: [Adafruit 258](https://www.adafruit.com/product/258)
 - Rotary encoder knob: [Vishay ACCKMR1316NLT14](https://www.digikey.com/short/5rpqt2rb)
 - Light pipe: [Bivar PLPC3-125](https://www.digikey.com/en/products/detail/bivar-inc/PLPC3-125/5721873)

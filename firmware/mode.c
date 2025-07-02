@@ -142,7 +142,7 @@ static char *string_amplitude_uV(const mode_signal_t *const sig)
 
 static char *string_freq_hz(const mode_signal_t *const sig)
 {
-    if (sig->waveform != WAVEFORM_GND && sig->waveform != WAVEFORM_EXTERNAL)
+    if (sig->waveform != WAVEFORM_GND && sig->waveform != WAVEFORM_EXTERNAL && sig->waveform != WAVEFORM_SPIKES)
     {
         static char str[8];
         snprintf(str, 8, "%f4.1", (float)FREQ_LUT[sig->freq_lut_idx][0] / (float)FREQ_LUT[sig->freq_lut_idx][1]);

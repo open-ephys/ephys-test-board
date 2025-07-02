@@ -6,7 +6,7 @@
 #define MODULE_I2C          i2c1
 #define MODULE_SDA          2
 #define MODULE_SCL          3
-#define MODULE_nDETECT      7 // TODO: Rev. C
+#define MODULE_DETECT       7 // TODO: Rev. C
 
 #define VBUS_DETECT         4
 
@@ -42,11 +42,11 @@
 #define SCREEN_HEIGHT       64
 
 // Signal constants
-#define MAX_AMPLITUDE_UV    2500.0f // TODO: see issue #30
+#define MAX_AMPLITUDE_UV    5000.0f
 #define DAC_MAX_SHIFT       10 // Max bit shift for DAC attenuation
 
 // Automatic channel increment dwell time in milliseconds
-#define AUTO_CHAN_DWELL_MS  200
+#define AUTO_CHAN_DWELL_MS  500
 
 // Module EEPROM constants
 #define MODULE_NAME_BYTES   20

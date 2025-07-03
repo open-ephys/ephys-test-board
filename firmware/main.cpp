@@ -169,7 +169,7 @@ int main()
     gpio_set_irq_enabled_with_callback(ENC_BUT, GPIO_IRQ_EDGE_RISE, true, &knob_press_callback);
 
     // Let splash screen hang around for a while
-    sleep_ms(1000);
+    sleep_ms(3000);
     oled_update(&ctx);
 
     // Send default state to waveform generator

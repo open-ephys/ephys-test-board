@@ -6,7 +6,7 @@
 #define MODULE_I2C          i2c1
 #define MODULE_SDA          2
 #define MODULE_SCL          3
-#define MODULE_DETECT       7 // TODO: Rev. C
+#define MODULE_DETECT       5 // TODO: Rev. C
 
 #define VBUS_DETECT         4
 

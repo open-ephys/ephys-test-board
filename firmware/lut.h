@@ -1,7 +1,7 @@
 #pragma once
 
 #define NUM_FREQS 12
-#define DEFAULT_FREQ_INDEX 6 // 100 Hz
+#define DEFAULT_FREQ_INDEX 10 // 1000 Hz
 
 const int FREQ_LUT[NUM_FREQS][4] =
 {

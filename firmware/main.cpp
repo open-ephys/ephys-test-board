@@ -15,6 +15,7 @@ extern "C"
 #include "mode.h"
 #include "tiny-json.h"
 #include "lut.h"
+#include "spikes.h"
 #include "sr.h"
 }
 
@@ -26,7 +27,8 @@ typedef struct timer_callback_data_t {
     pio_spi_inst_t *dac_spi;
     uint16_t rshift;
     int step;
-    int offset;
+    const uint16_t *lut;
+    size_t lut_len;
 } timer_callback_data_t;
 
 // WARNING: If this call takes longer than the timer period, it will completely take
@@ -37,7 +39,7 @@ bool dac_update_callback(struct repeating_timer *t)
     static size_t i = 0;
     timer_callback_data_t *timer_data = (timer_callback_data_t *)t->user_data;
 
-    ad5683_write_dac(timer_data->dac_spi, WAVEFORM_LUT[timer_data->offset + (i % LUT_WAVEFORM_LENGTH)], timer_data->rshift);
+    ad5683_write_dac(timer_data->dac_spi, *(timer_data->lut + (i % timer_data->lut_len)), timer_data->rshift);
     i += timer_data->step;
 
     return true;
@@ -87,9 +89,8 @@ void core1_entry()
 
         timer_data.dac_spi = &dac_spi;
         timer_data.rshift = signal.amp_rshift;
-        timer_data.step = FREQ_LUT[signal.freq_lut_idx][3];
-
         timer_cancelled = cancel_repeating_timer_safe(&timer, timer_cancelled);
+        int timer_usec = last_timer_usec;
 
         switch (signal.waveform)
         {
@@ -102,25 +103,34 @@ void core1_entry()
                 sr_source(SIGNAL_EXTERNAL);
                 continue;
             case WAVEFORM_SINE:
-                timer_data.offset = LUT_SINE_OFFSET;
+                timer_data.lut = SINE_LUT;
+                timer_data.lut_len = SINE_LUT_LENGTH;
+                timer_data.step = FREQ_LUT[signal.freq_lut_idx][3];
+                timer_usec = FREQ_LUT[signal.freq_lut_idx][2];
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SAW:
-                timer_data.offset = LUT_SAWTOOTH_OFFSET;
+                timer_data.lut = SAW_LUT;
+                timer_data.lut_len = SAW_LUT_LENGTH;
+                timer_data.step = FREQ_LUT[signal.freq_lut_idx][3];
+                timer_usec = FREQ_LUT[signal.freq_lut_idx][2];
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SPIKES:
-                timer_data.offset = LUT_SPIKES_OFFSET;
+                timer_data.lut = SPIKES;
+                timer_data.lut_len = SPIKES_LENGTH;
+                timer_data.step = 1;
+                timer_usec = SPIKES_SAMP_PERIOD_USEC;
                 sr_source(SIGNAL_INTERNAL);
                 break;
             default:
                 continue;
         }
 
-        if (timer_cancelled || last_timer_usec != FREQ_LUT[signal.freq_lut_idx][2])
+        if (timer_cancelled || last_timer_usec != timer_usec)
         {
-            timer_cancelled = !alarm_pool_add_repeating_timer_us(alarm_pool, -FREQ_LUT[signal.freq_lut_idx][2], dac_update_callback, &timer_data, &timer);
-            last_timer_usec = FREQ_LUT[signal.freq_lut_idx][2];
+            timer_cancelled = !alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback, &timer_data, &timer);
+            last_timer_usec = timer_usec;
         }
     }
 }
@@ -159,7 +169,7 @@ int main()
     gpio_set_irq_enabled_with_callback(ENC_BUT, GPIO_IRQ_EDGE_RISE, true, &knob_press_callback);
 
     // Let splash screen hang around for a while
-    sleep_ms(1000);
+    sleep_ms(3000);
     oled_update(&ctx);
 
     // Send default state to waveform generator

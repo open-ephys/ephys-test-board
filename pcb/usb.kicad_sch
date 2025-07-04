@@ -6343,7 +6343,7 @@
 			(fill
 				(type none)
 			)
-			(uuid c096e8d0-049d-4ee8-8b81-0bed03ee9bea)
+			(uuid e92f40bc-432c-4806-b04b-5dcfd1cbf25f)
 		)
 	)
 	(netclass_flag ""
@@ -9631,7 +9631,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0402JR-070RL"
 			(at 173.99 102.87 0)
 			(effects
 				(font
@@ -9640,7 +9640,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020001"
 			(at 173.99 102.87 0)
 			(effects
 				(font

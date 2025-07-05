@@ -4564,6 +4564,17 @@
 		)
 		(uuid "8acc2809-99a3-42ea-876a-1e8f8f4519cf")
 	)
+	(text "NB: Most batteries include built \nin discharge protection, BQ29700SER \nis redundand can cause charging lockout. \nIf the BQ29700SER circuit is populated \nthen DNP this resistor. "
+		(exclude_from_sim no)
+		(at 181.356 104.648 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d54d95f5-e4ef-4041-a6ae-0ba4ee201718")
+	)
 	(text "Light Pipe: \nPLPC3-125"
 		(exclude_from_sim no)
 		(at 203.2 22.86 0)
@@ -4610,6 +4621,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "274dd072-76fd-48c7-9aad-2ffa89eee124")
+	)
+	(junction
+		(at 173.99 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b609482-aba1-48cf-8fcb-5a5ee5386dbf")
 	)
 	(junction
 		(at 105.41 92.71)
@@ -4808,6 +4825,16 @@
 			(type default)
 		)
 		(uuid "03bec44a-6ebe-411f-9e17-94aa12db37d8")
+	)
+	(wire
+		(pts
+			(xy 173.99 106.68) (xy 173.99 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b50a33-a96c-4fce-906d-3b4f814f132d")
 	)
 	(wire
 		(pts
@@ -5711,6 +5738,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 92.71) (xy 173.99 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2a5cbcc-e9ef-4ff3-860b-3edc87131b2b")
+	)
+	(wire
+		(pts
 			(xy 105.41 91.44) (xy 105.41 92.71)
 		)
 		(stroke
@@ -6306,7 +6343,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 9e796f71-6ef1-4a02-916d-ddff0252f008)
+			(uuid e92f40bc-432c-4806-b04b-5dcfd1cbf25f)
 		)
 	)
 	(netclass_flag ""
@@ -8142,7 +8179,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "409e24e1-fdc0-4bf1-9a27-c192f26ef542")
 		(property "Reference" "Q3"
 			(at 260.35 97.79 90)
@@ -8686,7 +8723,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4f5f0963-6de4-48b9-8ee3-8f0f34b23640")
 		(property "Reference" "R272"
 			(at 275.59 83.82 90)
@@ -8924,7 +8961,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "57a5fb76-e653-4a69-a87f-46a563937b0b")
 		(property "Reference" "C298"
 			(at 186.69 81.28 0)
@@ -9508,6 +9545,126 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 173.99 102.87 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6941785f-9b14-4960-9331-bdf68e69fb6b")
+		(property "Reference" "R268"
+			(at 177.8 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 176.276 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 172.974 102.616 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS020001"
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c719251-27ad-4f5a-b20c-80d742edf25a")
+		)
+		(pin "2"
+			(uuid "69dca614-e287-403f-bdba-4582303d22c7")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
+					(reference "R268")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 124.46 71.12 0)
 		(unit 1)
@@ -9713,7 +9870,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "74a802b7-cb40-4066-bbaa-60e721e7665e")
 		(property "Reference" "R270"
 			(at 186.69 59.69 0)
@@ -9938,6 +10095,73 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
 					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 173.99 113.03 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75e62bd3-b4f3-4a57-93df-6ea74f6af8af")
+		(property "Reference" "#PWR0795"
+			(at 173.99 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 173.99 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf16b239-5cf7-4bac-b846-55766f1764d6")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
+					(reference "#PWR0795")
 					(unit 1)
 				)
 			)
@@ -12842,7 +13066,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d8b677db-d245-4ee6-becc-1721eb40a8aa")
 		(property "Reference" "U152"
 			(at 222.25 66.04 0)
@@ -13172,7 +13396,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e6a93742-8da9-4b11-8e4a-9bf9c8e53f85")
 		(property "Reference" "Q2"

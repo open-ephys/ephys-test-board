@@ -60,43 +60,11 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|196950000|60965000|a4ab7148-1c2f-4c10-9884-cc98e37b4158|abde6294-c541-44f3-82dc-0da387a6b11f",
-          ""
-        ],
-        [
-          "hole_clearance|196950000|60965000|a4ab7148-1c2f-4c10-9884-cc98e37b4158|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
-          ""
-        ],
-        [
-          "hole_clearance|203050000|60965000|dd75cd59-c3f4-4bef-8b51-c13cbcb150f4|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
-          ""
-        ],
-        [
-          "hole_clearance|203050000|60965000|dd75cd59-c3f4-4bef-8b51-c13cbcb150f4|f2f99769-d1e0-43d9-b332-97d91dc34de6",
-          ""
-        ],
-        [
-          "items_not_allowed|129000000|60000000|20f7be08-1877-4f4f-8b38-603498391509|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
           "items_not_allowed|129000000|60000000|afac1279-a29f-45cc-a6db-a2c68e35d753|00000000-0000-0000-0000-000000000000",
           "Cutout provided in case"
         ],
         [
-          "items_not_allowed|130000000|170000000|2c8e74ae-a4dc-409f-a8a4-3b7db1e9fca7|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
           "items_not_allowed|130000000|170000000|97835e7e-c449-4ff9-9769-dda886d6fc38|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|146200000|59600000|f0d2ce46-0d9d-4283-aa72-6a1af28503e9|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|153800000|59600000|b0cb4d88-0532-4cec-892f-e78ac62684c8|00000000-0000-0000-0000-000000000000",
           "Cutout provided in case"
         ],
         [
@@ -108,51 +76,7 @@
           "Cutout provided in case"
         ],
         [
-          "items_not_allowed|173250000|60000000|b7f2f128-80aa-4f6d-a79c-40b113fc392c|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|174500000|58000000|e1f7c36f-e59c-484d-b029-17a944dd4543|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|179000000|58000000|98dbf510-24ef-4df1-b51a-8e839e7702f4|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|180260000|60000000|37c7c58b-c78e-4920-a33d-e7e0657e15b2|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|195680000|57035000|14f04dce-1bf2-4eb1-bbf3-b41e09163986|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|195680000|60000000|35c20c18-dbd4-4279-b5ab-7d5f68046969|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|197110000|60000000|a4ab7148-1c2f-4c10-9884-cc98e37b4158|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|202890000|60000000|dd75cd59-c3f4-4bef-8b51-c13cbcb150f4|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
           "items_not_allowed|202890000|60000000|f5ccaaf6-d744-4102-8c78-2cd5db1ade8f|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|204309094|57300374|3b2cd435-de30-4990-b5cd-ef46998d3e29|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|204320000|60000000|fdafd5a7-062a-43fc-a367-5964988b1ca5|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|208300000|57612500|78c1986b-4ee4-41f1-87d3-daaeb0fa6102|00000000-0000-0000-0000-000000000000",
           "Cutout provided in case"
         ],
         [
@@ -160,23 +84,11 @@
           "Cutout provided in case"
         ],
         [
-          "items_not_allowed|208300000|59187500|d32ef047-5e1e-42f0-b1b2-a19cda3d8900|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
           "items_not_allowed|262200000|60000000|a1f3746f-d864-4806-9855-20b3c2ff02db|00000000-0000-0000-0000-000000000000",
           "Cutout provided in case"
         ],
         [
-          "items_not_allowed|270000000|60000000|c7e31355-0aaf-476d-add5-43466796d49a|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
           "items_not_allowed|270000000|60000000|ef882f7e-ace9-4076-9b1b-1a466d9d3749|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|271000000|171000000|7a625fa1-516b-4ea8-be3d-ff1cb6a8ee0c|00000000-0000-0000-0000-000000000000",
           "Cutout provided in case"
         ],
         [
@@ -189,22 +101,6 @@
         ],
         [
           "missing_courtyard|250000000|155300000|15f3cf78-d005-45b1-9f7a-5a5ec0788fd6|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_edge_clearance|226050000|65900000|bc91b038-d4e9-407f-ba4f-7c33b372802f|0414f972-c8b4-4f22-a52f-d297dd516fd2",
-          ""
-        ],
-        [
-          "silk_edge_clearance|237300000|61900000|219fe560-aeaf-4856-8a97-8eb34efa0f06|f718c26c-3453-48d5-8ac4-f45bb6363e2e",
-          ""
-        ],
-        [
-          "silk_edge_clearance|237349984|65899375|219fe560-aeaf-4856-8a97-8eb34efa0f06|885bc18f-9fc6-4f70-9b90-16916fb055ca",
-          ""
-        ],
-        [
-          "silk_edge_clearance|262200000|60000000|c4a84001-4e85-48c6-b2c7-39eba4114197|02def7f4-e1a9-42a4-ad06-e28687a775fb",
           ""
         ],
         [
@@ -885,13 +781,13 @@
           "group_by": false,
           "label": "OEPSPN",
           "name": "OEPSPN",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": true
+          "show": false
         }
       ],
       "filter_string": "",

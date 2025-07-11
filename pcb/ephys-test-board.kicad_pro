@@ -60,22 +60,6 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|196950000|60965000|2a36511a-3216-47e1-b117-7342a1735764|abde6294-c541-44f3-82dc-0da387a6b11f",
-          ""
-        ],
-        [
-          "hole_clearance|196950000|60965000|2a36511a-3216-47e1-b117-7342a1735764|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
-          ""
-        ],
-        [
-          "hole_clearance|203050000|60965000|79836779-60bb-4c08-b8d0-d5a47c4fb6b3|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
-          ""
-        ],
-        [
-          "hole_clearance|203050000|60965000|79836779-60bb-4c08-b8d0-d5a47c4fb6b3|f2f99769-d1e0-43d9-b332-97d91dc34de6",
-          ""
-        ],
-        [
           "items_not_allowed|129000000|60000000|afac1279-a29f-45cc-a6db-a2c68e35d753|00000000-0000-0000-0000-000000000000",
           "Cutout provided in case"
         ],
@@ -117,22 +101,6 @@
         ],
         [
           "missing_courtyard|250000000|155300000|15f3cf78-d005-45b1-9f7a-5a5ec0788fd6|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_edge_clearance|226050000|65900000|bc91b038-d4e9-407f-ba4f-7c33b372802f|0955a728-7744-4f55-9268-712baff695ea",
-          ""
-        ],
-        [
-          "silk_edge_clearance|237300000|61900000|219fe560-aeaf-4856-8a97-8eb34efa0f06|dba68aeb-5fee-4a79-ae12-df1489ebaa29",
-          ""
-        ],
-        [
-          "silk_edge_clearance|237349984|65899375|219fe560-aeaf-4856-8a97-8eb34efa0f06|289464ce-ca98-4cc8-a5fe-18fabc818b70",
-          ""
-        ],
-        [
-          "silk_edge_clearance|262200000|60000000|c4a84001-4e85-48c6-b2c7-39eba4114197|1b547ea9-9d19-4488-9e21-c3fdce4ade1a",
           ""
         ],
         [

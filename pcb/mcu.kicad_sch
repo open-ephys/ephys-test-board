@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "C")
+		(rev "D")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -2551,10 +2551,6 @@
 	(no_connect
 		(at 165.1 71.12)
 		(uuid "66d2b1ae-db77-4f3b-8a8f-d431264e136d")
-	)
-	(no_connect
-		(at 165.1 129.54)
-		(uuid "8d6c47df-a3de-44e7-842d-e25481c13cea")
 	)
 	(no_connect
 		(at 165.1 99.06)
@@ -9183,7 +9179,7 @@
 		)
 	)
 	(label "~{RES}"
-		(at 175.26 119.38 0)
+		(at 176.53 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9223,7 +9219,7 @@
 		(uuid "1ef79f7c-3ef8-44b3-a5d0-b9267c932c8f")
 	)
 	(label "SCLK"
-		(at 175.26 124.46 0)
+		(at 176.53 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9273,7 +9269,7 @@
 		(uuid "37fc72a5-5cb6-4b79-8e8b-4944025bf364")
 	)
 	(label "SDI"
-		(at 175.26 73.66 0)
+		(at 176.53 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9293,7 +9289,7 @@
 		(uuid "50a5eee8-dd40-4fc8-9beb-f01ace9d7b21")
 	)
 	(label "SCK"
-		(at 175.26 81.28 0)
+		(at 176.53 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9303,7 +9299,7 @@
 		(uuid "63c9c799-9d80-4678-b2ef-a876e315b3c3")
 	)
 	(label "~{CS1}"
-		(at 175.26 132.08 0)
+		(at 176.53 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9313,7 +9309,7 @@
 		(uuid "733bf195-21c4-4d15-95fc-60a2f7c7c7b2")
 	)
 	(label "~{LDAC}"
-		(at 175.26 83.82 0)
+		(at 176.53 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9323,7 +9319,7 @@
 		(uuid "84fcc950-8023-4cb6-b7d2-036cd9f592d2")
 	)
 	(label "MOSI"
-		(at 175.26 127 0)
+		(at 176.53 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9343,7 +9339,7 @@
 		(uuid "aa546495-65ee-4589-8f3a-fb2364e3e4d3")
 	)
 	(label "~{D{slash}C}"
-		(at 175.26 116.84 0)
+		(at 176.53 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9363,7 +9359,7 @@
 		(uuid "d4ddadaf-661d-4dc3-b607-b36ffb0e4d7c")
 	)
 	(label "~{CS0}"
-		(at 175.26 78.74 0)
+		(at 176.53 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9545,6 +9541,17 @@
 			(justify left)
 		)
 		(uuid "7b2eb3f3-203e-45f3-b511-78ca0c150df1")
+	)
+	(hierarchical_label "+BATT_{Mon}"
+		(shape input)
+		(at 165.1 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "89ca3105-0a04-4b93-b0a7-0a30119f8452")
 	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)

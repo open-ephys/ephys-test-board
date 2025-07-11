@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "C")
+		(rev "D")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -1410,6 +1410,16 @@
 			(type default)
 		)
 		(uuid "3c911bc5-4929-49a9-930a-63618be2d76c")
+	)
+	(wire
+		(pts
+			(xy 219.71 49.53) (xy 241.3 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a501914-f57c-4ff3-8e58-fdce3b9e85e7")
 	)
 	(wire
 		(pts
@@ -4473,6 +4483,16 @@
 				(justify left)
 			)
 		)
+		(pin "+BATT_{Mon}" output
+			(at 241.3 49.53 180)
+			(uuid "b6b4f9ec-7d75-4d2d-a0b2-b0eaf166e329")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
@@ -4688,6 +4708,16 @@
 		(pin "WP{slash}Detect" input
 			(at 207.01 38.1 90)
 			(uuid "29e43606-ca73-47e8-9ff4-b80c9384233f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+BATT_{Mon}" input
+			(at 219.71 49.53 0)
+			(uuid "b9cc3cf3-3ccd-42b4-9cab-04bc95f65fd6")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1,6 +1,5 @@
 #pragma once
 
-#include "ephys-tester.h"
 extern "C"
 {
 #include "mode.h"

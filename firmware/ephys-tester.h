@@ -2,11 +2,11 @@
 
 #include "pico/stdlib.h"
 
-// Pin defintions
+// Pin definitions
 #define MODULE_I2C          i2c1
 #define MODULE_SDA          2
 #define MODULE_SCL          3
-#define MODULE_DETECT       5 // TODO: Rev. C
+#define MODULE_DETECT       5 
 
 #define VBUS_DETECT         4
 
@@ -37,6 +37,9 @@
 #define OLED_MOSI           27
 #define OLED_nCS            29
 
+#define BATT_MON_PIN        28
+#define BATT_MON_ADC        2
+
 // Screen constants
 #define SCREEN_WIDTH        128
 #define SCREEN_HEIGHT       64
@@ -47,6 +50,10 @@
 
 // Automatic channel increment dwell time in milliseconds
 #define AUTO_CHAN_DWELL_MS  500
+
+// Battery monitor period in milliseconds
+#define BATT_MON_PERIOD_MS  1000
+#define BATT_MON_AVGS       30
 
 // Module EEPROM constants
 #define MODULE_NAME_BYTES   20

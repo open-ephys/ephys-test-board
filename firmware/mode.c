@@ -2,7 +2,6 @@
 #include "lut.h"
 
 #include <stdio.h>
-#include <string.h>
 
 static inline void increment_mode(mode_context_t *ctx)
 {
@@ -55,8 +54,8 @@ static inline void increment_amplitude(mode_signal_t *sig)
 
 static inline void decrement_amplitude(mode_signal_t *sig)
 {
-    sig->amp_rshift = sig->amp_rshift == 10 ?
-        10 :
+    sig->amp_rshift = sig->amp_rshift == DAC_MAX_SHIFT ?
+        DAC_MAX_SHIFT :
         sig->amp_rshift + 1;
 }
 
@@ -116,36 +115,36 @@ static const char* string_waveform(const mode_signal_t *const sig)
     }
 }
 
-static char *string_channel_idx(const mode_context_t *const ctx)
+static const char *string_channel_idx(const mode_context_t *const ctx)
 {
     if (ctx->test_dest == TEST_SINGLE_CHANNEL || ctx->test_dest == TEST_CYCLE_CHANNEL)
     {
         static char str[5];
-        snprintf(str, 5, "%u",ctx->channel_idx);
+        snprintf(str, sizeof(str), "%u",ctx->channel_idx);
         return str;
     } else {
         return "~";
     }
 }
 
-static char *string_amplitude_uV(const mode_signal_t *const sig)
+static const char *string_amplitude_uV(const mode_signal_t *const sig)
 {
     if (sig->waveform != WAVEFORM_GND && sig->waveform != WAVEFORM_EXTERNAL)
     {
         static char str[8];
-        snprintf(str, 8, "%f3.4", MAX_AMPLITUDE_UV / (1 << sig->amp_rshift));
+        snprintf(str, sizeof(str), "%f7.4", MAX_AMPLITUDE_UV / (1 << sig->amp_rshift));
         return str;
     } else {
         return "~";
     }
 }
 
-static char *string_freq_hz(const mode_signal_t *const sig)
+static const char *string_freq_hz(const mode_signal_t *const sig)
 {
     if (sig->waveform != WAVEFORM_GND && sig->waveform != WAVEFORM_EXTERNAL && sig->waveform != WAVEFORM_SPIKES)
     {
         static char str[8];
-        snprintf(str, 8, "%f4.1", (float)FREQ_LUT[sig->freq_lut_idx][0] / (float)FREQ_LUT[sig->freq_lut_idx][1]);
+        snprintf(str, sizeof(str), "%f5.1", (float)FREQ_LUT[sig->freq_lut_idx][0] / (float)FREQ_LUT[sig->freq_lut_idx][1]);
         return str;
     } else {
         return "~";
@@ -158,15 +157,16 @@ void mode_init(mode_context_t *ctx)
     ctx->test_dest = TEST_SINGLE_CHANNEL;
     ctx->channel_idx = 0;
     ctx->num_channels = MAX_NUM_CHANNELS;
-    for (int i = 0; i++; i < MAX_NUM_CHANNELS) { ctx->channel_map[i] = i; }
+    for (int i = 0; i < MAX_NUM_CHANNELS; i++) { ctx->channel_map[i] = i; }
     ctx->signal.waveform = WAVEFORM_SINE;
     ctx->signal.amp_rshift = 0;
     ctx->signal.freq_lut_idx = DEFAULT_FREQ_INDEX;
+    ctx->battery_frac = 1.0;
+    ctx->usb_detected = false;
 }
 
-int mode_update_from_knob(mode_context_t *ctx, int delta) //, bool button_pushed)
+int mode_update_from_knob(mode_context_t *ctx, int delta)
 {
-
     switch (ctx->selection)
     {
         case SELECTION_MODE:
@@ -199,7 +199,7 @@ inline mode_selection_t mode_selection(const mode_context_t *const ctx)
     return ctx->selection;
 }
 
-char *mode_str(const mode_context_t *const ctx, mode_selection_t selection)
+const char *mode_str(const mode_context_t *const ctx, mode_selection_t selection)
 {
     switch (selection)
     {

@@ -65,6 +65,7 @@ target_sources(ephys-tester PRIVATE
         tiny-json.c
         ad5683.c
         quadrature.c
+        battmon.c
         Adafruit_SH110X.cpp
         Adafruit_SH1106G.cpp
         Adafruit_GrayOLED_PicoSPI.cpp
@@ -78,6 +79,7 @@ target_link_libraries(ephys-tester
         pico_stdlib
         pico_multicore
         pico_bootsel_via_double_reset
+        hardware_adc
         hardware_spi
         hardware_i2c
         hardware_pio

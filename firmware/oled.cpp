@@ -3,7 +3,6 @@
 #include "oled.h"
 #include "ephys-tester.h"
 
-
 #include "Adafruit_SH110X.h"
 
 static Adafruit_SH1106G display(SCREEN_WIDTH, SCREEN_HEIGHT,
@@ -59,6 +58,34 @@ static void print_freq_hz(const mode_context_t *const ctx)
     if (mode_selection(ctx) == SELECTION_FREQHZ) display.setTextColor(SH110X_WHITE, SH110X_BLACK);
 }
 
+static void draw_battery(int16_t x, int16_t y, float frac)
+{
+    uint8_t bm[] = {
+        0b01100000,
+        0b11110000,
+        (frac > 0.75 ? (uint8_t)0b11110000 : (uint8_t)0b10010000), 
+        (frac > 0.50 ? (uint8_t)0b11110000 : (uint8_t)0b10010000), 
+        (frac > 0.25 ? (uint8_t)0b11110000 : (uint8_t)0b10010000), 
+        (frac > 0.10 ? (uint8_t)0b11110000 : (uint8_t)0b10010000), 
+        0b11110000,
+    };
+    display.drawBitmap(x, y, bm, 4, 7, SH110X_WHITE);
+}
+
+static void draw_bolt(int16_t x, int16_t y)
+{
+    static const uint8_t bm[] = {
+        0b00010000,
+        0b00110000,
+        0b01100000,
+        0b11111000,
+        0b00110000,
+        0b01100000,
+        0b01000000,
+    };
+    display.drawBitmap(x, y, bm, 5, 7, SH110X_WHITE);
+}
+
 int oled_init()
 {
     gpio_init(OLED_PWR); gpio_set_dir(OLED_PWR, GPIO_OUT);
@@ -75,16 +102,20 @@ int oled_init()
     return 0;
 }
 
-// TODO: provide some type of context struct to hold all of the mode state
 int oled_update(const mode_context_t *const ctx)
 {
     display.clearDisplay();
 
     display.setCursor(0, 0);
     display.print(ctx->module.name);
-    display.println(ctx->module.pcb_rev);
+
+    if (ctx->usb_detected)
+        draw_bolt(SCREEN_WIDTH - 5, 0);
+    else
+        draw_battery(SCREEN_WIDTH - 5, 0, ctx->battery_frac);
+
     display.drawLine(0, 9, SCREEN_WIDTH, 9, SH110X_WHITE);
-    display.drawLine(SCREEN_WIDTH - 12, 0, SCREEN_WIDTH - 12, 9, SH110X_WHITE);
+    //display.drawLine(SCREEN_WIDTH - 12, 0, SCREEN_WIDTH - 12, 9, SH110X_WHITE);
 
     display.setCursor(0, 12);
     print_mode(ctx);

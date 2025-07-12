@@ -13,6 +13,7 @@ extern "C"
 #include "ad5683.h"
 #include "quadrature.h"
 #include "mode.h"
+#include "battmon.h"
 #include "tiny-json.h"
 #include "lut.h"
 #include "spikes.h"
@@ -21,6 +22,7 @@ extern "C"
 
 queue_t signal_generator_cmd_queue;
 volatile bool channel_increment_request = false;
+volatile bool batt_mon_update_request = false;
 volatile bool knob_press_detected = false;
 
 typedef struct timer_callback_data_t {
@@ -42,6 +44,12 @@ bool dac_update_callback(struct repeating_timer *t)
     ad5683_write_dac(timer_data->dac_spi, *(timer_data->lut + (i % timer_data->lut_len)), timer_data->rshift);
     i += timer_data->step;
 
+    return true;
+}
+
+bool battery_monitor_callback(struct repeating_timer *t)
+{
+    batt_mon_update_request = true;
     return true;
 }
 
@@ -143,6 +151,9 @@ int main()
     // Quadrature encoder initialization
     quad_init();
 
+    // Battery monitor initialization
+    batt_mon_init();
+
     // Setup user IO context
     mode_context_t ctx;
     mode_init(&ctx);
@@ -152,7 +163,7 @@ int main()
     eeprom_read_module(&ctx);
 
     // Channels
-    channels_init(&ctx);
+    channels_init();
 
     // Queue for conveying settings to waveform generator and send default state
     queue_init(&signal_generator_cmd_queue, sizeof(mode_signal_t), 10);
@@ -169,11 +180,15 @@ int main()
     gpio_set_irq_enabled_with_callback(ENC_BUT, GPIO_IRQ_EDGE_RISE, true, &knob_press_callback);
 
     // Let splash screen hang around for a while
-    sleep_ms(3000);
+    sleep_ms(2000);
     oled_update(&ctx);
 
     // Send default state to waveform generator
     queue_add_blocking(&signal_generator_cmd_queue, &(ctx.signal));
+
+    // Battery monitor timer
+    struct repeating_timer battery_monitor_timer;
+    add_repeating_timer_ms(-BATT_MON_PERIOD_MS, battery_monitor_callback, NULL, &battery_monitor_timer);
 
     // Auto channel increment timer
     struct repeating_timer channel_timer;
@@ -181,7 +196,6 @@ int main()
 
     while(true)
     {
-
         bool update_oled_required = false;
 
         if (knob_press_detected)
@@ -197,7 +211,7 @@ int main()
             int what_changed = mode_update_from_knob(&ctx, quad_get_delta());
 
             if (what_changed == 1)
-                if (ctx.test_dest == TEST_CYCLE_CHANNEL){
+                if (ctx.test_dest == TEST_CYCLE_CHANNEL) {
                     channel_timer_cancelled = cancel_repeating_timer_safe(&channel_timer, channel_timer_cancelled);
                     channel_timer_cancelled = !add_repeating_timer_ms(-AUTO_CHAN_DWELL_MS, channel_increment_callback, NULL, &channel_timer);
                 } else {
@@ -213,7 +227,6 @@ int main()
             update_oled_required = true;
         }
 
-        // Handle auto channel increment
         if (channel_increment_request)
         {
             channel_increment_request = false;
@@ -222,8 +235,13 @@ int main()
             update_oled_required = true;
         }
 
-        if (update_oled_required) {
-            oled_update(&ctx);
+        if (batt_mon_update_request)
+        {
+            batt_mon_update_request = false;
+            update_oled_required = batt_mon_monitor(&ctx);
         }
+
+        if (update_oled_required)
+            oled_update(&ctx);
     }
 }

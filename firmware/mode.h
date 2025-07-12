@@ -49,6 +49,8 @@ typedef struct mode_context_t {
     uint8_t channel_idx;                    // Selected headstage channel
     mode_signal_t signal;                   // The test signal
     module_t module;                        // Module metadata
+    float battery_frac;                     // Fraction of battery remaining
+    bool usb_detected;                      // Indicates if USB is plugged in
 } mode_context_t;
 
 void mode_init(mode_context_t *ctx);
@@ -62,7 +64,7 @@ mode_selection_t mode_selection(const mode_context_t *ctx);
 /// @return string version of the requested selection. Calling this function
 /// again may mutate the previously returned string. Make sure to copy this or
 /// apply it hardware prior to that.
-char *mode_str(const mode_context_t *ctx, mode_selection_t selection);
+const char *mode_str(const mode_context_t *ctx, mode_selection_t selection);
 
 static inline void mode_cycle_selection(mode_context_t *ctx)
 {

@@ -37,6 +37,8 @@ int eeprom_init()
     gpio_pull_up(MODULE_SCL);
 
     i2c_init(i2c1, 100000);
+
+    return 0;
 }
 
 int eeprom_read_module(mode_context_t *ctx)

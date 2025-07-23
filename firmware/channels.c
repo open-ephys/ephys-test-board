@@ -37,7 +37,8 @@ int channels_update(const mode_context_t *ctx)
         case TEST_OPEN:
             sr_clear(&switches);
             break;
-        case TEST_CYCLE_CHANNEL:
+        case TEST_CYCLE_CHANNEL_SLOW:
+        case TEST_CYCLE_CHANNEL_FAST:
         case TEST_SINGLE_CHANNEL:
             sr_clear(&switches);
             rc = channels_to_bitarr(&ctx->channel_map[ctx->channel_idx], 1, &switches);
@@ -53,3 +54,9 @@ int channels_update(const mode_context_t *ctx)
     return rc != 0 ? rc : sr_update(&switches);
 }
 
+int channels_update_manual(const uint8_t *channels, size_t num_channels)
+{
+    sr_bit_arr_t switches;
+    int rc =  channels_to_bitarr(channels, num_channels, &switches);
+    return rc != 0 ? rc : sr_update(&switches);
+}

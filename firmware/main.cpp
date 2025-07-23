@@ -190,9 +190,10 @@ int main()
     struct repeating_timer battery_monitor_timer;
     add_repeating_timer_ms(-BATT_MON_PERIOD_MS, battery_monitor_callback, NULL, &battery_monitor_timer);
 
-    // Auto channel increment timer
+    // Auto channel increment state
     struct repeating_timer channel_timer;
     bool channel_timer_cancelled = true;
+    bool first_cycle = false;
 
     while(true)
     {
@@ -208,20 +209,25 @@ int main()
         if (quad_pending_turn())
         {
             quad_acknowledge_turn();
-            int what_changed = mode_update_from_knob(&ctx, quad_get_delta());
+            mode_update_result_t what_changed = mode_update_from_knob(&ctx, quad_get_delta());
 
-            if (what_changed == 1)
-                if (ctx.test_dest == TEST_CYCLE_CHANNEL) {
-                    channel_timer_cancelled = cancel_repeating_timer_safe(&channel_timer, channel_timer_cancelled);
-                    channel_timer_cancelled = !add_repeating_timer_ms(-AUTO_CHAN_DWELL_MS, channel_increment_callback, NULL, &channel_timer);
+            if (what_changed == MODE_UPDATE_INPUTSOURCE) {
+
+                // NB: Prevent multiple, overlapping timers
+                channel_timer_cancelled = cancel_repeating_timer_safe(&channel_timer, channel_timer_cancelled);
+
+                if (ctx.test_dest == TEST_CYCLE_CHANNEL_SLOW || ctx.test_dest == TEST_CYCLE_CHANNEL_FAST) {
+                    int32_t delay = ctx.test_dest == TEST_CYCLE_CHANNEL_SLOW ? AUTO_CHAN_SDWELL_MS : AUTO_CHAN_FDWELL_MS;
+                    channel_timer_cancelled = !add_repeating_timer_ms(-delay, channel_increment_callback, NULL, &channel_timer);
+                    ctx.channel_idx = ctx.num_channels - 1; // NB: Start at last index because increment will cycle it to 0
+                    first_cycle = true; // NB: On the first cycle we activate all channels
+                    channel_increment_request = true; // NB: This call counts as  time 0
                 } else {
-                    // NB: Prevent multiple, overlapping timers
-                    channel_timer_cancelled = cancel_repeating_timer_safe(&channel_timer, channel_timer_cancelled);
                     channels_update(&ctx);
                 }
-            else if (what_changed == 2)
+            } else if (what_changed == MODE_UPDATE_SIGNAL)
                 queue_try_add(&signal_generator_cmd_queue, &(ctx.signal));
-            else if (what_changed == 3)
+            else if (what_changed == MODE_UPDATE_CHANNEL)
                 channels_update(&ctx);
 
             update_oled_required = true;
@@ -230,9 +236,16 @@ int main()
         if (channel_increment_request)
         {
             channel_increment_request = false;
-            mode_increment_channel(&ctx);
-            channels_update(&ctx);
-            update_oled_required = true;
+            if (first_cycle)
+            {
+                channels_update_manual(ctx.channel_map, ctx.num_channels);
+                first_cycle = false;
+            } else {
+                mode_increment_channel(&ctx);
+                channels_update(&ctx);
+                first_cycle = (ctx.channel_idx == ctx.num_channels - 1);
+                update_oled_required = true;
+            }
         }
 
         if (batt_mon_update_request)

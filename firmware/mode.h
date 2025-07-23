@@ -16,7 +16,8 @@ typedef enum  {
     TEST_OPEN,
     TEST_SINGLE_CHANNEL,
     TEST_ALL_CHANNEL,
-    TEST_CYCLE_CHANNEL,
+    TEST_CYCLE_CHANNEL_SLOW,
+    TEST_CYCLE_CHANNEL_FAST,
     TEST_NUM_DESTINATIONS
 } mode_test_t;
 
@@ -28,6 +29,14 @@ typedef enum {
     WAVEFORM_EXTERNAL,
     WAVEFORM_NUM_WAVEFORMS
 } mode_waveform_t;
+
+typedef enum  {
+    MODE_UPDATE_EINVALID = -1, // Invalid update
+    MODE_UPDATE_NONE = 0, // No change
+    MODE_UPDATE_SIGNAL = 1, // Signal changed
+    MODE_UPDATE_CHANNEL = 2, // Channel selection changed
+    MODE_UPDATE_INPUTSOURCE = 3 // Input routing mode changed
+} mode_update_result_t;
 
 typedef struct mode_signal_t {
     mode_waveform_t waveform;
@@ -54,7 +63,7 @@ typedef struct mode_context_t {
 } mode_context_t;
 
 void mode_init(mode_context_t *ctx);
-int mode_update_from_knob(mode_context_t *ctx, int delta);
+mode_update_result_t mode_update_from_knob(mode_context_t *ctx, int delta);
 void mode_increment_channel(mode_context_t *ctx);
 mode_selection_t mode_selection(const mode_context_t *ctx);
 

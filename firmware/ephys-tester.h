@@ -49,7 +49,8 @@
 #define DAC_MAX_SHIFT       10 // Max bit shift for DAC attenuation
 
 // Automatic channel increment dwell time in milliseconds
-#define AUTO_CHAN_DWELL_MS  500
+#define AUTO_CHAN_SDWELL_MS 1000
+#define AUTO_CHAN_FDWELL_MS 100
 
 // Battery monitor period in milliseconds
 #define BATT_MON_PERIOD_MS  1000
@@ -62,3 +63,7 @@
 #define MAX_NUM_CHANNELS    128                                     // 128 channels max
 typedef struct sr_bit_arr_t { int32_t bits[4]; } sr_bit_arr_t;
 #define SR_BITS_PER_ELEMENT (8 * sizeof(int32_t))                   // Bits per array element of sr_bit_arr_t
+
+// Stringify macro for compile-time stringification
+#define STRINGIFY2(X) #X
+#define STRINGIFY(X) STRINGIFY2(X)

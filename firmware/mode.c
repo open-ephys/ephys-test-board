@@ -89,8 +89,10 @@ static const char* string_mode(const mode_context_t *const ctx)
             return "Single channel";
         case TEST_ALL_CHANNEL:
             return "All channels";
-        case TEST_CYCLE_CHANNEL:
-            return "Cycle channels";
+        case TEST_CYCLE_CHANNEL_SLOW:
+            return "Cycle (" STRINGIFY(AUTO_CHAN_SDWELL_MS) " ms)";
+        case TEST_CYCLE_CHANNEL_FAST:
+            return "Cycle (" STRINGIFY(AUTO_CHAN_FDWELL_MS) " ms)";
         default:
             return "Invalid mode";
     }
@@ -117,7 +119,7 @@ static const char* string_waveform(const mode_signal_t *const sig)
 
 static const char *string_channel_idx(const mode_context_t *const ctx)
 {
-    if (ctx->test_dest == TEST_SINGLE_CHANNEL || ctx->test_dest == TEST_CYCLE_CHANNEL)
+    if (ctx->test_dest == TEST_SINGLE_CHANNEL || ctx->test_dest == TEST_CYCLE_CHANNEL_SLOW || ctx->test_dest == TEST_CYCLE_CHANNEL_FAST)
     {
         static char str[5];
         snprintf(str, sizeof(str), "%u",ctx->channel_idx);
@@ -165,27 +167,27 @@ void mode_init(mode_context_t *ctx)
     ctx->usb_detected = false;
 }
 
-int mode_update_from_knob(mode_context_t *ctx, int delta)
+mode_update_result_t mode_update_from_knob(mode_context_t *ctx, int delta)
 {
     switch (ctx->selection)
     {
         case SELECTION_MODE:
             delta > 0 ? increment_mode(ctx) : decrement_mode(ctx);
-            return 1; // Input routing mode changed
+            return MODE_UPDATE_INPUTSOURCE;
         case SELECTION_WAVEFORM:
             delta > 0 ? increment_waveform(&ctx->signal) : decrement_waveform(&ctx->signal);
-            return 2; // Signal changed
+            return MODE_UPDATE_SIGNAL;
         case SELECTION_CHANNEL:
             change_channel_idx(ctx, delta, false);
-            return 3; // Channel selection changed
+            return MODE_UPDATE_CHANNEL;
         case SELECTION_AMPLITUDE:
             delta > 0 ? increment_amplitude(&ctx->signal) : decrement_amplitude(&ctx->signal);
-            return 2; // Signal changed
+            return MODE_UPDATE_SIGNAL;
         case SELECTION_FREQHZ:
             delta > 0 ? increment_freq_hz(&ctx->signal) : decrement_freq_hz(&ctx->signal);
-            return 2; // Signal changed
-        default : // Invalid
-            return -1; // TODO: error codes
+            return MODE_UPDATE_SIGNAL;
+        default :
+            return MODE_UPDATE_EINVALID;
     }
 }
 

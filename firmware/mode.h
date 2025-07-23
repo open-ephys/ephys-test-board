@@ -16,7 +16,8 @@ typedef enum  {
     TEST_OPEN,
     TEST_SINGLE_CHANNEL,
     TEST_ALL_CHANNEL,
-    TEST_CYCLE_CHANNEL,
+    TEST_CYCLE_CHANNEL_SLOW,
+    TEST_CYCLE_CHANNEL_FAST,
     TEST_NUM_DESTINATIONS
 } mode_test_t;
 
@@ -28,6 +29,14 @@ typedef enum {
     WAVEFORM_EXTERNAL,
     WAVEFORM_NUM_WAVEFORMS
 } mode_waveform_t;
+
+typedef enum  {
+    MODE_UPDATE_EINVALID = -1, // Invalid update
+    MODE_UPDATE_NONE = 0, // No change
+    MODE_UPDATE_SIGNAL = 1, // Signal changed
+    MODE_UPDATE_CHANNEL = 2, // Channel selection changed
+    MODE_UPDATE_INPUTSOURCE = 3 // Input routing mode changed
+} mode_update_result_t;
 
 typedef struct mode_signal_t {
     mode_waveform_t waveform;
@@ -49,10 +58,12 @@ typedef struct mode_context_t {
     uint8_t channel_idx;                    // Selected headstage channel
     mode_signal_t signal;                   // The test signal
     module_t module;                        // Module metadata
+    float battery_frac;                     // Fraction of battery remaining
+    bool usb_detected;                      // Indicates if USB is plugged in
 } mode_context_t;
 
 void mode_init(mode_context_t *ctx);
-int mode_update_from_knob(mode_context_t *ctx, int delta);
+mode_update_result_t mode_update_from_knob(mode_context_t *ctx, int delta);
 void mode_increment_channel(mode_context_t *ctx);
 mode_selection_t mode_selection(const mode_context_t *ctx);
 
@@ -62,7 +73,7 @@ mode_selection_t mode_selection(const mode_context_t *ctx);
 /// @return string version of the requested selection. Calling this function
 /// again may mutate the previously returned string. Make sure to copy this or
 /// apply it hardware prior to that.
-char *mode_str(const mode_context_t *ctx, mode_selection_t selection);
+const char *mode_str(const mode_context_t *ctx, mode_selection_t selection);
 
 static inline void mode_cycle_selection(mode_context_t *ctx)
 {

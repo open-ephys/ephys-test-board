@@ -38,8 +38,8 @@ static inline void change_channel_idx(mode_context_t *ctx, int delta, bool overr
 
     int new_channel_idx = (int)ctx->channel_idx + delta;
     if (new_channel_idx < 0)
-        ctx->channel_idx = ctx->num_channels - 1;
-    else if (new_channel_idx > ctx->num_channels - 1)
+        ctx->channel_idx = ctx->channel_map.num_channels - 1;
+    else if (new_channel_idx > ctx->channel_map.num_channels - 1)
         ctx->channel_idx = 0;
     else
         ctx->channel_idx = new_channel_idx;
@@ -124,6 +124,8 @@ static const char *string_channel_idx(const mode_context_t *const ctx)
         static char str[5];
         snprintf(str, sizeof(str), "%u",ctx->channel_idx);
         return str;
+    } else if (ctx->test_dest == TEST_ALL_CHANNEL) {
+        return "All";
     } else {
         return "~";
     }
@@ -158,8 +160,8 @@ void mode_init(mode_context_t *ctx)
     ctx->selection = SELECTION_MODE;
     ctx->test_dest = TEST_SINGLE_CHANNEL;
     ctx->channel_idx = 0;
-    ctx->num_channels = MAX_NUM_CHANNELS;
-    for (int i = 0; i < MAX_NUM_CHANNELS; i++) { ctx->channel_map[i] = i; }
+    ctx->channel_map.num_channels = MAX_NUM_CHANNELS;
+    for (int i = 0; i < MAX_NUM_CHANNELS; i++) { ctx->channel_map.channel_map[i] = i; }
     ctx->signal.waveform = WAVEFORM_SINE;
     ctx->signal.amp_rshift = 0;
     ctx->signal.freq_lut_idx = DEFAULT_FREQ_INDEX;

@@ -15,7 +15,7 @@ static void print_mode(const mode_context_t *const ctx)
     display.print(" ");
     display.print(mode_str(ctx, SELECTION_MODE));
     display.println(" ");
-    if (mode_selection(ctx) == SELECTION_MODE)  display.setTextColor(SH110X_WHITE, SH110X_BLACK); 
+    if (mode_selection(ctx) == SELECTION_MODE)  display.setTextColor(SH110X_WHITE, SH110X_BLACK);
 }
 
 static void print_channel(const mode_context_t *const ctx)
@@ -63,10 +63,10 @@ static void draw_battery(int16_t x, int16_t y, float frac)
     uint8_t bm[] = {
         0b01100000,
         0b11110000,
-        (frac > 0.75 ? (uint8_t)0b11110000 : (uint8_t)0b10010000), 
-        (frac > 0.50 ? (uint8_t)0b11110000 : (uint8_t)0b10010000), 
-        (frac > 0.25 ? (uint8_t)0b11110000 : (uint8_t)0b10010000), 
-        (frac > 0.10 ? (uint8_t)0b11110000 : (uint8_t)0b10010000), 
+        (frac > 0.75 ? (uint8_t)0b11110000 : (uint8_t)0b10010000),
+        (frac > 0.50 ? (uint8_t)0b11110000 : (uint8_t)0b10010000),
+        (frac > 0.25 ? (uint8_t)0b11110000 : (uint8_t)0b10010000),
+        (frac > 0.10 ? (uint8_t)0b11110000 : (uint8_t)0b10010000),
         0b11110000,
     };
     display.drawBitmap(x, y, bm, 4, 7, SH110X_WHITE);
@@ -98,11 +98,11 @@ int oled_init()
     display.setTextSize(1);
     display.setTextWrap(false);
     display.setTextColor(SH110X_WHITE, SH110X_BLACK); // white text, black background
-    
+
     return 0;
 }
 
-int oled_update(const mode_context_t *const ctx)
+int oled_update_map_menu(const mode_context_t *const ctx)
 {
     display.clearDisplay();
 
@@ -115,7 +115,33 @@ int oled_update(const mode_context_t *const ctx)
         draw_battery(SCREEN_WIDTH - 5, 0, ctx->battery_frac);
 
     display.drawLine(0, 9, SCREEN_WIDTH, 9, SH110X_WHITE);
-    //display.drawLine(SCREEN_WIDTH - 12, 0, SCREEN_WIDTH - 12, 9, SH110X_WHITE);
+
+    display.setCursor(0, 16);
+    display.print("Select channel map: ");
+
+    display.setCursor(0, 28);
+    display.setTextColor(SH110X_BLACK, SH110X_WHITE);
+    display.print(ctx->channel_map.name);
+    display.setTextColor(SH110X_WHITE, SH110X_BLACK);
+
+    display.display();
+
+    return 0;
+}
+
+int oled_update_main_menu(const mode_context_t *const ctx)
+{
+    display.clearDisplay();
+
+    display.setCursor(0, 0);
+    display.print(ctx->module.name);
+
+    if (ctx->usb_detected)
+        draw_bolt(SCREEN_WIDTH - 5, 0);
+    else
+        draw_battery(SCREEN_WIDTH - 5, 0, ctx->battery_frac);
+
+    display.drawLine(0, 9, SCREEN_WIDTH, 9, SH110X_WHITE);
 
     display.setCursor(0, 12);
     print_mode(ctx);

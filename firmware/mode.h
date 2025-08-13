@@ -45,16 +45,21 @@ typedef struct mode_signal_t {
 } mode_signal_t;
 
 typedef struct module_t {
-    uint8_t sn[16];
-    char name[MODULE_NAME_BYTES + 1]; // + 1 for null termination
+    char name[EEPROM_MODULE_NAME_SIZE];
     char pcb_rev;
 } module_t;
+
+typedef struct channel_map_t {
+    int  index;                             // The index of the map in the EEPROM
+    char name[EEPROM_MAP_NAME_SIZE];        // Name of selected channel map in the EEPROM
+    uint8_t channel_map[MAX_NUM_CHANNELS];  // The channel map. Index is the headstage channel, value is the test board channel
+    uint8_t num_channels;                   // Number of headstage channels in the channel map
+} channel_map_t;
 
 typedef struct mode_context_t {
     mode_selection_t selection;             // The user selection
     mode_test_t test_dest;                  // Where to route test signal
-    uint8_t channel_map[MAX_NUM_CHANNELS];  // Index is the headstage channel, value is the test board channel
-    uint8_t num_channels;                   // Number of headstage channels
+    channel_map_t channel_map;              // The channel map
     uint8_t channel_idx;                    // Selected headstage channel
     mode_signal_t signal;                   // The test signal
     module_t module;                        // Module metadata

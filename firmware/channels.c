@@ -41,11 +41,11 @@ int channels_update(const mode_context_t *ctx)
         case TEST_CYCLE_CHANNEL_FAST:
         case TEST_SINGLE_CHANNEL:
             sr_clear(&switches);
-            rc = channels_to_bitarr(&ctx->channel_map[ctx->channel_idx], 1, &switches);
+            rc = channels_to_bitarr(&ctx->channel_map.channel_map[ctx->channel_idx], 1, &switches);
             break;
         case TEST_ALL_CHANNEL:
             sr_clear(&switches);
-            rc = channels_to_bitarr(ctx->channel_map, ctx->num_channels, &switches);
+            rc = channels_to_bitarr(ctx->channel_map.channel_map, ctx->channel_map.num_channels, &switches);
             break;
         default:
             return -1; // TODO: Invalid test signal selection

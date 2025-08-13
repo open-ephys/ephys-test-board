@@ -147,20 +147,59 @@ int main()
 {
     // OLED
     oled_init();
+    sleep_ms(2000); // Let splash screen hang around for a while
 
     // Quadrature encoder initialization
     quad_init();
-
-    // Battery monitor initialization
-    batt_mon_init();
 
     // Setup user IO context
     mode_context_t ctx;
     mode_init(&ctx);
 
-    // Examine module EEPROM
+    // Battery monitor initialization
+    batt_mon_init();
+    batt_mon_monitor(&ctx);
+
+    // Setup knob button callback
+    gpio_init(ENC_BUT);
+    gpio_set_dir(ENC_BUT, GPIO_IN);
+    gpio_set_irq_enabled_with_callback(ENC_BUT, GPIO_IRQ_EDGE_RISE, true, &knob_press_callback);
+
+    // Initialize EEPROM
     eeprom_init();
-    eeprom_read_module(&ctx);
+
+    // Read required first map
+    int selected_map = 0;
+    int num_maps = eeprom_read_module(&ctx, selected_map);
+
+    // Select map loop
+    if (num_maps > 0)
+    {
+        oled_update_map_menu(&ctx);
+
+        while (true) {
+
+            if (quad_pending_turn())
+            {
+                quad_acknowledge_turn();
+                if (quad_get_delta() > 0)
+                    selected_map = selected_map == num_maps - 1 ? -1 : selected_map + 1;
+                else
+                    selected_map = selected_map == -1 ? num_maps - 1 : selected_map - 1;
+
+                eeprom_read_module(&ctx, selected_map);
+                oled_update_map_menu(&ctx);
+            }
+
+            if (knob_press_detected)
+            {
+                knob_press_detected = false;
+                break;
+            }
+        }
+    } else {
+        eeprom_set_default(&ctx);
+    }
 
     // Channels
     channels_init();
@@ -174,14 +213,8 @@ int main()
     // Force first mode update
     mode_update_from_knob(&ctx, quad_get_delta());
 
-    // Setup knob button callback
-    gpio_init(ENC_BUT);
-    gpio_set_dir(ENC_BUT, GPIO_IN);
-    gpio_set_irq_enabled_with_callback(ENC_BUT, GPIO_IRQ_EDGE_RISE, true, &knob_press_callback);
-
-    // Let splash screen hang around for a while
-    sleep_ms(2000);
-    oled_update(&ctx);
+    // Enter main menu
+    oled_update_main_menu(&ctx);
 
     // Send default state to waveform generator
     queue_add_blocking(&signal_generator_cmd_queue, &(ctx.signal));
@@ -195,6 +228,7 @@ int main()
     bool channel_timer_cancelled = true;
     bool first_cycle = false;
 
+    // Main loop
     while(true)
     {
         bool update_oled_required = false;
@@ -219,7 +253,7 @@ int main()
                 if (ctx.test_dest == TEST_CYCLE_CHANNEL_SLOW || ctx.test_dest == TEST_CYCLE_CHANNEL_FAST) {
                     int32_t delay = ctx.test_dest == TEST_CYCLE_CHANNEL_SLOW ? AUTO_CHAN_SDWELL_MS : AUTO_CHAN_FDWELL_MS;
                     channel_timer_cancelled = !add_repeating_timer_ms(-delay, channel_increment_callback, NULL, &channel_timer);
-                    ctx.channel_idx = ctx.num_channels - 1; // NB: Start at last index because increment will cycle it to 0
+                    ctx.channel_idx = ctx.channel_map.num_channels - 1; // NB: Start at last index because increment will cycle it to 0
                     first_cycle = true; // NB: On the first cycle we activate all channels
                     channel_increment_request = true; // NB: This call counts as  time 0
                 } else {
@@ -238,12 +272,12 @@ int main()
             channel_increment_request = false;
             if (first_cycle)
             {
-                channels_update_manual(ctx.channel_map, ctx.num_channels);
+                channels_update_manual(ctx.channel_map.channel_map, ctx.channel_map.num_channels);
                 first_cycle = false;
             } else {
                 mode_increment_channel(&ctx);
                 channels_update(&ctx);
-                first_cycle = (ctx.channel_idx == ctx.num_channels - 1);
+                first_cycle = (ctx.channel_idx == ctx.channel_map.num_channels - 1);
                 update_oled_required = true;
             }
         }
@@ -255,6 +289,6 @@ int main()
         }
 
         if (update_oled_required)
-            oled_update(&ctx);
+            oled_update_main_menu(&ctx);
     }
 }

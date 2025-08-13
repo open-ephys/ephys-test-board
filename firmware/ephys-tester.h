@@ -56,8 +56,9 @@
 #define BATT_MON_PERIOD_MS  1000
 #define BATT_MON_AVGS       30
 
-// Module EEPROM constants
-#define MODULE_NAME_BYTES   20
+// EEPROM constants (see eeprom.h for specification)
+#define EEPROM_MODULE_NAME_SIZE 32
+#define EEPROM_MAP_NAME_SIZE 32
 
 // Shift register bit array
 #define MAX_NUM_CHANNELS    128                                     // 128 channels max

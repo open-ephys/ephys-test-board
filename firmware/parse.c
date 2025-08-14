@@ -13,8 +13,7 @@ int parse_channels(json_t const *root, sr_bit_arr_t *bit_arr, size_t bit_arr_len
     }
 
     // Clear all bits
-    for (int i = 0; i < bit_arr_len; i++)
-        bit_arr[i] = 0;
+    sr_clear(bit_arr);
 
     for (json_t const *i = json_getChild(ch_prop); i; i = json_getSibling(i)) {
 
@@ -26,7 +25,7 @@ int parse_channels(json_t const *root, sr_bit_arr_t *bit_arr, size_t bit_arr_len
         // Get the bit index
         int b = json_getInteger(i);
 
-        if (sr_set_bit(bit_arr, bit_arr_len, b)){
+        if (sr_set_bit(bit_arr, b)){
             return -3;
         }
     }

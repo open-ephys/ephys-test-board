@@ -58,124 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "items_not_allowed|129000000|60000000|afac1279-a29f-45cc-a6db-a2c68e35d753|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|130000000|170000000|97835e7e-c449-4ff9-9769-dda886d6fc38|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|153800000|59600000|c1d91c73-679f-48fc-ad4b-995e785a5283|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|173250000|60000000|2efd81ff-ada5-45f0-95d2-b0e5787e5d94|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|202890000|60000000|f5ccaaf6-d744-4102-8c78-2cd5db1ade8f|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|208300000|57612500|e69da0db-6c69-4aee-9d5e-60cc6d6512f4|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|262200000|60000000|a1f3746f-d864-4806-9855-20b3c2ff02db|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|270000000|60000000|ef882f7e-ace9-4076-9b1b-1a466d9d3749|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "items_not_allowed|271000000|171000000|fd1c1855-4010-4657-bc03-84873ebcf8eb|00000000-0000-0000-0000-000000000000",
-          "Cutout provided in case"
-        ],
-        [
-          "missing_courtyard|244900000|62500000|bb550672-1391-4a75-996f-a81aa10c3465|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "missing_courtyard|250000000|155300000|15f3cf78-d005-45b1-9f7a-5a5ec0788fd6|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "starved_thermal|177025000|119405000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|c7bc00ac-4f9a-4adf-a49e-c8ed4a8d0b2d|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|177025000|122405000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|df48f48f-4495-4de7-9d4d-64b303462d3f|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|177025000|126605000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|130494a1-7c18-46a4-a3e6-bc1146c329ca|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|177025000|129605000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|bfa675ed-b03e-4c8f-bc91-47efd4d19c74|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|177025000|133805000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|06194f7f-4903-4f4a-ae37-f7b1a55449a3|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|177025000|136805000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|e2fa895e-9a12-4b1a-91c0-44d1a140d7e2|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|177025000|141005000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|8a9c2595-6adf-4a95-91c6-05937267ca8a|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|177025000|144005000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|bbe162bd-1a20-4f22-ac7b-eb121962ff92|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|203200000|61390000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|e66e9729-f47e-4ba0-9182-4cb2f2735ad3|F.Cu",
-          "Manually added secon connection"
-        ],
-        [
-          "starved_thermal|203200000|61390000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|f2f99769-d1e0-43d9-b332-97d91dc34de6|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|247025000|119405000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|5faff124-d11a-484d-8279-5934bee404e4|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|247025000|122405000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|45b8c0c6-0d2b-43c0-bc6f-71e2e8074807|B.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|247025000|126605000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|460235ba-9aa7-4248-8a4c-19215ae57997|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|247025000|129605000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|d9882c2e-3ee3-4784-8fc0-c9314a59c514|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|247025000|133805000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|06e3b334-c904-4f09-8114-26df0162250f|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|247025000|136805000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|626831bc-e1f1-475e-a50f-307fe9451d7c|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|247025000|141005000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|f5fd1c5a-2fc6-4ab7-8485-1a1bfc811042|B.Cu",
-          "Direct to GND via"
-        ],
-        [
-          "starved_thermal|247025000|144005000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|e2c906b7-1cbd-4ea4-b967-2c569cc15405|B.Cu",
-          "Direct to GND via"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -274,7 +157,7 @@
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -285,7 +168,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -296,7 +179,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -629,6 +512,7 @@
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.1554,
         "line_style": 0,
         "microvia_diameter": 0.3,

@@ -11389,6 +11389,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "TLV9061IDBVR"
+			(at 226.06 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080179"
+			(at 226.06 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "ace38fde-5b96-422b-b9ea-73205046c62a")
 		)

@@ -4732,7 +4732,7 @@
 		)
 		(uuid "2af9ab3c-0a00-43cb-9058-805892eac64b")
 	)
-	(text "NB: T = 1/(2*pi * 500k * 0.1u) = 3.1 Hz"
+	(text "NB: T = 1/(2*pi * 340k * 0.1u) = 4.7 Hz"
 		(exclude_from_sim no)
 		(at 218.694 153.416 0)
 		(effects

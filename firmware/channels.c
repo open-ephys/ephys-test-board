@@ -34,16 +34,16 @@ int channels_update(const mode_context_t *ctx)
 
     switch (ctx->test_dest)
     {
-        case TEST_OPEN:
+        case DEST_NONE:
             sr_clear(&switches);
             break;
-        case TEST_CYCLE_CHANNEL_SLOW:
-        case TEST_CYCLE_CHANNEL_FAST:
-        case TEST_SINGLE_CHANNEL:
+        case DEST_CYCLE_CHANNEL_SLOW:
+        case DEST_CYCLE_CHANNEL_FAST:
+        case DEST_SINGLE_CHANNEL:
             sr_clear(&switches);
             rc = channels_to_bitarr(&ctx->channel_map.channel_map[ctx->channel_idx], 1, &switches);
             break;
-        case TEST_ALL_CHANNEL:
+        case DEST_ALL_CHANNEL:
             sr_clear(&switches);
             rc = channels_to_bitarr(ctx->channel_map.channel_map, ctx->channel_map.num_channels, &switches);
             break;

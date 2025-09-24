@@ -70,7 +70,7 @@ static inline void pio_quadrature_init(PIO pio, uint sm, uint enc_a, int *dma_ch
     sm_config_set_in_shift(&c, false, false, 32);
     sm_config_set_in_pins(&c, enc_a);
     sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
-    sm_config_set_clkdiv(&c, 65535); // slow it down as much as possible for human interaction to prevent glitching
+    sm_config_set_clkdiv(&c, 255); // slow it down for human interaction to prevent glitching
     pio_sm_init(pio, sm, quadrature_decoder_offset_start, &c);
 
     // Configure DMA

@@ -10,17 +10,18 @@ static Adafruit_SH1106G display(SCREEN_WIDTH, SCREEN_HEIGHT,
 
 static void print_mode(const mode_context_t *const ctx)
 {
-    display.print("Mode:");
-    if (mode_selection(ctx) == SELECTION_MODE) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
+    display.print(title_str(ctx, SELECTION_DEST));
+    if (mode_selection(ctx) == SELECTION_DEST) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
     display.print(" ");
-    display.print(mode_str(ctx, SELECTION_MODE));
+    display.print(mode_str(ctx, SELECTION_DEST));
     display.println(" ");
-    if (mode_selection(ctx) == SELECTION_MODE)  display.setTextColor(SH110X_WHITE, SH110X_BLACK);
+    if (mode_selection(ctx) == SELECTION_DEST)  display.setTextColor(SH110X_WHITE, SH110X_BLACK);
 }
 
 static void print_channel(const mode_context_t *const ctx)
 {
-    display.print(" Channel:");
+    display.print(" ");
+    display.print(title_str(ctx, SELECTION_CHANNEL));
     if (mode_selection(ctx) == SELECTION_CHANNEL) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
     display.print(" ");
     display.print(mode_str(ctx, SELECTION_CHANNEL));
@@ -30,7 +31,7 @@ static void print_channel(const mode_context_t *const ctx)
 
 static void print_signal(const mode_context_t *const ctx)
 {
-    display.print("Signal:");
+    display.print(title_str(ctx, SELECTION_WAVEFORM));
     if (mode_selection(ctx) == SELECTION_WAVEFORM) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
     display.print(" ");
     display.print(mode_str(ctx, SELECTION_WAVEFORM));
@@ -40,7 +41,8 @@ static void print_signal(const mode_context_t *const ctx)
 
 static void print_amplitude_uV(const mode_context_t *const ctx)
 {
-    display.print(" Amp. (uV):");
+    display.print(" ");
+    display.print(title_str(ctx, SELECTION_AMPLITUDE));
     if (mode_selection(ctx) == SELECTION_AMPLITUDE) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
     display.print(" ");
     display.print(mode_str(ctx, SELECTION_AMPLITUDE));
@@ -50,7 +52,8 @@ static void print_amplitude_uV(const mode_context_t *const ctx)
 
 static void print_freq_hz(const mode_context_t *const ctx)
 {
-    display.print(" Freq. (Hz):");
+    display.print(" ");
+    display.print(title_str(ctx, SELECTION_FREQHZ));
     if (mode_selection(ctx) == SELECTION_FREQHZ) display.setTextColor(SH110X_BLACK, SH110X_WHITE);
     display.print(" ");
     display.print(mode_str(ctx, SELECTION_FREQHZ));

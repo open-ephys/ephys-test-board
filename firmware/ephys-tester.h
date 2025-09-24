@@ -6,7 +6,7 @@
 #define MODULE_I2C          i2c1
 #define MODULE_SDA          2
 #define MODULE_SCL          3
-#define MODULE_DETECT       5 
+#define MODULE_DETECT       5
 
 #define VBUS_DETECT         4
 
@@ -49,7 +49,8 @@
 #define DAC_MAX_SHIFT       10 // Max bit shift for DAC attenuation
 
 // Automatic channel increment dwell time in milliseconds
-#define AUTO_CHAN_SDWELL_MS 1000
+#define AUTO_CHAN_SDWELL_S 1 // Used to print value
+#define AUTO_CHAN_SDWELL_MS (AUTO_CHAN_SDWELL_S * 1000)  // Derive milliseconds
 #define AUTO_CHAN_FDWELL_MS 100
 
 // Battery monitor period in milliseconds

@@ -4,8 +4,8 @@
 #include "ephys-tester.h"
 #include <math.h>
 
-#define BATT_VOLTAGE_LOW 3.6f // Low voltage of linear discharge range
-#define BATT_VOLTAGE_HIGH 4.0f // High voltage of linear discharge range
+#define BATT_VOLTAGE_LOW 3.5f // Low voltage of linear discharge range
+#define BATT_VOLTAGE_HIGH 4.15f // High voltage of linear discharge range
 
 static float batt_mon_read_voltage()
 {
@@ -34,7 +34,7 @@ bool batt_mon_monitor(mode_context_t *ctx)
     if (fabsf(ctx->battery_frac - batt_frac) > 0.01f) {
         ctx->battery_frac = batt_frac;
         ctx_changed = true;
-    } 
+    }
 
     bool usb_detected = gpio_get(VBUS_DETECT);
     if (ctx->usb_detected != usb_detected) {

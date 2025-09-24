@@ -124,8 +124,22 @@ void core1_entry()
                 timer_usec = FREQ_LUT[signal.freq_lut_idx][2];
                 sr_source(SIGNAL_INTERNAL);
                 break;
-            case WAVEFORM_SPIKES:
-                timer_data.lut = SPIKES;
+            case WAVEFORM_SPIKESLF:
+                timer_data.lut = SPIKESLF;
+                timer_data.lut_len = SPIKES_LENGTH;
+                timer_data.step = 1;
+                timer_usec = SPIKES_SAMP_PERIOD_USEC;
+                sr_source(SIGNAL_INTERNAL);
+                break;
+            case WAVEFORM_SPIKESMF:
+                timer_data.lut = SPIKESMF;
+                timer_data.lut_len = SPIKES_LENGTH;
+                timer_data.step = 1;
+                timer_usec = SPIKES_SAMP_PERIOD_USEC;
+                sr_source(SIGNAL_INTERNAL);
+                break;
+            case WAVEFORM_SPIKESHF:
+                timer_data.lut = SPIKESHF;
                 timer_data.lut_len = SPIKES_LENGTH;
                 timer_data.step = 1;
                 timer_usec = SPIKES_SAMP_PERIOD_USEC;
@@ -250,8 +264,8 @@ int main()
                 // NB: Prevent multiple, overlapping timers
                 channel_timer_cancelled = cancel_repeating_timer_safe(&channel_timer, channel_timer_cancelled);
 
-                if (ctx.test_dest == TEST_CYCLE_CHANNEL_SLOW || ctx.test_dest == TEST_CYCLE_CHANNEL_FAST) {
-                    int32_t delay = ctx.test_dest == TEST_CYCLE_CHANNEL_SLOW ? AUTO_CHAN_SDWELL_MS : AUTO_CHAN_FDWELL_MS;
+                if (ctx.test_dest == DEST_CYCLE_CHANNEL_SLOW || ctx.test_dest == DEST_CYCLE_CHANNEL_FAST) {
+                    int32_t delay = ctx.test_dest == DEST_CYCLE_CHANNEL_SLOW ? AUTO_CHAN_SDWELL_MS : AUTO_CHAN_FDWELL_MS;
                     channel_timer_cancelled = !add_repeating_timer_ms(-delay, channel_increment_callback, NULL, &channel_timer);
                     ctx.channel_idx = ctx.channel_map.num_channels - 1; // NB: Start at last index because increment will cycle it to 0
                     first_cycle = true; // NB: On the first cycle we activate all channels

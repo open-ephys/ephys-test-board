@@ -3,18 +3,18 @@
 
 #include <stdio.h>
 
-static inline void increment_mode(mode_context_t *ctx)
+static inline void increment_dest(mode_context_t *ctx)
 {
-    ctx->test_dest = ctx->test_dest == TEST_NUM_DESTINATIONS - 1 ?
+    ctx->test_dest = ctx->test_dest == DEST_NUM_DESTINATIONS - 1 ?
         ctx->test_dest :
-        (mode_test_t)((ctx->test_dest + 1));
+        (mode_dest_t)((ctx->test_dest + 1));
 }
 
-static inline void decrement_mode(mode_context_t *ctx)
+static inline void decrement_dest(mode_context_t *ctx)
 {
-    ctx->test_dest = ctx->test_dest == TEST_OPEN ?
+    ctx->test_dest = ctx->test_dest == DEST_NONE ?
         ctx->test_dest :
-        (mode_test_t)((ctx->test_dest - 1));
+        (mode_dest_t)((ctx->test_dest - 1));
 }
 
 static inline void increment_waveform(mode_signal_t *sig)
@@ -33,7 +33,7 @@ static inline void decrement_waveform(mode_signal_t *sig)
 
 static inline void change_channel_idx(mode_context_t *ctx, int delta, bool override)
 {
-    if (ctx->test_dest != TEST_SINGLE_CHANNEL && !override)
+    if (ctx->test_dest != DEST_SINGLE_CHANNEL && !override)
         return;
 
     int new_channel_idx = (int)ctx->channel_idx + delta;
@@ -83,15 +83,15 @@ static const char* string_mode(const mode_context_t *const ctx)
 {
     switch(ctx->test_dest)
     {
-        case TEST_OPEN:
-            return "Open";
-        case TEST_SINGLE_CHANNEL:
+        case DEST_NONE:
+            return "None";
+        case DEST_SINGLE_CHANNEL:
             return "Single channel";
-        case TEST_ALL_CHANNEL:
+        case DEST_ALL_CHANNEL:
             return "All channels";
-        case TEST_CYCLE_CHANNEL_SLOW:
-            return "Cycle (" STRINGIFY(AUTO_CHAN_SDWELL_MS) " ms)";
-        case TEST_CYCLE_CHANNEL_FAST:
+        case DEST_CYCLE_CHANNEL_SLOW:
+            return "Cycle (" STRINGIFY(AUTO_CHAN_SDWELL_S) " sec)";
+        case DEST_CYCLE_CHANNEL_FAST:
             return "Cycle (" STRINGIFY(AUTO_CHAN_FDWELL_MS) " ms)";
         default:
             return "Invalid mode";
@@ -108,8 +108,12 @@ static const char* string_waveform(const mode_signal_t *const sig)
             return "Sine";
         case WAVEFORM_SAW:
             return "Sawtooth";
-        case WAVEFORM_SPIKES:
-            return "Spikes";
+        case WAVEFORM_SPIKESLF:
+            return "Low FR Spikes";
+        case WAVEFORM_SPIKESMF:
+            return "Med FR Spikes";
+        case WAVEFORM_SPIKESHF:
+            return "Hi FR Spikes";
         case WAVEFORM_EXTERNAL:
             return "External";
         default:
@@ -119,46 +123,90 @@ static const char* string_waveform(const mode_signal_t *const sig)
 
 static const char *string_channel_idx(const mode_context_t *const ctx)
 {
-    if (ctx->test_dest == TEST_SINGLE_CHANNEL || ctx->test_dest == TEST_CYCLE_CHANNEL_SLOW || ctx->test_dest == TEST_CYCLE_CHANNEL_FAST)
+    if (ctx->test_dest == DEST_SINGLE_CHANNEL || ctx->test_dest == DEST_CYCLE_CHANNEL_SLOW || ctx->test_dest == DEST_CYCLE_CHANNEL_FAST)
     {
         static char str[5];
         snprintf(str, sizeof(str), "%u",ctx->channel_idx);
         return str;
-    } else if (ctx->test_dest == TEST_ALL_CHANNEL) {
+    } else if (ctx->test_dest == DEST_ALL_CHANNEL) {
         return "All";
     } else {
         return "~";
     }
 }
 
-static const char *string_amplitude_uV(const mode_signal_t *const sig)
+static const char *string_amplitude(const mode_signal_t *const sig)
 {
-    if (sig->waveform != WAVEFORM_GND && sig->waveform != WAVEFORM_EXTERNAL)
+    if (sig->waveform == WAVEFORM_SINE || sig->waveform == WAVEFORM_SAW)
     {
         static char str[8];
         snprintf(str, sizeof(str), "%f7.4", MAX_AMPLITUDE_UV / (1 << sig->amp_rshift));
         return str;
-    } else {
-        return "~";
+    }
+    else if (sig->waveform == WAVEFORM_SPIKESLF || sig->waveform == WAVEFORM_SPIKESMF || sig->waveform == WAVEFORM_SPIKESHF)
+    {
+        static char str[8];
+        snprintf(str, sizeof(str), "%f7.4", 1.0f / (1 << sig->amp_rshift));
+        return str;
+    }
+    else // WAVEFORM_GND, WAVEFORM_EXTERNAL
+    {
+        return "";
     }
 }
 
-static const char *string_freq_hz(const mode_signal_t *const sig)
+static const char *string_title_amplitude(const mode_signal_t *const sig)
 {
-    if (sig->waveform != WAVEFORM_GND && sig->waveform != WAVEFORM_EXTERNAL && sig->waveform != WAVEFORM_SPIKES)
+    if (sig->waveform == WAVEFORM_SINE || sig->waveform == WAVEFORM_SAW)
+    {
+       return "Amp. (uV):";
+    }
+    else if (sig->waveform == WAVEFORM_SPIKESLF || sig->waveform == WAVEFORM_SPIKESMF || sig->waveform == WAVEFORM_SPIKESHF)
+    {
+        return "Atten.:";
+    }
+    else // WAVEFORM_GND, WAVEFORM_EXTERNAL
+    {
+        return "";
+    }
+}
+
+static const char *string_freq(const mode_signal_t *const sig)
+{
+    if (sig->waveform == WAVEFORM_SINE || sig->waveform == WAVEFORM_SAW)
     {
         static char str[8];
         snprintf(str, sizeof(str), "%f5.1", (float)FREQ_LUT[sig->freq_lut_idx][0] / (float)FREQ_LUT[sig->freq_lut_idx][1]);
         return str;
+    }
+    else if (sig->waveform == WAVEFORM_SPIKESLF || sig->waveform == WAVEFORM_SPIKESMF || sig->waveform == WAVEFORM_SPIKESHF)
+    {
+        return "30 kHz";
     } else {
-        return "~";
+        return "";
+    }
+}
+
+static const char *string_title_freq(const mode_signal_t *const sig)
+{
+    if (sig->waveform == WAVEFORM_SINE || sig->waveform == WAVEFORM_SAW)
+    {
+       return "Freq. (Hz):";
+    }
+    else if (sig->waveform == WAVEFORM_SPIKESLF || sig->waveform == WAVEFORM_SPIKESMF || sig->waveform == WAVEFORM_SPIKESHF)
+    {
+        return "Fs:";
+    }
+    else // WAVEFORM_GND, WAVEFORM_EXTERNAL
+    {
+        return "";
     }
 }
 
 void mode_init(mode_context_t *ctx)
 {
-    ctx->selection = SELECTION_MODE;
-    ctx->test_dest = TEST_SINGLE_CHANNEL;
+    ctx->selection = SELECTION_DEST;
+    ctx->test_dest = DEST_SINGLE_CHANNEL;
     ctx->channel_idx = 0;
     ctx->channel_map.num_channels = MAX_NUM_CHANNELS;
     for (int i = 0; i < MAX_NUM_CHANNELS; i++) { ctx->channel_map.channel_map[i] = i; }
@@ -169,12 +217,29 @@ void mode_init(mode_context_t *ctx)
     ctx->usb_detected = false;
 }
 
+void mode_cycle_selection(mode_context_t *ctx)
+{
+    int wrap_value = SELECTION_NUM_SELECTIONS;
+    int inc_value = ctx->selection == SELECTION_DEST ? (ctx->test_dest == DEST_SINGLE_CHANNEL ? 1 : 2) : 1;
+
+    if (ctx->signal.waveform == WAVEFORM_GND || ctx->signal.waveform == WAVEFORM_EXTERNAL)
+    {
+        wrap_value = SELECTION_AMPLITUDE;
+    }
+    else if (ctx->signal.waveform == WAVEFORM_SPIKESLF || ctx->signal.waveform == WAVEFORM_SPIKESMF || ctx->signal.waveform == WAVEFORM_SPIKESHF)
+    {
+        wrap_value = SELECTION_FREQHZ;
+    }
+
+    ctx->selection = (mode_selection_t)((ctx->selection + inc_value) % wrap_value);
+}
+
 mode_update_result_t mode_update_from_knob(mode_context_t *ctx, int delta)
 {
     switch (ctx->selection)
     {
-        case SELECTION_MODE:
-            delta > 0 ? increment_mode(ctx) : decrement_mode(ctx);
+        case SELECTION_DEST:
+            delta > 0 ? increment_dest(ctx) : decrement_dest(ctx);
             return MODE_UPDATE_INPUTSOURCE;
         case SELECTION_WAVEFORM:
             delta > 0 ? increment_waveform(&ctx->signal) : decrement_waveform(&ctx->signal);
@@ -207,16 +272,35 @@ const char *mode_str(const mode_context_t *const ctx, mode_selection_t selection
 {
     switch (selection)
     {
-        case SELECTION_MODE:
+        case SELECTION_DEST:
             return string_mode(ctx);
         case SELECTION_WAVEFORM:
             return string_waveform(&ctx->signal);
         case SELECTION_CHANNEL:
             return string_channel_idx(ctx);
         case SELECTION_AMPLITUDE:
-            return string_amplitude_uV(&ctx->signal);
+            return string_amplitude(&ctx->signal);
         case SELECTION_FREQHZ:
-            return string_freq_hz(&ctx->signal);
+            return string_freq(&ctx->signal);
+        default:
+            return "Invalid";
+    }
+}
+
+const char *title_str(const mode_context_t *const ctx, mode_selection_t selection)
+{
+    switch (selection)
+    {
+        case SELECTION_DEST:
+            return "Dest.:";
+        case SELECTION_WAVEFORM:
+            return "Signal:";
+        case SELECTION_CHANNEL:
+            return "Channel:";
+        case SELECTION_AMPLITUDE:
+            return string_title_amplitude(&ctx->signal);
+        case SELECTION_FREQHZ:
+            return string_title_freq(&ctx->signal);;
         default:
             return "Invalid";
     }

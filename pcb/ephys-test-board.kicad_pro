@@ -58,7 +58,60 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "hole_clearance|196950000|60965000|2a36511a-3216-47e1-b117-7342a1735764|abde6294-c541-44f3-82dc-0da387a6b11f",
+          ""
+        ],
+        [
+          "hole_clearance|196950000|60965000|2a36511a-3216-47e1-b117-7342a1735764|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
+          ""
+        ],
+        [
+          "hole_clearance|203050000|60965000|79836779-60bb-4c08-b8d0-d5a47c4fb6b3|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
+          ""
+        ],
+        [
+          "hole_clearance|203050000|60965000|79836779-60bb-4c08-b8d0-d5a47c4fb6b3|f2f99769-d1e0-43d9-b332-97d91dc34de6",
+          ""
+        ],
+        [
+          "items_not_allowed|129000000|60000000|afac1279-a29f-45cc-a6db-a2c68e35d753|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|130000000|170000000|97835e7e-c449-4ff9-9769-dda886d6fc38|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|153800000|59600000|c1d91c73-679f-48fc-ad4b-995e785a5283|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|173250000|60000000|2efd81ff-ada5-45f0-95d2-b0e5787e5d94|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|202890000|60000000|f5ccaaf6-d744-4102-8c78-2cd5db1ade8f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|208300000|57612500|e69da0db-6c69-4aee-9d5e-60cc6d6512f4|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|262200000|60000000|a1f3746f-d864-4806-9855-20b3c2ff02db|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|270000000|60000000|ef882f7e-ace9-4076-9b1b-1a466d9d3749|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|271000000|171000000|fd1c1855-4010-4657-bc03-84873ebcf8eb|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -232,6 +285,10 @@
         {
           "diameter": 0.5,
           "drill": 0.25
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
         },
         {
           "diameter": 0.9,
@@ -552,7 +609,7 @@
       "idf": "",
       "netlist": "",
       "plot": "manufacturing/gerber/",
-      "pos_files": "",
+      "pos_files": "manufacturing/assembly/",
       "specctra_dsn": "",
       "step": "../case/ephys-test-board.step",
       "svg": "",
@@ -562,7 +619,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "manufacturing\\bom\\ephys-test-board.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -591,9 +648,9 @@
         },
         {
           "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": false
         },
         {
           "group_by": false,
@@ -602,28 +659,46 @@
           "show": true
         },
         {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
-        },
-        {
           "group_by": true,
-          "label": "DNP",
-          "name": "${DNP}",
+          "label": "LCSC",
+          "name": "LCSC",
           "show": true
         },
         {
           "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": false
         },
         {
           "group_by": false,
           "label": "TempCo",
           "name": "TempCo",
-          "show": true
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": false
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         },
         {
           "group_by": false,
@@ -639,12 +714,6 @@
         },
         {
           "group_by": false,
-          "label": "Voltage",
-          "name": "Voltage",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "Part No.",
           "name": "Part No.",
           "show": false
@@ -654,12 +723,6 @@
           "label": "Sim.Pins",
           "name": "Sim.Pins",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Tolerance",
-          "name": "Tolerance",
-          "show": true
         },
         {
           "group_by": false,
@@ -679,7 +742,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Value"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {

@@ -173,6 +173,8 @@ int main()
     // Battery monitor initialization
     batt_mon_init();
     batt_mon_monitor(&ctx);
+    struct repeating_timer battery_monitor_timer;
+    add_repeating_timer_ms(-BATT_MON_PERIOD_MS, battery_monitor_callback, NULL, &battery_monitor_timer);
 
     // Setup knob button callback
     gpio_init(ENC_BUT);
@@ -205,6 +207,13 @@ int main()
                 oled_update_map_menu(&ctx);
             }
 
+            if (batt_mon_update_request)
+            {
+                batt_mon_update_request = false;
+                batt_mon_monitor(&ctx);
+                oled_update_map_menu(&ctx);
+            }
+
             if (knob_press_detected)
             {
                 knob_press_detected = false;
@@ -232,10 +241,6 @@ int main()
 
     // Send default state to waveform generator
     queue_add_blocking(&signal_generator_cmd_queue, &(ctx.signal));
-
-    // Battery monitor timer
-    struct repeating_timer battery_monitor_timer;
-    add_repeating_timer_ms(-BATT_MON_PERIOD_MS, battery_monitor_callback, NULL, &battery_monitor_timer);
 
     // Auto channel increment state
     struct repeating_timer channel_timer;

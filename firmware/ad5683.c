@@ -56,7 +56,9 @@ int ad5683_write_dac(const pio_spi_inst_t *spi, uint16_t code, uint16_t rshift)
 {
     // NB: PIO SPI controller will take 24 bits starting at position 31 and
     // working down
-    uint32_t val = 0b0011 << 28 | code << (12 - rshift);
+    int32_t ac = (int32_t)code - 32767;
+    ac >>= rshift;
+    uint32_t val = 0b0011 << 28 | (ac + 32767) << 12;
     pio_spi_write32_nonblocking(spi, val);
     return 0;
 }

@@ -53,7 +53,13 @@
         "sr.h": "c",
         "quadrature.pio.h": "c",
         "eeprom.h": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "stdlib.h": "c",
+        "adc.h": "c",
+        "mode.h": "c",
+        "stdio.h": "c",
+        "lut.h": "c",
+        "ephys-tester.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": true
 }

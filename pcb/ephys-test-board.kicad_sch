@@ -6,118 +6,11 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "D")
+		(rev "E")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_02x04_Odd_Even"
 			(pin_names
 				(offset 1.016)
@@ -1080,22 +973,10 @@
 		(uuid "861778b1-5ecc-4676-b841-7f4edf228e97")
 	)
 	(junction
-		(at 190.5 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d6b882b-4670-47ad-b9fc-9d83fc549137")
-	)
-	(junction
 		(at 262.89 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc7558b9-6abf-47a9-a278-6568e8e41cd1")
-	)
-	(junction
-		(at 182.88 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "faf1f7f1-01a3-4cc6-a55b-b7949dd433ea")
 	)
 	(no_connect
 		(at 34.29 40.64)
@@ -1220,16 +1101,6 @@
 			(type default)
 		)
 		(uuid "102b629f-75b0-4931-af7e-df6ecaed5241")
-	)
-	(wire
-		(pts
-			(xy 93.98 29.21) (xy 182.88 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11aae92d-def0-4720-b581-eac04a92ab27")
 	)
 	(wire
 		(pts
@@ -1833,7 +1704,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 31.75) (xy 201.93 31.75)
+			(xy 96.52 31.75) (xy 201.93 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2043,16 +1914,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 25.4) (xy 190.5 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdea33b6-14e3-42bc-a5f9-e8f6358db5be")
-	)
-	(wire
-		(pts
 			(xy 219.71 40.64) (xy 241.3 40.64)
 		)
 		(stroke
@@ -2060,16 +1921,6 @@
 			(type default)
 		)
 		(uuid "d45a7a3f-7eee-4336-8239-c046c15aa61e")
-	)
-	(wire
-		(pts
-			(xy 96.52 31.75) (xy 190.5 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5d74e8a-5549-454e-a48b-6261072b8fbc")
 	)
 	(wire
 		(pts
@@ -2103,7 +1954,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 29.21) (xy 204.47 29.21)
+			(xy 93.98 29.21) (xy 204.47 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2130,16 +1981,6 @@
 			(type default)
 		)
 		(uuid "df8a7360-8868-48d6-8d3f-e075e58059b6")
-	)
-	(wire
-		(pts
-			(xy 182.88 25.4) (xy 182.88 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e18a26f1-d6bc-4169-a524-74aeab4fd3b1")
 	)
 	(wire
 		(pts
@@ -2443,6 +2284,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 250.19 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
@@ -2458,7 +2308,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "17b7ba4c-0969-440f-8c6a-fb643c7fb6ac")
@@ -2551,6 +2401,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS070120"
+			(at 251.46 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 251.46 97.79 0)
 			(effects
 				(font
@@ -2698,6 +2557,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 236.22 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c2dbad85-2e4f-4ba9-9d03-8f67212dd426")
 		)
@@ -2813,6 +2681,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" ""
+			(at 201.93 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3132,6 +3009,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 213.36 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b37564ed-eb1a-49d4-b3d2-a902201d34d1")
 		)
@@ -3283,7 +3169,7 @@
 		(at 252.73 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "a66148c7-982e-4d61-9830-c90652fb4da8")
@@ -3386,6 +3272,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 252.73 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8d115c7a-02b4-4a39-a73d-681b2dfc070e")
 		)
@@ -3402,124 +3297,6 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
 					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 190.5 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "ad0306a0-9894-4b67-99c0-a268ded29983")
-		(property "Reference" "TP12"
-			(at 191.262 20.828 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VCC"
-			(at 191.262 23.368 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 195.58 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 195.58 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 190.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 190.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet1" ""
-			(at 190.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part No." ""
-			(at 190.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 190.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 190.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "OEPSPN" ""
-			(at 190.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d8a66693-b3cd-4d30-9458-e401aecfe0d6")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
-					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -3631,6 +3408,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 224.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7904acdc-1750-4f73-8eda-45dec4fdbbe3")
 		)
@@ -3638,124 +3424,6 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
 					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 182.88 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "cb713077-41e4-48c7-a97f-9e57a8d18994")
-		(property "Reference" "TP11"
-			(at 183.642 20.828 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VCC"
-			(at 183.642 23.368 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 187.96 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 187.96 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 182.88 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 182.88 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet1" ""
-			(at 182.88 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part No." ""
-			(at 182.88 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 182.88 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 182.88 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "OEPSPN" ""
-			(at 182.88 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "57f011d3-8111-4f5b-8fdf-1cca17c8db0e")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
-					(reference "TP11")
 					(unit 1)
 				)
 			)

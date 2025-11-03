@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "D")
+		(rev "E")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -4732,7 +4732,7 @@
 		)
 		(uuid "2af9ab3c-0a00-43cb-9058-805892eac64b")
 	)
-	(text "NB: T = 1/(2*pi * 500k * 0.1u) = 3.1 Hz"
+	(text "NB: T = 1/(2*pi * 340k * 0.1u) = 4.7 Hz"
 		(exclude_from_sim no)
 		(at 218.694 153.416 0)
 		(effects
@@ -4752,6 +4752,17 @@
 			(justify bottom)
 		)
 		(uuid "624f28a7-f009-4841-bb8a-15448347d30b")
+	)
+	(text "NB: This diode is required to \nprevent C299 from forming a very \nlong RC circuit with R264/5, which\ncauses long turn on time for Q1 and \nlong time period in triode regime,\nwhich causes VPP to droop, which \ncauses U154 to issue reset and\nthe circuit to power cycle when USB \ncable is unplugged."
+		(exclude_from_sim no)
+		(at 245.11 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74607418-f602-4125-8df4-45663a19a137")
 	)
 	(text "NB: Configure in\ndevice mode."
 		(exclude_from_sim no)
@@ -5120,6 +5131,16 @@
 			(type default)
 		)
 		(uuid "0fa9bc6f-31a9-4de3-8dcc-4e74a7624c7e")
+	)
+	(polyline
+		(pts
+			(xy 234.95 26.67) (xy 243.84 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "115c8c6a-b6bd-400b-8cab-f5ef9b87f80e")
 	)
 	(wire
 		(pts
@@ -5893,6 +5914,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 31.75) (xy 228.6 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a29c26c-b8be-4272-bce0-8c1563522c52")
+	)
+	(wire
+		(pts
 			(xy 148.59 92.71) (xy 157.48 92.71)
 		)
 		(stroke
@@ -6263,7 +6294,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 29.21) (xy 228.6 35.56)
+			(xy 228.6 21.59) (xy 228.6 24.13)
 		)
 		(stroke
 			(width 0)
@@ -6809,7 +6840,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 89f579e2-012e-4842-8c01-66f703fe103e)
+			(uuid 2a827d6a-1cfa-4696-bc42-340d42129104)
 		)
 	)
 	(netclass_flag ""
@@ -7138,6 +7169,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 68.58 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "441c3253-39e4-4384-acc7-efcac1439298")
 		)
@@ -7218,6 +7258,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080168"
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2067919"
 			(at 142.24 143.51 0)
 			(effects
 				(font
@@ -7350,6 +7399,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 165.1 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4afcbe8e-b262-442c-afae-d0dd9ce64e3d")
 		)
@@ -7468,6 +7526,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 118.11 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cdce4477-5518-4958-b5a8-3aebff80866f")
 		)
@@ -7544,7 +7611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 153.67 143.51 0)
 			(effects
 				(font
@@ -7589,6 +7656,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 153.67 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
 			(at 153.67 143.51 0)
 			(effects
 				(font
@@ -7784,6 +7860,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 68.58 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7253a089-6ed2-4b14-b45b-cacd96a0c14b")
 		)
@@ -7818,7 +7903,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED Green"
+		(property "Value" "150060GS75000"
 			(at 200.66 35.56 90)
 			(effects
 				(font
@@ -7900,6 +7985,15 @@
 		)
 		(property "OEPSPN" "OEPS030033"
 			(at 203.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C916074"
+			(at 203.2 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8106,6 +8200,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C51205"
+			(at 195.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d8f3773c-e6b3-4b5f-b392-23a7783ba573")
 		)
@@ -8226,6 +8329,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2909377"
+			(at 173.99 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "04a609c7-7785-45a6-a69c-ecb25c701583")
 		)
@@ -8305,7 +8417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 191.77 148.59 0)
 			(effects
 				(font
@@ -8350,6 +8462,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 191.77 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
 			(at 191.77 148.59 0)
 			(effects
 				(font
@@ -8481,6 +8602,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010022"
+			(at 157.48 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5673"
 			(at 157.48 99.06 0)
 			(effects
 				(font
@@ -8675,6 +8805,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" ""
+			(at 58.42 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8960,7 +9099,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "409e24e1-fdc0-4bf1-9a27-c192f26ef542")
@@ -8972,7 +9111,7 @@
 				)
 			)
 		)
-		(property "Value" "DMG3418L"
+		(property "Value" "DMG3418L-7"
 			(at 260.35 100.33 90)
 			(effects
 				(font
@@ -9056,6 +9195,15 @@
 		)
 		(property "OEPSPN" "OEPS060019"
 			(at 260.35 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 260.35 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9253,6 +9401,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5184243"
+			(at 46.99 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A1"
 			(uuid "34bd9876-9023-459d-98cb-7d454ed002ee")
 		)
@@ -9410,6 +9567,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS020176"
+			(at 173.99 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2909377"
 			(at 173.99 135.89 0)
 			(effects
 				(font
@@ -9605,6 +9771,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C82544"
+			(at 74.93 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "23994823-f6b9-4544-921b-7180afc5945e")
 		)
@@ -9622,7 +9797,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 228.6 29.21 0)
+		(at 228.6 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9630,7 +9805,7 @@
 		(dnp no)
 		(uuid "4ab3077c-1a04-4271-aa08-f3eb3d572eb7")
 		(property "Reference" "#PWR0754"
-			(at 228.6 33.02 0)
+			(at 228.6 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9639,7 +9814,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 232.41 27.94 0)
+			(at 232.41 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9647,7 +9822,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 29.21 0)
+			(at 228.6 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9656,7 +9831,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 29.21 0)
+			(at 228.6 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9665,7 +9840,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 228.6 29.21 0)
+			(at 228.6 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9690,7 +9865,7 @@
 		(at 273.05 83.82 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "4f5f0963-6de4-48b9-8ee3-8f0f34b23640")
@@ -9783,6 +9958,15 @@
 		)
 		(property "OEPSPN" "OEPS020174"
 			(at 273.05 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 273.05 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9977,6 +10161,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 157.48 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c7e96c45-a6bb-4545-b6a9-f35b0ff02d6f")
 		)
@@ -9995,7 +10188,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "57a5fb76-e653-4a69-a87f-46a563937b0b")
@@ -10053,7 +10246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 182.88 82.55 0)
 			(effects
 				(font
@@ -10098,6 +10291,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 182.88 82.55 0)
 			(effects
 				(font
@@ -10290,6 +10492,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS060020"
+			(at 82.55 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C155244"
 			(at 82.55 85.09 0)
 			(effects
 				(font
@@ -10685,6 +10896,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C106231"
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2c719251-27ad-4f5a-b20c-80d742edf25a")
 		)
@@ -10904,7 +11124,7 @@
 		(at 182.88 60.96 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "74a802b7-cb40-4066-bbaa-60e721e7665e")
@@ -10996,6 +11216,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS020139"
+			(at 182.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 182.88 60.96 0)
 			(effects
 				(font
@@ -11122,6 +11351,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" ""
+			(at 142.24 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11389,6 +11627,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C398358"
+			(at 226.06 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "ace38fde-5b96-422b-b9ea-73205046c62a")
 		)
@@ -11521,6 +11768,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010022"
+			(at 118.11 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5673"
 			(at 118.11 97.79 0)
 			(effects
 				(font
@@ -11847,6 +12103,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 149.86 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cdadd036-32e9-4c55-beb9-d64c63f4e90a")
 		)
@@ -12033,6 +12298,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 200.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a372cf5e-2d47-4878-bcd3-76ddef481a35")
 		)
@@ -12178,6 +12452,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS030037"
+			(at 124.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138714"
 			(at 124.46 58.42 0)
 			(effects
 				(font
@@ -12463,6 +12746,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C105871"
+			(at 210.82 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ce9c6687-0a05-4c94-9062-ed8d5289bb77")
 		)
@@ -12651,6 +12943,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C295747"
+			(at 152.4 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "13c22f31-3d07-4c0a-bf66-6b973868f4b6")
 		)
@@ -12772,6 +13073,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" ""
+			(at 119.38 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12958,6 +13268,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C105872"
+			(at 88.9 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7dae048-75ab-49ce-a120-d0d01da2d2f3")
 		)
@@ -12968,6 +13287,138 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
 					(reference "R267")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 228.6 27.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9337c176-0974-46b2-97e9-f5b4da0f56e1")
+		(property "Reference" "D5"
+			(at 231.14 26.9874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "CDBW140-G"
+			(at 231.14 29.5274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet1" ""
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part No." ""
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CDBW140-G"
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS030034"
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C82544"
+			(at 228.6 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d78a3e7f-d061-492d-8a0f-befdba6d36c6")
+		)
+		(pin "2"
+			(uuid "929c9ff7-9ef9-40d7-b38b-cc5610143ca4")
+		)
+		(instances
+			(project "ephys-test-board"
+				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/3204537c-edba-465e-8dbf-7f75aa43b711"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -13071,6 +13522,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080155"
+			(at 140.97 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C51118"
 			(at 140.97 95.25 0)
 			(effects
 				(font
@@ -13274,6 +13734,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 127 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dfa3adc8-3279-4e4f-9892-7ab0c2bbfd10")
 		)
@@ -13392,6 +13861,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 163.83 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "285259c4-63f8-49ee-a27a-59eeb36c0fb1")
 		)
@@ -13475,6 +13953,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS070112"
+			(at 85.09 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C6105831"
 			(at 85.09 140.97 0)
 			(effects
 				(font
@@ -13738,6 +14225,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "21f7bc03-37ab-4b46-a36f-73f74bc40973")
 		)
@@ -13922,6 +14418,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 134.62 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "16a19032-bbf3-4c0e-bfb2-ef604d83f91e")
 		)
@@ -14032,6 +14537,15 @@
 		)
 		(property "OEPSPN" "OEPS020010"
 			(at 241.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105871"
+			(at 241.3 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14160,6 +14674,15 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0c9f745-584d-4718-93ea-1dd8592ae2ce")
 		)
@@ -14177,7 +14700,7 @@
 		(at 222.25 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "d8b677db-d245-4ee6-becc-1721eb40a8aa")
@@ -14269,6 +14792,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080156"
+			(at 222.25 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 222.25 74.93 0)
 			(effects
 				(font
@@ -14487,6 +15019,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C13585"
+			(at 251.46 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "db1d3241-0a0e-40dc-a264-d5bb61042282")
 		)
@@ -14638,7 +15179,7 @@
 		(at 243.84 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
@@ -14651,7 +15192,7 @@
 				)
 			)
 		)
-		(property "Value" "DMG3418L"
+		(property "Value" "DMG3418L-7"
 			(at 243.84 100.33 90)
 			(effects
 				(font
@@ -14735,6 +15276,15 @@
 		)
 		(property "OEPSPN" "OEPS060019"
 			(at 243.84 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 243.84 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14928,6 +15478,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080157"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C424093"
 			(at 228.6 44.45 0)
 			(effects
 				(font
@@ -15157,7 +15716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 228.6 118.11 0)
 			(effects
 				(font
@@ -15202,6 +15761,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 228.6 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
 			(at 228.6 118.11 0)
 			(effects
 				(font
@@ -15289,7 +15857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 97.79 149.86 0)
 			(effects
 				(font
@@ -15334,6 +15902,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 97.79 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
 			(at 97.79 149.86 0)
 			(effects
 				(font
@@ -15462,6 +16039,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C93943"
+			(at 97.79 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "83d332bf-556f-4e49-af6d-19805f3c9945")
 		)
@@ -15576,6 +16162,15 @@
 		)
 		(property "OEPSPN" "OEPS020173"
 			(at 80.01 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105872"
+			(at 80.01 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)

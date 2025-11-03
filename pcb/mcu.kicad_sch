@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "D")
+		(rev "E")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -9769,6 +9769,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C138021"
+			(at 105.41 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "99c24c4c-c7be-4092-be69-21b6aabc0e5d")
 		)
@@ -10114,7 +10123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 184.15 38.1 0)
 			(effects
 				(font
@@ -10160,6 +10169,15 @@
 		)
 		(property "OEPSPN" "OEPS010050"
 			(at 211.328 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
+			(at 184.15 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10513,7 +10531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 199.39 38.1 0)
 			(effects
 				(font
@@ -10559,6 +10577,15 @@
 		)
 		(property "OEPSPN" "OEPS010050"
 			(at 226.568 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
+			(at 199.39 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10687,6 +10714,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C106232"
+			(at 109.22 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "711f9699-ae6b-4574-8461-3a4bb256e9e5")
 		)
@@ -10766,7 +10802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 214.63 38.1 0)
 			(effects
 				(font
@@ -10811,6 +10847,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 214.63 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
 			(at 214.63 38.1 0)
 			(effects
 				(font
@@ -10897,7 +10942,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "50V"
 			(at 69.85 101.6 0)
 			(effects
 				(font
@@ -10942,6 +10987,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010080"
+			(at 69.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106203"
 			(at 69.85 101.6 0)
 			(effects
 				(font
@@ -11071,6 +11125,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C106232"
+			(at 109.22 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4a99171a-ccb5-4c68-b970-7c749e99c9eb")
 		)
@@ -11150,7 +11213,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 207.01 38.1 0)
 			(effects
 				(font
@@ -11196,6 +11259,15 @@
 		)
 		(property "OEPSPN" "OEPS010050"
 			(at 234.188 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
+			(at 207.01 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11334,6 +11406,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5673"
+			(at 109.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "81e18607-4ce7-451f-8dfc-62530b0a76d4")
 		)
@@ -11448,6 +11529,15 @@
 		)
 		(property "OEPSPN" "OEPS020027"
 			(at 109.22 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106235"
+			(at 109.22 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11570,6 +11660,15 @@
 		)
 		(property "OEPSPN" "OEPS020077"
 			(at 177.8 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106232"
+			(at 177.8 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11722,7 +11821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 45.72 143.51 0)
 			(effects
 				(font
@@ -11768,6 +11867,15 @@
 		)
 		(property "OEPSPN" "OEPS010050"
 			(at 45.72 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
+			(at 45.72 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11920,7 +12028,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 124.46 38.1 0)
 			(effects
 				(font
@@ -11966,6 +12074,15 @@
 		)
 		(property "OEPSPN" "OEPS010050"
 			(at 139.7 41.402 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
+			(at 124.46 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12361,6 +12478,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C138021"
+			(at 105.41 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bb7fa531-7c22-446b-8105-bc6897550838")
 		)
@@ -12462,7 +12588,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "W25Q128JVS"
+		(property "Value" "W25Q128JVSIQ"
 			(at 54.61 171.45 0)
 			(effects
 				(font
@@ -12543,6 +12669,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080163"
+			(at 52.07 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C97521"
 			(at 52.07 157.48 0)
 			(effects
 				(font
@@ -12683,6 +12818,15 @@
 		)
 		(property "OEPSPN" "OEPS020077"
 			(at 177.8 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106232"
+			(at 177.8 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12903,7 +13047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 191.77 38.1 0)
 			(effects
 				(font
@@ -12949,6 +13093,15 @@
 		)
 		(property "OEPSPN" "OEPS010050"
 			(at 218.948 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
+			(at 191.77 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13088,6 +13241,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5673"
+			(at 222.25 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c440a87a-8b5e-4d5a-9034-365d7d22a26a")
 		)
@@ -13201,6 +13363,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS020030"
+			(at 96.52 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C60490"
 			(at 96.52 46.99 0)
 			(effects
 				(font
@@ -13354,7 +13525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 161.29 38.1 0)
 			(effects
 				(font
@@ -13399,6 +13570,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 161.29 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
 			(at 161.29 38.1 0)
 			(effects
 				(font
@@ -13528,6 +13708,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 73.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "38323058-184f-4ddf-995b-5d7edc5e7681")
 		)
@@ -13644,6 +13833,15 @@
 		)
 		(property "OEPSPN" "OEPS070115"
 			(at 73.66 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4364861"
+			(at 73.66 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13840,6 +14038,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C133337"
+			(at 82.55 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fb2f4789-949f-48a9-ac37-ce6e3972aa9b")
 		)
@@ -13879,7 +14086,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PTS645VH58-2 LFS"
+		(property "Value" "PTS645VH83-2 LFS"
 			(at 69.85 69.8499 90)
 			(effects
 				(font
@@ -13968,6 +14175,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C221889"
+			(at 73.66 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b8841c11-586d-4861-8184-693f1408c815")
 		)
@@ -14047,7 +14263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 168.91 38.1 0)
 			(effects
 				(font
@@ -14092,6 +14308,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 168.91 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
 			(at 168.91 38.1 0)
 			(effects
 				(font
@@ -14353,6 +14578,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2040"
+			(at 139.7 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9068d187-1755-4b33-b716-a89065be9184")
 		)
@@ -14596,7 +14830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 116.84 38.1 0)
 			(effects
 				(font
@@ -14642,6 +14876,15 @@
 		)
 		(property "OEPSPN" "OEPS010050"
 			(at 132.08 41.402 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
+			(at 116.84 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14862,7 +15105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "50V"
 			(at 69.85 111.76 0)
 			(effects
 				(font
@@ -14907,6 +15150,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010080"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106203"
 			(at 69.85 111.76 0)
 			(effects
 				(font
@@ -15061,7 +15313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" ""
+		(property "Voltage" "25V"
 			(at 176.53 38.1 0)
 			(effects
 				(font
@@ -15106,6 +15358,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS010050"
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105883"
 			(at 176.53 38.1 0)
 			(effects
 				(font

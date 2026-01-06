@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -60,19 +60,19 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|196950000|60965000|52045f22-2ea3-4ce5-9f80-26ad79665159|abde6294-c541-44f3-82dc-0da387a6b11f",
+          "hole_clearance|196950000|60965000|2a36511a-3216-47e1-b117-7342a1735764|abde6294-c541-44f3-82dc-0da387a6b11f",
           ""
         ],
         [
-          "hole_clearance|196950000|60965000|52045f22-2ea3-4ce5-9f80-26ad79665159|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
+          "hole_clearance|196950000|60965000|2a36511a-3216-47e1-b117-7342a1735764|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
           ""
         ],
         [
-          "hole_clearance|203050000|60965000|753d14d1-abff-45a3-ba81-b2439b0185c9|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
+          "hole_clearance|203050000|60965000|79836779-60bb-4c08-b8d0-d5a47c4fb6b3|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
           ""
         ],
         [
-          "hole_clearance|203050000|60965000|753d14d1-abff-45a3-ba81-b2439b0185c9|f2f99769-d1e0-43d9-b332-97d91dc34de6",
+          "hole_clearance|203050000|60965000|79836779-60bb-4c08-b8d0-d5a47c4fb6b3|f2f99769-d1e0-43d9-b332-97d91dc34de6",
           ""
         ],
         [
@@ -109,6 +109,38 @@
         ],
         [
           "items_not_allowed|271000000|171000000|fd1c1855-4010-4657-bc03-84873ebcf8eb|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "missing_courtyard|244900000|62500000|bb550672-1391-4a75-996f-a81aa10c3465|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "missing_courtyard|250000000|155300000|15f3cf78-d005-45b1-9f7a-5a5ec0788fd6|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|226050000|65900000|bc91b038-d4e9-407f-ba4f-7c33b372802f|d11033ea-fbe6-4cb5-a4b0-a1132eb4a588",
+          ""
+        ],
+        [
+          "silk_edge_clearance|237300000|65900000|219fe560-aeaf-4856-8a97-8eb34efa0f06|d56b780d-8682-476d-a0a6-a735ceff0a4b",
+          ""
+        ],
+        [
+          "silk_edge_clearance|237349984|65899375|219fe560-aeaf-4856-8a97-8eb34efa0f06|d5a1e5c7-52d3-40fa-ad86-ebea093c92e9",
+          ""
+        ],
+        [
+          "silk_edge_clearance|262200000|60000000|c4a84001-4e85-48c6-b2c7-39eba4114197|1b547ea9-9d19-4488-9e21-c3fdce4ade1a",
+          ""
+        ],
+        [
+          "starved_thermal|203200000|61390000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|e66e9729-f47e-4ba0-9182-4cb2f2735ad3|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|203200000|61390000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|f2f99769-d1e0-43d9-b332-97d91dc34de6|F.Cu",
           ""
         ]
       ],
@@ -528,7 +560,6 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
-      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -675,13 +706,13 @@
           "group_by": false,
           "label": "TempCo",
           "name": "TempCo",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Voltage",
           "name": "Voltage",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -743,7 +774,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {

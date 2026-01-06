@@ -29,13 +29,13 @@ int sr_init()
     return 0;
 }
 
-int sr_update(sr_bit_arr_t const *bit_arr) //, size_t bit_arr_len)
+int sr_update(sr_bit_arr_t const *bit_arr)
 {
     // Shift bits into shift register
     gpio_put(SR_RCLK, 0);
     sleep_us(BB_SETTLE_USEC);
 
-    int total_bits = 8 * sizeof(sr_bit_arr_t); // bit_arr_len * 8 * sizeof(sr_bit_arr_t);
+    int total_bits = 8 * sizeof(sr_bit_arr_t);
 
     for (int i = total_bits - 1; i >= 0; i--) { // MSB first -- this is a shift register
         gpio_put(SR_SRCLK, 0); sleep_us(BB_SETTLE_USEC);

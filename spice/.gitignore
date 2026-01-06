@@ -1,0 +1,5 @@
+# LTSpice
+*.raw
+*.op.raw
+*.log
+*.fft

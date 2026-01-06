@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "E")
+		(rev "F")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -1799,6 +1799,7 @@
 		)
 		(symbol "Transistor_FET:DMG3414U"
 			(pin_names
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -2014,7 +2015,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -3594,7 +3595,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c6bfffb-df36-4ad6-a822-2f303b39fb86")
-		(property "Reference" "R286"
+		(property "Reference" "R283"
 			(at 77.47 52.07 90)
 			(effects
 				(font
@@ -3708,7 +3709,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R286")
+					(reference "R283")
 					(unit 1)
 				)
 			)
@@ -3725,7 +3726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f4b14b1-9882-4e15-98e8-d2ec0b95f701")
-		(property "Reference" "#PWR0743"
+		(property "Reference" "#PWR0491"
 			(at 175.26 123.19 0)
 			(effects
 				(font
@@ -3775,7 +3776,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0743")
+					(reference "#PWR0491")
 					(unit 1)
 				)
 			)
@@ -3791,7 +3792,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10f7a20f-1da6-4ccc-bda9-2277afd3b7ef")
-		(property "Reference" "R279"
+		(property "Reference" "R284"
 			(at 90.17 121.92 90)
 			(effects
 				(font
@@ -3905,7 +3906,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R279")
+					(reference "R284")
 					(unit 1)
 				)
 			)
@@ -3920,7 +3921,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13d2ba4f-8271-4cfb-a806-23e9aa66a79f")
-		(property "Reference" "C303"
+		(property "Reference" "C118"
 			(at 115.57 154.94 0)
 			(effects
 				(font
@@ -4045,7 +4046,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C303")
+					(reference "C118")
 					(unit 1)
 				)
 			)
@@ -4060,8 +4061,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23923126-bd6b-4bb9-9531-4e861b1b1268")
-		(property "Reference" "Q6"
-			(at 88.9 62.2299 0)
+		(property "Reference" "Q4"
+			(at 87.63 65.532 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4070,7 +4071,7 @@
 			)
 		)
 		(property "Value" "DMG3418L-7"
-			(at 88.9 64.7699 0)
+			(at 87.63 68.072 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4182,7 +4183,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "Q6")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -4199,7 +4200,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2722147d-2d52-42db-9af7-83a3f44630f3")
-		(property "Reference" "#PWR0760"
+		(property "Reference" "#PWR0483"
 			(at 128.27 63.5 0)
 			(effects
 				(font
@@ -4249,7 +4250,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0760")
+					(reference "#PWR0483")
 					(unit 1)
 				)
 			)
@@ -4265,7 +4266,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d21863a-2104-41a4-921e-958a03ae26f1")
-		(property "Reference" "C301"
+		(property "Reference" "C119"
 			(at 124.968 48.26 0)
 			(effects
 				(font
@@ -4390,7 +4391,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C301")
+					(reference "C119")
 					(unit 1)
 				)
 			)
@@ -4406,7 +4407,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "341a8a41-d3ae-4ab0-83c1-d0a0da120ea2")
-		(property "Reference" "R280"
+		(property "Reference" "R286"
 			(at 111.76 121.92 90)
 			(effects
 				(font
@@ -4520,7 +4521,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R280")
+					(reference "R286")
 					(unit 1)
 				)
 			)
@@ -4537,7 +4538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37c11732-9055-4d22-b91f-6b920c3fce59")
-		(property "Reference" "#PWR0762"
+		(property "Reference" "#PWR0485"
 			(at 142.24 88.9 0)
 			(effects
 				(font
@@ -4587,7 +4588,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0762")
+					(reference "#PWR0485")
 					(unit 1)
 				)
 			)
@@ -4604,7 +4605,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3924fb03-5629-43c0-be15-be27c42535fd")
-		(property "Reference" "#PWR0767"
+		(property "Reference" "#PWR0478"
 			(at 87.63 175.26 0)
 			(effects
 				(font
@@ -4654,7 +4655,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0767")
+					(reference "#PWR0478")
 					(unit 1)
 				)
 			)
@@ -4671,7 +4672,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "449e8fc5-4526-4e13-8df8-97b187a3175c")
-		(property "Reference" "#PWR0745"
+		(property "Reference" "#PWR0496"
 			(at 189.23 151.13 0)
 			(effects
 				(font
@@ -4721,7 +4722,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0745")
+					(reference "#PWR0496")
 					(unit 1)
 				)
 			)
@@ -4738,7 +4739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ab1a247-f020-4f63-a695-1f81681c7a10")
-		(property "Reference" "#PWR0792"
+		(property "Reference" "#PWR0493"
 			(at 180.34 88.9 0)
 			(effects
 				(font
@@ -4788,7 +4789,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0792")
+					(reference "#PWR0493")
 					(unit 1)
 				)
 			)
@@ -4805,7 +4806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cac1005-82c3-41ea-a24b-b31bd4156b6c")
-		(property "Reference" "#PWR0750"
+		(property "Reference" "#PWR0492"
 			(at 175.26 151.13 0)
 			(effects
 				(font
@@ -4855,7 +4856,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0750")
+					(reference "#PWR0492")
 					(unit 1)
 				)
 			)
@@ -4870,7 +4871,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4cd45d62-af50-4ef6-b722-5be288aa4ad2")
-		(property "Reference" "C305"
+		(property "Reference" "C122"
 			(at 163.068 38.1 0)
 			(effects
 				(font
@@ -4995,7 +4996,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C305")
+					(reference "C122")
 					(unit 1)
 				)
 			)
@@ -5012,7 +5013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d1e49a0-1a05-4b5a-ba33-227435ef1c2e")
-		(property "Reference" "#PWR0742"
+		(property "Reference" "#PWR0488"
 			(at 153.67 151.13 0)
 			(effects
 				(font
@@ -5062,7 +5063,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0742")
+					(reference "#PWR0488")
 					(unit 1)
 				)
 			)
@@ -5079,7 +5080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e56605a-2590-4f66-aa2d-25dc1a71b1fc")
-		(property "Reference" "#PWR0791"
+		(property "Reference" "#PWR0494"
 			(at 186.69 88.9 0)
 			(effects
 				(font
@@ -5129,7 +5130,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0791")
+					(reference "#PWR0494")
 					(unit 1)
 				)
 			)
@@ -5144,7 +5145,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5544f1f5-83f9-40be-b036-5e341d14bbd8")
-		(property "Reference" "R277"
+		(property "Reference" "R288"
 			(at 139.7 74.93 90)
 			(effects
 				(font
@@ -5258,7 +5259,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R277")
+					(reference "R288")
 					(unit 1)
 				)
 			)
@@ -5275,7 +5276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c05475c-c500-4298-83f5-f5d678be095e")
-		(property "Reference" "#PWR0769"
+		(property "Reference" "#PWR0482"
 			(at 127 151.13 0)
 			(effects
 				(font
@@ -5325,7 +5326,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0769")
+					(reference "#PWR0482")
 					(unit 1)
 				)
 			)
@@ -5342,7 +5343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dbfb9de-e8ca-46cb-aa81-c351e4d44c1f")
-		(property "Reference" "#PWR0794"
+		(property "Reference" "#PWR0476"
 			(at 85.09 88.9 0)
 			(effects
 				(font
@@ -5392,7 +5393,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0794")
+					(reference "#PWR0476")
 					(unit 1)
 				)
 			)
@@ -5408,7 +5409,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b55e7b0-92ab-48a7-8e97-b89eb7fc4f46")
-		(property "Reference" "C302"
+		(property "Reference" "C120"
 			(at 137.16 47.498 0)
 			(effects
 				(font
@@ -5533,7 +5534,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C302")
+					(reference "C120")
 					(unit 1)
 				)
 			)
@@ -5550,7 +5551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b9c9e9c-689b-4639-977e-3a7fb90f08b3")
-		(property "Reference" "#PWR0768"
+		(property "Reference" "#PWR0481"
 			(at 109.22 175.26 0)
 			(effects
 				(font
@@ -5600,7 +5601,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0768")
+					(reference "#PWR0481")
 					(unit 1)
 				)
 			)
@@ -5616,7 +5617,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6cbeaaa6-1060-417f-94f1-cf06027707db")
-		(property "Reference" "C306"
+		(property "Reference" "C123"
 			(at 165.608 73.66 0)
 			(effects
 				(font
@@ -5741,7 +5742,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C306")
+					(reference "C123")
 					(unit 1)
 				)
 			)
@@ -5757,7 +5758,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6e70ff38-ad0a-457b-8dc2-dac79a91ef6a")
-		(property "Reference" "R269"
+		(property "Reference" "R289"
 			(at 156.21 121.92 90)
 			(effects
 				(font
@@ -5871,7 +5872,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R269")
+					(reference "R289")
 					(unit 1)
 				)
 			)
@@ -5886,7 +5887,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a34aba0-6081-4fc3-9ad8-0be87e5ca1d3")
-		(property "Reference" "C294"
+		(property "Reference" "C125"
 			(at 168.91 134.62 90)
 			(effects
 				(font
@@ -6011,7 +6012,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C294")
+					(reference "C125")
 					(unit 1)
 				)
 			)
@@ -6028,7 +6029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83e309e4-9f1a-41af-ab6d-fc17109ce0a8")
-		(property "Reference" "#PWR0793"
+		(property "Reference" "#PWR0497"
 			(at 199.39 41.91 0)
 			(effects
 				(font
@@ -6078,7 +6079,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0793")
+					(reference "#PWR0497")
 					(unit 1)
 				)
 			)
@@ -6094,7 +6095,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8e31a5ec-4042-46d1-bdfd-ee3ab565c328")
-		(property "Reference" "C308"
+		(property "Reference" "C126"
 			(at 177.8 72.898 0)
 			(effects
 				(font
@@ -6219,7 +6220,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C308")
+					(reference "C126")
 					(unit 1)
 				)
 			)
@@ -6236,7 +6237,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "919c16b8-89ba-466a-a7f8-61c50245029e")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR0486"
 			(at 153.67 58.42 0)
 			(effects
 				(font
@@ -6286,7 +6287,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR013")
+					(reference "#PWR0486")
 					(unit 1)
 				)
 			)
@@ -6302,7 +6303,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93f066ce-1fc9-43ef-ba6e-ad8fc5c7137e")
-		(property "Reference" "#PWR0744"
+		(property "Reference" "#PWR0495"
 			(at 189.23 116.84 0)
 			(effects
 				(font
@@ -6352,7 +6353,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0744")
+					(reference "#PWR0495")
 					(unit 1)
 				)
 			)
@@ -6367,7 +6368,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9489fded-78b5-4b0a-844f-df5eff6da5fc")
-		(property "Reference" "U150"
+		(property "Reference" "U93"
 			(at 200.66 123.19 0)
 			(effects
 				(font
@@ -6491,7 +6492,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "U150")
+					(reference "U93")
 					(unit 1)
 				)
 			)
@@ -6507,7 +6508,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "971224bd-20f7-456d-826d-71ba7d41fce0")
-		(property "Reference" "#PWR0765"
+		(property "Reference" "#PWR0477"
 			(at 87.63 116.84 0)
 			(effects
 				(font
@@ -6557,7 +6558,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0765")
+					(reference "#PWR0477")
 					(unit 1)
 				)
 			)
@@ -6574,7 +6575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9748ecef-0705-4e5b-8826-ce0400dc3e12")
-		(property "Reference" "#PWR0761"
+		(property "Reference" "#PWR0484"
 			(at 139.7 63.5 0)
 			(effects
 				(font
@@ -6624,7 +6625,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0761")
+					(reference "#PWR0484")
 					(unit 1)
 				)
 			)
@@ -6640,7 +6641,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f137a48-3df4-4cf6-b80e-87b972ac70d0")
-		(property "Reference" "R278"
+		(property "Reference" "R290"
 			(at 163.83 133.35 90)
 			(effects
 				(font
@@ -6754,7 +6755,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R278")
+					(reference "R290")
 					(unit 1)
 				)
 			)
@@ -6770,7 +6771,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a2798634-6c5b-404f-ab0a-abc7fb17a4b0")
-		(property "Reference" "#PWR0766"
+		(property "Reference" "#PWR0480"
 			(at 109.22 116.84 0)
 			(effects
 				(font
@@ -6820,7 +6821,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0766")
+					(reference "#PWR0480")
 					(unit 1)
 				)
 			)
@@ -6836,7 +6837,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b12ca413-27f0-4449-8de9-b97447fd13ab")
-		(property "Reference" "C309"
+		(property "Reference" "C121"
 			(at 151.638 73.66 0)
 			(effects
 				(font
@@ -6961,7 +6962,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C309")
+					(reference "C121")
 					(unit 1)
 				)
 			)
@@ -6976,7 +6977,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1987d6f-9b22-47a2-96ae-5c9ba8b4ddb4")
-		(property "Reference" "C304"
+		(property "Reference" "C124"
 			(at 176.784 33.274 0)
 			(effects
 				(font
@@ -7101,7 +7102,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C304")
+					(reference "C124")
 					(unit 1)
 				)
 			)
@@ -7117,7 +7118,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1da089a-fee8-4640-b005-ac9cfc1f74ce")
-		(property "Reference" "Q4"
+		(property "Reference" "Q5"
 			(at 102.87 59.69 0)
 			(effects
 				(font
@@ -7239,7 +7240,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "Q4")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -7256,7 +7257,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc94cf95-3cf7-4e0b-a67a-fe03e77eab65")
-		(property "Reference" "#PWR0789"
+		(property "Reference" "#PWR0489"
 			(at 154.94 88.9 0)
 			(effects
 				(font
@@ -7306,7 +7307,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0789")
+					(reference "#PWR0489")
 					(unit 1)
 				)
 			)
@@ -7321,7 +7322,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c424efd6-167b-4665-b386-00d6acc9f5e1")
-		(property "Reference" "C296"
+		(property "Reference" "C116"
 			(at 93.98 154.94 0)
 			(effects
 				(font
@@ -7446,7 +7447,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C296")
+					(reference "C116")
 					(unit 1)
 				)
 			)
@@ -7463,7 +7464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7becddf-a4b4-48d7-836b-6d7a904e67e8")
-		(property "Reference" "#PWR0790"
+		(property "Reference" "#PWR0490"
 			(at 168.91 88.9 0)
 			(effects
 				(font
@@ -7513,7 +7514,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0790")
+					(reference "#PWR0490")
 					(unit 1)
 				)
 			)
@@ -7529,7 +7530,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c8c0fb45-8f36-43dd-87f8-eac61a747d99")
-		(property "Reference" "#PWR0746"
+		(property "Reference" "#PWR0487"
 			(at 153.67 116.84 0)
 			(effects
 				(font
@@ -7579,7 +7580,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0746")
+					(reference "#PWR0487")
 					(unit 1)
 				)
 			)
@@ -7594,7 +7595,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca5faf8c-8d7c-4249-a7fa-2438189ef37f")
-		(property "Reference" "C293"
+		(property "Reference" "C127"
 			(at 184.15 109.22 90)
 			(effects
 				(font
@@ -7719,7 +7720,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C293")
+					(reference "C127")
 					(unit 1)
 				)
 			)
@@ -7736,7 +7737,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbb40327-98ce-4e5a-87fb-6b2540fc776f")
-		(property "Reference" "#PWR0759"
+		(property "Reference" "#PWR0479"
 			(at 109.22 88.9 0)
 			(effects
 				(font
@@ -7786,7 +7787,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0759")
+					(reference "#PWR0479")
 					(unit 1)
 				)
 			)
@@ -7802,7 +7803,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d4f3f15b-b6bb-4004-b059-8d96773110a5")
-		(property "Reference" "#PWR0788"
+		(property "Reference" "#PWR0475"
 			(at 68.58 45.72 0)
 			(effects
 				(font
@@ -7852,7 +7853,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "#PWR0788")
+					(reference "#PWR0475")
 					(unit 1)
 				)
 			)
@@ -7868,7 +7869,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "db5706a8-58b2-4c0d-bba3-63c41135da5d")
-		(property "Reference" "R282"
+		(property "Reference" "R287"
 			(at 111.76 144.78 90)
 			(effects
 				(font
@@ -7982,7 +7983,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R282")
+					(reference "R287")
 					(unit 1)
 				)
 			)
@@ -7998,7 +7999,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef4f38e1-6175-453d-8d71-6861c7df9973")
-		(property "Reference" "J4"
+		(property "Reference" "J8"
 			(at 195.58 55.5245 0)
 			(effects
 				(font
@@ -8150,7 +8151,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "J4")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -8166,7 +8167,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2d8ba1c-a083-4fda-a9f9-13979fbe941a")
-		(property "Reference" "R281"
+		(property "Reference" "R285"
 			(at 90.17 144.78 90)
 			(effects
 				(font
@@ -8280,7 +8281,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R281")
+					(reference "R285")
 					(unit 1)
 				)
 			)
@@ -8296,7 +8297,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f472dddf-a065-4181-a64f-bbd2f8abf7cf")
-		(property "Reference" "C300"
+		(property "Reference" "C117"
 			(at 106.68 72.898 0)
 			(effects
 				(font
@@ -8421,7 +8422,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "C300")
+					(reference "C117")
 					(unit 1)
 				)
 			)
@@ -8436,7 +8437,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f59d79b5-3a26-484c-875a-35ee5a4ad191")
-		(property "Reference" "R287"
+		(property "Reference" "R282"
 			(at 68.58 69.85 0)
 			(effects
 				(font
@@ -8550,7 +8551,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "R287")
+					(reference "R282")
 					(unit 1)
 				)
 			)
@@ -8566,7 +8567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc19a358-7976-41dd-9b6f-b5e66323ba9e")
-		(property "Reference" "SW2"
+		(property "Reference" "SW4"
 			(at 139.7 123.19 0)
 			(effects
 				(font
@@ -8689,7 +8690,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/0564b576-016f-4657-a76f-817e9e3dffb1"
-					(reference "SW2")
+					(reference "SW4")
 					(unit 1)
 				)
 			)

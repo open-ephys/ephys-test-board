@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "E")
+		(rev "F")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -2415,145 +2415,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2967,15 +2828,15 @@
 		)
 		(uuid "463b2cf1-fb6a-4ca1-84c0-28f3857e203c")
 	)
-	(text "NB: Reserved for future use, DNC"
+	(text "NB: Reserved"
 		(exclude_from_sim no)
-		(at 165.1 142.24 0)
+		(at 210.058 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "6117c414-18e1-4173-a70e-3cef4174e429")
+		(uuid "dffdce33-0845-4cf3-96b1-504a8588a6d6")
 	)
 	(junction
 		(at 184.15 69.85)
@@ -3104,16 +2965,20 @@
 		(uuid "fe1f0869-bf81-4e4d-8fa4-489f9a814ce2")
 	)
 	(no_connect
-		(at 186.69 140.97)
-		(uuid "4bdfe35e-f7d7-4f66-9fe6-a694591ad319")
-	)
-	(no_connect
-		(at 186.69 143.51)
-		(uuid "728cde69-652c-40b7-9980-2fbd7478ed43")
+		(at 199.39 140.97)
+		(uuid "700adbad-34f4-4763-898e-8e59aafab8e9")
 	)
 	(no_connect
 		(at 199.39 143.51)
-		(uuid "c8bacdfb-f6fc-484d-8976-afd937b499d0")
+		(uuid "a86e7b1a-1343-4dda-a338-81f0b0fa9595")
+	)
+	(no_connect
+		(at 186.69 140.97)
+		(uuid "d0d36a59-b369-4629-8c20-099a6861e4e1")
+	)
+	(no_connect
+		(at 186.69 143.51)
+		(uuid "fbdd8b3e-d1f2-44f8-8741-0ce56450960b")
 	)
 	(bus_entry
 		(at 68.58 100.33)
@@ -5307,16 +5172,6 @@
 		)
 		(uuid "58c22829-efe7-4402-b3ff-e7c86171a86e")
 	)
-	(wire
-		(pts
-			(xy 184.15 138.43) (xy 184.15 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a0fde03-0339-4ae1-a816-7cc3f17e2764")
-	)
 	(bus
 		(pts
 			(xy 111.76 115.57) (xy 106.68 115.57)
@@ -6409,6 +6264,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 138.43) (xy 184.15 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef6f72f-eddd-4532-b963-a76a3891b81c")
+	)
+	(wire
+		(pts
 			(xy 175.26 80.01) (xy 186.69 80.01)
 		)
 		(stroke
@@ -6546,16 +6411,6 @@
 			(type default)
 		)
 		(uuid "b908d985-93dc-4acd-931f-6762e3e932ce")
-	)
-	(wire
-		(pts
-			(xy 199.39 140.97) (xy 209.55 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbfee8d0-183a-4299-88d5-512fcaf5d70f")
 	)
 	(wire
 		(pts
@@ -7346,16 +7201,6 @@
 			(type default)
 		)
 		(uuid "f7177525-11d2-4bd5-b0ed-fb0669db26e6")
-	)
-	(wire
-		(pts
-			(xy 217.17 140.97) (xy 218.44 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f71944b9-d4c7-4055-aa09-0efb97713e5c")
 	)
 	(wire
 		(pts
@@ -8237,16 +8082,6 @@
 		)
 		(uuid "a20fe2ad-8869-40b7-8505-af2c5425ce8c")
 	)
-	(label "REF"
-		(at 204.47 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a56efbc1-dfcc-48b1-8bf1-b09b7732f84b")
-	)
 	(label "B8.E_{7}"
 		(at 175.26 67.31 0)
 		(effects
@@ -8717,28 +8552,6 @@
 		)
 		(uuid "fdf48a22-db07-4b65-8b10-7a01d8323076")
 	)
-	(global_label "TESTREF"
-		(shape input)
-		(at 218.44 140.97 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "03bd9661-a7dd-48a7-af2a-c0351a31c603")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.2265 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(hierarchical_label "B0{TRODES}"
 		(shape input)
 		(at 63.5 46.99 180)
@@ -8959,7 +8772,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06b033cd-87b9-4192-b38b-ef35ea2137d9")
-		(property "Reference" "#PWR0763"
+		(property "Reference" "#PWR010"
 			(at 68.58 160.02 0)
 			(effects
 				(font
@@ -9009,7 +8822,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR0763")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9026,7 +8839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14dafb5e-29cd-4fab-8c1d-744c560db501")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR013"
 			(at 184.15 160.02 0)
 			(effects
 				(font
@@ -9076,145 +8889,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 213.36 140.97 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "16460595-7118-445f-aac1-2afae1da6751")
-		(property "Reference" "C316"
-			(at 213.36 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 213.36 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 209.55 141.9352 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "TempCo" "X7R"
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "25V"
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet1" ""
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part No." ""
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "C1005X7R1E104K050BB"
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OEPSPN" "OEPS010050"
-			(at 213.36 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C105883"
-			(at 213.36 140.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2ce27ad7-ebf2-4344-8573-129e31c647cc")
-		)
-		(pin "2"
-			(uuid "f1a729a5-ae85-4580-9bb0-0cf0eee0e1a7")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "C316")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9231,7 +8906,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "284b37d9-acfa-46e7-9036-5eff936f5a1e")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR012"
 			(at 96.52 160.02 0)
 			(effects
 				(font
@@ -9281,7 +8956,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR03")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -9297,7 +8972,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "41ade828-1784-4e9f-bd2c-d1a76a5a010a")
-		(property "Reference" "R288"
+		(property "Reference" "R1"
 			(at 70.866 149.86 0)
 			(effects
 				(font
@@ -9414,7 +9089,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "R288")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -9430,7 +9105,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77cbee52-f57a-4401-9f7b-e13df52f848a")
-		(property "Reference" "#PWR0774"
+		(property "Reference" "#PWR09"
 			(at 48.26 133.35 0)
 			(effects
 				(font
@@ -9480,7 +9155,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR0774")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -9496,7 +9171,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7bd27059-3e75-4701-8a09-2198e590f964")
-		(property "Reference" "J3"
+		(property "Reference" "J4"
 			(at 193.04 38.1 0)
 			(effects
 				(font
@@ -9844,7 +9519,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "J3")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -9861,7 +9536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84517c33-6bcd-4854-9d97-1d67f6cae54c")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR011"
 			(at 78.74 160.02 0)
 			(effects
 				(font
@@ -9911,7 +9586,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR02")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -9928,7 +9603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fb66290-3402-4877-90c1-0ac5943deb5b")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR014"
 			(at 201.93 160.02 0)
 			(effects
 				(font
@@ -9978,7 +9653,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "#PWR05")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -9994,7 +9669,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9e1c2ca-55ab-4af0-8861-881b41095159")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 87.63 38.1 0)
 			(effects
 				(font
@@ -10342,7 +10017,7 @@
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/f2c6d928-7acb-4b4d-942a-bf07e4ec8d7a"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)

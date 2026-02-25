@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "F")
+		(rev "G")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -2801,26 +2801,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 121.92) (xy 105.41 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2067c67c-4639-49f1-9d8e-f6c7e4e2c7ff")
-	)
-	(wire
-		(pts
-			(xy 113.03 121.92) (xy 114.3 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2564eb73-deb1-49fe-93c2-2e9231f08523")
-	)
-	(wire
-		(pts
 			(xy 66.04 101.6) (xy 62.23 101.6)
 		)
 		(stroke
@@ -2828,16 +2808,6 @@
 			(type default)
 		)
 		(uuid "25b99296-d261-4b77-9844-a1ff0db2a5c4")
-	)
-	(wire
-		(pts
-			(xy 104.14 124.46) (xy 105.41 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26b92f62-2d10-4c51-87c9-7e55582e547d")
 	)
 	(wire
 		(pts
@@ -3091,16 +3061,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 124.46) (xy 114.3 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67385a2e-5719-4656-9722-57f7d1e39056")
-	)
-	(wire
-		(pts
 			(xy 52.07 143.51) (xy 52.07 144.78)
 		)
 		(stroke
@@ -3241,16 +3201,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 55.88) (xy 181.61 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88ea1c45-2922-4094-9b84-833977205972")
-	)
-	(wire
-		(pts
 			(xy 73.66 152.4) (xy 73.66 149.86)
 		)
 		(stroke
@@ -3338,16 +3288,6 @@
 			(type default)
 		)
 		(uuid "98153583-2eec-450a-8d4a-4cc6660c8457")
-	)
-	(wire
-		(pts
-			(xy 173.99 58.42) (xy 165.1 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98c3d894-6d6d-4d86-993d-481e3dd3a8cd")
 	)
 	(wire
 		(pts
@@ -3691,16 +3631,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 58.42) (xy 181.61 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed669c6a-9258-4d6b-b4ed-69ceb57617e6")
-	)
-	(wire
-		(pts
 			(xy 124.46 34.29) (xy 124.46 33.02)
 		)
 		(stroke
@@ -3758,16 +3688,6 @@
 			(type default)
 		)
 		(uuid "f9fc17cd-a6cf-4ff6-9085-04f5e355f2d6")
-	)
-	(wire
-		(pts
-			(xy 173.99 55.88) (xy 165.1 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdc4c06f-d0de-46bc-b652-6b7b10cf6b9d")
 	)
 	(wire
 		(pts
@@ -9566,7 +9486,7 @@
 	)
 	(hierarchical_label "RP2040_{RX}"
 		(shape input)
-		(at 190.5 58.42 0)
+		(at 165.1 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9577,7 +9497,7 @@
 	)
 	(hierarchical_label "SWD"
 		(shape bidirectional)
-		(at 104.14 124.46 180)
+		(at 114.3 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9632,7 +9552,7 @@
 	)
 	(hierarchical_label "SWCLK"
 		(shape input)
-		(at 104.14 121.92 180)
+		(at 114.3 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9698,7 +9618,7 @@
 	)
 	(hierarchical_label "RP2040_{TX}"
 		(shape output)
-		(at 190.5 55.88 0)
+		(at 165.1 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10653,136 +10573,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 109.22 121.92 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e51ff25-ad10-4185-bf5b-8f078a92dd45")
-		(property "Reference" "R7"
-			(at 109.22 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 109.22 119.38 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 109.474 120.904 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 109.22 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 109.22 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet1" ""
-			(at 109.22 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part No." ""
-			(at 109.22 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 109.22 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0402FR-07100RL"
-			(at 109.22 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OEPSPN" "OEPS020077"
-			(at 109.22 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C106232"
-			(at 109.22 121.92 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "711f9699-ae6b-4574-8461-3a4bb256e9e5")
-		)
-		(pin "2"
-			(uuid "c99a8d53-a862-40f8-a672-d4ddae786ee0")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 214.63 38.1 0)
 		(mirror y)
@@ -11058,136 +10848,6 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 109.22 124.46 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "840d5bdf-4cf6-44d3-a28e-5eea0660ce6c")
-		(property "Reference" "R8"
-			(at 109.22 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 109.22 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 108.966 125.476 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 109.22 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 109.22 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet1" ""
-			(at 109.22 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part No." ""
-			(at 109.22 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 109.22 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0402FR-07100RL"
-			(at 109.22 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OEPSPN" "OEPS020077"
-			(at 109.22 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C106232"
-			(at 109.22 124.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a99171a-ccb5-4c68-b970-7c749e99c9eb")
-		)
-		(pin "2"
-			(uuid "c4a5fbf1-b978-46f0-a82c-232d68d49b8b")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -11554,12 +11214,13 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "0.1%"
 			(at 109.22 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "MPN" "CRCW04021K00FKED"
@@ -11580,7 +11241,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C106235"
+		(property "LCSC" ""
 			(at 109.22 111.76 90)
 			(effects
 				(font
@@ -11599,137 +11260,6 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 177.8 55.88 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a1db601-df6d-4c95-8fb5-e49f2063f530")
-		(property "Reference" "R9"
-			(at 177.8 51.054 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 177.8 53.594 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 177.546 54.864 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet1" ""
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part No." ""
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0402FR-07100RL"
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OEPSPN" "OEPS020077"
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C106232"
-			(at 177.8 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5d311783-874a-4fe3-b7d3-73fe7c7578c6")
-		)
-		(pin "2"
-			(uuid "d5b86c4b-ebc0-4016-a6a1-5516bd6c075b")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -12758,136 +12288,6 @@
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 177.8 58.42 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b70f2a3d-db2d-4942-abb6-0025880684cf")
-		(property "Reference" "R10"
-			(at 177.8 63.246 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 177.8 60.706 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 177.546 59.436 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 177.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 177.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet1" ""
-			(at 177.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part No." ""
-			(at 177.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 177.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0402FR-07100RL"
-			(at 177.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OEPSPN" "OEPS020077"
-			(at 177.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C106232"
-			(at 177.8 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a15511a6-4b58-4c76-84c5-7f5e28472256")
-		)
-		(pin "2"
-			(uuid "2e7c1d2a-33b9-4603-8317-26714b44254b")
-		)
-		(instances
-			(project "ephys-test-board"
-				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e"
-					(reference "R10")
 					(unit 1)
 				)
 			)

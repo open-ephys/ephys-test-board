@@ -60,19 +60,19 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|196950000|60965000|fcf21a7f-2caf-49f1-8d81-e7db0f098448|abde6294-c541-44f3-82dc-0da387a6b11f",
+          "hole_clearance|196950000|60965000|f434b185-a71d-4a81-ab86-8acde231d3ba|abde6294-c541-44f3-82dc-0da387a6b11f",
           ""
         ],
         [
-          "hole_clearance|196950000|60965000|fcf21a7f-2caf-49f1-8d81-e7db0f098448|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
+          "hole_clearance|196950000|60965000|f434b185-a71d-4a81-ab86-8acde231d3ba|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
           ""
         ],
         [
-          "hole_clearance|203050000|60965000|38eb2e83-3a6c-4ae1-9866-d2712dec7a5b|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
+          "hole_clearance|203050000|60965000|691b11b8-b664-49dd-aacb-bded27da505d|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
           ""
         ],
         [
-          "hole_clearance|203050000|60965000|38eb2e83-3a6c-4ae1-9866-d2712dec7a5b|f2f99769-d1e0-43d9-b332-97d91dc34de6",
+          "hole_clearance|203050000|60965000|691b11b8-b664-49dd-aacb-bded27da505d|f2f99769-d1e0-43d9-b332-97d91dc34de6",
           ""
         ],
         [
@@ -282,7 +282,6 @@
         0.0,
         0.15,
         0.2,
-        0.25,
         0.3,
         0.5,
         1.0
@@ -317,10 +316,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.25
         },
         {
           "diameter": 0.5,
@@ -687,7 +682,7 @@
           "group_by": false,
           "label": "Tolerance",
           "name": "Tolerance",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,

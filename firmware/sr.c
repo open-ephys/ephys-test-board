@@ -14,7 +14,8 @@ int sr_init()
     gpio_init(SR_SRCLK); gpio_set_dir(SR_SRCLK, GPIO_OUT);
     gpio_init(SR_RCLK); gpio_set_dir(SR_RCLK, GPIO_OUT);
     gpio_init(SR_SER); gpio_set_dir(SR_SER, GPIO_OUT); gpio_set_outover(SR_SER, GPIO_OVERRIDE_INVERT); // High -> ground channel, Low -> tie to signal
-    gpio_init(TEST_SEL); gpio_set_dir(TEST_SEL, GPIO_OUT);
+    gpio_init(nEXT_SEL); gpio_set_dir(nEXT_SEL, GPIO_OUT);
+    gpio_init(nDAC_SEL); gpio_set_dir(nDAC_SEL, GPIO_OUT);
 
     // Clear the SR and clock the 0 values into output registers
     gpio_put(SR_RCLK, 0);
@@ -23,8 +24,8 @@ int sr_init()
     gpio_put(SR_RCLK, 0);
     gpio_put(SR_nSRCLR, 1);
 
-    // Set signal select to internal
-    gpio_put(TEST_SEL, SIGNAL_INTERNAL);
+    // Disconnect both signal sources
+    sr_source(SIGNAL_NONE);
 
     return 0;
 }
@@ -53,6 +54,23 @@ int sr_update(sr_bit_arr_t const *bit_arr)
 
 int sr_source(signal_source_t source)
 {
-    gpio_put(TEST_SEL, source);
+    switch (source)
+    {
+        case SIGNAL_NONE:
+            gpio_put(nDAC_SEL, 1);
+            gpio_put(nEXT_SEL, 1);
+            break;
+        case SIGNAL_EXTERNAL:
+            gpio_put(nDAC_SEL, 1);
+            gpio_put(nEXT_SEL, 0);
+            break;
+        case SIGNAL_INTERNAL:
+            gpio_put(nEXT_SEL, 1);
+            gpio_put(nDAC_SEL, 0);
+            break;
+        default:
+            return -1;
+    }
+
     return 0;
 }

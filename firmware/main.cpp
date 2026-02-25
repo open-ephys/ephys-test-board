@@ -33,6 +33,7 @@ typedef struct timer_callback_data_t {
     size_t lut_len;
 } timer_callback_data_t;
 
+
 // WARNING: If this call takes longer than the timer period, it will completely take
 // over a core and lock out all other activity (e.g. command dequeueing that
 // would cause the timer to stop, etc.).
@@ -104,7 +105,7 @@ void core1_entry()
         {
             case WAVEFORM_GND:
                 ad5683_write_dac(&dac_spi, 0, 0);
-                sr_source(SIGNAL_INTERNAL);
+                sr_source(SIGNAL_NONE);
                 continue;
             case WAVEFORM_EXTERNAL:
                 ad5683_write_dac(&dac_spi, 0, 0);

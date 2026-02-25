@@ -15,6 +15,10 @@ static float batt_mon_read_voltage()
 
 int batt_mon_init()
 {
+    gpio_init(BATT_MON_EN);
+    gpio_set_dir(BATT_MON_EN, GPIO_OUT);
+    gpio_put(BATT_MON_EN, 1);
+
     adc_init();
     adc_gpio_init(BATT_MON_PIN);
     adc_select_input(BATT_MON_ADC);

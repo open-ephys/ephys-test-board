@@ -38,18 +38,6 @@
 #define MONOOLED_WHITE 1   ///< Default white 'color' for monochrome OLEDS
 #define MONOOLED_INVERSE 2 ///< Default inversion command for monochrome OLEDS
 
-static inline void cs_select() {
-  asm volatile("nop \n nop \n nop");
-  gpio_put(PICO_DEFAULT_SPI_CSN_PIN, 0);  // Active low
-  asm volatile("nop \n nop \n nop");
-}
-
-static inline void cs_deselect() {
-  asm volatile("nop \n nop \n nop");
-  gpio_put(PICO_DEFAULT_SPI_CSN_PIN, 1);
-  asm volatile("nop \n nop \n nop");
-}
-
 /*!
     @brief  Class that stores state and functions for interacting with
             generic grayscale OLED displays.
@@ -95,6 +83,19 @@ protected:
       rstPin; ///< The Arduino pin connected to reset (-1 if unused)
 
   uint8_t _bpp = 1; ///< Bits per pixel color for this display
+
+
+  void cs_select() {
+    asm volatile("nop \n nop \n nop");
+    gpio_put(csPin, 0);  // Active low
+    asm volatile("nop \n nop \n nop");
+  }
+
+  void cs_deselect() {
+    asm volatile("nop \n nop \n nop");
+    gpio_put(csPin, 1);
+    asm volatile("nop \n nop \n nop");
+  }
 };
 
 #endif // end __AVR_ATtiny85__ __AVR_ATtiny84__

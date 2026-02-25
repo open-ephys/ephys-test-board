@@ -21,9 +21,12 @@
 #define SR_RCLK             14
 #define SR_SER              15
 
-#define TEST_SEL            16
+#define nEXT_SEL            16
+#define nDAC_SEL            17
 
-#define OLED_PWR             19
+#define OLED_PWR            19
+
+#define BATT_MON_EN         20
 
 #define ENC_PIO             pio1
 #define ENC_A               21

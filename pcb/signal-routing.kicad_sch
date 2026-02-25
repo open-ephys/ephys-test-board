@@ -7,7 +7,7 @@
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
 		(date "2025-03-20")
-		(rev "F")
+		(rev "G")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -3337,7 +3337,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "19.8k"
 			(at 135.89 165.1 90)
 			(effects
 				(font
@@ -3426,7 +3426,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852472"
+		(property "LCSC" ""
 			(at 135.89 167.64 90)
 			(effects
 				(font
@@ -4170,7 +4170,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "19.8k"
 			(at 62.23 81.28 90)
 			(effects
 				(font
@@ -4259,7 +4259,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852472"
+		(property "LCSC" ""
 			(at 62.23 83.82 90)
 			(effects
 				(font
@@ -4361,7 +4361,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "19.8k"
 			(at 62.23 39.37 90)
 			(effects
 				(font
@@ -4450,7 +4450,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852472"
+		(property "LCSC" ""
 			(at 62.23 41.91 90)
 			(effects
 				(font
@@ -7057,7 +7057,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "19.8k"
 			(at 135.89 125.73 90)
 			(effects
 				(font
@@ -7146,7 +7146,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852472"
+		(property "LCSC" ""
 			(at 135.89 128.27 90)
 			(effects
 				(font
@@ -7375,7 +7375,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "19.8k"
 			(at 62.23 165.1 90)
 			(effects
 				(font
@@ -7464,7 +7464,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852472"
+		(property "LCSC" ""
 			(at 62.23 167.64 90)
 			(effects
 				(font
@@ -8072,7 +8072,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "19.8k"
 			(at 62.23 125.73 90)
 			(effects
 				(font
@@ -8161,7 +8161,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852472"
+		(property "LCSC" ""
 			(at 62.23 128.27 90)
 			(effects
 				(font
@@ -9045,7 +9045,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "19.8k"
 			(at 135.89 39.37 90)
 			(effects
 				(font
@@ -9134,7 +9134,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852472"
+		(property "LCSC" ""
 			(at 135.89 41.91 90)
 			(effects
 				(font
@@ -10630,7 +10630,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "19.8k"
 			(at 135.89 81.28 90)
 			(effects
 				(font
@@ -10719,7 +10719,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852472"
+		(property "LCSC" ""
 			(at 135.89 83.82 90)
 			(effects
 				(font

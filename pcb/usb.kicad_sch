@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "F")
+		(rev "G")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -13767,7 +13767,7 @@
 				)
 			)
 		)
-		(property "Value" "AP2112K-3.3"
+		(property "Value" "TLV75530PDBVR"
 			(at 140.97 88.9 0)
 			(effects
 				(font
@@ -13784,7 +13784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv755p.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1772006670451&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftlv755p"
 			(at 140.97 92.71 0)
 			(effects
 				(font
@@ -13793,7 +13793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+		(property "Description" "500mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.0V fixed positive output, SOT-23-5"
 			(at 140.97 95.25 0)
 			(effects
 				(font

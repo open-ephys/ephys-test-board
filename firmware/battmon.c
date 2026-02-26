@@ -9,7 +9,7 @@
 
 static float batt_mon_read_voltage()
 {
-    const float conversion_factor = 3.3f / (1 << 12);
+    const float conversion_factor = VCC_VOLTAGE / (1 << 12);
     return (adc_read() << 1) * conversion_factor; // Read ADC value, account for the 0.5x voltage divider, and scale to volts
 }
 
@@ -32,7 +32,8 @@ int batt_mon_init()
 
 bool batt_mon_monitor(mode_context_t *ctx)
 {
-    float batt_frac = (batt_mon_read_voltage() - BATT_VOLTAGE_LOW) / (BATT_VOLTAGE_HIGH - BATT_VOLTAGE_LOW);
+    ctx->battery_voltage = batt_mon_read_voltage();
+    float batt_frac = (ctx->battery_voltage - BATT_VOLTAGE_LOW) / (BATT_VOLTAGE_HIGH - BATT_VOLTAGE_LOW);
 
     bool ctx_changed = false;
     if (fabsf(ctx->battery_frac - batt_frac) > 0.01f) {

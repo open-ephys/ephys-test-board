@@ -2,6 +2,9 @@
 
 #include "pico/stdlib.h"
 
+// Operating voltage
+#define VCC_VOLTAGE         3.0f
+
 // Pin definitions
 #define MODULE_I2C          i2c1
 #define MODULE_SDA          2

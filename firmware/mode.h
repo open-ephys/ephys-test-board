@@ -65,6 +65,7 @@ typedef struct mode_context_t {
     uint8_t channel_idx;                    // Selected headstage channel
     mode_signal_t signal;                   // The test signal
     module_t module;                        // Module metadata
+    float battery_voltage;                  // Voltage of battery
     float battery_frac;                     // Fraction of battery remaining
     bool usb_detected;                      // Indicates if USB is plugged in
 } mode_context_t;

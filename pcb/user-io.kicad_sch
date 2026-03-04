@@ -6720,7 +6720,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW04021K00FKED"
+		(property "MPN" "ERA-1AEB102C"
 			(at 163.83 130.81 0)
 			(effects
 				(font
@@ -6729,7 +6729,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020027"
+		(property "OEPSPN" "OEPS020189"
 			(at 163.83 130.81 0)
 			(effects
 				(font
@@ -8646,7 +8646,7 @@
 				)
 			)
 		)
-		(property "MPN" "PEC12R-4222F-S0024"
+		(property "MPN" "PEC12R-4220F-S0024"
 			(at 139.7 133.35 0)
 			(effects
 				(font
@@ -8655,7 +8655,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS070113"
+		(property "OEPSPN" "OEPS100076"
 			(at 139.7 133.35 0)
 			(effects
 				(font

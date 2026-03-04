@@ -13837,7 +13837,7 @@
 				)
 			)
 		)
-		(property "MPN" "AP2112K-3.3TRG1"
+		(property "MPN" "TLV75530PDBVR"
 			(at 140.97 95.25 0)
 			(effects
 				(font
@@ -13846,7 +13846,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS080155"
+		(property "OEPSPN" "OEPS080199"
 			(at 140.97 95.25 0)
 			(effects
 				(font
@@ -14947,6 +14947,24 @@
 			)
 		)
 		(property "LCSC" "C398358"
+			(at 226.06 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TLV9061IDBVR"
+			(at 226.06 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080179"
 			(at 226.06 128.27 0)
 			(effects
 				(font

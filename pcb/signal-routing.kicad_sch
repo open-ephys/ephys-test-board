@@ -2952,6 +2952,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "FSA553UCX"
+			(at 152.4 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 152.4 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "C1"
 			(uuid "030a44ca-3bf3-4412-a18a-41a8e8e3bed4")
 		)
@@ -3226,6 +3244,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "FSA553UCX"
+			(at 77.47 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 77.47 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "C1"
 			(uuid "bd7e8e15-5415-4d78-8e7d-b805dd42be19")
 		)
@@ -3408,7 +3444,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 135.89 167.64 0)
 			(effects
 				(font
@@ -3417,7 +3453,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 135.89 167.64 0)
 			(effects
 				(font
@@ -4241,7 +4277,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 62.23 83.82 0)
 			(effects
 				(font
@@ -4250,7 +4286,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 62.23 83.82 0)
 			(effects
 				(font
@@ -4432,7 +4468,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 62.23 41.91 0)
 			(effects
 				(font
@@ -4441,7 +4477,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 62.23 41.91 0)
 			(effects
 				(font
@@ -5810,6 +5846,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "FSA553UCX"
+			(at 77.47 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 77.47 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "C1"
 			(uuid "e8406868-6df0-4e6a-a940-81a93c27dc3d")
 		)
@@ -6697,7 +6751,7 @@
 				)
 			)
 		)
-		(property "MPN" "SN74HCS595PWR"
+		(property "MPN" "SN74HC595PWR"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -6706,7 +6760,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS080159"
+		(property "OEPSPN" "OEPS080200"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -7128,7 +7182,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 135.89 128.27 0)
 			(effects
 				(font
@@ -7137,7 +7191,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 135.89 128.27 0)
 			(effects
 				(font
@@ -7446,7 +7500,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 62.23 167.64 0)
 			(effects
 				(font
@@ -7455,7 +7509,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 62.23 167.64 0)
 			(effects
 				(font
@@ -8143,7 +8197,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 62.23 128.27 0)
 			(effects
 				(font
@@ -8152,7 +8206,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 62.23 128.27 0)
 			(effects
 				(font
@@ -8934,6 +8988,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "FSA553UCX"
+			(at 152.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 152.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "C1"
 			(uuid "030a44ca-3bf3-4412-a18a-41a8e8e3bed5")
 		)
@@ -9116,7 +9188,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 135.89 41.91 0)
 			(effects
 				(font
@@ -9125,7 +9197,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 135.89 41.91 0)
 			(effects
 				(font
@@ -9393,6 +9465,24 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 66.04 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 77.47 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 77.47 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10054,6 +10144,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "FSA553UCX"
+			(at 152.4 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 152.4 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "C1"
 			(uuid "98cf2cb4-4d8e-4386-a34f-5f3ebe70bb69")
 		)
@@ -10194,6 +10302,24 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 66.04 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 77.47 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 77.47 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10701,7 +10827,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 135.89 83.82 0)
 			(effects
 				(font
@@ -10710,7 +10836,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 135.89 83.82 0)
 			(effects
 				(font
@@ -10851,6 +10977,24 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 140.97 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 152.4 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 152.4 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)

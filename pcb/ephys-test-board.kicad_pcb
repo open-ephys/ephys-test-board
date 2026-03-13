@@ -2151,7 +2151,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2206,6 +2206,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "946634ac-61e2-44f2-a0c6-8a9f8e4bb3ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9039271c-f65f-4f2a-b11b-be3d1b279d5c")
 			(effects
 				(font
 					(size 1 1)
@@ -4793,7 +4806,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4848,6 +4861,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2bca24ae-43a5-499f-96bd-49375bb433a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc54f310-b8ac-4e89-a8ec-600ef0c3955b")
 			(effects
 				(font
 					(size 1 1)
@@ -5443,7 +5469,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5498,6 +5524,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cb4fc400-a14b-469e-b6d0-13417806dc26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c20992aa-1a01-4fc6-bb69-9cd10802f15d")
 			(effects
 				(font
 					(size 1 1)
@@ -6093,7 +6132,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6148,6 +6187,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c4b5bbc2-62e9-45cf-b53c-f53cc0b24f3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11ef077f-5af8-4b19-95a6-005a075bb920")
 			(effects
 				(font
 					(size 1 1)
@@ -7917,7 +7969,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7972,6 +8024,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e9d66fb8-5fb2-4966-b3c1-fef685eb9bf2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c2cb110-9590-4f30-a3c9-903a59a0e629")
 			(effects
 				(font
 					(size 1 1)
@@ -8996,7 +9061,7 @@
 		(path "/3204537c-edba-465e-8dbf-7f75aa43b711/74a802b7-cb40-4066-bbaa-60e721e7665e")
 		(sheetname "/USB/")
 		(sheetfile "usb.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd dnp)
 		(fp_line
 			(start -0.237258 -0.5225)
 			(end 0.237258 -0.5225)
@@ -9956,7 +10021,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10011,6 +10076,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c02fdb87-1441-445a-be9b-4131bf1baf9c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "531aba53-3a45-4f78-a7c6-c72a08dc4878")
 			(effects
 				(font
 					(size 1 1)
@@ -10912,7 +10990,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10967,6 +11045,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "37648ba8-427f-4c9b-89f8-624a0b9f2aa4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e30a4aea-25a7-4769-8d79-06358fbee811")
 			(effects
 				(font
 					(size 1 1)
@@ -13238,7 +13329,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13293,6 +13384,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0080e672-e071-40a5-b7f1-752af56528d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5373cae3-a7e0-4bb9-8f1e-aa2300c11ec7")
 			(effects
 				(font
 					(size 1 1)
@@ -14603,6 +14707,19 @@
 				)
 			)
 		)
+		(property "LCSC" "C7451493"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8070cd2c-6734-4fe4-ac0b-457a63f468b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MSOP*3x3mm*P0.65mm*")
 		(path "/a1b553e6-360f-440c-99f8-5680e9dd5803/3e0d8b37-82e6-4048-b450-0830da9171b9")
 		(sheetname "/Test Signal/")
@@ -15541,7 +15658,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15596,6 +15713,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e62f3f47-9164-4c05-a847-1bfcbf1e9b4d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9185ee9f-8553-47a2-8a28-4bc0e9d79ad7")
 			(effects
 				(font
 					(size 1 1)
@@ -21291,7 +21421,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21346,6 +21476,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3f093946-afc7-4c62-a0d5-19cac0e39513")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6749b6b3-351d-4390-bb4e-04ade8fb1769")
 			(effects
 				(font
 					(size 1 1)
@@ -21647,7 +21790,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21702,6 +21845,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f294915a-9198-4c6c-8433-350e1265f402")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e84131c-1903-40a5-8bad-1f226cf58cd7")
 			(effects
 				(font
 					(size 1 1)
@@ -23497,7 +23653,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23552,6 +23708,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "671744ee-eb49-478b-a22a-2846b47961df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce532819-7bd8-4643-9f33-d0d2947992a1")
 			(effects
 				(font
 					(size 1 1)
@@ -27382,7 +27551,7 @@
 		(path "/a66148c7-982e-4d61-9830-c90652fb4da8")
 		(sheetname "/")
 		(sheetfile "ephys-test-board.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd dnp)
 		(fp_line
 			(start -1.44 -2.01)
 			(end 1.44 -2.01)
@@ -27785,7 +27954,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27840,6 +28009,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6ebd915f-2e93-4c01-8a43-c8a4b230ef23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0f5236f-cae8-426e-a1c8-89f3b80aab07")
 			(effects
 				(font
 					(size 1 1)
@@ -29532,7 +29714,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29587,6 +29769,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7b4e0a4d-7e9e-40b1-babb-dd4219834cb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bdee1954-8d64-49bd-a7a1-de3316231baa")
 			(effects
 				(font
 					(size 1 1)
@@ -44867,7 +45062,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -44922,6 +45117,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3daad287-1bdb-4d67-98e0-91bfc82dbf9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0bf176b-0e4c-40f3-823a-89e033a35f76")
 			(effects
 				(font
 					(size 1 1)
@@ -46396,7 +46604,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -46451,6 +46659,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "85722a54-0f7b-4706-9c36-c5a0d25af506")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4dd78f57-a09b-465d-bd76-afce029cd5e9")
 			(effects
 				(font
 					(size 1 1)
@@ -47342,7 +47563,7 @@
 				)
 			)
 		)
-		(property "Value" "TLV9061IDBVR"
+		(property "Value" "TLV9061SIDBVR"
 			(at 0 2.4 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -47378,7 +47599,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C398358"
+		(property "LCSC" "C2058350"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47391,7 +47612,7 @@
 				)
 			)
 		)
-		(property "MPN" "TLV9061IDBVR"
+		(property "MPN" "TLV9061SIDBVR"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47404,7 +47625,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS080179"
+		(property "OEPSPN" "OEPS080202"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47724,7 +47945,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -47779,6 +48000,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a5874591-32b1-4e08-99f6-c910170f28cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd9f6839-8a03-4ec2-ba1c-9a352c1a0174")
 			(effects
 				(font
 					(size 1 1)
@@ -48371,7 +48605,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -48426,6 +48660,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "34d15eab-18ea-4239-bae8-0c8133d01b85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e6c86f1-a825-47e5-885b-638bb7351ce9")
 			(effects
 				(font
 					(size 1 1)
@@ -49315,7 +49562,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -49370,6 +49617,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ff3e6dc0-419a-4d88-8963-ba7bdb70e58e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb0c7db5-cb19-42c6-a165-0d115c7ee70c")
 			(effects
 				(font
 					(size 1 1)
@@ -50100,7 +50360,7 @@
 		(path "/3204537c-edba-465e-8dbf-7f75aa43b711/d8b677db-d245-4ee6-becc-1721eb40a8aa")
 		(sheetname "/USB/")
 		(sheetfile "usb.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd dnp)
 		(fp_line
 			(start -0.785 0.9)
 			(end 0.785 0.9)
@@ -50322,7 +50582,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -50377,6 +50637,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "99260b05-9e5a-4462-ad85-e2dd7877e273")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7c87a0e-0e71-4fff-bef7-e1e54869dff5")
 			(effects
 				(font
 					(size 1 1)
@@ -52733,7 +53006,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -52788,6 +53061,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "75f56a96-e95d-468c-bbae-8fe81afdf720")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbe0ed51-e318-4b4f-a4c2-254cc2369f38")
 			(effects
 				(font
 					(size 1 1)
@@ -55465,7 +55751,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -55520,6 +55806,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3ca8764a-87ae-41e5-adaa-8bdd3d72dfa0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "315f19c3-a077-4eaa-91e1-db60487d0cf2")
 			(effects
 				(font
 					(size 1 1)
@@ -56250,7 +56549,7 @@
 		(path "/3204537c-edba-465e-8dbf-7f75aa43b711/e6a93742-8da9-4b11-8e4a-9bf9c8e53f85")
 		(sheetname "/USB/")
 		(sheetfile "usb.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd dnp)
 		(fp_line
 			(start 0.76 -1.56)
 			(end 0.76 -0.56)
@@ -56534,7 +56833,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -56589,6 +56888,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "85301d44-1a4f-49f1-a63e-b0def34655de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32d06f19-433d-450d-ac20-ed701d5c6154")
 			(effects
 				(font
 					(size 1 1)
@@ -57477,7 +57789,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -57532,6 +57844,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "33a74679-6fe3-4892-993c-ee8d7b0b01ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97d1880e-c38f-465c-8e77-46c6c295df15")
 			(effects
 				(font
 					(size 1 1)
@@ -58127,7 +58452,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -58182,6 +58507,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a1422a60-3d3b-42e4-908f-3e5f83f02431")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fb4118c-4827-4e0a-91e8-f570e876b88f")
 			(effects
 				(font
 					(size 1 1)
@@ -59179,7 +59517,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -59234,6 +59572,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "42fdbd94-fa71-4ff3-9cf2-c7c7a5018d06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "627cbd2c-50f3-4901-bb22-a99d0951ba3c")
 			(effects
 				(font
 					(size 1 1)
@@ -61835,7 +62186,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -61890,6 +62241,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bf004c3b-00ab-417e-982c-3bb316651326")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4513013f-7d33-4ac0-b5fb-b53c9d7a833d")
 			(effects
 				(font
 					(size 1 1)
@@ -62779,7 +63143,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -62834,6 +63198,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "360fd10e-ec5d-4e51-8963-9ea3d7dda08b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ffcc58a9-b797-4a7c-8ff7-78282385de42")
 			(effects
 				(font
 					(size 1 1)
@@ -64039,7 +64416,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -64094,6 +64471,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d9927524-e4f6-45eb-b025-532e56eeb64f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6da1777-d6ea-40d3-9ca3-946be7725f3f")
 			(effects
 				(font
 					(size 1 1)
@@ -66376,7 +66766,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -66431,6 +66821,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c5921782-5c86-4c6d-b9da-c52e7b8fb97b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a901bbba-2f6b-47de-b9ed-12f944781dd6")
 			(effects
 				(font
 					(size 1 1)
@@ -67523,7 +67926,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -67578,6 +67981,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7d217046-3d0c-4d81-9eaf-fc3804dbe041")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c169c7ed-939e-4ce3-9d2e-ffd3dc92b7bd")
 			(effects
 				(font
 					(size 1 1)
@@ -68771,7 +69187,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -68826,6 +69242,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3a3f4b5b-50d0-4a13-8d1e-b0742d69d4fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0bdd4606-892f-4667-8963-50acd2d3d954")
 			(effects
 				(font
 					(size 1 1)
@@ -69628,7 +70057,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -69683,6 +70112,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "52fc8142-98a0-4765-8baa-0e117b37801e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d60265e5-539d-4e7c-a18c-9e8adb4abe66")
 			(effects
 				(font
 					(size 1 1)
@@ -71669,7 +72111,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -71724,6 +72166,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4daf8cb6-4e15-48af-a0b6-cd938140105c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bc3b92b-6268-4722-b655-44454cd4e615")
 			(effects
 				(font
 					(size 1 1)
@@ -72789,7 +73244,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -72844,6 +73299,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "598f6ae4-c2bf-42c6-8053-519e93d482de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e835a46-c125-4511-b1c5-baa297372759")
 			(effects
 				(font
 					(size 1 1)
@@ -75803,7 +76271,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -75858,6 +76326,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4bc1f23c-7e28-44db-989d-b7a117413438")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc1c9d03-09f8-4a75-81de-7365dc82ef71")
 			(effects
 				(font
 					(size 1 1)
@@ -77618,7 +78099,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -77673,6 +78154,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c4a0b9e7-bd41-4017-be80-4b0bb7428520")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e1d1a02-2f79-46ae-b7c3-b7cb13cea50f")
 			(effects
 				(font
 					(size 1 1)
@@ -83639,7 +84133,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -83694,6 +84188,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "06a46c16-4771-444f-a0bd-8078c2bcb5fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "888492a2-12b9-4ece-b230-1f6ed3c48012")
 			(effects
 				(font
 					(size 1 1)
@@ -85366,7 +85873,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -85421,6 +85928,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0ae0dd6b-581f-46fa-be8c-1bdbbc7ea7e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb9395f0-8949-4af2-a916-bfd14e21ce4f")
 			(effects
 				(font
 					(size 1 1)
@@ -86026,7 +86546,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -86081,6 +86601,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "99e62d2c-495d-44dd-9ac7-fa094aead6bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b2c3647-0974-47a1-9eb1-5000eee5c0cd")
 			(effects
 				(font
 					(size 1 1)
@@ -86382,7 +86915,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -86437,6 +86970,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3a9db4d8-0f2d-4484-b7bd-bab983fd7cd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8e999e8-14b5-4470-82c7-ffae8be8a61f")
 			(effects
 				(font
 					(size 1 1)
@@ -87261,7 +87807,7 @@
 		(path "/3204537c-edba-465e-8dbf-7f75aa43b711/57a5fb76-e653-4a69-a87f-46a563937b0b")
 		(sheetname "/USB/")
 		(sheetfile "usb.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd dnp)
 		(fp_line
 			(start -0.107836 0.36)
 			(end 0.107836 0.36)
@@ -90186,7 +90732,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -90241,6 +90787,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "60bca0ff-1a9d-45fa-a439-5b67ee022488")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8feea73-f1d0-4fe5-bcae-d9a2c16385db")
 			(effects
 				(font
 					(size 1 1)
@@ -91757,7 +92316,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -91812,6 +92371,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d0487884-d168-4fab-9c1a-cf7cf0cc0071")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "453cbbae-e95d-4183-ae56-2bec07035408")
 			(effects
 				(font
 					(size 1 1)
@@ -92113,7 +92685,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -92168,6 +92740,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "95de5aa4-2a78-4685-862c-14389ea9c180")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d294790-3e65-4f67-af2c-8933ad052555")
 			(effects
 				(font
 					(size 1 1)
@@ -93658,7 +94243,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -93713,6 +94298,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6ee39b41-ad21-4d51-b4af-54b7b809da05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e2fe1e6-5dcd-482b-a252-a7a74449fb16")
 			(effects
 				(font
 					(size 1 1)
@@ -94607,7 +95205,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -94662,6 +95260,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4971c83c-1386-4332-bbb5-3806020a8efc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "737a68b4-1626-4bd0-baf8-4ebd38c0c8b7")
 			(effects
 				(font
 					(size 1 1)
@@ -94963,7 +95574,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -95018,6 +95629,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2cec03da-389f-473d-84d8-75312f4838ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75aecfa1-e799-48bd-9462-ece8e1791664")
 			(effects
 				(font
 					(size 1 1)
@@ -95625,7 +96249,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -95680,6 +96304,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ef5e13e4-07b2-4228-89e8-d9507393345c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "576f873a-00de-4aef-a886-758168511c47")
 			(effects
 				(font
 					(size 1 1)
@@ -97164,7 +97801,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -97219,6 +97856,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ed12a3db-3967-4640-b0b8-16a06530ff26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20adcf66-334e-4043-94e4-894c60ad697e")
 			(effects
 				(font
 					(size 1 1)
@@ -98747,7 +99397,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -98802,6 +99452,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5b6ae642-8f1a-4b62-94a1-b2055a0a546d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3200f00a-c234-4e28-848f-18ceb4e44baf")
 			(effects
 				(font
 					(size 1 1)
@@ -99604,7 +100267,7 @@
 				)
 			)
 		)
-		(property "Value" "LM27761"
+		(property "Value" "LM27761DSGR"
 			(at 0.01 2.14 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -99661,6 +100324,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d0be7034-d603-425c-8087-23d45f8af095")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C129351 "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a695d50-7b24-49f6-90f5-9e71e14e59df")
 			(effects
 				(font
 					(size 1 1)
@@ -100523,7 +101199,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -100578,6 +101254,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b44c92ae-0349-4bf3-84ea-dd9feff3ae73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47ef3386-cd78-4cbd-b46c-35c3f28bb465")
 			(effects
 				(font
 					(size 1 1)
@@ -101172,7 +101861,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -101227,6 +101916,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f576d807-d010-4ad8-8287-8e8c02d9ba91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "225ecdf5-7282-446d-9c6c-8cecfb44779c")
 			(effects
 				(font
 					(size 1 1)
@@ -101822,7 +102524,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -101877,6 +102579,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dac4f43d-8e3c-4149-89b6-677b878fb547")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc5c79bb-a560-49a4-84a6-68a583d429e1")
 			(effects
 				(font
 					(size 1 1)
@@ -104081,7 +104796,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -104136,6 +104851,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "899a9563-6f44-4b7f-9a48-753780e92a55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e097db9-828e-4155-af67-26b233b6d491")
 			(effects
 				(font
 					(size 1 1)
@@ -104437,7 +105165,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -104492,6 +105220,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6d41f4c1-79f1-44e7-8e56-033adca758de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d00a66a4-3dac-4c45-9de5-18f3eca60595")
 			(effects
 				(font
 					(size 1 1)
@@ -105675,7 +106416,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -105730,6 +106471,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a6d9459a-dc2b-48ea-8add-90a309d68679")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "337368c1-c566-46a6-966f-f9c47eaefb34")
 			(effects
 				(font
 					(size 1 1)
@@ -107434,7 +108188,7 @@
 		(path "/3204537c-edba-465e-8dbf-7f75aa43b711/4f5f0963-6de4-48b9-8ee3-8f0f34b23640")
 		(sheetname "/USB/")
 		(sheetfile "usb.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd dnp)
 		(fp_line
 			(start -0.153641 -0.38)
 			(end 0.153641 -0.38)
@@ -108483,7 +109237,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -108538,6 +109292,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8540b73b-1e26-4a37-a0c7-b71951e807f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32b686bd-b739-4af8-91dd-c3fbc4fe98e8")
 			(effects
 				(font
 					(size 1 1)
@@ -111400,7 +112167,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -111455,6 +112222,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "467e00c4-79de-4ed7-bfdc-1e1e5f2bfc9a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a3974fa-006a-4c85-9209-599fc65a932e")
 			(effects
 				(font
 					(size 1 1)
@@ -113336,7 +114116,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -113391,6 +114171,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f79f8d1d-a3ff-446d-8cab-71abcb64ebbf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78c4c5ed-c263-4600-aead-a4583e252c73")
 			(effects
 				(font
 					(size 1 1)
@@ -113827,7 +114620,7 @@
 		(path "/17b7ba4c-0969-440f-8c6a-fb643c7fb6ac")
 		(sheetname "/")
 		(sheetfile "ephys-test-board.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd dnp)
 		(fp_line
 			(start 2.65 -5.19)
 			(end 2.65 -4.62)
@@ -115355,7 +116148,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -115410,6 +116203,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c59a34f8-7cd3-45da-adfa-de9be81b29b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fecdd83-5f48-4e7d-8847-82cb610a3f23")
 			(effects
 				(font
 					(size 1 1)
@@ -116593,7 +117399,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -116648,6 +117454,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a5f90958-32f7-4449-8d4e-1389b3a04ba6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f9c7f0e-596b-47b5-9826-924c3b0c5a84")
 			(effects
 				(font
 					(size 1 1)
@@ -116949,7 +117768,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -117004,6 +117823,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4af0145a-e402-4d44-906f-1c9e1e6d895b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35f9132d-fd5e-4cc1-a8c2-c63cbb01ff24")
 			(effects
 				(font
 					(size 1 1)
@@ -117905,7 +118737,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -117960,6 +118792,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1fff0a59-53f4-424f-b936-3d60e34bc6b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bcfcad24-93e0-4930-8150-84b1a7847b52")
 			(effects
 				(font
 					(size 1 1)
@@ -119557,7 +120402,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -119612,6 +120457,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "782e34fa-b04d-4df7-a96d-19a9bc06fb99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dca14ff4-d9f0-4276-a812-4ac034cfe45a")
 			(effects
 				(font
 					(size 1 1)
@@ -121300,7 +122158,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 0 1.6925 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -121355,6 +122213,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2730a7e0-5bbe-4dee-8d2a-f9b6288098fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03e1f9b4-15f3-410d-9a5f-526c7b12dda2")
 			(effects
 				(font
 					(size 1 1)
@@ -122874,7 +123745,7 @@
 		(path "/3204537c-edba-465e-8dbf-7f75aa43b711/409e24e1-fdc0-4bf1-9a27-c192f26ef542")
 		(sheetname "/USB/")
 		(sheetfile "usb.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd dnp)
 		(fp_line
 			(start 0.76 1.56)
 			(end -0.76 1.56)

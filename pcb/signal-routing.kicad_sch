@@ -2917,7 +2917,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 152.4 157.48 0)
 			(effects
 				(font
@@ -2962,6 +2962,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080198"
+			(at 152.4 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
 			(at 152.4 165.1 0)
 			(effects
 				(font
@@ -3209,7 +3218,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 77.47 73.66 0)
 			(effects
 				(font
@@ -3254,6 +3263,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080198"
+			(at 77.47 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
 			(at 77.47 81.28 0)
 			(effects
 				(font
@@ -5811,7 +5829,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 70.612 115.316 0)
 			(effects
 				(font
@@ -5856,6 +5874,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080198"
+			(at 77.47 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
 			(at 77.47 125.73 0)
 			(effects
 				(font
@@ -8953,7 +8980,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 146.05 115.824 0)
 			(effects
 				(font
@@ -8998,6 +9025,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080198"
+			(at 152.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
 			(at 152.4 125.73 0)
 			(effects
 				(font
@@ -9437,7 +9473,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 77.47 157.48 0)
 			(effects
 				(font
@@ -9482,6 +9518,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080198"
+			(at 77.47 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
 			(at 77.47 165.1 0)
 			(effects
 				(font
@@ -10109,7 +10154,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 146.304 29.464 0)
 			(effects
 				(font
@@ -10154,6 +10199,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080198"
+			(at 152.4 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
 			(at 152.4 39.37 0)
 			(effects
 				(font
@@ -10274,7 +10328,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 70.612 28.956 0)
 			(effects
 				(font
@@ -10319,6 +10373,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080198"
+			(at 77.47 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
 			(at 77.47 39.37 0)
 			(effects
 				(font
@@ -10949,7 +11012,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 152.4 73.66 0)
 			(effects
 				(font
@@ -10994,6 +11057,15 @@
 			)
 		)
 		(property "OEPSPN" "OEPS080198"
+			(at 152.4 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
 			(at 152.4 81.28 0)
 			(effects
 				(font

@@ -14910,7 +14910,7 @@
 				)
 			)
 		)
-		(property "Value" "TLV9061IDBVR"
+		(property "Value" "TLV9061SIDBVR"
 			(at 236.22 134.62 0)
 			(effects
 				(font
@@ -14946,7 +14946,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C398358"
+		(property "LCSC" "C2058350"
 			(at 226.06 128.27 0)
 			(effects
 				(font
@@ -14955,7 +14955,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TLV9061IDBVR"
+		(property "MPN" "TLV9061SIDBVR"
 			(at 226.06 128.27 0)
 			(effects
 				(font
@@ -14964,7 +14964,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS080179"
+		(property "OEPSPN" "OEPS080202"
 			(at 226.06 128.27 0)
 			(effects
 				(font

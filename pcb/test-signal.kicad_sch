@@ -4549,7 +4549,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C107024"
 			(at 133.35 115.57 90)
 			(effects
 				(font
@@ -4930,7 +4930,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 195.58 104.14 90)
 			(effects
 				(font
@@ -5341,7 +5341,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C107024"
 			(at 157.48 62.23 90)
 			(effects
 				(font
@@ -6179,7 +6179,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 157.48 82.55 90)
 			(effects
 				(font
@@ -6440,7 +6440,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C138066"
 			(at 127 36.83 90)
 			(effects
 				(font
@@ -7235,7 +7235,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 175.26 114.3 90)
 			(effects
 				(font
@@ -7503,7 +7503,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C138066"
 			(at 113.03 106.68 90)
 			(effects
 				(font
@@ -7633,7 +7633,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5948099"
 			(at 163.83 137.16 90)
 			(effects
 				(font
@@ -7956,7 +7956,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 133.35 137.16 90)
 			(effects
 				(font
@@ -8432,7 +8432,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C281751"
 			(at 191.77 45.72 90)
 			(effects
 				(font
@@ -9891,7 +9891,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C107024"
 			(at 162.56 115.57 90)
 			(effects
 				(font
@@ -10159,7 +10159,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 204.47 44.45 90)
 			(effects
 				(font
@@ -10422,7 +10422,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C868262"
 			(at 217.17 34.29 90)
 			(effects
 				(font
@@ -10552,7 +10552,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 184.15 104.14 90)
 			(effects
 				(font

@@ -2917,7 +2917,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 152.4 157.48 0)
 			(effects
 				(font
@@ -2945,6 +2945,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 140.97 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 152.4 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 152.4 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 152.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3191,7 +3218,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 77.47 73.66 0)
 			(effects
 				(font
@@ -3219,6 +3246,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 77.47 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 77.47 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 77.47 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3408,7 +3462,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 135.89 167.64 0)
 			(effects
 				(font
@@ -3417,7 +3471,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 135.89 167.64 0)
 			(effects
 				(font
@@ -3426,7 +3480,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2535118"
 			(at 135.89 167.64 90)
 			(effects
 				(font
@@ -4241,7 +4295,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 62.23 83.82 0)
 			(effects
 				(font
@@ -4250,7 +4304,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 62.23 83.82 0)
 			(effects
 				(font
@@ -4259,7 +4313,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2535118"
 			(at 62.23 83.82 90)
 			(effects
 				(font
@@ -4432,7 +4486,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 62.23 41.91 0)
 			(effects
 				(font
@@ -4441,7 +4495,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 62.23 41.91 0)
 			(effects
 				(font
@@ -4450,7 +4504,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2535118"
 			(at 62.23 41.91 90)
 			(effects
 				(font
@@ -5775,7 +5829,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 70.612 115.316 0)
 			(effects
 				(font
@@ -5803,6 +5857,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 66.04 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 77.47 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 77.47 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 77.47 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,7 +6778,7 @@
 				)
 			)
 		)
-		(property "MPN" "SN74HCS595PWR"
+		(property "MPN" "SN74HC595PWR"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -6706,7 +6787,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS080159"
+		(property "OEPSPN" "OEPS080200"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -7128,7 +7209,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 135.89 128.27 0)
 			(effects
 				(font
@@ -7137,7 +7218,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 135.89 128.27 0)
 			(effects
 				(font
@@ -7146,7 +7227,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2535118"
 			(at 135.89 128.27 90)
 			(effects
 				(font
@@ -7446,7 +7527,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 62.23 167.64 0)
 			(effects
 				(font
@@ -7455,7 +7536,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 62.23 167.64 0)
 			(effects
 				(font
@@ -7464,7 +7545,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2535118"
 			(at 62.23 167.64 90)
 			(effects
 				(font
@@ -8143,7 +8224,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 62.23 128.27 0)
 			(effects
 				(font
@@ -8152,7 +8233,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 62.23 128.27 0)
 			(effects
 				(font
@@ -8161,7 +8242,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2535118"
 			(at 62.23 128.27 90)
 			(effects
 				(font
@@ -8899,7 +8980,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 146.05 115.824 0)
 			(effects
 				(font
@@ -8927,6 +9008,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 140.97 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 152.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 152.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 152.4 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9116,7 +9224,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 135.89 41.91 0)
 			(effects
 				(font
@@ -9125,7 +9233,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 135.89 41.91 0)
 			(effects
 				(font
@@ -9134,7 +9242,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2535118"
 			(at 135.89 41.91 90)
 			(effects
 				(font
@@ -9365,7 +9473,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 77.47 157.48 0)
 			(effects
 				(font
@@ -9393,6 +9501,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 66.04 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 77.47 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 77.47 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 77.47 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,7 +10154,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 146.304 29.464 0)
 			(effects
 				(font
@@ -10047,6 +10182,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 140.97 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 152.4 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 152.4 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 152.4 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10166,7 +10328,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 70.612 28.956 0)
 			(effects
 				(font
@@ -10194,6 +10356,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 66.04 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 77.47 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 77.47 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 77.47 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10701,7 +10890,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RN73R1ETTP1982B25"
 			(at 135.89 83.82 0)
 			(effects
 				(font
@@ -10710,7 +10899,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020208"
 			(at 135.89 83.82 0)
 			(effects
 				(font
@@ -10719,7 +10908,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2535118"
 			(at 135.89 83.82 90)
 			(effects
 				(font
@@ -10823,7 +11012,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 152.4 73.66 0)
 			(effects
 				(font
@@ -10851,6 +11040,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 140.97 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 152.4 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 152.4 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 152.4 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)

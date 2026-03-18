@@ -9053,7 +9053,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "AC0402FR-07100KL"
 			(at 68.58 148.59 0)
 			(effects
 				(font
@@ -9062,7 +9062,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020051"
 			(at 68.58 148.59 0)
 			(effects
 				(font

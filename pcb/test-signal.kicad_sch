@@ -4531,7 +4531,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C0402C182J5RACTU"
 			(at 133.35 115.57 0)
 			(effects
 				(font
@@ -4540,7 +4540,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS010090"
 			(at 133.35 115.57 0)
 			(effects
 				(font
@@ -4549,7 +4549,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C107024"
 			(at 133.35 115.57 90)
 			(effects
 				(font
@@ -4618,6 +4618,33 @@
 			)
 		)
 		(property "Description" "Low-Noise, Low-Distortion, Wide-Band, Rail-to-Rail Op Amps"
+			(at 161.29 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MAX4489AUA+"
+			(at 161.29 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080197"
+			(at 161.29 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7451493"
 			(at 161.29 36.83 0)
 			(effects
 				(font
@@ -4755,7 +4782,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "DNP"
 			(at 157.48 73.66 0)
 			(effects
 				(font
@@ -4764,7 +4791,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS000000"
 			(at 157.48 73.66 0)
 			(effects
 				(font
@@ -4885,7 +4912,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERA-1AEB102C"
 			(at 195.58 104.14 0)
 			(effects
 				(font
@@ -4894,7 +4921,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020189"
 			(at 195.58 104.14 0)
 			(effects
 				(font
@@ -4903,7 +4930,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 195.58 104.14 90)
 			(effects
 				(font
@@ -5296,7 +5323,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C0402C182J5RACTU"
 			(at 157.48 62.23 0)
 			(effects
 				(font
@@ -5305,7 +5332,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS010090"
 			(at 157.48 62.23 0)
 			(effects
 				(font
@@ -5314,7 +5341,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C107024"
 			(at 157.48 62.23 90)
 			(effects
 				(font
@@ -5701,7 +5728,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 73.914 27.178 0)
 			(effects
 				(font
@@ -5729,6 +5756,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 68.58 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 80.01 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 80.01 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 80.01 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5894,29 +5948,56 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "MAX4489AUA+"
+			(at 163.83 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080197"
+			(at 163.83 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7451493"
+			(at 163.83 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
-			(uuid "9cecd09e-0071-4368-a600-8d91f3c8dfed")
+			(uuid "9cecd09e-0071-4368-a600-8d91f3c8dfee")
 		)
 		(pin "4"
-			(uuid "16eea904-0dc1-4ffa-bc9b-3192c41ab565")
+			(uuid "16eea904-0dc1-4ffa-bc9b-3192c41ab566")
 		)
 		(pin "2"
-			(uuid "30d4075a-7569-4f62-b2fd-2e685f578206")
+			(uuid "30d4075a-7569-4f62-b2fd-2e685f578207")
 		)
 		(pin "5"
-			(uuid "b880399f-5245-44d8-9138-cb09ce04d82c")
+			(uuid "b880399f-5245-44d8-9138-cb09ce04d82d")
 		)
 		(pin "6"
-			(uuid "169765b9-a86f-4e17-be82-a4e76c10ee2b")
+			(uuid "169765b9-a86f-4e17-be82-a4e76c10ee2c")
 		)
 		(pin "8"
-			(uuid "8984d9fd-a70a-4bf5-88cf-11b4775492fd")
+			(uuid "8984d9fd-a70a-4bf5-88cf-11b4775492fe")
 		)
 		(pin "7"
-			(uuid "4a12c31c-ac55-4d1b-bda2-ea7d093dfd40")
+			(uuid "4a12c31c-ac55-4d1b-bda2-ea7d093dfd41")
 		)
 		(pin "1"
-			(uuid "6bc57561-20f5-4fbb-8189-cb2e7f170473")
+			(uuid "6bc57561-20f5-4fbb-8189-cb2e7f170474")
 		)
 		(instances
 			(project ""
@@ -6080,7 +6161,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERA-1AEB102C"
 			(at 157.48 82.55 0)
 			(effects
 				(font
@@ -6089,7 +6170,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020189"
 			(at 157.48 82.55 0)
 			(effects
 				(font
@@ -6098,7 +6179,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 157.48 82.55 90)
 			(effects
 				(font
@@ -6211,7 +6292,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "AC0402FR-07100KL"
 			(at 115.57 162.56 0)
 			(effects
 				(font
@@ -6220,7 +6301,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020051"
 			(at 115.57 162.56 0)
 			(effects
 				(font
@@ -6341,7 +6422,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0402FT10R0"
 			(at 127 36.83 0)
 			(effects
 				(font
@@ -6350,7 +6431,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020205"
 			(at 127 36.83 0)
 			(effects
 				(font
@@ -6359,7 +6440,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C138066"
 			(at 127 36.83 90)
 			(effects
 				(font
@@ -6472,7 +6553,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "RMCF0402FT249K"
 			(at 97.79 175.26 0)
 			(effects
 				(font
@@ -6481,7 +6562,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020209"
 			(at 97.79 175.26 0)
 			(effects
 				(font
@@ -6597,7 +6678,7 @@
 				)
 			)
 		)
-		(property "Value" "LM27761"
+		(property "Value" "LM27761DSGR"
 			(at 69.85 152.4 0)
 			(effects
 				(font
@@ -6625,6 +6706,33 @@
 			)
 		)
 		(property "Description" "low-noise regulated switched-capacitor voltage inverter with 2.7V-5.5V input to -1.5 to -5V Output Voltage, WSON-8"
+			(at 69.85 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LM27761DSGR"
+			(at 69.85 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080196"
+			(at 69.85 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C129351 "
 			(at 69.85 165.1 0)
 			(effects
 				(font
@@ -7109,7 +7217,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERA-1AEB102C"
 			(at 175.26 114.3 0)
 			(effects
 				(font
@@ -7118,7 +7226,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020189"
 			(at 175.26 114.3 0)
 			(effects
 				(font
@@ -7127,7 +7235,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 175.26 114.3 90)
 			(effects
 				(font
@@ -7377,7 +7485,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0402FT10R0"
 			(at 113.03 106.68 0)
 			(effects
 				(font
@@ -7386,7 +7494,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020205"
 			(at 113.03 106.68 0)
 			(effects
 				(font
@@ -7395,7 +7503,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C138066"
 			(at 113.03 106.68 90)
 			(effects
 				(font
@@ -7507,7 +7615,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "PNM0402E5001BST1"
 			(at 163.83 137.16 0)
 			(effects
 				(font
@@ -7516,7 +7624,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020206"
 			(at 163.83 137.16 0)
 			(effects
 				(font
@@ -7525,7 +7633,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5948099"
 			(at 163.83 137.16 90)
 			(effects
 				(font
@@ -7830,7 +7938,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERA-1AEB102C"
 			(at 133.35 137.16 0)
 			(effects
 				(font
@@ -7839,7 +7947,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020189"
 			(at 133.35 137.16 0)
 			(effects
 				(font
@@ -7848,7 +7956,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 133.35 137.16 90)
 			(effects
 				(font
@@ -8306,7 +8414,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CC0402JRNPO9BN101"
 			(at 191.77 45.72 0)
 			(effects
 				(font
@@ -8315,7 +8423,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS010089"
 			(at 191.77 45.72 0)
 			(effects
 				(font
@@ -8324,7 +8432,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C281751"
 			(at 191.77 45.72 90)
 			(effects
 				(font
@@ -9376,7 +9484,7 @@
 				)
 			)
 		)
-		(property "Value" "FSA553"
+		(property "Value" "FSA553UCX"
 			(at 73.406 114.3 0)
 			(effects
 				(font
@@ -9404,6 +9512,33 @@
 		)
 		(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
 			(at 68.58 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSA553UCX"
+			(at 80.01 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080198"
+			(at 80.01 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C605183 "
+			(at 80.01 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9738,7 +9873,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C0402C182J5RACTU"
 			(at 162.56 115.57 0)
 			(effects
 				(font
@@ -9747,7 +9882,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS010090"
 			(at 162.56 115.57 0)
 			(effects
 				(font
@@ -9756,7 +9891,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C107024"
 			(at 162.56 115.57 90)
 			(effects
 				(font
@@ -9876,7 +10011,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "DNP"
 			(at 133.35 127 0)
 			(effects
 				(font
@@ -9885,7 +10020,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS000000"
 			(at 133.35 127 0)
 			(effects
 				(font
@@ -10006,7 +10141,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERA-1AEB102C"
 			(at 204.47 44.45 0)
 			(effects
 				(font
@@ -10015,7 +10150,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020189"
 			(at 204.47 44.45 0)
 			(effects
 				(font
@@ -10024,7 +10159,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 204.47 44.45 90)
 			(effects
 				(font
@@ -10269,7 +10404,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RT0805BRE079KL"
 			(at 217.17 34.29 0)
 			(effects
 				(font
@@ -10278,7 +10413,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020207"
 			(at 217.17 34.29 0)
 			(effects
 				(font
@@ -10287,7 +10422,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C868262"
 			(at 217.17 34.29 90)
 			(effects
 				(font
@@ -10399,7 +10534,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERA-1AEB102C"
 			(at 184.15 104.14 0)
 			(effects
 				(font
@@ -10408,7 +10543,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" ""
+		(property "OEPSPN" "OEPS020189"
 			(at 184.15 104.14 0)
 			(effects
 				(font
@@ -10417,7 +10552,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C852624"
 			(at 184.15 104.14 90)
 			(effects
 				(font
@@ -10596,7 +10731,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RG1005P-104-B-T5"
+		(property "MPN" "AC0402FR-07100KL"
 			(at 105.41 162.56 0)
 			(effects
 				(font
@@ -10605,7 +10740,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020175"
+		(property "OEPSPN" "OEPS020051"
 			(at 105.41 162.56 0)
 			(effects
 				(font
@@ -10691,29 +10826,56 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "MAX4489AUA+"
+			(at 135.89 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OEPSPN" "OEPS080197"
+			(at 135.89 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7451493"
+			(at 135.89 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
-			(uuid "9cecd09e-0071-4368-a600-8d91f3c8dfed")
+			(uuid "9cecd09e-0071-4368-a600-8d91f3c8dfef")
 		)
 		(pin "4"
-			(uuid "16eea904-0dc1-4ffa-bc9b-3192c41ab565")
+			(uuid "16eea904-0dc1-4ffa-bc9b-3192c41ab567")
 		)
 		(pin "2"
-			(uuid "30d4075a-7569-4f62-b2fd-2e685f578206")
+			(uuid "30d4075a-7569-4f62-b2fd-2e685f578208")
 		)
 		(pin "5"
-			(uuid "b880399f-5245-44d8-9138-cb09ce04d82c")
+			(uuid "b880399f-5245-44d8-9138-cb09ce04d82e")
 		)
 		(pin "6"
-			(uuid "169765b9-a86f-4e17-be82-a4e76c10ee2b")
+			(uuid "169765b9-a86f-4e17-be82-a4e76c10ee2d")
 		)
 		(pin "8"
-			(uuid "8984d9fd-a70a-4bf5-88cf-11b4775492fd")
+			(uuid "8984d9fd-a70a-4bf5-88cf-11b4775492ff")
 		)
 		(pin "7"
-			(uuid "4a12c31c-ac55-4d1b-bda2-ea7d093dfd40")
+			(uuid "4a12c31c-ac55-4d1b-bda2-ea7d093dfd42")
 		)
 		(pin "1"
-			(uuid "6bc57561-20f5-4fbb-8189-cb2e7f170473")
+			(uuid "6bc57561-20f5-4fbb-8189-cb2e7f170475")
 		)
 		(instances
 			(project ""

@@ -1,6 +1,8 @@
 #include "ad5683.h"
 #include "ephys-tester.h"
 
+#define AD5683_WRITE_AND_LATCH_CMD (0b0011u << 28)
+
 // NB: Modified from https://github.com/raspberrypi/pico-examples/blob/master/pio/spi/pio_spi.c
 static void __time_critical_func(pio_spi_write32_nonblocking)(const pio_spi_inst_t *spi, const uint32_t src) {
 
@@ -52,13 +54,17 @@ int ad5683_init(const pio_spi_inst_t *spi)
     return 0;
 }
 
-int ad5683_write_dac(const pio_spi_inst_t *spi, uint16_t code, uint16_t rshift)
+signal_clip_t ad5683_write_dac(const pio_spi_inst_t *spi, uint16_t code, uint16_t rshift, uint16_t offset)
 {
+    signal_clip_t rc = CLIP_NONE;
+    int32_t val = ((int32_t)code - DAC_MIDSCALE) >> rshift;
+    val += offset;
+
+    if (val < 0) { val = 0; rc = CLIP_LOW;  }
+    if (val > DAC_FULLSCALE) { val = DAC_FULLSCALE; rc = CLIP_HIGH; }
+
     // NB: PIO SPI controller will take 24 bits starting at position 31 and
     // working down
-    int32_t ac = (int32_t)code - 32767;
-    ac >>= rshift;
-    uint32_t val = 0b0011 << 28 | (ac + 32767) << 12;
-    pio_spi_write32_nonblocking(spi, val);
-    return 0;
+    pio_spi_write32_nonblocking(spi, AD5683_WRITE_AND_LATCH_CMD | (uint32_t)val << 12);
+    return rc;
 }

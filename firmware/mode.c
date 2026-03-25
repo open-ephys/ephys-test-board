@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+#define OFFSET_INCREMENT_UV 10
+
 static inline void increment_dest(mode_context_t *ctx)
 {
     ctx->test_dest = ctx->test_dest == DEST_NUM_DESTINATIONS - 1 ?
@@ -59,6 +61,14 @@ static inline void decrement_amplitude(mode_signal_t *sig)
         sig->amp_rshift + 1;
 }
 
+static inline void change_offset(mode_signal_t *sig, int delta)
+{
+    if (delta > 0 && sig->offset_uV + OFFSET_INCREMENT_UV <= MAX_AMPLITUDE_UV)
+        sig->offset_uV += OFFSET_INCREMENT_UV;
+    else if (delta < 0 && sig->offset_uV - OFFSET_INCREMENT_UV >= -MAX_AMPLITUDE_UV)
+        sig->offset_uV -= OFFSET_INCREMENT_UV;
+}
+
 static inline void increment_freq_hz(mode_signal_t *sig)
 {
     if (sig->waveform == WAVEFORM_EXTERNAL)
@@ -104,6 +114,8 @@ static const char* string_waveform(const mode_signal_t *const sig)
     {
         case WAVEFORM_GND:
             return "Ground";
+        case WAVEFORM_DC:
+            return "DC";
         case WAVEFORM_SINE:
             return "Sine";
         case WAVEFORM_SAW:
@@ -139,14 +151,14 @@ static const char *string_amplitude(const mode_signal_t *const sig)
 {
     if (sig->waveform == WAVEFORM_SINE || sig->waveform == WAVEFORM_SAW)
     {
-        static char str[8];
-        snprintf(str, sizeof(str), "%f7.4", MAX_AMPLITUDE_UV / (1 << sig->amp_rshift));
+        static char str[11];
+        snprintf(str, sizeof(str), "%.4g uV", MAX_AMPLITUDE_UV / (1 << sig->amp_rshift));
         return str;
     }
     else if (sig->waveform == WAVEFORM_SPIKESLF || sig->waveform == WAVEFORM_SPIKESMF || sig->waveform == WAVEFORM_SPIKESHF)
     {
-        static char str[8];
-        snprintf(str, sizeof(str), "%f7.4", 1.0f / (1 << sig->amp_rshift));
+        static char str[11];
+        snprintf(str, sizeof(str), "%.4g %%", 100.0f / (1 << sig->amp_rshift));
         return str;
     }
     else // WAVEFORM_GND, WAVEFORM_EXTERNAL
@@ -155,11 +167,26 @@ static const char *string_amplitude(const mode_signal_t *const sig)
     }
 }
 
+static const char *string_offset(const mode_signal_t *const sig)
+{
+
+    if (sig->waveform == WAVEFORM_GND || sig->waveform == WAVEFORM_EXTERNAL)
+    {
+       return "";
+    }
+    else
+    {
+        static char str[9];
+        snprintf(str, sizeof(str), "%.4g uV", sig->offset_uV);
+        return str;
+    }
+}
+
 static const char *string_title_amplitude(const mode_signal_t *const sig)
 {
     if (sig->waveform == WAVEFORM_SINE || sig->waveform == WAVEFORM_SAW)
     {
-       return "Amp. (uV):";
+       return "Amp.:";
     }
     else if (sig->waveform == WAVEFORM_SPIKESLF || sig->waveform == WAVEFORM_SPIKESMF || sig->waveform == WAVEFORM_SPIKESHF)
     {
@@ -168,6 +195,18 @@ static const char *string_title_amplitude(const mode_signal_t *const sig)
     else // WAVEFORM_GND, WAVEFORM_EXTERNAL
     {
         return "";
+    }
+}
+
+static const char *string_title_offset(const mode_signal_t *const sig)
+{
+    if (sig->waveform == WAVEFORM_GND || sig->waveform == WAVEFORM_EXTERNAL)
+    {
+       return "";
+    }
+    else
+    {
+        return "Offset:";
     }
 }
 
@@ -211,10 +250,12 @@ void mode_init(mode_context_t *ctx)
     ctx->channel_map.num_channels = MAX_NUM_CHANNELS;
     for (int i = 0; i < MAX_NUM_CHANNELS; i++) { ctx->channel_map.channel_map[i] = i; }
     ctx->signal.waveform = WAVEFORM_SINE;
+    ctx->signal.offset_uV = 0.0f;
     ctx->signal.amp_rshift = 0;
     ctx->signal.freq_lut_idx = DEFAULT_FREQ_INDEX;
     ctx->battery_frac = 1.0;
     ctx->usb_detected = false;
+    ctx->clipping = CLIP_NONE;
 }
 
 void mode_cycle_selection(mode_context_t *ctx)
@@ -223,6 +264,10 @@ void mode_cycle_selection(mode_context_t *ctx)
     int inc_value = ctx->selection == SELECTION_DEST ? (ctx->test_dest == DEST_SINGLE_CHANNEL ? 1 : 2) : 1;
 
     if (ctx->signal.waveform == WAVEFORM_GND || ctx->signal.waveform == WAVEFORM_EXTERNAL)
+    {
+        wrap_value = SELECTION_OFFSET;
+    }
+    else if (ctx->signal.waveform == WAVEFORM_DC)
     {
         wrap_value = SELECTION_AMPLITUDE;
     }
@@ -249,6 +294,9 @@ mode_update_result_t mode_update_from_knob(mode_context_t *ctx, int delta)
             return MODE_UPDATE_CHANNEL;
         case SELECTION_AMPLITUDE:
             delta > 0 ? increment_amplitude(&ctx->signal) : decrement_amplitude(&ctx->signal);
+            return MODE_UPDATE_SIGNAL;
+        case SELECTION_OFFSET:
+            change_offset(&ctx->signal, delta);
             return MODE_UPDATE_SIGNAL;
         case SELECTION_FREQHZ:
             delta > 0 ? increment_freq_hz(&ctx->signal) : decrement_freq_hz(&ctx->signal);
@@ -280,6 +328,8 @@ const char *mode_str(const mode_context_t *const ctx, mode_selection_t selection
             return string_channel_idx(ctx);
         case SELECTION_AMPLITUDE:
             return string_amplitude(&ctx->signal);
+        case SELECTION_OFFSET:
+            return string_offset(&ctx->signal);
         case SELECTION_FREQHZ:
             return string_freq(&ctx->signal);
         default:
@@ -299,6 +349,8 @@ const char *title_str(const mode_context_t *const ctx, mode_selection_t selectio
             return "Channel:";
         case SELECTION_AMPLITUDE:
             return string_title_amplitude(&ctx->signal);
+        case SELECTION_OFFSET:
+            return string_title_offset(&ctx->signal);
         case SELECTION_FREQHZ:
             return string_title_freq(&ctx->signal);;
         default:

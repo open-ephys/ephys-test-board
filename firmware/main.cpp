@@ -22,12 +22,14 @@ extern "C"
 
 queue_t signal_generator_cmd_queue;
 volatile bool channel_increment_request = false;
-volatile bool batt_mon_update_request = false;
+volatile bool monitor_request = false;
 volatile bool knob_press_detected = false;
+volatile int dac_clipping = CLIP_NONE;
 
 typedef struct timer_callback_data_t {
     pio_spi_inst_t *dac_spi;
     uint16_t rshift;
+    uint16_t offset;
     int step;
     const uint16_t *lut;
     size_t lut_len;
@@ -40,17 +42,17 @@ typedef struct timer_callback_data_t {
 bool dac_update_callback(struct repeating_timer *t)
 {
     static size_t i = 0;
-    timer_callback_data_t *timer_data = (timer_callback_data_t *)t->user_data;
+    timer_callback_data_t *td = (timer_callback_data_t *)t->user_data;
 
-    ad5683_write_dac(timer_data->dac_spi, *(timer_data->lut + (i % timer_data->lut_len)), timer_data->rshift);
-    i += timer_data->step;
+    dac_clipping |= ad5683_write_dac(td->dac_spi, *(td->lut + (i % td->lut_len)), td->rshift, td->offset);
+    i += td->step;
 
     return true;
 }
 
-bool battery_monitor_callback(struct repeating_timer *t)
+bool system_monitor_callback(struct repeating_timer *t)
 {
-    batt_mon_update_request = true;
+    monitor_request = true;
     return true;
 }
 
@@ -97,6 +99,7 @@ void core1_entry()
         queue_remove_blocking(&signal_generator_cmd_queue, &signal);
 
         timer_data.dac_spi = &dac_spi;
+        timer_data.offset =  DAC_MIDSCALE + (signal.offset_uV / MAX_AMPLITUDE_UV) * DAC_FULLSCALE;
         timer_data.rshift = signal.amp_rshift;
         timer_cancelled = cancel_repeating_timer_safe(&timer, timer_cancelled);
         int timer_usec = last_timer_usec;
@@ -104,13 +107,17 @@ void core1_entry()
         switch (signal.waveform)
         {
             case WAVEFORM_GND:
-                ad5683_write_dac(&dac_spi, 0, 0);
+                ad5683_write_dac(&dac_spi, 0, 0, DAC_MIDSCALE);
                 sr_source(SIGNAL_NONE);
                 continue;
             case WAVEFORM_EXTERNAL:
-                ad5683_write_dac(&dac_spi, 0, 0);
+                ad5683_write_dac(&dac_spi, 0, 0, DAC_MIDSCALE);
                 sr_source(SIGNAL_EXTERNAL);
                 continue;
+            case WAVEFORM_DC:
+                ad5683_write_dac(&dac_spi, 0, 0, timer_data.offset);
+                sr_source(SIGNAL_INTERNAL);
+                break;
             case WAVEFORM_SINE:
                 timer_data.lut = SINE_LUT;
                 timer_data.lut_len = SINE_LUT_LENGTH;
@@ -171,11 +178,11 @@ int main()
     mode_context_t ctx;
     mode_init(&ctx);
 
-    // Battery monitor initialization
+    // System monitor initialization
     batt_mon_init();
     batt_mon_monitor(&ctx);
-    struct repeating_timer battery_monitor_timer;
-    add_repeating_timer_ms(-BATT_MON_PERIOD_MS, battery_monitor_callback, NULL, &battery_monitor_timer);
+    struct repeating_timer monitor_timer;
+    add_repeating_timer_ms(-SYS_MON_PERIOD_MS, system_monitor_callback, NULL, &monitor_timer);
 
     // Setup knob button callback
     gpio_init(ENC_BUT);
@@ -208,9 +215,9 @@ int main()
                 oled_update_map_menu(&ctx);
             }
 
-            if (batt_mon_update_request)
+            if (monitor_request)
             {
-                batt_mon_update_request = false;
+                monitor_request = false;
                 batt_mon_monitor(&ctx);
                 oled_update_map_menu(&ctx);
             }
@@ -238,7 +245,7 @@ int main()
     mode_update_from_knob(&ctx, quad_get_delta());
 
     // Enter main menu
-    oled_update_main_menu(&ctx);
+    oled_update_main_menu(&ctx, false);
 
     // Send default state to waveform generator
     queue_add_blocking(&signal_generator_cmd_queue, &(ctx.signal));
@@ -247,6 +254,9 @@ int main()
     struct repeating_timer channel_timer;
     bool channel_timer_cancelled = true;
     bool first_cycle = false;
+
+    // OLED state
+    bool blink = false;
 
     // Main loop
     while(true)
@@ -302,13 +312,17 @@ int main()
             }
         }
 
-        if (batt_mon_update_request)
+        if (monitor_request)
         {
-            batt_mon_update_request = false;
-            update_oled_required = batt_mon_monitor(&ctx);
+            monitor_request = false;
+            blink = !blink;
+            ctx.clipping = (signal_clip_t)dac_clipping;
+            batt_mon_monitor(&ctx);
+            dac_clipping = CLIP_NONE; // give it a chance to recover
+            update_oled_required = true;
         }
 
         if (update_oled_required)
-            oled_update_main_menu(&ctx);
+            oled_update_main_menu(&ctx, blink);
     }
 }

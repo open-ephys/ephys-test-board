@@ -6720,7 +6720,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ERA-1AEB102C"
+		(property "MPN" "RG1005P-102-B-T5"
 			(at 163.83 130.81 0)
 			(effects
 				(font
@@ -6729,7 +6729,7 @@
 				(hide yes)
 			)
 		)
-		(property "OEPSPN" "OEPS020189"
+		(property "OEPSPN" "OEPS020219"
 			(at 163.83 130.81 0)
 			(effects
 				(font
@@ -6738,7 +6738,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C852624"
+		(property "LCSC" "C2073397"
 			(at 163.83 130.81 90)
 			(effects
 				(font

@@ -125,29 +125,29 @@ static void draw_bolt(int16_t x, int16_t y)
 static void draw_high_clip(int16_t x, int16_t y, bool invert)
 {
     static const uint8_t bm[] = {
-        0b00000000, 0b00000000,
-        0b00001111, 0b11110000,
-        0b00011000, 0b00011000,
-        0b00110000, 0b00001100,
-        0b01100000, 0b00000110,
-        0b00000000, 0b00000000,
-        0b00000000, 0b00000000
+        0b11111111, 0b10000000,
+        0b00001000, 0b00000000,
+        0b00011100, 0b00000000,
+        0b00111110, 0b00000000,
+        0b00001000, 0b00000000,
+        0b00001000, 0b00000000,
+        0b00001000, 0b00000000
     };
-    display.drawBitmap(x, y, bm, 16, 7, invert ? SH110X_BLACK: SH110X_WHITE);
+    display.drawBitmap(x, y, bm, 9, 7, invert ? SH110X_BLACK: SH110X_WHITE);
 }
 
 static void draw_low_clip(int16_t x, int16_t y, bool invert)
 {
     static const uint8_t bm[] = {
-        0b00000000, 0b00000000,
-        0b00000000, 0b00000000,
-        0b01100000, 0b00000110,
-        0b00110000, 0b00001100,
-        0b00011000, 0b00011000,
-        0b00001111, 0b11110000,
-        0b00000000, 0b00000000
+        0b00001000, 0b00000000,
+        0b00001000, 0b00000000,
+        0b00001000, 0b00000000,
+        0b00111110, 0b00000000,
+        0b00011100, 0b00000000,
+        0b00001000, 0b00000000,
+        0b11111111, 0b10000000
     };
-    display.drawBitmap(x, y, bm, 16, 7, invert ? SH110X_BLACK: SH110X_WHITE);
+    display.drawBitmap(x, y, bm, 9, 7, invert ? SH110X_BLACK: SH110X_WHITE);
 }
 
 int oled_init()
@@ -211,10 +211,10 @@ int oled_update_main_menu(const mode_context_t *const ctx, bool blink)
     switch (ctx->clipping)
     {
         case CLIP_LOW:
-            draw_low_clip(SCREEN_WIDTH - 16, 0, blink);
+            draw_low_clip(SCREEN_WIDTH - 9, 0, blink);
             break;
         case CLIP_HIGH:
-            draw_high_clip(SCREEN_WIDTH - 16, 0, blink);
+            draw_high_clip(SCREEN_WIDTH - 9, 0, blink);
             break;
         case CLIP_NONE:
             if (ctx->usb_detected)

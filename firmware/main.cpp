@@ -29,6 +29,7 @@ volatile int dac_clipping = CLIP_NONE;
 typedef struct timer_callback_data_t {
     pio_spi_inst_t *dac_spi;
     uint16_t rshift;
+    float scale;
     uint16_t offset;
     int step;
     const uint16_t *lut;
@@ -39,12 +40,23 @@ typedef struct timer_callback_data_t {
 // WARNING: If this call takes longer than the timer period, it will completely take
 // over a core and lock out all other activity (e.g. command dequeueing that
 // would cause the timer to stop, etc.).
-bool dac_update_callback(struct repeating_timer *t)
+bool dac_update_callback_rs(struct repeating_timer *t)
 {
     static size_t i = 0;
     timer_callback_data_t *td = (timer_callback_data_t *)t->user_data;
 
-    dac_clipping |= ad5683_write_dac(td->dac_spi, *(td->lut + (i % td->lut_len)), td->rshift, td->offset);
+    dac_clipping |= ad5683_write_dac_rs(td->dac_spi, *(td->lut + (i % td->lut_len)), td->rshift, td->offset);
+    i += td->step;
+
+    return true;
+}
+
+bool dac_update_callback_scale(struct repeating_timer *t)
+{
+    static size_t i = 0;
+    timer_callback_data_t *td = (timer_callback_data_t *)t->user_data;
+
+    dac_clipping |= ad5683_write_dac_scale(td->dac_spi, *(td->lut + (i % td->lut_len)), td->scale, td->offset);
     i += td->step;
 
     return true;
@@ -101,21 +113,22 @@ void core1_entry()
         timer_data.dac_spi = &dac_spi;
         timer_data.offset =  DAC_MIDSCALE + (signal.offset_uV / MAX_AMPLITUDE_UV) * DAC_FULLSCALE;
         timer_data.rshift = signal.amp_rshift;
+        timer_data.scale = signal.amp_scale;
         timer_cancelled = cancel_repeating_timer_safe(&timer, timer_cancelled);
         int timer_usec = last_timer_usec;
 
         switch (signal.waveform)
         {
             case WAVEFORM_GND:
-                ad5683_write_dac(&dac_spi, 0, 0, DAC_MIDSCALE);
+                ad5683_write_dac_rs(&dac_spi, 0, 0, DAC_MIDSCALE);
                 sr_source(SIGNAL_NONE);
                 continue;
             case WAVEFORM_EXTERNAL:
-                ad5683_write_dac(&dac_spi, 0, 0, DAC_MIDSCALE);
+                ad5683_write_dac_rs(&dac_spi, 0, 0, DAC_MIDSCALE);
                 sr_source(SIGNAL_EXTERNAL);
                 continue;
             case WAVEFORM_DC:
-                ad5683_write_dac(&dac_spi, 0, 0, timer_data.offset);
+                ad5683_write_dac_rs(&dac_spi, 0, 0, timer_data.offset);
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SINE:
@@ -159,7 +172,14 @@ void core1_entry()
 
         if (timer_cancelled || last_timer_usec != timer_usec)
         {
-            timer_cancelled = !alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback, &timer_data, &timer);
+            if (signal.use_scale)
+            {
+                timer_cancelled = !alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback_scale, &timer_data, &timer);
+            }
+            else
+            {
+                timer_cancelled = !alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback_rs, &timer_data, &timer);
+            }
             last_timer_usec = timer_usec;
         }
     }
@@ -317,8 +337,8 @@ int main()
             monitor_request = false;
             blink = !blink;
             ctx.clipping = (signal_clip_t)dac_clipping;
-            batt_mon_monitor(&ctx);
             dac_clipping = CLIP_NONE; // give it a chance to recover
+            batt_mon_monitor(&ctx);
             update_oled_required = true;
         }
 

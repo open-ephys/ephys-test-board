@@ -54,10 +54,25 @@ int ad5683_init(const pio_spi_inst_t *spi)
     return 0;
 }
 
-signal_clip_t ad5683_write_dac(const pio_spi_inst_t *spi, uint16_t code, uint16_t rshift, uint16_t offset)
+signal_clip_t ad5683_write_dac_rs(const pio_spi_inst_t *spi, uint16_t code, uint16_t rshift, uint16_t offset)
 {
     signal_clip_t rc = CLIP_NONE;
     int32_t val = ((int32_t)code - DAC_MIDSCALE) >> rshift;
+    val += offset;
+
+    if (val < 0) { val = 0; rc = CLIP_LOW;  }
+    if (val > DAC_FULLSCALE) { val = DAC_FULLSCALE; rc = CLIP_HIGH; }
+
+    // NB: PIO SPI controller will take 24 bits starting at position 31 and
+    // working down
+    pio_spi_write32_nonblocking(spi, AD5683_WRITE_AND_LATCH_CMD | (uint32_t)val << 12);
+    return rc;
+}
+
+signal_clip_t ad5683_write_dac_scale(const pio_spi_inst_t *spi, uint16_t code, float scale, uint16_t offset)
+{
+    signal_clip_t rc = CLIP_NONE;
+    int32_t val = (int32_t)((code - DAC_MIDSCALE) * scale);
     val += offset;
 
     if (val < 0) { val = 0; rc = CLIP_LOW;  }

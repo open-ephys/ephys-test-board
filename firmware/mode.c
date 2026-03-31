@@ -19,11 +19,32 @@ static inline void decrement_dest(mode_context_t *ctx)
         (mode_dest_t)((ctx->test_dest - 1));
 }
 
+static inline bool waveform_uses_scale(mode_waveform_t waveform)
+{
+    switch (waveform)
+    {
+        case WAVEFORM_GND:
+        case WAVEFORM_DC:
+        case WAVEFORM_SINE:
+        case WAVEFORM_SAW:
+            return false;
+        case WAVEFORM_SPIKESLF:
+        case WAVEFORM_SPIKESMF:
+        case WAVEFORM_SPIKESHF:
+        case WAVEFORM_EXTERNAL:
+            return true;
+        case WAVEFORM_NUM_WAVEFORMS:
+            return false;
+    }
+}
+
 static inline void increment_waveform(mode_signal_t *sig)
 {
     sig->waveform = sig->waveform == WAVEFORM_NUM_WAVEFORMS - 1 ?
         sig->waveform :
         (mode_waveform_t)(sig->waveform + 1);
+
+    sig->use_scale = waveform_uses_scale(sig->waveform);
 }
 
 static inline void decrement_waveform(mode_signal_t *sig)
@@ -31,6 +52,8 @@ static inline void decrement_waveform(mode_signal_t *sig)
     sig->waveform = sig->waveform == WAVEFORM_GND ?
         sig->waveform :
         (mode_waveform_t)(sig->waveform - 1);
+
+    sig->use_scale = waveform_uses_scale(sig->waveform);
 }
 
 static inline void change_channel_idx(mode_context_t *ctx, int delta, bool override)
@@ -49,16 +72,32 @@ static inline void change_channel_idx(mode_context_t *ctx, int delta, bool overr
 
 static inline void increment_amplitude(mode_signal_t *sig)
 {
-    sig->amp_rshift = sig->amp_rshift == 0 ?
-        0 :
-        sig->amp_rshift - 1;
+    if (sig->use_scale)
+    {
+        sig->amp_scale += 0.1f;
+    }
+    else
+    {
+        sig->amp_rshift = sig->amp_rshift == 0 ?
+            0 :
+            sig->amp_rshift - 1;
+    }
 }
 
 static inline void decrement_amplitude(mode_signal_t *sig)
 {
-    sig->amp_rshift = sig->amp_rshift == DAC_MAX_SHIFT ?
-        DAC_MAX_SHIFT :
-        sig->amp_rshift + 1;
+    if (sig->use_scale)
+    {
+        sig->amp_scale = sig->amp_scale <= 0.1f ?
+            0.1f :
+            sig->amp_scale - 0.1f;
+    }
+    else
+    {
+        sig->amp_rshift = sig->amp_rshift == DAC_MAX_SHIFT ?
+            DAC_MAX_SHIFT :
+            sig->amp_rshift + 1;
+    }
 }
 
 static inline void change_offset(mode_signal_t *sig, int delta)
@@ -149,21 +188,21 @@ static const char *string_channel_idx(const mode_context_t *const ctx)
 
 static const char *string_amplitude(const mode_signal_t *const sig)
 {
-    if (sig->waveform == WAVEFORM_SINE || sig->waveform == WAVEFORM_SAW)
+    if(sig->waveform == WAVEFORM_GND || sig->waveform == WAVEFORM_EXTERNAL)
+    {
+        return "";
+    }
+    else if (!sig->use_scale)
     {
         static char str[11];
         snprintf(str, sizeof(str), "%.4g uV", MAX_AMPLITUDE_UV / (1 << sig->amp_rshift));
         return str;
     }
-    else if (sig->waveform == WAVEFORM_SPIKESLF || sig->waveform == WAVEFORM_SPIKESMF || sig->waveform == WAVEFORM_SPIKESHF)
+    else
     {
         static char str[11];
-        snprintf(str, sizeof(str), "%.4g %%", 100.0f / (1 << sig->amp_rshift));
+        snprintf(str, sizeof(str), "%.4g %%", 100.0f * sig->amp_scale);
         return str;
-    }
-    else // WAVEFORM_GND, WAVEFORM_EXTERNAL
-    {
-        return "";
     }
 }
 
@@ -190,7 +229,7 @@ static const char *string_title_amplitude(const mode_signal_t *const sig)
     }
     else if (sig->waveform == WAVEFORM_SPIKESLF || sig->waveform == WAVEFORM_SPIKESMF || sig->waveform == WAVEFORM_SPIKESHF)
     {
-        return "Atten.:";
+        return "Gain.:";
     }
     else // WAVEFORM_GND, WAVEFORM_EXTERNAL
     {
@@ -252,8 +291,10 @@ void mode_init(mode_context_t *ctx)
     ctx->signal.waveform = WAVEFORM_SINE;
     ctx->signal.offset_uV = 0.0f;
     ctx->signal.amp_rshift = 0;
+    ctx->signal.use_scale = false;
+    ctx->signal.amp_scale = 1.0f;
     ctx->signal.freq_lut_idx = DEFAULT_FREQ_INDEX;
-    ctx->battery_frac = 1.0;
+    ctx->battery_frac = 1.0f;
     ctx->usb_detected = false;
     ctx->clipping = CLIP_NONE;
 }

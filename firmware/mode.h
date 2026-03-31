@@ -47,6 +47,8 @@ typedef struct mode_signal_t {
     mode_waveform_t waveform;
     float offset_uV;
     uint16_t amp_rshift;
+    bool use_scale;
+    float amp_scale;
     uint16_t freq_lut_idx;
 } mode_signal_t;
 

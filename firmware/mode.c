@@ -74,7 +74,9 @@ static inline void increment_amplitude(mode_signal_t *sig)
 {
     if (sig->use_scale)
     {
-        sig->amp_scale += 0.1f;
+        sig->amp_scale = sig->amp_scale >= SIG_MAX_AMP_SCALE ?
+            SIG_MAX_AMP_SCALE :
+            sig->amp_scale + 0.1f;
     }
     else
     {
@@ -200,7 +202,7 @@ static const char *string_amplitude(const mode_signal_t *const sig)
     }
     else
     {
-        static char str[11];
+        static char str[8]; // "2000 %" = 7 chars + null
         snprintf(str, sizeof(str), "%.4g %%", 100.0f * sig->amp_scale);
         return str;
     }
@@ -215,8 +217,8 @@ static const char *string_offset(const mode_signal_t *const sig)
     }
     else
     {
-        static char str[9];
-        snprintf(str, sizeof(str), "%.4g uV", sig->offset_uV);
+        static char str[11]; // "-5000.0 uV" = 10 chars + null
+        snprintf(str, sizeof(str), "%.1f uV", sig->offset_uV);
         return str;
     }
 }

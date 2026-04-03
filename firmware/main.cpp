@@ -37,9 +37,9 @@ typedef struct timer_callback_data_t {
 } timer_callback_data_t;
 
 
-// WARNING: If this call takes longer than the timer period, it will completely take
-// over a core and lock out all other activity (e.g. command dequeueing that
-// would cause the timer to stop, etc.).
+// WARNING: If this call takes longer than the timer period, it will completely
+// take over a core and lock out all other activity (e.g. command dequeueing
+// that would cause the timer to stop, etc.).
 bool dac_update_callback_rs(struct repeating_timer *t)
 {
     static size_t i = 0;
@@ -51,6 +51,9 @@ bool dac_update_callback_rs(struct repeating_timer *t)
     return true;
 }
 
+// WARNING: If this call takes longer than the timer period, it will completely
+// take over a core and lock out all other activity (e.g. command dequeueing
+// that would cause the timer to stop, etc.).
 bool dac_update_callback_scale(struct repeating_timer *t)
 {
     static size_t i = 0;
@@ -79,12 +82,10 @@ void knob_press_callback(uint gpio, uint32_t events)
     knob_press_detected = true;
 }
 
-// TODO: Calling cancel_repeating_timer on a timer that has not had alarm added
-// to it seems to cause segfault. Is this expected or SDK bug?
-// cancel_repeating_timer docs say it checks for existence before cancelling.
-// Can we inspect timer object to see if its appropriate to cancel rather than
-// holding this first variable?
-bool cancel_repeating_timer_safe(repeating_timer_t *timer, bool timer_cancelled)
+// NB: Calling cancel_repeating_timer on a timer that has not been started
+// causes a segfault. Guard with a boolean rather than inspecting alarm_id,
+// which the SDK does not reliably reset to -1 on cancel.
+static bool cancel_repeating_timer_safe(repeating_timer_t *timer, bool timer_cancelled)
 {
     return timer_cancelled ? true : cancel_repeating_timer(timer);
 }
@@ -100,9 +101,10 @@ void core1_entry()
     ad5683_init(&dac_spi);
 
     struct repeating_timer timer;
-    timer_callback_data_t timer_data;
-    mode_signal_t signal;
+    timer_callback_data_t timer_data_buf[2] = {};
+    int timer_buf_active = 0;
     bool timer_cancelled = true;
+    mode_signal_t signal;
     static int last_timer_usec = 0;
     alarm_pool_t *alarm_pool = alarm_pool_create_with_unused_hardware_alarm(10);
 
@@ -110,10 +112,11 @@ void core1_entry()
     {
         queue_remove_blocking(&signal_generator_cmd_queue, &signal);
 
-        timer_data.dac_spi = &dac_spi;
-        timer_data.offset =  DAC_MIDSCALE + (signal.offset_uV / MAX_AMPLITUDE_UV) * DAC_FULLSCALE;
-        timer_data.rshift = signal.amp_rshift;
-        timer_data.scale = signal.amp_scale;
+        int next_buf = 1 - timer_buf_active;
+        timer_data_buf[next_buf].dac_spi = &dac_spi;
+        timer_data_buf[next_buf].offset = DAC_MIDSCALE + (signal.offset_uV / MAX_AMPLITUDE_UV) * DAC_FULLSCALE;
+        timer_data_buf[next_buf].rshift = signal.amp_rshift;
+        timer_data_buf[next_buf].scale = signal.amp_scale;
         timer_cancelled = cancel_repeating_timer_safe(&timer, timer_cancelled);
         int timer_usec = last_timer_usec;
 
@@ -128,41 +131,41 @@ void core1_entry()
                 sr_source(SIGNAL_EXTERNAL);
                 continue;
             case WAVEFORM_DC:
-                ad5683_write_dac_rs(&dac_spi, 0, 0, timer_data.offset);
+                ad5683_write_dac_rs(&dac_spi, 0, 0, timer_data_buf[next_buf].offset);
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SINE:
-                timer_data.lut = SINE_LUT;
-                timer_data.lut_len = SINE_LUT_LENGTH;
-                timer_data.step = FREQ_LUT[signal.freq_lut_idx][3];
+                timer_data_buf[next_buf].lut = SINE_LUT;
+                timer_data_buf[next_buf].lut_len = SINE_LUT_LENGTH;
+                timer_data_buf[next_buf].step = FREQ_LUT[signal.freq_lut_idx][3];
                 timer_usec = FREQ_LUT[signal.freq_lut_idx][2];
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SAW:
-                timer_data.lut = SAW_LUT;
-                timer_data.lut_len = SAW_LUT_LENGTH;
-                timer_data.step = FREQ_LUT[signal.freq_lut_idx][3];
+                timer_data_buf[next_buf].lut = SAW_LUT;
+                timer_data_buf[next_buf].lut_len = SAW_LUT_LENGTH;
+                timer_data_buf[next_buf].step = FREQ_LUT[signal.freq_lut_idx][3];
                 timer_usec = FREQ_LUT[signal.freq_lut_idx][2];
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SPIKESLF:
-                timer_data.lut = SPIKESLF;
-                timer_data.lut_len = SPIKES_LENGTH;
-                timer_data.step = 1;
+                timer_data_buf[next_buf].lut = SPIKESLF;
+                timer_data_buf[next_buf].lut_len = SPIKES_LENGTH;
+                timer_data_buf[next_buf].step = 1;
                 timer_usec = SPIKES_SAMP_PERIOD_USEC;
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SPIKESMF:
-                timer_data.lut = SPIKESMF;
-                timer_data.lut_len = SPIKES_LENGTH;
-                timer_data.step = 1;
+                timer_data_buf[next_buf].lut = SPIKESMF;
+                timer_data_buf[next_buf].lut_len = SPIKES_LENGTH;
+                timer_data_buf[next_buf].step = 1;
                 timer_usec = SPIKES_SAMP_PERIOD_USEC;
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SPIKESHF:
-                timer_data.lut = SPIKESHF;
-                timer_data.lut_len = SPIKES_LENGTH;
-                timer_data.step = 1;
+                timer_data_buf[next_buf].lut = SPIKESHF;
+                timer_data_buf[next_buf].lut_len = SPIKES_LENGTH;
+                timer_data_buf[next_buf].step = 1;
                 timer_usec = SPIKES_SAMP_PERIOD_USEC;
                 sr_source(SIGNAL_INTERNAL);
                 break;
@@ -172,14 +175,14 @@ void core1_entry()
 
         if (timer_cancelled || last_timer_usec != timer_usec)
         {
+            bool started;
             if (signal.use_scale)
-            {
-                timer_cancelled = !alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback_scale, &timer_data, &timer);
-            }
+                started = alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback_scale, &timer_data_buf[next_buf], &timer);
             else
-            {
-                timer_cancelled = !alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback_rs, &timer_data, &timer);
-            }
+                started = alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback_rs, &timer_data_buf[next_buf], &timer);
+            if (started)
+                timer_buf_active = next_buf;
+            timer_cancelled = !started;
             last_timer_usec = timer_usec;
         }
     }

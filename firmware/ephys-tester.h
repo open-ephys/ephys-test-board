@@ -60,6 +60,7 @@
 #define DAC_FULLSCALE       65535
 #define MAX_AMPLITUDE_UV    5000.0f
 #define DAC_MAX_SHIFT       10 // Max bit shift for DAC attenuation
+#define SIG_MAX_AMP_SCALE   20.0f   // Maximum scale multiplier (displayed as 100.0f * scale, max = 2000%)
 
 // Dac clipping stated
 typedef enum {

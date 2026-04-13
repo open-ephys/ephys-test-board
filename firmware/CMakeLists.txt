@@ -63,7 +63,6 @@ target_sources(ephys-tester PRIVATE
         channels.c
         eeprom.c
         sr.c
-        tiny-json.c
         ad5683.c
         quadrature.c
         battmon.c

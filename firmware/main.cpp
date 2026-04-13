@@ -14,7 +14,6 @@ extern "C"
 #include "quadrature.h"
 #include "mode.h"
 #include "battmon.h"
-#include "tiny-json.h"
 #include "lut.h"
 #include "spikes.h"
 #include "sr.h"
@@ -255,10 +254,10 @@ int main()
         eeprom_set_default(&ctx);
     }
 
-    // Channels
+    // Initialize channel mux
     channels_init();
 
-    // Queue for conveying settings to waveform generator and send default state
+    // Initialize queue for conveying settings to waveform generator
     queue_init(&signal_generator_cmd_queue, sizeof(mode_signal_t), 10);
 
     // Launch the second core to handle the waveform generator

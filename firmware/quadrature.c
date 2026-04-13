@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-#define PHASE_DETECTION_MAX_DWELL_MSEC 500
+#define QUAD_COUNTS_PER_DETENT 4
 
 static struct pio_quad_inst_t {
     PIO pio;
@@ -21,60 +21,32 @@ static void knob_turned_handler()
 {
     dma_channel_acknowledge_irq0(pio_quad.dma_chan);
 
-    // Detent phase detection via time-spent histogram state
-    static uint64_t phase_time[4] = {0};
-    static uint8_t  detent_phase  = 0;
-    static uint8_t  last_residue  = 0xFF;
-    static uint32_t residue_entry_us = 0;
+    // Displacement-from-anchor approach: register a detent when |raw counter|
+    // has moved >= QUAD_COUNTS_PER_DETENT from the last accepted detent
+    // position (anchor). Advancing the anchor on each registration provides
+    // hysteresis: e.g. a backward bounce of 1-3 counts never reaches the
+    // -QUAD_COUNTS_PER_DETENT threshold.
+    static bool initialized = false;
+    static int32_t anchor = 0;
+    int32_t raw = pio_quad.raw_counter;
 
-    // raw_counter is signed and residue is index
-    uint8_t residue = ((pio_quad.raw_counter % 4) + 4) % 4;
-
-    if (last_residue == 0xFF)
+    if (!initialized)
     {
-        // First call: just record where we are, nothing to accumulate yet
-        last_residue     = residue;
-        residue_entry_us = time_us_32();
-    }
-    else if (residue != last_residue)
-    {
-        // We moved: credit the time spent in the previous residue
-        uint32_t now = time_us_32() / 1000;
-        uint32_t elapsed = now - residue_entry_us; // wraps safely for uint32_t
-        elapsed = elapsed > PHASE_DETECTION_MAX_DWELL_MSEC ? PHASE_DETECTION_MAX_DWELL_MSEC : elapsed;
-        phase_time[last_residue] += elapsed * elapsed; //< PHASE_DETECTION_MAX_DWELL_MSEC ? elapsed : PHASE_DETECTION_MAX_DWELL_MSEC;
-
-        // Update detent_phase to whichever bucket is largest
-        if (phase_time[last_residue] > phase_time[detent_phase])
-            detent_phase = last_residue;
-
-        last_residue = residue;
-        residue_entry_us = now;
+        anchor = raw;
+        initialized = true;
+        dma_channel_start(pio_quad.dma_chan);
+        return;
     }
 
-    // Four raw counts between each detent
-    // NB: we dont want to do integer division here because this will round
-    // toward zero for both positive and negative numbers. We want to always
-    // round towards negative infinity. Otherwise when we transition to negative
-    // numbers, 7 raw_counter values [-3 to 3] will be mapped to 0.
-    int current_count = (pio_quad.raw_counter - detent_phase) >> 2;
-    int delta = current_count - pio_quad.count;
+    int32_t displacement = raw - anchor;
 
-    if (delta != 0)
+    if (displacement >= QUAD_COUNTS_PER_DETENT || displacement <= -QUAD_COUNTS_PER_DETENT)
     {
-        static int last_delta = 0;
-        // Only register if moving in the same direction as last move
-        if ((delta > 0) == (last_delta > 0) || last_delta == 0)
-        {
-            pio_quad.delta = delta;
-            pio_quad.count = current_count;
-            pio_quad.update = true;
-        }
-        last_delta = delta;
-    }
-    else
-    {
-        pio_quad.update = false;
+        int detents = displacement / QUAD_COUNTS_PER_DETENT;
+        pio_quad.count += detents;
+        pio_quad.delta = detents;
+        anchor += detents * QUAD_COUNTS_PER_DETENT;
+        pio_quad.update = true;
     }
 
     dma_channel_start(pio_quad.dma_chan);

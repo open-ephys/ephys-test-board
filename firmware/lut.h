@@ -19,12 +19,9 @@ const int FREQ_LUT[NUM_FREQS][4] =
     {10000, 1,      4,      100}    // 10
 };
 
-// }
-/** Generated using Dr LUT - Free Lookup Table Generator
-  * https://github.com/ppelikan/drlut
-  **/
-// Formula: sin(2*pi*t/T)
 
+// Generated using Dr LUT - Free Lookup Table Generator
+// https://github.com/ppelikan/drlut
 #define SINE_LUT_LENGTH 2500
 #define SAW_LUT_LENGTH 2500
 

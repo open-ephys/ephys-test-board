@@ -190,7 +190,7 @@ static const char *string_channel_idx(const mode_context_t *const ctx)
 
 static const char *string_amplitude(const mode_signal_t *const sig)
 {
-    if(sig->waveform == WAVEFORM_GND || sig->waveform == WAVEFORM_EXTERNAL)
+    if(sig->waveform == WAVEFORM_GND || sig->waveform == WAVEFORM_EXTERNAL || sig->waveform == WAVEFORM_DC)
     {
         return "";
     }
@@ -233,7 +233,7 @@ static const char *string_title_amplitude(const mode_signal_t *const sig)
     {
         return "Gain.:";
     }
-    else // WAVEFORM_GND, WAVEFORM_EXTERNAL
+    else // WAVEFORM_GND, WAVEFORM_EXTERNAL, WAVEFORM_DC
     {
         return "";
     }

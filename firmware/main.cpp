@@ -132,7 +132,7 @@ void core1_entry()
             case WAVEFORM_DC:
                 ad5683_write_dac_rs(&dac_spi, 0, 0, timer_data_buf[next_buf].offset);
                 sr_source(SIGNAL_INTERNAL);
-                break;
+                continue;
             case WAVEFORM_SINE:
                 timer_data_buf[next_buf].lut = SINE_LUT;
                 timer_data_buf[next_buf].lut_len = SINE_LUT_LENGTH;

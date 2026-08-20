@@ -9,7 +9,7 @@
 	(paper "A3")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "G")
+		(rev "H")
 		(company "Open Ephys, Inc.")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -175,7 +175,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -278,7 +278,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -291,7 +291,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -304,7 +304,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -431,7 +431,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -547,7 +547,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -560,7 +560,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -940,7 +940,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1043,7 +1043,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1069,7 +1069,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1543,7 +1543,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -1748,7 +1748,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "99bb24a5-c606-4efd-ac21-b003cee99050")
 		)
@@ -1774,6 +1774,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U76A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "70b58aa0-42a2-4540-96f0-c4186c0562ae")
 		)
@@ -2100,7 +2103,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -2203,7 +2206,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2229,7 +2232,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2893,7 +2896,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2996,7 +2999,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3009,7 +3012,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3022,7 +3025,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3668,7 +3671,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -3784,7 +3787,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3797,7 +3800,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4002,7 +4005,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -4207,7 +4210,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "7a2a6bec-860d-4f1d-a1b8-1a851f8f40c5")
 		)
@@ -4233,6 +4236,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U56A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "52cca342-f7d9-4b53-bcaf-83fce3ee7b8d")
 		)
@@ -4304,7 +4310,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -4420,7 +4426,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4433,7 +4439,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4638,7 +4644,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -4843,7 +4849,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "79708a56-fba2-4bf4-a759-fc070f827c1c")
 		)
@@ -4869,6 +4875,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U75A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "cbf3f63a-fd11-4342-a236-e97253049ec7")
 		)
@@ -4940,7 +4949,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5043,7 +5052,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5056,7 +5065,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5069,7 +5078,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5274,7 +5283,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -5479,7 +5488,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "284c0a67-7e13-4e45-bbcb-4a50f2305296")
 		)
@@ -5505,6 +5514,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U63A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "676e70a3-7877-442b-8d96-e3c98bd68580")
 		)
@@ -5576,7 +5588,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5679,7 +5691,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5692,7 +5704,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5705,7 +5717,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6087,7 +6099,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6190,7 +6202,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6203,7 +6215,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6216,7 +6228,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6343,7 +6355,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6446,7 +6458,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6459,7 +6471,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6472,7 +6484,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6932,7 +6944,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -7137,7 +7149,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "37dcaf00-a5dc-4ac9-8de5-3dc3ae00467e")
 		)
@@ -7163,6 +7175,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U30A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "cd10d248-c81f-45af-b39a-08145f0b3ea9")
 		)
@@ -7234,7 +7249,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7337,7 +7352,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7350,7 +7365,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7363,7 +7378,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7490,7 +7505,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7593,7 +7608,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7606,7 +7621,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7619,7 +7634,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8863,7 +8878,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -9068,7 +9083,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "5a2f2a4d-a36c-42d9-a673-331f0851526f")
 		)
@@ -9094,6 +9109,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U39A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "325a79c7-1515-4261-b0bf-d1f2bcbb288e")
 		)
@@ -9165,7 +9183,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -9268,7 +9286,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9294,7 +9312,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9767,7 +9785,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -9972,7 +9990,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "dea64dc2-c4df-4358-a774-dcfbe1964b48")
 		)
@@ -9998,6 +10016,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U66A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "0c6c63f2-8555-42d5-b4b4-e24d3e456856")
 		)
@@ -11383,7 +11404,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -11486,7 +11507,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11512,7 +11533,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11639,7 +11660,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11742,7 +11763,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11755,7 +11776,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11768,7 +11789,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11973,7 +11994,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -12178,7 +12199,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "4ed9a07d-ff1a-4798-a804-6bc0dc20741e")
 		)
@@ -12204,6 +12225,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U36A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "5272622d-e40f-4f2b-938f-14039f4985f8")
 		)
@@ -12275,7 +12299,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12378,7 +12402,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12391,7 +12415,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12404,7 +12428,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14193,7 +14217,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -14398,7 +14422,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "848412b7-53d4-41d3-9ac0-36ff2cfd3d78")
 		)
@@ -14424,6 +14448,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U49A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "c0a630e9-7eac-4528-bea3-0d0e94211aa0")
 		)
@@ -15271,7 +15298,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -15387,7 +15414,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15400,7 +15427,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15527,7 +15554,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15630,7 +15657,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15643,7 +15670,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15656,7 +15683,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17177,7 +17204,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -17293,7 +17320,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17306,7 +17333,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17433,7 +17460,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17536,7 +17563,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17549,7 +17576,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17562,7 +17589,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18210,7 +18237,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -18326,7 +18353,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18339,7 +18366,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19544,7 +19571,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -19749,7 +19776,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "dba4b2c7-d2fb-4f55-9f67-51546e3fef17")
 		)
@@ -19775,6 +19802,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U20A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "fb25acf6-06b3-46bb-976d-e90c31c5f4ec")
 		)
@@ -19924,7 +19954,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -20129,7 +20159,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "a1e72ea6-169b-478f-bd56-0f522e4e6858")
 		)
@@ -20155,6 +20185,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U9A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "0300615b-7af7-4884-9c4f-45c1b3a30bbf")
 		)
@@ -20493,7 +20526,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -20609,7 +20642,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20622,7 +20655,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21017,7 +21050,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -21133,7 +21166,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21146,7 +21179,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21273,7 +21306,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21376,7 +21409,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21389,7 +21422,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21402,7 +21435,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21607,7 +21640,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -21812,7 +21845,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "41fb2bc2-6dc0-44dc-a052-68119a16a4d3")
 		)
@@ -21838,6 +21871,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U73A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "f0a037d3-28ec-4bb0-98ea-8239cbbd6add")
 		)
@@ -21909,7 +21945,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -22025,7 +22061,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22038,7 +22074,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22432,7 +22468,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -22548,7 +22584,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22561,7 +22597,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23492,7 +23528,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23595,7 +23631,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23608,7 +23644,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23621,7 +23657,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24717,7 +24753,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -24820,7 +24856,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24846,7 +24882,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25609,7 +25645,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -25814,7 +25850,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "defab31c-430f-45d4-be2a-08155080978b")
 		)
@@ -25840,6 +25876,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U5A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "9b5d16f1-3b96-4f50-8eaf-e203b0c668af")
 		)
@@ -25911,7 +25950,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26014,7 +26053,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26027,7 +26066,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26040,7 +26079,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27286,7 +27325,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -27491,7 +27530,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "4a68efc8-63e0-42ec-8e30-e5f1b35c5f3a")
 		)
@@ -27517,6 +27556,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U25A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "64882e67-aed2-4f06-a717-9eda7aa51d88")
 		)
@@ -28318,7 +28360,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -28434,7 +28476,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28447,7 +28489,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29361,7 +29403,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -29464,7 +29506,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29490,7 +29532,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29617,7 +29659,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29720,7 +29762,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29733,7 +29775,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29746,7 +29788,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31270,7 +31312,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -31373,7 +31415,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31386,7 +31428,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31399,7 +31441,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32045,7 +32087,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -32161,7 +32203,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32174,7 +32216,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33023,7 +33065,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -33139,7 +33181,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33152,7 +33194,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33279,7 +33321,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -33395,7 +33437,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33408,7 +33450,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36813,7 +36855,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -36916,7 +36958,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36942,7 +36984,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37069,7 +37111,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -37185,7 +37227,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37198,7 +37240,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37325,7 +37367,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -37428,7 +37470,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37441,7 +37483,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37454,7 +37496,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41148,7 +41190,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -41251,7 +41293,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41264,7 +41306,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41277,7 +41319,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41404,7 +41446,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -41507,7 +41549,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41533,7 +41575,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41660,7 +41702,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -41776,7 +41818,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41789,7 +41831,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41994,7 +42036,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -42199,7 +42241,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "8687eb8d-6d62-4993-a0da-48d11b4915c5")
 		)
@@ -42225,6 +42267,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U43A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "590e91f4-a77c-4ca8-8805-638027243b25")
 		)
@@ -42549,7 +42594,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -42665,7 +42710,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42678,7 +42723,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42805,7 +42850,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -42908,7 +42953,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42921,7 +42966,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42934,7 +42979,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43061,7 +43106,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -43164,7 +43209,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43177,7 +43222,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43190,7 +43235,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43395,7 +43440,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -43600,7 +43645,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "c1e78d42-7e49-4ce5-91c5-84dcdd524baa")
 		)
@@ -43626,6 +43671,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U33A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "2fe61a7a-2ab5-47a3-9109-ba9df881ce77")
 		)
@@ -43697,7 +43745,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -43800,7 +43848,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43813,7 +43861,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43826,7 +43874,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43953,7 +44001,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -44056,7 +44104,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44069,7 +44117,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44082,7 +44130,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44690,7 +44738,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -44895,7 +44943,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "a1d53596-6fbb-4370-aca1-7594cf881f91")
 		)
@@ -44921,6 +44969,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U54A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "a9289a7b-5cfe-4bd5-9682-85c9534a7820")
 		)
@@ -45323,7 +45374,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -45528,7 +45579,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "1933c94d-2da7-4cb0-a227-a4e79f0d4430")
 		)
@@ -45554,6 +45605,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U53A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "4692e6be-36cf-41e0-a7f6-83a0c0842f4c")
 		)
@@ -45625,7 +45679,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -45728,7 +45782,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45754,7 +45808,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45881,7 +45935,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -45984,7 +46038,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46010,7 +46064,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46215,7 +46269,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -46420,7 +46474,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "ff20a4b6-d435-40aa-8d4b-6da00a29be19")
 		)
@@ -46446,6 +46500,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U41A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "a84da9ff-820f-4588-9656-ebc2cca131dc")
 		)
@@ -46517,7 +46574,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -46620,7 +46677,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46633,7 +46690,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46646,7 +46703,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47215,7 +47272,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -47420,7 +47477,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "ac02b71a-eb79-4736-be9b-d6e1c8da094c")
 		)
@@ -47446,6 +47503,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U59A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "35eb4031-8582-49ca-b47a-11fb2e2f7a95")
 		)
@@ -47517,7 +47577,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -47633,7 +47693,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47646,7 +47706,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47773,7 +47833,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -47889,7 +47949,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47902,7 +47962,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48322,7 +48382,7 @@
 				)
 			)
 		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48433,7 +48493,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "A" "C" "B" "S1" "S2")
+				(pins "A" "C" "B" "SH" "S1" "S2")
 			)
 		)
 		(attr through_hole)
@@ -48933,6 +48993,9 @@
 			(drill oval 3.1 2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(SW4-PadSH)")
+			(pinfunction "SH_SH")
+			(pintype "passive+no_connect")
 			(uuid "4eb7c1d7-73bb-4801-8173-d19ef781baa9")
 		)
 		(pad "SH" thru_hole oval
@@ -48941,6 +49004,9 @@
 			(drill oval 3.1 2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(SW4-PadSH)_1")
+			(pinfunction "SH_SH")
+			(pintype "passive+no_connect")
 			(uuid "886a7feb-bbc3-4037-b921-ebebc60c248f")
 		)
 		(embedded_fonts no)
@@ -48974,7 +49040,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -49077,7 +49143,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49090,7 +49156,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49103,7 +49169,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49524,7 +49590,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -49729,7 +49795,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "679fe45d-623d-4342-908d-34b6147bf8e4")
 		)
@@ -49755,6 +49821,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U55A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "df9d170f-7acb-4f4a-baab-0d636625e68b")
 		)
@@ -51079,7 +51148,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -51182,7 +51251,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51195,7 +51264,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51208,7 +51277,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51335,7 +51404,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -51438,7 +51507,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51464,7 +51533,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -52188,7 +52257,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -52393,7 +52462,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "8d84feb6-51fd-4520-8b2f-3f856dcbafe5")
 		)
@@ -52419,6 +52488,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U38A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "b3e34bd0-8911-4493-a2f6-285bcd6d3bbe")
 		)
@@ -52490,7 +52562,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -52593,7 +52665,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -52619,7 +52691,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -53302,7 +53374,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -53507,7 +53579,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "29fc41f9-25d4-4489-8b55-ec266399c3a3")
 		)
@@ -53533,6 +53605,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U6A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "8102f55a-cfa6-4385-8690-bd4f66d7ee4f")
 		)
@@ -53604,7 +53679,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -53720,7 +53795,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -53733,7 +53808,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54193,7 +54268,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -54398,7 +54473,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "70dd8646-d3dc-4cdb-870f-21428d3a8c12")
 		)
@@ -54424,6 +54499,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U31A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "c1bcfaa5-efb7-45df-85cc-f4d09d2fa117")
 		)
@@ -54495,7 +54573,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -54598,7 +54676,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54611,7 +54689,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54624,7 +54702,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54829,7 +54907,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -55034,7 +55112,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "b2d41206-ebfe-4edc-9155-644e358eb974")
 		)
@@ -55060,6 +55138,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U69A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "514f37d6-786a-4dee-9ec9-f6e1225b9c1d")
 		)
@@ -55881,7 +55962,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -56086,7 +56167,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "7bc35fb9-4c27-415a-946f-90aead7ddcfb")
 		)
@@ -56112,6 +56193,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U8A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "6bfb0ada-8d05-4b88-b640-164323db27a2")
 		)
@@ -56970,7 +57054,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -57073,7 +57157,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57086,7 +57170,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57099,7 +57183,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57226,7 +57310,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -57342,7 +57426,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57355,7 +57439,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57482,7 +57566,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -57585,7 +57669,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57598,7 +57682,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57611,7 +57695,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58354,7 +58438,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -58559,7 +58643,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "c6bb3638-2e56-43ef-9250-e6322918f78b")
 		)
@@ -58585,6 +58669,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U70A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "887858c2-deaf-48d6-ba2f-1fe25cc4629a")
 		)
@@ -58656,7 +58743,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -58759,7 +58846,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58772,7 +58859,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58785,7 +58872,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58912,7 +58999,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -59015,7 +59102,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -59028,7 +59115,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -59041,7 +59128,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -59246,7 +59333,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -59451,7 +59538,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "02c0e801-2b36-41fb-8535-6258a412ec6d")
 		)
@@ -59477,6 +59564,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U50A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "bd92e764-42c5-4ef9-97bc-c4eba32283b7")
 		)
@@ -60082,7 +60172,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -60198,7 +60288,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -60211,7 +60301,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -60416,7 +60506,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -60621,7 +60711,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "7abddc5a-c6fa-4502-a1d8-3fca16b3e867")
 		)
@@ -60647,6 +60737,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U71A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "78ec845f-771b-464e-b6df-a85fb50558d1")
 		)
@@ -60972,7 +61065,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -61088,7 +61181,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -61101,7 +61194,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -61696,7 +61789,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -61812,7 +61905,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -61825,7 +61918,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -61952,7 +62045,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -62055,7 +62148,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -62068,7 +62161,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -62081,7 +62174,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -62555,7 +62648,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -62760,7 +62853,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "75f4c9d7-c62a-4e54-b431-a7e377e9b75a")
 		)
@@ -62786,6 +62879,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U13A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "21596a71-abe2-405b-aced-baf1a31972fa")
 		)
@@ -63708,7 +63804,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -63913,7 +64009,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "bcc7b3d6-d475-43df-b4f1-3735ebaa2477")
 		)
@@ -63939,6 +64035,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U35A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "a32bc14c-f56e-46ec-9a90-8d5e22274d5f")
 		)
@@ -64276,7 +64375,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -64392,7 +64491,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -64405,7 +64504,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -64532,7 +64631,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -64648,7 +64747,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -64661,7 +64760,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -64866,7 +64965,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -65071,7 +65170,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "15a2c510-9425-400f-ba52-4fc7c55af99a")
 		)
@@ -65097,6 +65196,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U11A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "6f20ca84-bc4e-4ac6-903c-0bee479e9ec5")
 		)
@@ -65715,7 +65817,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -65920,7 +66022,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "251a6eb7-c3bb-4864-bd7e-119a475f2f22")
 		)
@@ -65946,6 +66048,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U60A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "913a0c56-f5e6-468f-9d86-f525fd59e6ab")
 		)
@@ -66791,7 +66896,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -66907,7 +67012,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -66920,7 +67025,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -67047,7 +67152,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -67163,7 +67268,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -67176,7 +67281,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -67648,7 +67753,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -67853,7 +67958,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "a8ce2ca8-5a62-4de7-b253-1d2656dd353c")
 		)
@@ -67879,6 +67984,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U18A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "f164e3b8-3a70-4124-acef-6939a9ce537f")
 		)
@@ -68773,7 +68881,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -68978,7 +69086,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "e5aba7a8-d415-4e4e-ba3a-86112d5e4bdb")
 		)
@@ -69004,6 +69112,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U26A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "251f8b2b-e0f4-484c-a962-d099c2dc526f")
 		)
@@ -69344,7 +69455,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -69447,7 +69558,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -69460,7 +69571,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -69473,7 +69584,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -69600,7 +69711,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -69716,7 +69827,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -69729,7 +69840,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -70769,7 +70880,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -70872,7 +70983,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -70885,7 +70996,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -70898,7 +71009,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -71243,7 +71354,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -71346,7 +71457,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -71372,7 +71483,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -71577,7 +71688,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -71782,7 +71893,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "66c0b321-5890-4f13-82bc-54b632c2ccc6")
 		)
@@ -71808,6 +71919,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U45A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "9a7d6666-8ce7-441e-b199-74c2f3214335")
 		)
@@ -72766,7 +72880,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -72869,7 +72983,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -72882,7 +72996,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -72895,7 +73009,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -73368,7 +73482,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -73573,7 +73687,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "0128b989-17c6-465d-82ba-eda5a3a0f4e4")
 		)
@@ -73599,6 +73713,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U48A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "1f8fc449-2b93-42bd-b634-a3631469949b")
 		)
@@ -73670,7 +73787,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -73773,7 +73890,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -73786,7 +73903,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -73799,7 +73916,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -73926,7 +74043,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -74042,7 +74159,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -74055,7 +74172,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -74182,7 +74299,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -74298,7 +74415,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -74311,7 +74428,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -75726,7 +75843,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -75829,7 +75946,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -75842,7 +75959,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -75855,7 +75972,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -75982,7 +76099,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -76085,7 +76202,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -76098,7 +76215,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -76111,7 +76228,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -76238,7 +76355,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -76341,7 +76458,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -76354,7 +76471,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -76367,7 +76484,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -77448,7 +77565,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -77551,7 +77668,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -77577,7 +77694,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -77704,7 +77821,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -77807,7 +77924,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -77820,7 +77937,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -77833,7 +77950,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -78828,7 +78945,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -79033,7 +79150,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "6b47d49f-0c37-4661-8156-a60c5b50aaa2")
 		)
@@ -79059,6 +79176,9 @@
 			(at 0 0 270)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U84A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "c9b85017-abfe-408a-a9fd-5f57535bf27f")
 		)
@@ -79638,7 +79758,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -79754,7 +79874,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -79767,7 +79887,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -80112,7 +80232,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -80215,7 +80335,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -80228,7 +80348,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -80241,7 +80361,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -80446,7 +80566,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -80651,7 +80771,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "cde41866-92a1-4ae5-9e87-42d9b001cf67")
 		)
@@ -80677,6 +80797,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U28A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "1b1f910d-c442-4935-ba9d-0fd71dbd16d5")
 		)
@@ -81092,7 +81215,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -81297,7 +81420,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "9a868fa9-a3c9-4671-92ea-f6b3855dafda")
 		)
@@ -81323,6 +81446,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U23A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "584ae7ae-3385-4acc-bb9e-8a9a4e5ba1a0")
 		)
@@ -81472,7 +81598,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -81677,7 +81803,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "de8bf04b-ed22-4c94-af28-31bbd6d3c88d")
 		)
@@ -81703,6 +81829,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U29A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "62fd4741-415e-48eb-a9f7-832ca55137e6")
 		)
@@ -82424,7 +82553,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -82527,7 +82656,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -82540,7 +82669,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -82553,7 +82682,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -82680,7 +82809,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -82783,7 +82912,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -82796,7 +82925,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -82809,7 +82938,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -83551,6 +83680,16 @@
 		(path "/72625ec8-68e6-44fb-ba42-4cf3e0d4f05e/f30e47b2-2ea6-4b13-b5a5-dcaa335baafa")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "26" "47" "46" "56" "53" "55" "54" "51" "52" "20" "21" "24" "25"
+					"19" "45" "23" "50" "57" "1" "22" "10" "49" "42" "33" "48" "43" "44"
+					"2" "3" "4" "5" "6" "7" "8" "9" "11" "12" "13" "14" "15" "16" "17" "18"
+					"27" "28" "29" "30" "31" "32" "34" "35" "36" "37" "38" "39" "40" "41"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -85099,7 +85238,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -85304,7 +85443,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "618ded6d-57a1-4bcb-859b-a64bbd580630")
 		)
@@ -85330,6 +85469,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U65A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "b2730f6a-162f-4211-955f-a333b588915f")
 		)
@@ -86208,7 +86350,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -86311,7 +86453,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -86337,7 +86479,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -86542,7 +86684,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -86747,7 +86889,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "6ffa95da-296e-43ce-9ae4-f0fc8b5792c8")
 		)
@@ -86773,6 +86915,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U44A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "eea23a1a-61d5-4e9a-a581-d49c70b2e4c0")
 		)
@@ -86922,7 +87067,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -87127,7 +87272,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "7dc029d8-adae-4a3a-8126-9d7d1fd2e8e6")
 		)
@@ -87153,6 +87298,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U79A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "8258b262-29cf-41fd-924e-99125518f52a")
 		)
@@ -87493,7 +87641,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -87596,7 +87744,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -87609,7 +87757,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -87622,7 +87770,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -87749,7 +87897,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -87865,7 +88013,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -87878,7 +88026,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -88005,7 +88153,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -88108,7 +88256,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -88121,7 +88269,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -88134,7 +88282,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -88339,7 +88487,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -88544,7 +88692,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "7aa32715-d79c-424b-8556-7b539449e0ab")
 		)
@@ -88570,6 +88718,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U34A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "8e0867d6-d3a0-4687-945f-10846ecbad76")
 		)
@@ -89280,7 +89431,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -89485,7 +89636,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "2df87f7f-bd49-403b-864e-57bb17a55103")
 		)
@@ -89511,6 +89662,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U15A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "04c6527e-1dcd-4345-911f-0cdd20f4c86d")
 		)
@@ -89660,7 +89814,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -89865,7 +90019,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "9b797af5-2969-4975-93a6-84a9953949ad")
 		)
@@ -89891,6 +90045,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U40A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "285e246d-affa-406e-9573-405c7dfd27a4")
 		)
@@ -90307,7 +90464,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -90512,7 +90669,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "431f7f03-2af8-4e31-a2d8-fd0885a24346")
 		)
@@ -90538,6 +90695,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U21A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "8befff87-540f-4866-8f3d-c3ef9fe233b2")
 		)
@@ -90875,7 +91035,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -90978,7 +91138,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -91004,7 +91164,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -91384,7 +91544,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -91487,7 +91647,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -91500,7 +91660,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -91513,7 +91673,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -91718,7 +91878,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -91923,7 +92083,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "10d786e8-d9ce-4f00-bbd9-d42a9fbc7395")
 		)
@@ -91949,6 +92109,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U3A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "ecfb70fc-6e05-4427-861f-7275d87b16d3")
 		)
@@ -93315,7 +93478,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -93520,7 +93683,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "5d068258-cb3f-41ed-9dfa-bacea86e9b07")
 		)
@@ -93546,6 +93709,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U80A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "f724ee5f-a8ca-47f2-a315-7e7c1891de1d")
 		)
@@ -94694,7 +94860,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -94797,7 +94963,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -94823,7 +94989,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -95028,7 +95194,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -95233,7 +95399,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "32fb68a1-37a8-4458-ae68-150d6b049f1c")
 		)
@@ -95259,6 +95425,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U46A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "45de8ccc-c747-41ee-8017-985da12e8c14")
 		)
@@ -95662,7 +95831,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -95867,7 +96036,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "499be480-8380-425b-b5ae-3ee7a4b2cd46")
 		)
@@ -95893,6 +96062,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U10A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "567d90a2-4505-4a62-872a-db65480300e3")
 		)
@@ -95964,7 +96136,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -96067,7 +96239,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -96080,7 +96252,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -96093,7 +96265,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -96298,7 +96470,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -96503,7 +96675,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "3e5be1a4-4b1c-417c-bf9e-0a88474901f6")
 		)
@@ -96529,6 +96701,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U81A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "1471720f-8bd1-4d22-8b10-59a4a6edd467")
 		)
@@ -97351,7 +97526,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -97454,7 +97629,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -97480,7 +97655,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -97607,7 +97782,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -97710,7 +97885,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -97723,7 +97898,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -97736,7 +97911,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -98116,7 +98291,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -98219,7 +98394,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -98245,7 +98420,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -98450,7 +98625,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -98655,7 +98830,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "4e72f2be-a8dd-4107-b808-d09884b07507")
 		)
@@ -98681,6 +98856,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U74A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "97d3c84a-2988-42d8-9989-4f7ced5c4471")
 		)
@@ -98830,7 +99008,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -99035,7 +99213,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "e8391340-2596-4a55-b8f0-a734462c506f")
 		)
@@ -99061,6 +99239,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U24A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "c897c26a-cbe4-4c46-a75d-3b8443f370f6")
 		)
@@ -99132,7 +99313,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -99235,7 +99416,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -99248,7 +99429,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -99261,7 +99442,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -99388,7 +99569,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -99504,7 +99685,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -99517,7 +99698,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -99644,7 +99825,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -99747,7 +99928,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -99760,7 +99941,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -99773,7 +99954,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -99978,7 +100159,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -100183,7 +100364,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "c5d09bb5-e501-4551-ab1f-6a76650c7102")
 		)
@@ -100209,6 +100390,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U19A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "d7c98ecf-602b-4ddf-8c4b-56b2d945354e")
 		)
@@ -100704,7 +100888,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -100820,7 +101004,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -100833,7 +101017,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -101266,7 +101450,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -101369,7 +101553,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -101382,7 +101566,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -101395,7 +101579,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -101777,7 +101961,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -101893,7 +102077,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -101906,7 +102090,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -102631,7 +102815,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -102836,7 +103020,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "37187d61-114f-4f8f-9294-6471d56a9867")
 		)
@@ -102862,6 +103046,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U61A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "1b5b0125-937b-4d0c-bdc5-e4a6ddd46ba6")
 		)
@@ -102933,7 +103120,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -103036,7 +103223,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103049,7 +103236,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103062,7 +103249,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103189,7 +103376,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -103292,7 +103479,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103305,7 +103492,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103318,7 +103505,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103445,7 +103632,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -103561,7 +103748,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103574,7 +103761,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103701,7 +103888,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -103817,7 +104004,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -103830,7 +104017,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -104175,7 +104362,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -104291,7 +104478,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -104304,7 +104491,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -104697,7 +104884,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -104800,7 +104987,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -104813,7 +105000,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -104826,7 +105013,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -104953,7 +105140,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -105069,7 +105256,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -105082,7 +105269,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -105287,7 +105474,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -105492,7 +105679,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "91407854-8fdb-407b-8d28-57af7446f87c")
 		)
@@ -105518,6 +105705,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U51A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "fa5ba26f-7d44-411a-9815-09bcf3b27435")
 		)
@@ -105995,7 +106185,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -106098,7 +106288,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -106124,7 +106314,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -106251,7 +106441,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -106354,7 +106544,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -106367,7 +106557,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -106380,7 +106570,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -106774,7 +106964,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -106877,7 +107067,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -106890,7 +107080,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -106903,7 +107093,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -107108,7 +107298,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -107313,7 +107503,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "7e70ec6e-dcbd-4e53-a05c-7706c76fed5e")
 		)
@@ -107339,6 +107529,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U16A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "fbc14c49-ab6f-41c4-a2ce-d8eea8134b63")
 		)
@@ -108797,7 +108990,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -108900,7 +109093,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -108913,7 +109106,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -108926,7 +109119,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -109131,7 +109324,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -109336,7 +109529,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "419558f6-b6ff-4fe5-9bf2-ac11f062d86a")
 		)
@@ -109362,6 +109555,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U4A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "a13fd14a-a6df-4224-9ad2-ff0e96a5ad1b")
 		)
@@ -109433,7 +109629,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -109549,7 +109745,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -109562,7 +109758,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -109689,7 +109885,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -109792,7 +109988,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -109805,7 +110001,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -109818,7 +110014,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -109945,7 +110141,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -110048,7 +110244,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -110061,7 +110257,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -110074,7 +110270,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -110279,7 +110475,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -110484,7 +110680,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "70569099-340b-4c2a-90a7-609b5347a243")
 		)
@@ -110510,6 +110706,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U14A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "5d1287f9-7d01-44d6-b0a1-231036644533")
 		)
@@ -110659,7 +110858,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -110864,7 +111063,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "8051ebac-512a-4abe-8f0a-20162b7cb5ea")
 		)
@@ -110890,6 +111089,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U64A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "0c269c34-f93a-4555-be79-868804608eed")
 		)
@@ -111228,7 +111430,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -111331,7 +111533,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -111344,7 +111546,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -111357,7 +111559,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -111562,7 +111764,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -111767,7 +111969,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "597fc0d3-921a-4e9a-8605-0e296b8c1ada")
 		)
@@ -111793,6 +111995,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U68A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "cb9f177c-dfee-42fd-96f6-683439a2e584")
 		)
@@ -111864,7 +112069,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -111967,7 +112172,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -111980,7 +112185,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -111993,7 +112198,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -112849,7 +113054,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -112965,7 +113170,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -112978,7 +113183,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -113183,7 +113388,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -113388,7 +113593,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "1a1aab95-9eb9-464f-bc5b-d481f28e6bfc")
 		)
@@ -113414,6 +113619,9 @@
 			(at 0 0 180)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U78A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "04a38b4e-8a01-4363-8a9b-a07f4ef0422d")
 		)
@@ -113485,7 +113693,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -113588,7 +113796,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -113601,7 +113809,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -113614,7 +113822,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -114009,7 +114217,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -114125,7 +114333,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -114138,7 +114346,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -114483,7 +114691,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -114586,7 +114794,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -114599,7 +114807,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -114612,7 +114820,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -114817,7 +115025,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "C1" "A1" "A2" "C2" "A3")
+				(pins "C1" "A1" "A2" "B2" "C2" "A3")
 			)
 			(unit
 				(name "B")
@@ -115022,7 +115230,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VCC")
 			(pinfunction "VCC_A2")
-			(pintype "input")
+			(pintype "power_in")
 			(solder_mask_margin 0.025)
 			(uuid "c9c9443c-a82c-460e-8c74-df9f68296eb2")
 		)
@@ -115048,6 +115256,9 @@
 			(at 0 0)
 			(size 0.215 0.215)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(U58A-NC-PadB2)")
+			(pinfunction "NC_B2")
+			(pintype "no_connect")
 			(solder_mask_margin 0.025)
 			(uuid "b41cc404-039c-4541-8419-e59c6cc278b4")
 		)
@@ -115119,7 +115330,7 @@
 				)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -115222,7 +115433,7 @@
 				)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -115235,7 +115446,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -115248,7 +115459,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -116625,7 +116836,7 @@
 				)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -116728,7 +116939,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -116754,7 +116965,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -116882,7 +117093,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -117007,7 +117218,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -117021,7 +117232,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -117151,7 +117362,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -117262,7 +117473,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -117290,7 +117501,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -117701,7 +117912,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -117812,7 +118023,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -117826,7 +118037,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -117840,7 +118051,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -117970,7 +118181,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -118081,7 +118292,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -118095,7 +118306,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -118109,7 +118320,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -118239,7 +118450,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -118350,7 +118561,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -118364,7 +118575,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -118378,7 +118589,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -118508,7 +118719,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -118619,7 +118830,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -118647,7 +118858,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -119058,7 +119269,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -119169,7 +119380,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -119197,7 +119408,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -119327,7 +119538,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -119438,7 +119649,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -119452,7 +119663,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -119466,7 +119677,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -119877,7 +120088,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -119988,7 +120199,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -120002,7 +120213,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -120016,7 +120227,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121036,7 +121247,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -121147,7 +121358,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121175,7 +121386,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121305,7 +121516,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -121416,7 +121627,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121444,7 +121655,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121574,7 +121785,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -121685,7 +121896,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121699,7 +121910,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121713,7 +121924,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121843,7 +122054,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -121954,7 +122165,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121968,7 +122179,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -121982,7 +122193,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -122112,7 +122323,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -122223,7 +122434,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -122237,7 +122448,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -122251,7 +122462,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -122381,7 +122592,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -122506,7 +122717,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -122520,7 +122731,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -122650,7 +122861,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -122761,7 +122972,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -122789,7 +123000,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -122919,7 +123130,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -123030,7 +123241,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -123044,7 +123255,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -123058,7 +123269,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -123188,7 +123399,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -123299,7 +123510,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -123313,7 +123524,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -123327,7 +123538,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -124019,7 +124230,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -124130,7 +124341,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -124158,7 +124369,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -124850,7 +125061,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -124961,7 +125172,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -124975,7 +125186,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -124989,7 +125200,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125119,7 +125330,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -125244,7 +125455,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125258,7 +125469,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125388,7 +125599,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -125499,7 +125710,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125513,7 +125724,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125527,7 +125738,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125657,7 +125868,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -125768,7 +125979,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125782,7 +125993,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125796,7 +126007,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -125926,7 +126137,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -126037,7 +126248,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -126051,7 +126262,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -126065,7 +126276,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -126195,7 +126406,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -126306,7 +126517,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -126320,7 +126531,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -126334,7 +126545,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -126745,7 +126956,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -126870,7 +127081,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -126884,7 +127095,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -127295,7 +127506,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -127406,7 +127617,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -127420,7 +127631,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -127434,7 +127645,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -127845,7 +128056,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -127956,7 +128167,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -127970,7 +128181,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -127984,7 +128195,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -128957,7 +129168,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -129068,7 +129279,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -129082,7 +129293,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -129096,7 +129307,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -129507,7 +129718,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -129632,7 +129843,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -129646,7 +129857,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -130057,7 +130268,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -130168,7 +130379,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -130182,7 +130393,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -130196,7 +130407,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -130607,7 +130818,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -130718,7 +130929,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -130746,7 +130957,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -130876,7 +131087,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -130987,7 +131198,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -131001,7 +131212,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -131015,7 +131226,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -131145,7 +131356,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -131256,7 +131467,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -131284,7 +131495,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -131976,7 +132187,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -132087,7 +132298,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -132101,7 +132312,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -132115,7 +132326,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -132245,7 +132456,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -132370,7 +132581,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -132384,7 +132595,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -132795,7 +133006,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -132906,7 +133117,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -132920,7 +133131,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -132934,7 +133145,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -133345,7 +133556,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -133456,7 +133667,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -133470,7 +133681,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -133484,7 +133695,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -133614,7 +133825,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -133725,7 +133936,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -133739,7 +133950,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -133753,7 +133964,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -133883,7 +134094,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -133994,7 +134205,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -134008,7 +134219,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -134022,7 +134233,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -134433,7 +134644,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -134558,7 +134769,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -134572,7 +134783,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -134983,7 +135194,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -135108,7 +135319,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135122,7 +135333,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135252,7 +135463,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -135377,7 +135588,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135391,7 +135602,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135521,7 +135732,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -135632,7 +135843,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135646,7 +135857,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135660,7 +135871,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135790,7 +136001,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -135901,7 +136112,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135915,7 +136126,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -135929,7 +136140,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -136621,7 +136832,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -136732,7 +136943,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -136746,7 +136957,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -136760,7 +136971,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -137171,7 +137382,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -137296,7 +137507,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -137310,7 +137521,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -138002,7 +138213,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -138113,7 +138324,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -138127,7 +138338,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -138141,7 +138352,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -138271,7 +138482,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -138382,7 +138593,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -138396,7 +138607,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -138410,7 +138621,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -138821,7 +139032,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -138946,7 +139157,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -138960,7 +139171,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -139933,7 +140144,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -140044,7 +140255,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -140058,7 +140269,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -140072,7 +140283,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -140202,7 +140413,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -140327,7 +140538,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -140341,7 +140552,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -140752,7 +140963,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -140877,7 +141088,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -140891,7 +141102,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -141021,7 +141232,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -141146,7 +141357,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -141160,7 +141371,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -141290,7 +141501,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -141401,7 +141612,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -141415,7 +141626,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -141429,7 +141640,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -141840,7 +142051,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -141965,7 +142176,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -141979,7 +142190,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -142390,7 +142601,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -142501,7 +142712,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -142529,7 +142740,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -142659,7 +142870,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -142784,7 +142995,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -142798,7 +143009,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -142928,7 +143139,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -143039,7 +143250,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -143053,7 +143264,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -143067,7 +143278,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -143197,7 +143408,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -143308,7 +143519,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -143322,7 +143533,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -143336,7 +143547,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -144028,7 +144239,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -144139,7 +144350,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -144153,7 +144364,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -144167,7 +144378,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -144578,7 +144789,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -144689,7 +144900,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -144717,7 +144928,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -145409,7 +145620,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -145520,7 +145731,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -145534,7 +145745,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -145548,7 +145759,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -145959,7 +146170,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -146084,7 +146295,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -146098,7 +146309,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -146790,7 +147001,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -146901,7 +147112,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -146929,7 +147140,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -147340,7 +147551,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -147451,7 +147662,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -147465,7 +147676,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -147479,7 +147690,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -147890,7 +148101,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -148015,7 +148226,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -148029,7 +148240,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -148440,7 +148651,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -148551,7 +148762,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -148579,7 +148790,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -148990,7 +149201,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -149101,7 +149312,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149115,7 +149326,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149129,7 +149340,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149259,7 +149470,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -149370,7 +149581,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149384,7 +149595,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149398,7 +149609,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149528,7 +149739,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -149653,7 +149864,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149667,7 +149878,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149797,7 +150008,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -149908,7 +150119,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149922,7 +150133,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -149936,7 +150147,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150066,7 +150277,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -150177,7 +150388,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150191,7 +150402,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150205,7 +150416,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150335,7 +150546,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -150446,7 +150657,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150474,7 +150685,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150604,7 +150815,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -150715,7 +150926,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150729,7 +150940,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150743,7 +150954,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -150873,7 +151084,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -150998,7 +151209,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151012,7 +151223,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151142,7 +151353,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -151267,7 +151478,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151281,7 +151492,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151411,7 +151622,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -151536,7 +151747,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151550,7 +151761,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151680,7 +151891,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -151791,7 +152002,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151805,7 +152016,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151819,7 +152030,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -151949,7 +152160,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -152060,7 +152271,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -152088,7 +152299,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -152499,7 +152710,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -152610,7 +152821,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -152624,7 +152835,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -152638,7 +152849,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -152768,7 +152979,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -152893,7 +153104,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -152907,7 +153118,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -153037,7 +153248,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -153162,7 +153373,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -153176,7 +153387,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -153587,7 +153798,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -153698,7 +153909,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -153712,7 +153923,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -153726,7 +153937,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -154666,7 +154877,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -154777,7 +154988,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -154805,7 +155016,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -154935,7 +155146,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -155046,7 +155257,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -155074,7 +155285,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -155204,7 +155415,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -155315,7 +155526,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -155343,7 +155554,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -155754,7 +155965,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -155865,7 +156076,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -155893,7 +156104,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -156585,7 +156796,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -156696,7 +156907,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -156724,7 +156935,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -156854,7 +157065,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -156979,7 +157190,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -156993,7 +157204,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157123,7 +157334,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -157234,7 +157445,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157248,7 +157459,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157262,7 +157473,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157392,7 +157603,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -157503,7 +157714,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157517,7 +157728,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157531,7 +157742,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157661,7 +157872,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -157772,7 +157983,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157800,7 +158011,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -157930,7 +158141,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -158041,7 +158252,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -158055,7 +158266,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -158069,7 +158280,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -158199,7 +158410,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -158324,7 +158535,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -158338,7 +158549,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -158468,7 +158679,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -158579,7 +158790,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -158607,7 +158818,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159018,7 +159229,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -159129,7 +159340,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159143,7 +159354,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159157,7 +159368,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159287,7 +159498,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -159398,7 +159609,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159412,7 +159623,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159426,7 +159637,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159556,7 +159767,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -159667,7 +159878,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159695,7 +159906,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159825,7 +160036,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -159950,7 +160161,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -159964,7 +160175,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160094,7 +160305,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -160205,7 +160416,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160219,7 +160430,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160233,7 +160444,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160363,7 +160574,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -160474,7 +160685,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160488,7 +160699,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160502,7 +160713,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160632,7 +160843,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -160743,7 +160954,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160757,7 +160968,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160771,7 +160982,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -160901,7 +161112,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -161026,7 +161237,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161040,7 +161251,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161170,7 +161381,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -161281,7 +161492,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161295,7 +161506,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161309,7 +161520,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161439,7 +161650,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -161550,7 +161761,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161578,7 +161789,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161708,7 +161919,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -161819,7 +162030,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161833,7 +162044,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -161847,7 +162058,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -162258,7 +162469,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -162369,7 +162580,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -162397,7 +162608,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -162527,7 +162738,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -162638,7 +162849,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -162666,7 +162877,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -162796,7 +163007,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -162921,7 +163132,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -162935,7 +163146,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -163065,7 +163276,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -163176,7 +163387,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -163190,7 +163401,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -163204,7 +163415,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -163615,7 +163826,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -163726,7 +163937,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -163740,7 +163951,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -163754,7 +163965,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -164727,7 +164938,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -164838,7 +165049,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -164866,7 +165077,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -164996,7 +165207,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -165107,7 +165318,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -165121,7 +165332,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -165135,7 +165346,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -165265,7 +165476,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -165376,7 +165587,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -165390,7 +165601,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -165404,7 +165615,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -165534,7 +165745,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -165659,7 +165870,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -165673,7 +165884,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -166084,7 +166295,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -166209,7 +166420,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -166223,7 +166434,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -166353,7 +166564,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -166464,7 +166675,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -166478,7 +166689,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -166492,7 +166703,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -166622,7 +166833,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -166733,7 +166944,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -166761,7 +166972,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -166891,7 +167102,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -167016,7 +167227,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -167030,7 +167241,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -167160,7 +167371,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -167271,7 +167482,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -167285,7 +167496,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -167299,7 +167510,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -167429,7 +167640,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -167540,7 +167751,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -167554,7 +167765,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -167568,7 +167779,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -168868,7 +169079,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -168993,7 +169204,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -169007,7 +169218,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -169137,7 +169348,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -169262,7 +169473,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -169276,7 +169487,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -169687,7 +169898,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -169798,7 +170009,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -169812,7 +170023,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -169826,7 +170037,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -169956,7 +170167,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -170081,7 +170292,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -170095,7 +170306,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -170225,7 +170436,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "19.8k"
+		(property "Value" "29.8k"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -170336,7 +170547,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RN73R1ETTP1982B25"
+		(property "MPN" "RN73R1ETTP2982B25"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -170350,7 +170561,7 @@
 				(justify mirror)
 			)
 		)
-		(property "OEPSPN" "OEPS020208"
+		(property "OEPSPN" "OEPS020222"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -170364,7 +170575,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2535118"
+		(property "LCSC" "C2506693"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -170494,7 +170705,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "301R"
 			(at 0 -1.17 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -170619,7 +170830,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C852625"
+		(property "LCSC" "C705632"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -170633,7 +170844,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ERA-2AEB201X"
+		(property "MPN" "RT0402BRD07301RL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -171492,7 +171703,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Ephys Test Board\nRev. G"
+	(gr_text "Ephys Test Board\nRev. H"
 		(at 206 165.3 0)
 		(layer "F.SilkS")
 		(uuid "db73cd67-0d77-4b82-9b2e-197cfe289d8b")

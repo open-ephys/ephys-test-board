@@ -298,7 +298,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "G"
+      "sch_revision": "H"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -657,6 +657,12 @@
       "fields_ordered": [
         {
           "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -680,18 +686,6 @@
           "show": true
         },
         {
-          "group_by": true,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": false
-        },
-        {
           "group_by": false,
           "label": "TempCo",
           "name": "TempCo",
@@ -704,15 +698,33 @@
           "show": true
         },
         {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": false
-        },
-        {
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "OEPSPN",
+          "name": "OEPSPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": false
         },
         {
@@ -735,27 +747,9 @@
         },
         {
           "group_by": false,
-          "label": "Part No.",
-          "name": "Part No.",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Sim.Pins",
           "name": "Sim.Pins",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "OEPSPN",
-          "name": "OEPSPN",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
-          "show": true
         }
       ],
       "filter_string": "",
@@ -763,7 +757,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Value"
+      "sort_field": "Reference"
     },
     "bus_aliases": {
       "MCP4821_{SPI}": [
@@ -838,7 +832,7 @@
         "uuid": "ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR502",
     "variants": []
   },
   "sheets": [

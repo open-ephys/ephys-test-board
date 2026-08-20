@@ -7,7 +7,7 @@
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
 		(date "2025-03-20")
-		(rev "G")
+		(rev "H")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -356,7 +356,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FSA553_1"
+		(symbol "open-ephys:FSA553"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -436,7 +436,7 @@
 					)
 				)
 			)
-			(symbol "FSA553_1_1_1"
+			(symbol "FSA553_1_1"
 				(rectangle
 					(start -3.81 7.62)
 					(end 3.81 -7.62)
@@ -596,7 +596,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at 0 10.16 270)
 					(length 2.54)
 					(name "VCC"
@@ -625,6 +625,25 @@
 						)
 					)
 					(number "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 2.54 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -669,7 +688,7 @@
 					)
 				)
 			)
-			(symbol "FSA553_1_2_1"
+			(symbol "FSA553_2_1"
 				(rectangle
 					(start -3.81 5.08)
 					(end 3.81 -5.08)
@@ -3010,7 +3029,6 @@
 		(uuid "c908def0-9d82-4178-bcd3-4109c77272de")
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 152.4 165.1 0)
 		(mirror y)
@@ -3132,6 +3150,9 @@
 		)
 		(pin "A3"
 			(uuid "20e2311f-19d9-47a3-8473-91e81a9ef0aa")
+		)
+		(pin "B2"
+			(uuid "e39b3097-2c23-4e8d-b716-964e76eac6b0")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -3341,7 +3362,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 77.47 81.28 0)
 		(mirror y)
@@ -3463,6 +3483,9 @@
 		)
 		(pin "A3"
 			(uuid "4b6e7bf8-d88f-4d5b-b914-759e94fff71d")
+		)
+		(pin "B2"
+			(uuid "1c145f50-72c3-4708-a9c6-fc2add959ef5")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -3610,17 +3633,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 135.89 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 135.89 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -4124,17 +4136,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 83.82 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 83.82 22.86 0)
 			(show_name no)
@@ -4340,17 +4341,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 55.88 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 55.88 173.99 0)
 			(hide yes)
@@ -4373,7 +4363,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020223"
+		(property "OEPSPN" "OEPS020171"
 			(at 55.88 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -4384,7 +4374,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C705632"
 			(at 55.88 173.99 90)
 			(hide yes)
 			(show_name no)
@@ -4547,17 +4537,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 62.23 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 62.23 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4774,17 +4753,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 62.23 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 62.23 41.91 0)
 			(hide yes)
@@ -4991,17 +4959,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 55.88 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 55.88 48.26 0)
 			(hide yes)
@@ -5024,7 +4981,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020223"
+		(property "OEPSPN" "OEPS020171"
 			(at 55.88 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5035,7 +4992,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C705632"
 			(at 55.88 48.26 90)
 			(hide yes)
 			(show_name no)
@@ -5208,17 +5165,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 245.11 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 245.11 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5434,17 +5380,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 129.54 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 129.54 173.99 0)
 			(hide yes)
@@ -5467,7 +5402,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020223"
+		(property "OEPSPN" "OEPS020171"
 			(at 129.54 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -5478,7 +5413,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C705632"
 			(at 129.54 173.99 90)
 			(hide yes)
 			(show_name no)
@@ -5651,17 +5586,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 83.82 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 83.82 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -6154,17 +6078,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 129.54 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 129.54 134.62 0)
 			(hide yes)
@@ -6187,7 +6100,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020223"
+		(property "OEPSPN" "OEPS020171"
 			(at 129.54 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -6198,7 +6111,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C705632"
 			(at 129.54 134.62 90)
 			(hide yes)
 			(show_name no)
@@ -6285,7 +6198,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 77.47 125.73 0)
 		(mirror y)
@@ -6406,6 +6318,9 @@
 		)
 		(pin "A3"
 			(uuid "90435f4e-ad62-4ee0-b32e-e8477d4c46f5")
+		)
+		(pin "B2"
+			(uuid "226dc74a-dbf3-48dd-90ed-e0e6ddf13194")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -6563,17 +6478,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 158.75 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 158.75 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -7345,17 +7249,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 215.9 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 215.9 90.17 0)
 			(show_name no)
@@ -7613,17 +7506,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 158.75 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 158.75 109.22 0)
 			(show_name no)
@@ -7819,17 +7701,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 135.89 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 135.89 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8175,17 +8046,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 62.23 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 62.23 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -8956,17 +8816,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 62.23 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 62.23 128.27 0)
 			(hide yes)
@@ -9311,17 +9160,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 129.54 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 129.54 48.26 0)
 			(hide yes)
@@ -9344,7 +9182,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020223"
+		(property "OEPSPN" "OEPS020171"
 			(at 129.54 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -9355,7 +9193,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C705632"
 			(at 129.54 48.26 90)
 			(hide yes)
 			(show_name no)
@@ -9528,17 +9366,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 55.88 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 55.88 90.17 0)
 			(hide yes)
@@ -9561,7 +9388,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020223"
+		(property "OEPSPN" "OEPS020171"
 			(at 55.88 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -9572,7 +9399,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C705632"
 			(at 55.88 90.17 90)
 			(hide yes)
 			(show_name no)
@@ -9798,7 +9625,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 152.4 125.73 0)
 		(mirror y)
@@ -9919,6 +9745,9 @@
 		)
 		(pin "A3"
 			(uuid "20e2311f-19d9-47a3-8473-91e81a9ef0ab")
+		)
+		(pin "B2"
+			(uuid "0d8fcbd9-e604-4d67-9dd9-ebe727418c91")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -10066,17 +9895,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 135.89 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 135.89 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -10346,7 +10164,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 77.47 165.1 0)
 		(mirror y)
@@ -10468,6 +10285,9 @@
 		)
 		(pin "A3"
 			(uuid "90435f4e-ad62-4ee0-b32e-e8477d4c46f6")
+		)
+		(pin "B2"
+			(uuid "f60f8429-82e5-461d-bd6c-7c54fd03551f")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -11094,7 +10914,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 152.4 39.37 0)
 		(mirror y)
@@ -11216,6 +11035,9 @@
 		(pin "A3"
 			(uuid "1b77d6af-9f18-4973-968c-bc3ce4fd01bf")
 		)
+		(pin "B2"
+			(uuid "5ea2a1ef-8050-46d3-a87a-5353d4a1b805")
+		)
 		(instances
 			(project "ephys-test-board"
 				(path "/ffaa6ffd-73fa-4da3-9ff1-78fa7369281f/084f258c-76c2-447d-a204-cf4210f20f4a"
@@ -11286,7 +11108,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 77.47 39.37 0)
 		(mirror y)
@@ -11407,6 +11228,9 @@
 		)
 		(pin "A3"
 			(uuid "4b6e7bf8-d88f-4d5b-b914-759e94fff71e")
+		)
+		(pin "B2"
+			(uuid "57748b62-9d08-47f3-a87e-25910585cabd")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -11703,17 +11527,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 55.88 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 55.88 134.62 0)
 			(hide yes)
@@ -11736,7 +11549,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020223"
+		(property "OEPSPN" "OEPS020171"
 			(at 55.88 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11747,7 +11560,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C705632"
 			(at 55.88 134.62 90)
 			(hide yes)
 			(show_name no)
@@ -11920,17 +11733,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 135.89 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 135.89 83.82 0)
 			(hide yes)
@@ -12051,7 +11853,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 152.4 81.28 0)
 		(mirror y)
@@ -12173,6 +11974,9 @@
 		)
 		(pin "A3"
 			(uuid "1b77d6af-9f18-4973-968c-bc3ce4fd01c0")
+		)
+		(pin "B2"
+			(uuid "63eb2d09-51d9-4bce-9330-87720b5ef641")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -12469,17 +12273,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 129.54 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 129.54 90.17 0)
 			(hide yes)
@@ -12502,7 +12295,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS020223"
+		(property "OEPSPN" "OEPS020171"
 			(at 129.54 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -12513,7 +12306,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C705632"
 			(at 129.54 90.17 90)
 			(hide yes)
 			(show_name no)

@@ -62,59 +62,7 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|196950000|60965000|f434b185-a71d-4a81-ab86-8acde231d3ba|abde6294-c541-44f3-82dc-0da387a6b11f",
-          ""
-        ],
-        [
-          "hole_clearance|196950000|60965000|f434b185-a71d-4a81-ab86-8acde231d3ba|acd17e66-e52e-4e58-a294-e7a2b805e7b2",
-          ""
-        ],
-        [
-          "hole_clearance|203050000|60965000|691b11b8-b664-49dd-aacb-bded27da505d|e66e9729-f47e-4ba0-9182-4cb2f2735ad3",
-          ""
-        ],
-        [
-          "hole_clearance|203050000|60965000|691b11b8-b664-49dd-aacb-bded27da505d|f2f99769-d1e0-43d9-b332-97d91dc34de6",
-          ""
-        ],
-        [
-          "items_not_allowed|129000000|60000000|afac1279-a29f-45cc-a6db-a2c68e35d753|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|130000000|170000000|97835e7e-c449-4ff9-9769-dda886d6fc38|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|153800000|59600000|c1d91c73-679f-48fc-ad4b-995e785a5283|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|173250000|60000000|2efd81ff-ada5-45f0-95d2-b0e5787e5d94|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|202890000|60000000|f5ccaaf6-d744-4102-8c78-2cd5db1ade8f|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|208300000|57612500|e69da0db-6c69-4aee-9d5e-60cc6d6512f4|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|262200000|60000000|a1f3746f-d864-4806-9855-20b3c2ff02db|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|270000000|60000000|ef882f7e-ace9-4076-9b1b-1a466d9d3749|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|271000000|171000000|fd1c1855-4010-4657-bc03-84873ebcf8eb|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|164912500|95500000|b6310539-4fcf-4d2b-a83a-32e12420f2d0|00000000-0000-0000-0000-000000000000",
+          "lib_footprint_mismatch|164877500|95407500|b6310539-4fcf-4d2b-a83a-32e12420f2d0|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -126,19 +74,27 @@
           ""
         ],
         [
-          "silk_edge_clearance|226050000|65900000|bc91b038-d4e9-407f-ba4f-7c33b372802f|65c7effd-58d3-486b-ac97-692fff436257",
+          "silk_edge_clearance|226050015|65899375|4f67fae5-6e16-49d7-9d50-3e5cceb134f5|65c7effd-58d3-486b-ac97-692fff436257",
           ""
         ],
         [
-          "silk_edge_clearance|237300000|65900000|219fe560-aeaf-4856-8a97-8eb34efa0f06|c1399d36-0508-46fe-a8aa-fc00524913b2",
+          "silk_edge_clearance|226100000|65900000|4f67fae5-6e16-49d7-9d50-3e5cceb134f5|c1399d36-0508-46fe-a8aa-fc00524913b2",
           ""
         ],
         [
-          "silk_edge_clearance|237349984|65899375|219fe560-aeaf-4856-8a97-8eb34efa0f06|f2c4a23a-f221-4e5b-b197-eea14276457a",
+          "silk_edge_clearance|237350000|65900000|bc91b038-d4e9-407f-ba4f-7c33b372802f|f2c4a23a-f221-4e5b-b197-eea14276457a",
           ""
         ],
         [
           "silk_edge_clearance|262200000|60000000|c4a84001-4e85-48c6-b2c7-39eba4114197|dc288862-cb98-4c7b-84d8-23beac3b3500",
+          ""
+        ],
+        [
+          "starved_thermal|196800000|61390000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|abde6294-c541-44f3-82dc-0da387a6b11f|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|196800000|61390000|7d7da6cf-9dc6-4fce-b598-d28eb6f1b929|acd17e66-e52e-4e58-a294-e7a2b805e7b2|F.Cu",
           ""
         ],
         [
@@ -342,7 +298,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "G"
+      "sch_revision": "H"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -362,7 +318,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|1397000|939800|f30e47b2-2ea6-4b13-b5a5-dcaa335baafa|00000000-0000-0000-0000-000000000000|||",
+        "The updated symbol changes pin locations"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -679,7 +640,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "manufacturing\\bom\\oe-commutator-controller.csv",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -694,12 +655,6 @@
     "bom_settings": {
       "exclude_dnp": false,
       "fields_ordered": [
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": true
-        },
         {
           "group_by": false,
           "label": "Qty",
@@ -719,31 +674,25 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Tolerance",
           "name": "Tolerance",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": false
-        },
-        {
-          "group_by": true,
           "label": "TempCo",
           "name": "TempCo",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Voltage",
           "name": "Voltage",
           "show": true
@@ -753,6 +702,36 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "OEPSPN",
+          "name": "OEPSPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         },
         {
           "group_by": false,
@@ -768,33 +747,9 @@
         },
         {
           "group_by": false,
-          "label": "Part No.",
-          "name": "Part No.",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Sim.Pins",
           "name": "Sim.Pins",
           "show": false
-        },
-        {
-          "group_by": true,
-          "label": "OEPSPN",
-          "name": "OEPSPN",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "MPN",
-          "name": "MPN",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": true
         }
       ],
       "filter_string": "",
@@ -836,7 +791,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "hop_over_size_choice": 0,
+      "hop_over_size_choice": 2,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -877,7 +832,7 @@
         "uuid": "ffaa6ffd-73fa-4da3-9ff1-78fa7369281f"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR502",
     "variants": []
   },
   "sheets": [

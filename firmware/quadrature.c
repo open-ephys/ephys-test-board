@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 
+#define QUAD_COUNTS_PER_DETENT 4
+
 static struct pio_quad_inst_t {
     PIO pio;
     uint sm;
@@ -17,31 +19,37 @@ static struct pio_quad_inst_t {
 
 static void knob_turned_handler()
 {
-    dma_channel_acknowledge_irq0(pio_quad.dma_chan); // Acknowledge
+    dma_channel_acknowledge_irq0(pio_quad.dma_chan);
 
-    // Hysteresis
-    // static int32_t hyst = 0;
-    // int current_count = (pio_quad.raw_counter + hyst) >> 2;
+    // Displacement-from-anchor approach: register a detent when |raw counter|
+    // has moved >= QUAD_COUNTS_PER_DETENT from the last accepted detent
+    // position (anchor). Advancing the anchor on each registration provides
+    // hysteresis: e.g. a backward bounce of 1-3 counts never reaches the
+    // -QUAD_COUNTS_PER_DETENT threshold.
+    static bool initialized = false;
+    static int32_t anchor = 0;
+    int32_t raw = pio_quad.raw_counter;
 
-    int current_count = pio_quad.raw_counter >> 2;
-
-
-    if (current_count != pio_quad.count )
+    if (!initialized)
     {
-        // Four raw counts between each detent
-        // NB: we dont want to do integer division here because this will round toward zero
-        // for both positive and negative numbers. We want to always round towards
-        // negative infinity. Otherwise when we transition to negative numbers, 7
-        // raw_counter values [-3 to 3] will be mapped to 0.
-        //hyst = current_count > pio_quad.count ? 4 : -4;
-        pio_quad.update = true;
-        pio_quad.delta = current_count - pio_quad.count;
-        pio_quad.count = current_count;
-    } else {
-        pio_quad.update = false;
+        anchor = raw;
+        initialized = true;
+        dma_channel_start(pio_quad.dma_chan);
+        return;
     }
 
-    dma_channel_start(pio_quad.dma_chan); // Retrigger
+    int32_t displacement = raw - anchor;
+
+    if (displacement >= QUAD_COUNTS_PER_DETENT || displacement <= -QUAD_COUNTS_PER_DETENT)
+    {
+        int detents = displacement / QUAD_COUNTS_PER_DETENT;
+        pio_quad.count += detents;
+        pio_quad.delta = detents;
+        anchor += detents * QUAD_COUNTS_PER_DETENT;
+        pio_quad.update = true;
+    }
+
+    dma_channel_start(pio_quad.dma_chan);
 }
 
 int quad_init()

@@ -3,10 +3,12 @@
 #include "pico/stdlib.h"
 #include "ephys-tester.h"
 
+// NB: The order of this enum defines the order of menu items
 typedef enum  {
     SELECTION_DEST,
     SELECTION_CHANNEL,
     SELECTION_WAVEFORM,
+    SELECTION_OFFSET,
     SELECTION_AMPLITUDE,
     SELECTION_FREQHZ,
     SELECTION_NUM_SELECTIONS
@@ -23,6 +25,7 @@ typedef enum  {
 
 typedef enum {
     WAVEFORM_GND,
+    WAVEFORM_DC,
     WAVEFORM_SINE,
     WAVEFORM_SAW,
     WAVEFORM_SPIKESLF,
@@ -42,7 +45,10 @@ typedef enum  {
 
 typedef struct mode_signal_t {
     mode_waveform_t waveform;
+    float offset_uV;
     uint16_t amp_rshift;
+    bool use_scale;
+    float amp_scale;
     uint16_t freq_lut_idx;
 } mode_signal_t;
 
@@ -65,8 +71,10 @@ typedef struct mode_context_t {
     uint8_t channel_idx;                    // Selected headstage channel
     mode_signal_t signal;                   // The test signal
     module_t module;                        // Module metadata
+    float battery_voltage;                  // Voltage of battery
     float battery_frac;                     // Fraction of battery remaining
     bool usb_detected;                      // Indicates if USB is plugged in
+    signal_clip_t clipping;                    // Indicates if the DAC is clipping
 } mode_context_t;
 
 void mode_init(mode_context_t *ctx);

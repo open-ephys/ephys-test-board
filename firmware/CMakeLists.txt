@@ -51,8 +51,9 @@ target_link_libraries(ephys-tester
         pico_stdlib)
 
 # Add the standard include files to the build
-target_include_directories(ephys-tester  PRIVATE
+target_include_directories(ephys-tester PRIVATE
   ${CMAKE_CURRENT_LIST_DIR}
+  ${CMAKE_CURRENT_LIST_DIR}/Adafruit_SH110X
 )
 
 target_sources(ephys-tester PRIVATE
@@ -62,16 +63,14 @@ target_sources(ephys-tester PRIVATE
         channels.c
         eeprom.c
         sr.c
-        tiny-json.c
         ad5683.c
         quadrature.c
         battmon.c
-        Adafruit_SH110X.cpp
-        Adafruit_SH1106G.cpp
-        Adafruit_GrayOLED_PicoSPI.cpp
-        Adafruit_GrayOLED_PicoSPI.cpp
-        Adafruit_GFX.cpp
-        Print.cpp
+        Adafruit_SH110X/Adafruit_SH110X.cpp
+        Adafruit_SH110X/Adafruit_SH1106G.cpp
+        Adafruit_SH110X/Adafruit_GrayOLED_PicoSPI.cpp
+        Adafruit_SH110X/Adafruit_GFX.cpp
+        Adafruit_SH110X/Print.cpp
         )
 
 # Add any user requested libraries

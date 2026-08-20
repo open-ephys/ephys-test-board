@@ -1,7 +1,7 @@
 #pragma once
 
-#define NUM_FREQS 12
-#define DEFAULT_FREQ_INDEX 9 // 1000 Hz
+#define NUM_FREQS 11
+#define DEFAULT_FREQ_INDEX 8 // 1000 Hz
 
 const int FREQ_LUT[NUM_FREQS][4] =
 {
@@ -14,18 +14,14 @@ const int FREQ_LUT[NUM_FREQS][4] =
     {50,    1,      8,      1},     // 5
     {100,   1,      4,      1},     // 6
     {500,   1,      4,      5},     // 7
-    {500,   1,      4,      5},     // 8
-    {1000,  1,      4,      10},    // 9
-    {5000,  1,      4,      50},    // 10
-    {10000, 1,      4,      100}    // 11
+    {1000,  1,      4,      10},    // 8
+    {5000,  1,      4,      50},    // 9
+    {10000, 1,      4,      100}    // 10
 };
 
-// }
-/** Generated using Dr LUT - Free Lookup Table Generator
-  * https://github.com/ppelikan/drlut
-  **/
-// Formula: sin(2*pi*t/T)
 
+// Generated using Dr LUT - Free Lookup Table Generator
+// https://github.com/ppelikan/drlut
 #define SINE_LUT_LENGTH 2500
 #define SAW_LUT_LENGTH 2500
 

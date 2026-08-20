@@ -14,7 +14,6 @@ extern "C"
 #include "quadrature.h"
 #include "mode.h"
 #include "battmon.h"
-#include "tiny-json.h"
 #include "lut.h"
 #include "spikes.h"
 #include "sr.h"
@@ -22,35 +21,52 @@ extern "C"
 
 queue_t signal_generator_cmd_queue;
 volatile bool channel_increment_request = false;
-volatile bool batt_mon_update_request = false;
+volatile bool monitor_request = false;
 volatile bool knob_press_detected = false;
+volatile int dac_clipping = CLIP_NONE;
 
 typedef struct timer_callback_data_t {
     pio_spi_inst_t *dac_spi;
     uint16_t rshift;
+    float scale;
+    uint16_t offset;
     int step;
     const uint16_t *lut;
     size_t lut_len;
 } timer_callback_data_t;
 
 
-// WARNING: If this call takes longer than the timer period, it will completely take
-// over a core and lock out all other activity (e.g. command dequeueing that
-// would cause the timer to stop, etc.).
-bool dac_update_callback(struct repeating_timer *t)
+// WARNING: If this call takes longer than the timer period, it will completely
+// take over a core and lock out all other activity (e.g. command dequeueing
+// that would cause the timer to stop, etc.).
+bool dac_update_callback_rs(struct repeating_timer *t)
 {
     static size_t i = 0;
-    timer_callback_data_t *timer_data = (timer_callback_data_t *)t->user_data;
+    timer_callback_data_t *td = (timer_callback_data_t *)t->user_data;
 
-    ad5683_write_dac(timer_data->dac_spi, *(timer_data->lut + (i % timer_data->lut_len)), timer_data->rshift);
-    i += timer_data->step;
+    dac_clipping |= ad5683_write_dac_rs(td->dac_spi, *(td->lut + (i % td->lut_len)), td->rshift, td->offset);
+    i += td->step;
 
     return true;
 }
 
-bool battery_monitor_callback(struct repeating_timer *t)
+// WARNING: If this call takes longer than the timer period, it will completely
+// take over a core and lock out all other activity (e.g. command dequeueing
+// that would cause the timer to stop, etc.).
+bool dac_update_callback_scale(struct repeating_timer *t)
 {
-    batt_mon_update_request = true;
+    static size_t i = 0;
+    timer_callback_data_t *td = (timer_callback_data_t *)t->user_data;
+
+    dac_clipping |= ad5683_write_dac_scale(td->dac_spi, *(td->lut + (i % td->lut_len)), td->scale, td->offset);
+    i += td->step;
+
+    return true;
+}
+
+bool system_monitor_callback(struct repeating_timer *t)
+{
+    monitor_request = true;
     return true;
 }
 
@@ -65,12 +81,10 @@ void knob_press_callback(uint gpio, uint32_t events)
     knob_press_detected = true;
 }
 
-// TODO: Calling cancel_repeating_timer on a timer that has not had alarm added
-// to it seems to cause segfault. Is this expected or SDK bug?
-// cancel_repeating_timer docs say it checks for existence before cancelling.
-// Can we inspect timer object to see if its appropriate to cancel rather than
-// holding this first variable?
-bool cancel_repeating_timer_safe(repeating_timer_t *timer, bool timer_cancelled)
+// NB: Calling cancel_repeating_timer on a timer that has not been started
+// causes a segfault. Guard with a boolean rather than inspecting alarm_id,
+// which the SDK does not reliably reset to -1 on cancel.
+static bool cancel_repeating_timer_safe(repeating_timer_t *timer, bool timer_cancelled)
 {
     return timer_cancelled ? true : cancel_repeating_timer(timer);
 }
@@ -86,9 +100,10 @@ void core1_entry()
     ad5683_init(&dac_spi);
 
     struct repeating_timer timer;
-    timer_callback_data_t timer_data;
-    mode_signal_t signal;
+    timer_callback_data_t timer_data_buf[2] = {};
+    int timer_buf_active = 0;
     bool timer_cancelled = true;
+    mode_signal_t signal;
     static int last_timer_usec = 0;
     alarm_pool_t *alarm_pool = alarm_pool_create_with_unused_hardware_alarm(10);
 
@@ -96,53 +111,60 @@ void core1_entry()
     {
         queue_remove_blocking(&signal_generator_cmd_queue, &signal);
 
-        timer_data.dac_spi = &dac_spi;
-        timer_data.rshift = signal.amp_rshift;
+        int next_buf = 1 - timer_buf_active;
+        timer_data_buf[next_buf].dac_spi = &dac_spi;
+        timer_data_buf[next_buf].offset = DAC_MIDSCALE + (signal.offset_uV / MAX_AMPLITUDE_UV) * DAC_FULLSCALE;
+        timer_data_buf[next_buf].rshift = signal.amp_rshift;
+        timer_data_buf[next_buf].scale = signal.amp_scale;
         timer_cancelled = cancel_repeating_timer_safe(&timer, timer_cancelled);
         int timer_usec = last_timer_usec;
 
         switch (signal.waveform)
         {
             case WAVEFORM_GND:
-                ad5683_write_dac(&dac_spi, 0, 0);
+                ad5683_write_dac_rs(&dac_spi, 0, 0, DAC_MIDSCALE);
                 sr_source(SIGNAL_NONE);
                 continue;
             case WAVEFORM_EXTERNAL:
-                ad5683_write_dac(&dac_spi, 0, 0);
+                ad5683_write_dac_rs(&dac_spi, 0, 0, DAC_MIDSCALE);
                 sr_source(SIGNAL_EXTERNAL);
                 continue;
+            case WAVEFORM_DC:
+                ad5683_write_dac_rs(&dac_spi, 0, 0, timer_data_buf[next_buf].offset);
+                sr_source(SIGNAL_INTERNAL);
+                continue;
             case WAVEFORM_SINE:
-                timer_data.lut = SINE_LUT;
-                timer_data.lut_len = SINE_LUT_LENGTH;
-                timer_data.step = FREQ_LUT[signal.freq_lut_idx][3];
+                timer_data_buf[next_buf].lut = SINE_LUT;
+                timer_data_buf[next_buf].lut_len = SINE_LUT_LENGTH;
+                timer_data_buf[next_buf].step = FREQ_LUT[signal.freq_lut_idx][3];
                 timer_usec = FREQ_LUT[signal.freq_lut_idx][2];
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SAW:
-                timer_data.lut = SAW_LUT;
-                timer_data.lut_len = SAW_LUT_LENGTH;
-                timer_data.step = FREQ_LUT[signal.freq_lut_idx][3];
+                timer_data_buf[next_buf].lut = SAW_LUT;
+                timer_data_buf[next_buf].lut_len = SAW_LUT_LENGTH;
+                timer_data_buf[next_buf].step = FREQ_LUT[signal.freq_lut_idx][3];
                 timer_usec = FREQ_LUT[signal.freq_lut_idx][2];
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SPIKESLF:
-                timer_data.lut = SPIKESLF;
-                timer_data.lut_len = SPIKES_LENGTH;
-                timer_data.step = 1;
+                timer_data_buf[next_buf].lut = SPIKESLF;
+                timer_data_buf[next_buf].lut_len = SPIKES_LENGTH;
+                timer_data_buf[next_buf].step = 1;
                 timer_usec = SPIKES_SAMP_PERIOD_USEC;
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SPIKESMF:
-                timer_data.lut = SPIKESMF;
-                timer_data.lut_len = SPIKES_LENGTH;
-                timer_data.step = 1;
+                timer_data_buf[next_buf].lut = SPIKESMF;
+                timer_data_buf[next_buf].lut_len = SPIKES_LENGTH;
+                timer_data_buf[next_buf].step = 1;
                 timer_usec = SPIKES_SAMP_PERIOD_USEC;
                 sr_source(SIGNAL_INTERNAL);
                 break;
             case WAVEFORM_SPIKESHF:
-                timer_data.lut = SPIKESHF;
-                timer_data.lut_len = SPIKES_LENGTH;
-                timer_data.step = 1;
+                timer_data_buf[next_buf].lut = SPIKESHF;
+                timer_data_buf[next_buf].lut_len = SPIKES_LENGTH;
+                timer_data_buf[next_buf].step = 1;
                 timer_usec = SPIKES_SAMP_PERIOD_USEC;
                 sr_source(SIGNAL_INTERNAL);
                 break;
@@ -152,7 +174,14 @@ void core1_entry()
 
         if (timer_cancelled || last_timer_usec != timer_usec)
         {
-            timer_cancelled = !alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback, &timer_data, &timer);
+            bool started;
+            if (signal.use_scale)
+                started = alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback_scale, &timer_data_buf[next_buf], &timer);
+            else
+                started = alarm_pool_add_repeating_timer_us(alarm_pool, -timer_usec, dac_update_callback_rs, &timer_data_buf[next_buf], &timer);
+            if (started)
+                timer_buf_active = next_buf;
+            timer_cancelled = !started;
             last_timer_usec = timer_usec;
         }
     }
@@ -171,11 +200,11 @@ int main()
     mode_context_t ctx;
     mode_init(&ctx);
 
-    // Battery monitor initialization
+    // System monitor initialization
     batt_mon_init();
     batt_mon_monitor(&ctx);
-    struct repeating_timer battery_monitor_timer;
-    add_repeating_timer_ms(-BATT_MON_PERIOD_MS, battery_monitor_callback, NULL, &battery_monitor_timer);
+    struct repeating_timer monitor_timer;
+    add_repeating_timer_ms(-SYS_MON_PERIOD_MS, system_monitor_callback, NULL, &monitor_timer);
 
     // Setup knob button callback
     gpio_init(ENC_BUT);
@@ -208,9 +237,9 @@ int main()
                 oled_update_map_menu(&ctx);
             }
 
-            if (batt_mon_update_request)
+            if (monitor_request)
             {
-                batt_mon_update_request = false;
+                monitor_request = false;
                 batt_mon_monitor(&ctx);
                 oled_update_map_menu(&ctx);
             }
@@ -225,10 +254,10 @@ int main()
         eeprom_set_default(&ctx);
     }
 
-    // Channels
+    // Initialize channel mux
     channels_init();
 
-    // Queue for conveying settings to waveform generator and send default state
+    // Initialize queue for conveying settings to waveform generator
     queue_init(&signal_generator_cmd_queue, sizeof(mode_signal_t), 10);
 
     // Launch the second core to handle the waveform generator
@@ -238,7 +267,7 @@ int main()
     mode_update_from_knob(&ctx, quad_get_delta());
 
     // Enter main menu
-    oled_update_main_menu(&ctx);
+    oled_update_main_menu(&ctx, false);
 
     // Send default state to waveform generator
     queue_add_blocking(&signal_generator_cmd_queue, &(ctx.signal));
@@ -247,6 +276,9 @@ int main()
     struct repeating_timer channel_timer;
     bool channel_timer_cancelled = true;
     bool first_cycle = false;
+
+    // OLED state
+    bool blink = false;
 
     // Main loop
     while(true)
@@ -302,13 +334,17 @@ int main()
             }
         }
 
-        if (batt_mon_update_request)
+        if (monitor_request)
         {
-            batt_mon_update_request = false;
-            update_oled_required = batt_mon_monitor(&ctx);
+            monitor_request = false;
+            blink = !blink;
+            ctx.clipping = (signal_clip_t)dac_clipping;
+            dac_clipping = CLIP_NONE; // give it a chance to recover
+            batt_mon_monitor(&ctx);
+            update_oled_required = true;
         }
 
         if (update_oled_required)
-            oled_update_main_menu(&ctx);
+            oled_update_main_menu(&ctx, blink);
     }
 }

@@ -4148,6 +4148,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]" (at 133.35 167.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -4303,6 +4305,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 1.8nF 50V ±5% X7R   [C0402C182J5RACTU] [SMD]" (at 133.35 115.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6L02x-xMS")
@@ -4434,6 +4438,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   OPAMP GP 2 CIRCUIT   [MAX4489AUA+] [8-MSOP]" (at 161.29 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -4589,6 +4595,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "DNP: Do Not Populate (DNI)" (at 157.48 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -4734,6 +4742,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]" (at 195.58 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5048,6 +5058,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 152.4 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5203,6 +5215,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 1.8nF 50V ±5% X7R   [C0402C182J5RACTU] [SMD]" (at 157.48 62.23 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5359,6 +5373,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 267.97 83.82 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5593,6 +5609,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 152.4 26.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "open-ephys:FSA553")
@@ -5727,6 +5745,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 80.01 34.29 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5942,6 +5962,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   OPAMP GP 2 CIRCUIT   [MAX4489AUA+] [8-MSOP]" (at 163.83 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -6164,6 +6186,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]" (at 157.48 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -6310,6 +6334,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 100kΩ ±1% 0.063W   [AC0402FR-07100KL] [SMD]" (at 115.57 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -6455,6 +6481,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10Ω ±1% 0.063W   [RMCF0402FT10R0] [SMD]" (at 127 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -6601,6 +6629,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 249kΩ ±1% 0.063W   [RMCF0402FT249K] [SMD]" (at 97.79 175.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -6813,6 +6843,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   Switched-capacitor Voltage Inverter   [LM27761DSGR] [8-WSON]" (at 69.85 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7060,6 +7092,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   DAC 16BIT   [AD5683RARMZ] [10-MSOP]" (at 220.98 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7361,6 +7395,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]" (at 175.26 114.3 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -7516,6 +7552,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]" (at 86.36 85.09 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -7661,6 +7699,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10Ω ±1% 0.063W   [RMCF0402FT10R0] [SMD]" (at 113.03 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -7806,6 +7846,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 5kΩ ±0.1% 0.050W   [PNM0402E5001BST1] [SMD]" (at 163.83 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8171,6 +8213,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]" (at 133.35 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
@@ -8318,6 +8362,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CONNECTOR:   BNC JACK 50ohm R/A   [0731000105] [TH]" (at 248.92 34.29 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -8475,6 +8521,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 10uF 50V ±10% X7R   [CL31B106KBHNNNE] [SMD]" (at 257.81 83.82 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -8708,6 +8756,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100pF 50V ±5% C0G   [CC0402JRNPO9BN101] [SMD]" (at 191.77 45.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8944,6 +8994,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]" (at 85.09 173.99 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9254,6 +9306,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]" (at 233.68 85.09 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9867,6 +9921,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]" (at 50.8 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "open-ephys:FSA553")
@@ -10001,6 +10057,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 80.01 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10390,6 +10448,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 1.8nF 50V ±5% X7R   [C0402C182J5RACTU] [SMD]" (at 162.56 115.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -10545,6 +10605,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "DNP: Do Not Populate (DNI)" (at 133.35 127 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -10690,6 +10752,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]" (at 204.47 44.45 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VSSA")
@@ -10992,6 +11056,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0805 9kΩ ±0.1% 0.125W   [RT0805BRE079KL] [SMD]" (at 217.17 34.29 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -11137,6 +11203,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]" (at 184.15 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -11361,6 +11429,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 100kΩ ±1% 0.063W   [AC0402FR-07100KL] [SMD]" (at 105.41 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6L02x-xMS")
@@ -11492,6 +11562,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   OPAMP GP 2 CIRCUIT   [MAX4489AUA+] [8-MSOP]" (at 135.89 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -11650,5 +11722,7 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]" (at 38.1 167.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 )

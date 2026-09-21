@@ -640,7 +640,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "manufacturing/bom/${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -655,6 +655,12 @@
     "bom_settings": {
       "exclude_dnp": false,
       "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": true
+        },
         {
           "group_by": false,
           "label": "Qty",
@@ -674,25 +680,25 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Tolerance",
           "name": "Tolerance",
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "TempCo",
           "name": "TempCo",
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Voltage",
           "name": "Voltage",
           "show": true
@@ -704,13 +710,13 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "OEPSPN",
           "name": "OEPSPN",
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "MPN",
           "name": "MPN",
           "show": true
@@ -722,15 +728,15 @@
           "show": true
         },
         {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": false
+          "group_by": true,
+          "label": "OEPS Description",
+          "name": "OEPS Description",
+          "show": true
         },
         {
           "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": false
         },
         {

@@ -9887,6 +9887,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 27Ω ±1% 0.063W   [RMCF0402FT27R0] [SMD]" (at 105.41 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10359,6 +10361,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 184.15 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10832,6 +10836,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 199.39 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -10990,6 +10996,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 214.63 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -11147,6 +11155,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 22pF 50V ±5% C0G/NP0   [CL05C220JB51PNC] [SMD]" (at 76.2 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -11305,6 +11315,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 207.01 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -11462,6 +11474,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]" (at 109.22 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -11608,6 +11622,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]" (at 109.22 111.76 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -11844,6 +11860,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 45.72 143.51 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -12080,6 +12098,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 124.46 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -12461,6 +12481,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 27Ω ±1% 0.063W   [RMCF0402FT27R0] [SMD]" (at 105.41 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -12705,6 +12727,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   FLASH 128MBIT SPI/QUAD   [W25Q128JVSIQ] [8-SOIC]" (at 52.07 157.48 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -13021,6 +13045,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 191.77 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -13179,6 +13205,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]" (at 222.25 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -13324,6 +13352,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]" (at 96.52 46.99 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -13560,6 +13590,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 161.29 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -13705,6 +13737,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]" (at 73.66 143.51 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
@@ -13852,6 +13886,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CONNECTOR:   SWITCH TACTILE SPST-NO TOP ACTUATED   [TS04-66-50-BK-160-SMT] [SMD]" (at 73.66 157.48 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -14083,6 +14119,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "OTHER:   Crystal 12 MHz ±20ppm 12pF 100Ohms   [ABM8AIG-12.000MHZ-12-2Z-T3] [SMD]" (at 88.9 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
@@ -14229,6 +14267,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "OTHER:   SWITCH TACTILE SPST-NO 0.05A 12V   [PTS645VH83-2 LFS] [TH]" (at 73.66 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -14387,6 +14427,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 168.91 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -14853,6 +14895,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "IC:   MCU ARM CORTEX-M0+ 32-BIT DUAL-CORE 133MHZ RP2040   [SC0914(13)] [56-VFQFN Exposed Pad]" (at 139.7 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -15010,6 +15054,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 116.84 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -15326,6 +15372,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 22pF 50V ±5% C0G/NP0   [CL05C220JB51PNC] [SMD]" (at 76.2 111.76 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -15563,6 +15611,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 176.53 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")

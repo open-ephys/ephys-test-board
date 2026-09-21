@@ -9202,6 +9202,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "RESISTOR:   SMD 0402 100kΩ ±1% 0.063W   [AC0402FR-07100KL] [SMD]" (at 68.58 148.59 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -9659,6 +9661,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CONNECTOR:   CONN HDR 80POS SMD GOLD   [BTE-040-03-L-D-A] [SMD]" (at 194.31 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10196,5 +10200,7 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CONNECTOR:   CONN HDR 80POS SMD GOLD   [BTE-040-03-L-D-A] [SMD]" (at 88.9 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 )

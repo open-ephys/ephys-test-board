@@ -2650,6 +2650,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CONNECTOR:   HEADER VERT 2x5POS 2.54MM   [10129383-910002ALF] [SMD]" (at 251.46 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
@@ -4202,6 +4204,8 @@
 				)
 			)
 		)
+	
+		(property "OEPS Description" "CONNECTOR:   HEADER VERT 3POS 1MM   [BM03B-SRSS-TB] [SMD]" (at 252.73 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")

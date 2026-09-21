@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "G")
+		(rev "H")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -1235,7 +1235,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5427,7 +5427,7 @@
 		)
 		(uuid "624f28a7-f009-4841-bb8a-15448347d30b")
 	)
-	(text "NB: This diode is required to \nprevent C299 from forming a very \nlong RC circuit with R264/5, which\ncauses long turn on time for Q1 and \nlong time period in triode regime,\nwhich causes VPP to droop, which \ncauses U154 to issue reset and\nthe circuit to power cycle when USB \ncable is unplugged."
+	(text "NB: This diode is required to \nprevent C115 from forming a very \nlong RC circuit with R270/1, which\ncauses long turn on time for Q1 and \nlong time period in triode regime,\nwhich causes VPP to droop, which \ncauses U89 to issue reset and\nthe circuit to power cycle when USB \ncable is unplugged."
 		(exclude_from_sim no)
 		(at 245.11 25.4 0)
 		(effects
@@ -7893,17 +7893,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 68.58 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 68.58 97.79 0)
 			(show_name no)
@@ -7938,6 +7927,17 @@
 		)
 		(property "LCSC" "C60490"
 			(at 68.58 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 68.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8062,6 +8062,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   SUPERVISOR 1 CHANNEL   [APX803L05-35SA-7] [SOT-23-3]"
+			(at 142.24 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "fe512b42-e2ba-46b6-83db-866b0e1baae9")
 		)
@@ -8088,7 +8099,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "191426ff-ef09-48cf-b941-79a84f443b6a")
 		(property "Reference" "TP12"
@@ -8169,17 +8180,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 165.1 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 165.1 90.17 0)
 			(show_name no)
@@ -8241,7 +8241,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "19effc03-dda1-4385-a8fd-02f28b4cf546")
 		(property "Reference" "TP4"
@@ -8312,17 +8312,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 118.11 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 118.11 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8486,17 +8475,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 153.67 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 153.67 143.51 0)
 			(show_name no)
@@ -8530,6 +8508,17 @@
 			)
 		)
 		(property "LCSC" "C105883"
+			(at 153.67 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
 			(at 153.67 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8720,17 +8709,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 68.58 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 68.58 107.95 0)
 			(show_name no)
@@ -8765,6 +8743,17 @@
 		)
 		(property "LCSC" "C60490"
 			(at 68.58 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 68.58 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8867,17 +8856,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 203.2 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 203.2 35.56 0)
 			(hide yes)
@@ -8923,6 +8901,17 @@
 		)
 		(property "LCSC" "C916074"
 			(at 203.2 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "DIODE:   LED SMD Green Clear 515nm 20mA   [150060GS75000] [0603]"
+			(at 203.2 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9126,17 +9115,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 195.58 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 195.58 48.26 0)
 			(show_name no)
@@ -9170,6 +9148,17 @@
 			)
 		)
 		(property "LCSC" "C51205"
+			(at 195.58 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
 			(at 195.58 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -9281,18 +9270,7 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 173.99 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
 			(at 173.99 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9325,6 +9303,17 @@
 			)
 		)
 		(property "LCSC" "C2909377"
+			(at 173.99 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 680kΩ ±1% 0.063W   [RC0402FR-13680KL] [SMD]"
 			(at 173.99 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9450,17 +9439,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 191.77 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 191.77 148.59 0)
 			(show_name no)
@@ -9494,6 +9472,17 @@
 			)
 		)
 		(property "LCSC" "C105883"
+			(at 191.77 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
 			(at 191.77 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9618,17 +9607,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 157.48 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 157.48 99.06 0)
 			(show_name no)
@@ -9662,6 +9640,17 @@
 			)
 		)
 		(property "LCSC" "C5673"
+			(at 157.48 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
 			(at 157.48 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9774,7 +9763,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "34b57940-a49e-4b51-b8e2-a73b4b650e36")
 		(property "Reference" "TP2"
@@ -9845,17 +9834,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 58.42 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 58.42 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -10322,17 +10300,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 260.35 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 260.35 90.17 0)
 			(show_name no)
@@ -10367,6 +10334,17 @@
 		)
 		(property "LCSC" ""
 			(at 260.35 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "TRANSISTOR:   MOSFET N-CH 30 V 4A   [DMG3418L-7] [SOT-23-3]"
+			(at 260.35 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10559,17 +10537,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 46.99 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 46.99 41.91 0)
 			(show_name no)
@@ -10603,6 +10570,17 @@
 			)
 		)
 		(property "LCSC" "C5184243"
+			(at 46.99 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   USB2.0 TYPE C 16P SMD R/A   [USB4105-GF-A] [SMD/TH]"
 			(at 46.99 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -10661,7 +10639,7 @@
 		(pin "B9"
 			(uuid "a5ed04de-53a4-494e-a38d-7c666407c48a")
 		)
-		(pin "S1"
+		(pin "SH"
 			(uuid "3c6919f8-0659-42a4-b433-02a867214676")
 		)
 		(instances
@@ -10759,18 +10737,7 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 173.99 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
 			(at 173.99 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10803,6 +10770,17 @@
 			)
 		)
 		(property "LCSC" "C2909377"
+			(at 173.99 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 680kΩ ±1% 0.063W   [RC0402FR-13680KL] [SMD]"
 			(at 173.99 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -10993,17 +10971,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 74.93 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 74.93 92.71 0)
 			(show_name no)
@@ -11037,6 +11004,17 @@
 			)
 		)
 		(property "LCSC" "C82544"
+			(at 74.93 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "DIODE:   DIODE SCHOTTKY 40V 1A   [CDBW140-G] [SOD-123]"
 			(at 74.93 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11225,17 +11203,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 273.05 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 273.05 83.82 0)
 			(show_name no)
@@ -11270,6 +11237,17 @@
 		)
 		(property "LCSC" ""
 			(at 273.05 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 2.2kΩ ±1% 0.100W   [ERJ-2RKF2201X] [SMD]"
+			(at 273.05 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11381,7 +11359,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "566372b2-fcfc-4188-b160-dcfc3cdec779")
 		(property "Reference" "TP10"
@@ -11451,17 +11429,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 157.48 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 157.48 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -11625,17 +11592,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 182.88 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 182.88 82.55 0)
 			(show_name no)
@@ -11669,6 +11625,17 @@
 			)
 		)
 		(property "LCSC" ""
+			(at 182.88 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
 			(at 182.88 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -11864,17 +11831,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 82.55 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 82.55 85.09 0)
 			(show_name no)
@@ -11908,6 +11864,17 @@
 			)
 		)
 		(property "LCSC" "C155244"
+			(at 82.55 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "TRANSISTOR:   MOSFET P-CH 30V 3.8A   [DMP3099L-7] [SOT-23-3]"
 			(at 82.55 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -12334,17 +12301,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 173.99 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 173.99 102.87 0)
 			(show_name no)
@@ -12378,6 +12334,17 @@
 			)
 		)
 		(property "LCSC" "C106231"
+			(at 173.99 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 0Ω 1A   [RC0402JR-070RL] [SMD]"
 			(at 173.99 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -12724,17 +12691,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 182.88 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 182.88 60.96 0)
 			(show_name no)
@@ -12778,6 +12734,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0603 330Ω ±1% 0.100W   [CRCW0603330RFKEAC] [SMD]"
+			(at 182.88 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a1ea013c-1ec5-4a1b-89a7-12444b026bc3")
 		)
@@ -12801,7 +12768,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "75c53145-cffe-4995-9068-876749ecb63a")
 		(property "Reference" "TP8"
@@ -12871,17 +12838,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 142.24 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 142.24 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -13280,17 +13236,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 118.11 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 118.11 97.79 0)
 			(show_name no)
@@ -13324,6 +13269,17 @@
 			)
 		)
 		(property "LCSC" "C5673"
+			(at 118.11 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
 			(at 118.11 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -13591,7 +13547,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "7ed74ca3-99db-48da-9e9b-c9078a2f3e5a")
 		(property "Reference" "TP9"
@@ -13661,17 +13617,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 149.86 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 149.86 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -13901,7 +13846,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "83bd14ec-4e2a-4877-94fd-c360ae416393")
 		(property "Reference" "TP14"
@@ -13972,17 +13917,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 200.66 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 200.66 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -14216,6 +14150,17 @@
 			)
 		)
 		(property "LCSC" "C138714"
+			(at 124.46 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "DIODE:   TVS DIODE 5.5VWM 14VC   [TPD4E05U06DQAR] [10-UFDFN]"
 			(at 124.46 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14508,17 +14453,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 210.82 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 210.82 46.99 0)
 			(show_name no)
@@ -14553,6 +14487,17 @@
 		)
 		(property "LCSC" "C105871"
 			(at 210.82 46.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 4.7kΩ ±1% 0.100W   [ERJ-2RKF4701X] [SMD]"
+			(at 210.82 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14743,17 +14688,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 152.4 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 152.4 41.91 0)
 			(show_name no)
@@ -14797,6 +14731,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CONNECTOR:   CONN HEADER SMD R/A 2POS 2MM   [S2B-PH-SM4-TB] [SMD]"
+			(at 152.4 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "13c22f31-3d07-4c0a-bf66-6b973868f4b6")
 		)
@@ -14823,7 +14768,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "91b82d64-90b0-481d-a4ad-975862b376ad")
 		(property "Reference" "TP5"
@@ -14893,17 +14838,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 119.38 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 119.38 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -15132,17 +15066,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 88.9 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 88.9 57.15 0)
 			(show_name no)
@@ -15177,6 +15100,17 @@
 		)
 		(property "LCSC" "C105872"
 			(at 88.9 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 5.1kΩ ±1% 0.100W   [ERJ-2RKF5101X] [SMD]"
+			(at 88.9 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15290,17 +15224,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 228.6 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 228.6 26.67 0)
 			(show_name no)
@@ -15335,6 +15258,17 @@
 		)
 		(property "LCSC" "C82544"
 			(at 228.6 26.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "DIODE:   DIODE SCHOTTKY 40V 1A   [CDBW140-G] [SOD-123]"
+			(at 228.6 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15446,17 +15380,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 140.97 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 140.97 95.25 0)
 			(show_name no)
@@ -15490,6 +15413,17 @@
 			)
 		)
 		(property "LCSC" "C51118"
+			(at 140.97 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   LDO 3V 500mA   [TLV75530PDBVR] [SOT-23-5]"
 			(at 140.97 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -15610,7 +15544,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "a2a06960-e366-4fae-a51b-b3b783d7af63")
 		(property "Reference" "TP6"
@@ -15690,17 +15624,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 127 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 127 179.07 0)
 			(show_name no)
@@ -15762,7 +15685,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "b2885669-2e71-4149-a06c-b8ac731a2b6f")
 		(property "Reference" "TP11"
@@ -15833,17 +15756,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 163.83 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 163.83 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -16005,6 +15917,17 @@
 			)
 		)
 		(property "LCSC" "C6105831"
+			(at 85.09 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   SWITCH ROCKER SPDT 3A 120V   [400MSP1R6BLKM6QE] [TH]"
 			(at 85.09 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -16196,7 +16119,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "bed20b18-2f4b-46a7-b51d-789f3003d279")
 		(property "Reference" "TP13"
@@ -16267,17 +16190,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 170.18 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 170.18 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -16428,7 +16340,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "bfaf2952-03b5-4b78-82ee-5982d53ebf91")
 		(property "Reference" "TP7"
@@ -16498,17 +16410,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 134.62 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 134.62 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -16658,17 +16559,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 241.3 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 241.3 52.07 0)
 			(show_name no)
@@ -16703,6 +16593,17 @@
 		)
 		(property "LCSC" "C105871"
 			(at 241.3 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 4.7kΩ ±1% 0.100W   [ERJ-2RKF4701X] [SMD]"
+			(at 241.3 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16825,6 +16726,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   OPAMP 1 CIRCUIT   [TLV9061SIDBVR] [SOT-23-6]"
+			(at 226.06 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "7d8b255b-37c7-49d0-bdf4-7951a5c157db")
 		)
@@ -16860,7 +16772,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "d7ac5976-4443-4064-8889-c51a750befc8")
 		(property "Reference" "TP3"
@@ -16931,17 +16843,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 105.41 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 105.41 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -17091,17 +16992,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 222.25 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 222.25 74.93 0)
 			(show_name no)
@@ -17135,6 +17025,17 @@
 			)
 		)
 		(property "LCSC" ""
+			(at 222.25 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   BATT PROT LI-ION 1CELL   [BQ29700DSER] [6-WFDFN]"
 			(at 222.25 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -17350,17 +17251,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 251.46 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 251.46 46.99 0)
 			(show_name no)
@@ -17394,6 +17284,17 @@
 			)
 		)
 		(property "LCSC" "C13585"
+			(at 251.46 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 10uF 50V ±10% X7R   [CL31B106KBHNNNE] [SMD]"
 			(at 251.46 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -17665,17 +17566,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 243.84 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 243.84 90.17 0)
 			(show_name no)
@@ -17710,6 +17600,17 @@
 		)
 		(property "LCSC" ""
 			(at 243.84 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "TRANSISTOR:   MOSFET N-CH 30 V 4A   [DMG3418L-7] [SOT-23-3]"
+			(at 243.84 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17906,17 +17807,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 228.6 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 228.6 44.45 0)
 			(show_name no)
@@ -17950,6 +17840,17 @@
 			)
 		)
 		(property "LCSC" "C424093"
+			(at 228.6 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   BATT CNTL LI-ION 1CEL   [MCP73831T-2ACI/OT] [SOT-23-5]"
 			(at 228.6 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -18241,17 +18142,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 228.6 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 228.6 118.11 0)
 			(show_name no)
@@ -18285,6 +18175,17 @@
 			)
 		)
 		(property "LCSC" "C105883"
+			(at 228.6 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
 			(at 228.6 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -18410,17 +18311,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 97.79 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 97.79 149.86 0)
 			(show_name no)
@@ -18454,6 +18344,17 @@
 			)
 		)
 		(property "LCSC" "C105883"
+			(at 97.79 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
 			(at 97.79 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -18565,17 +18466,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 97.79 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 97.79 134.62 0)
 			(show_name no)
@@ -18610,6 +18500,17 @@
 		)
 		(property "LCSC" "C93943"
 			(at 97.79 134.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 47kΩ ±1% 0.100W   [ERJ-2RKF4702X] [SMD]"
+			(at 97.79 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18721,17 +18622,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 80.01 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 80.01 57.15 0)
 			(show_name no)
@@ -18766,6 +18656,17 @@
 		)
 		(property "LCSC" "C105872"
 			(at 80.01 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 5.1kΩ ±1% 0.100W   [ERJ-2RKF5101X] [SMD]"
+			(at 80.01 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

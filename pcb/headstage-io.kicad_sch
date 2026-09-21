@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "G")
+		(rev "H")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -9144,17 +9144,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 68.58 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "1%"
 			(at 68.58 148.59 0)
 			(hide yes)
@@ -9189,6 +9178,17 @@
 			)
 		)
 		(property "LCSC" "C852472"
+			(at 68.58 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 100kΩ ±1% 0.063W   [AC0402FR-07100KL] [SMD]"
 			(at 68.58 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9379,17 +9379,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 194.31 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 194.31 92.71 0)
 			(show_name no)
@@ -9423,6 +9412,17 @@
 			)
 		)
 		(property "LCSC" "C6135791"
+			(at 194.31 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   CONN HDR 80POS SMD GOLD   [BTE-040-03-L-D-A] [SMD]"
 			(at 194.31 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -9927,17 +9927,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 88.9 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 88.9 92.71 0)
 			(show_name no)
@@ -9971,6 +9960,17 @@
 			)
 		)
 		(property "LCSC" "C6135791"
+			(at 88.9 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   CONN HDR 80POS SMD GOLD   [BTE-040-03-L-D-A] [SMD]"
 			(at 88.9 92.71 0)
 			(hide yes)
 			(show_name no)

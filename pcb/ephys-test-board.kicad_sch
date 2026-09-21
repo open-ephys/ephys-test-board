@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "G")
+		(rev "H")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -2367,7 +2367,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "0e1b46d1-25be-49f5-97d4-fa401611a4a7")
 		(property "Reference" "H5"
@@ -2427,17 +2427,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 228.6 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 228.6 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -2585,17 +2574,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 251.46 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 251.46 97.79 0)
 			(hide yes)
@@ -2630,6 +2608,17 @@
 			)
 		)
 		(property "LCSC" ""
+			(at 251.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   HEADER VERT 2x5POS 2.54MM   [10129383-910002ALF] [SMD]"
 			(at 251.46 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2681,7 +2670,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17c6e29d-7dfa-43fa-90e3-b1dd2eec512a")
@@ -2762,17 +2751,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 214.63 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 214.63 151.13 0)
 			(show_name no)
@@ -2834,7 +2812,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "239a3a4f-63b6-47d0-ab61-954ddc100f93")
 		(property "Reference" "H1"
@@ -2904,17 +2882,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 180.34 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 180.34 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -3144,7 +3111,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "3ee9ef92-a2b8-426a-8340-a46bd8f9421e")
 		(property "Reference" "H8"
@@ -3214,17 +3181,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 261.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 261.62 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -3453,7 +3409,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "477814a9-9b73-4d2b-baed-22f322001283")
 		(property "Reference" "H6"
@@ -3533,17 +3489,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 238.76 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 238.76 151.13 0)
 			(show_name no)
@@ -3605,7 +3550,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "549b8dc2-8ef3-49ed-af48-249f56cde17d")
 		(property "Reference" "H2"
@@ -3675,17 +3620,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 191.77 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 191.77 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -3994,7 +3928,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "a1b019c9-c5dd-4525-aac3-f0fdc939e007")
 		(property "Reference" "H7"
@@ -4064,17 +3998,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 250.19 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 250.19 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -4226,17 +4149,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 252.73 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 252.73 113.03 0)
 			(hide yes)
@@ -4281,6 +4193,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CONNECTOR:   HEADER VERT 3POS 1MM   [BM03B-SRSS-TB] [SMD]"
+			(at 252.73 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8d115c7a-02b4-4a39-a73d-681b2dfc070e")
 		)
@@ -4310,7 +4233,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bafa3c84-64c3-466d-9cc7-429fe829d7de")
@@ -4381,17 +4304,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 203.2 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 203.2 151.13 0)
 			(hide yes)
 			(show_name no)

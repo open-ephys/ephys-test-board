@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "G")
+		(rev "H")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -936,1030 +936,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FSA553_1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 5.08 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "FSA553"
-				(at 7.62 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "open-ephys:ONSEMI_567SV_WLCSP9-3x3-1.215x1.385x0.581mm-P0.4mm"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fsa553-d.pdf"
-				(at 1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
-				(at 11.43 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Analog Switch Depletion SPST Dual"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "FSA553_1_1_1"
-				(rectangle
-					(start -3.81 7.62)
-					(end 3.81 -7.62)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.6376 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -3.175 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.159 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.6438 -2.5307) (xy 2.4826 -1.713)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -1.905 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -0.635 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.159 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin bidirectional line
-					(at -6.35 -2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 6.35 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -6.35 2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "FSA553_1_2_1"
-				(rectangle
-					(start -3.81 5.08)
-					(end 3.81 -5.08)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.6376 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -3.175 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.159 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.6438 -2.5307) (xy 2.4826 -1.713)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -1.905 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -0.635 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.159 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin bidirectional line
-					(at -6.35 -2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 6.35 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -6.35 2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "FSA553_2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 5.08 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "FSA553"
-				(at 7.62 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "open-ephys:ONSEMI_567SV_WLCSP9-3x3-1.215x1.385x0.581mm-P0.4mm"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fsa553-d.pdf"
-				(at 1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
-				(at 11.43 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Analog Switch Depletion SPST Dual"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "FSA553_2_1_1"
-				(rectangle
-					(start -3.81 7.62)
-					(end 3.81 -7.62)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.6376 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -3.175 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.159 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.6438 -2.5307) (xy 2.4826 -1.713)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -1.905 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -0.635 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.159 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin bidirectional line
-					(at -6.35 -2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 6.35 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -6.35 2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "FSA553_2_2_1"
-				(rectangle
-					(start -3.81 5.08)
-					(end 3.81 -5.08)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.6376 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -3.175 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.159 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.6438 -2.5307) (xy 2.4826 -1.713)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -1.905 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -0.635 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.159 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin bidirectional line
-					(at -6.35 -2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 6.35 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -6.35 2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Regulator_SwitchedCapacitor:LM27761"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2495,6 +1471,537 @@
 						)
 					)
 					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "open-ephys:FSA553"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 5.08 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FSA553"
+				(at 7.62 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "open-ephys:ONSEMI_567SV_WLCSP9-3x3-1.215x1.385x0.581mm-P0.4mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fsa553-d.pdf"
+				(at 1.27 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Dual SPST Depletion Audio Switch with Negative Swing"
+				(at 11.43 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Analog Switch Depletion SPST Dual"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FSA553_1_1"
+				(rectangle
+					(start -3.81 7.62)
+					(end 3.81 -7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.6376 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -3.175 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.159 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.6438 -2.5307) (xy 2.4826 -1.713)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -1.905 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -0.635 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.159 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 6.35 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 2.54 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "FSA553_2_1"
+				(rectangle
+					(start -3.81 5.08)
+					(end 3.81 -5.08)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.6376 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -3.175 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.159 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.6438 -2.5307) (xy 2.4826 -1.713)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -1.905 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -0.635 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.159 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 6.35 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4584,17 +4091,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 133.35 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 133.35 167.64 0)
 			(show_name no)
@@ -4628,6 +4124,17 @@
 			)
 		)
 		(property "LCSC" "C51205"
+			(at 133.35 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
 			(at 133.35 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -4750,17 +4257,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 133.35 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 133.35 115.57 0)
 			(show_name no)
@@ -4795,6 +4291,17 @@
 		)
 		(property "LCSC" "C107024"
 			(at 133.35 115.57 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 1.8nF 50V ±5% X7R   [C0402C182J5RACTU] [SMD]"
+			(at 133.35 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4907,6 +4414,17 @@
 			)
 		)
 		(property "LCSC" "C7451493"
+			(at 161.29 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   OPAMP GP 2 CIRCUIT   [MAX4489AUA+] [8-MSOP]"
 			(at 161.29 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -5047,17 +4565,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 157.48 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 157.48 73.66 0)
 			(show_name no)
@@ -5092,6 +4599,17 @@
 		)
 		(property "LCSC" ""
 			(at 157.48 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "DNP: Do Not Populate (DNI)"
+			(at 157.48 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5202,17 +4720,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 195.58 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 195.58 104.14 0)
 			(hide yes)
@@ -5248,6 +4755,17 @@
 		)
 		(property "LCSC" "C2073397"
 			(at 195.58 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]"
+			(at 195.58 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5528,17 +5046,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 152.4 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 152.4 48.26 0)
 			(show_name no)
@@ -5573,6 +5080,17 @@
 		)
 		(property "LCSC" "C105883"
 			(at 152.4 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
+			(at 152.4 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5694,17 +5212,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 157.48 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 157.48 62.23 0)
 			(show_name no)
@@ -5739,6 +5246,17 @@
 		)
 		(property "LCSC" "C107024"
 			(at 157.48 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 1.8nF 50V ±5% X7R   [C0402C182J5RACTU] [SMD]"
+			(at 157.48 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5861,17 +5379,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 267.97 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 267.97 83.82 0)
 			(show_name no)
@@ -5905,6 +5412,17 @@
 			)
 		)
 		(property "LCSC" "C105883"
+			(at 267.97 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
 			(at 267.97 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6106,17 +5624,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 152.4 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 152.4 26.67 0)
 			(show_name no)
@@ -6160,6 +5667,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
+			(at 152.4 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e7605131-a4b0-4dd3-a5a8-aef5bea47337")
 		)
@@ -6176,7 +5694,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_1")
 		(lib_id "open-ephys:FSA553")
 		(at 80.01 34.29 0)
 		(mirror y)
@@ -6274,6 +5791,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
+			(at 80.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "60acf848-b4f7-49d0-a952-657af77b2309")
 		)
@@ -6297,6 +5825,9 @@
 		)
 		(pin "A3"
 			(uuid "74dffc8b-cebe-4c94-bb16-cc377bfa0939")
+		)
+		(pin "B2"
+			(uuid "b2c38145-c68f-4449-a871-47cc410f79fe")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -6479,6 +6010,17 @@
 			)
 		)
 		(property "LCSC" "C7451493"
+			(at 163.83 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   OPAMP GP 2 CIRCUIT   [MAX4489AUA+] [8-MSOP]"
 			(at 163.83 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -6685,17 +6227,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 157.48 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 157.48 82.55 0)
 			(hide yes)
@@ -6731,6 +6262,17 @@
 		)
 		(property "LCSC" "C2073397"
 			(at 157.48 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]"
+			(at 157.48 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6842,17 +6384,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 115.57 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "1%"
 			(at 115.57 162.56 0)
 			(hide yes)
@@ -6888,6 +6419,17 @@
 		)
 		(property "LCSC" "C852472"
 			(at 115.57 162.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 100kΩ ±1% 0.063W   [AC0402FR-07100KL] [SMD]"
+			(at 115.57 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6998,17 +6540,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 127 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "1%"
 			(at 127 36.83 0)
 			(hide yes)
@@ -7044,6 +6575,17 @@
 		)
 		(property "LCSC" "C138066"
 			(at 127 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10Ω ±1% 0.063W   [RMCF0402FT10R0] [SMD]"
+			(at 127 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7155,17 +6697,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 97.79 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "1%"
 			(at 97.79 175.26 0)
 			(hide yes)
@@ -7201,6 +6732,17 @@
 		)
 		(property "LCSC" "C852472"
 			(at 97.79 175.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 249kΩ ±1% 0.063W   [RMCF0402FT249K] [SMD]"
+			(at 97.79 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7391,6 +6933,17 @@
 			)
 		)
 		(property "LCSC" "C129351 "
+			(at 69.85 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   Switched-capacitor Voltage Inverter   [LM27761DSGR] [8-WSON]"
 			(at 69.85 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7602,17 +7155,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 220.98 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 220.98 104.14 0)
 			(show_name no)
@@ -7646,6 +7188,17 @@
 			)
 		)
 		(property "LCSC" "C650083"
+			(at 220.98 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   DAC 16BIT   [AD5683RARMZ] [10-MSOP]"
 			(at 220.98 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7937,17 +7490,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 175.26 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 175.26 114.3 0)
 			(hide yes)
@@ -7983,6 +7525,17 @@
 		)
 		(property "LCSC" "C2073397"
 			(at 175.26 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]"
+			(at 175.26 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8104,17 +7657,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 86.36 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 86.36 85.09 0)
 			(show_name no)
@@ -8149,6 +7691,17 @@
 		)
 		(property "LCSC" "C60133"
 			(at 86.36 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
+			(at 86.36 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8259,17 +7812,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 113.03 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "1%"
 			(at 113.03 106.68 0)
 			(hide yes)
@@ -8305,6 +7847,17 @@
 		)
 		(property "LCSC" "C138066"
 			(at 113.03 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10Ω ±1% 0.063W   [RMCF0402FT10R0] [SMD]"
+			(at 113.03 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8415,17 +7968,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 163.83 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 163.83 137.16 0)
 			(hide yes)
@@ -8461,6 +8003,17 @@
 		)
 		(property "LCSC" "C5948099"
 			(at 163.83 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 5kΩ ±0.1% 0.050W   [PNM0402E5001BST1] [SMD]"
+			(at 163.83 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8571,7 +8124,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "7a71ef5c-7485-4ba1-b40d-b736b7b99041")
 		(property "Reference" "TP1"
@@ -8642,17 +8195,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 55.88 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 55.88 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8802,17 +8344,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 133.35 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 133.35 137.16 0)
 			(hide yes)
@@ -8848,6 +8379,17 @@
 		)
 		(property "LCSC" "C2073397"
 			(at 133.35 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]"
+			(at 133.35 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8895,7 +8437,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "731000105"
+		(property "Value" "0731000105"
 			(at 252.73 35.8532 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8961,17 +8503,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 248.92 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 248.92 34.29 0)
 			(show_name no)
@@ -8982,7 +8513,7 @@
 				)
 			)
 		)
-		(property "MPN" "731000105"
+		(property "MPN" "0731000105"
 			(at 248.92 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9005,6 +8536,17 @@
 			)
 		)
 		(property "LCSC" "C3174924"
+			(at 248.92 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   BNC JACK 50ohm R/A   [0731000105] [TH]"
 			(at 248.92 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9129,17 +8671,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 257.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 257.81 83.82 0)
 			(show_name no)
@@ -9173,6 +8704,17 @@
 			)
 		)
 		(property "LCSC" "C13585"
+			(at 257.81 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 10uF 50V ±10% X7R   [CL31B106KBHNNNE] [SMD]"
 			(at 257.81 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -9373,17 +8915,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 191.77 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 191.77 45.72 0)
 			(show_name no)
@@ -9418,6 +8949,17 @@
 		)
 		(property "LCSC" "C281751"
 			(at 191.77 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100pF 50V ±5% C0G   [CC0402JRNPO9BN101] [SMD]"
+			(at 191.77 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9620,17 +9162,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 85.09 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 85.09 173.99 0)
 			(show_name no)
@@ -9664,6 +9195,17 @@
 			)
 		)
 		(property "LCSC" "C51205"
+			(at 85.09 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
 			(at 85.09 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -9941,17 +9483,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 233.68 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 233.68 85.09 0)
 			(show_name no)
@@ -9986,6 +9517,17 @@
 		)
 		(property "LCSC" "C60133"
 			(at 233.68 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
+			(at 233.68 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10096,7 +9638,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "9c76e362-3a83-44ea-a109-b6be2fcd00a7")
 		(property "Reference" "TP15"
@@ -10166,17 +9708,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 133.35 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 133.35 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -10576,17 +10107,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 50.8 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 50.8 168.91 0)
 			(show_name no)
@@ -10630,6 +10150,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
+			(at 50.8 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "66110371-2af7-4dc8-a5ea-5129fbf3102c")
 		)
@@ -10646,7 +10177,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSA553_2")
 		(lib_id "open-ephys:FSA553")
 		(at 80.01 104.14 0)
 		(mirror y)
@@ -10744,6 +10274,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
+			(at 80.01 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "048fa5d1-5fd6-482a-9e5d-c3299d58cf55")
 		)
@@ -10767,6 +10308,9 @@
 		)
 		(pin "A3"
 			(uuid "181faed3-2457-4796-8f77-82612afd979c")
+		)
+		(pin "B2"
+			(uuid "947d7bdc-f34b-4dcf-959a-f52b8f1feb2e")
 		)
 		(instances
 			(project "ephys-test-board"
@@ -11108,17 +10652,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 162.56 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 162.56 115.57 0)
 			(show_name no)
@@ -11153,6 +10686,17 @@
 		)
 		(property "LCSC" "C107024"
 			(at 162.56 115.57 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 1.8nF 50V ±5% X7R   [C0402C182J5RACTU] [SMD]"
+			(at 162.56 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11274,17 +10818,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 133.35 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 133.35 127 0)
 			(show_name no)
@@ -11319,6 +10852,17 @@
 		)
 		(property "LCSC" ""
 			(at 133.35 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "DNP: Do Not Populate (DNI)"
+			(at 133.35 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11429,17 +10973,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 204.47 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 204.47 44.45 0)
 			(hide yes)
@@ -11475,6 +11008,17 @@
 		)
 		(property "LCSC" "C2073397"
 			(at 204.47 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]"
+			(at 204.47 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11742,17 +11286,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 217.17 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 217.17 34.29 0)
 			(hide yes)
@@ -11788,6 +11321,17 @@
 		)
 		(property "LCSC" "C868262"
 			(at 217.17 34.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0805 9kΩ ±0.1% 0.125W   [RT0805BRE079KL] [SMD]"
+			(at 217.17 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11898,17 +11442,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 184.15 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 184.15 104.14 0)
 			(hide yes)
@@ -11944,6 +11477,17 @@
 		)
 		(property "LCSC" "C2073397"
 			(at 184.15 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]"
+			(at 184.15 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12133,17 +11677,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 105.41 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "1%"
 			(at 105.41 162.56 0)
 			(hide yes)
@@ -12179,6 +11712,17 @@
 		)
 		(property "LCSC" "C852472"
 			(at 105.41 162.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 100kΩ ±1% 0.063W   [AC0402FR-07100KL] [SMD]"
+			(at 105.41 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12291,6 +11835,17 @@
 			)
 		)
 		(property "LCSC" "C7451493"
+			(at 135.89 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   OPAMP GP 2 CIRCUIT   [MAX4489AUA+] [8-MSOP]"
 			(at 135.89 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -12434,17 +11989,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 38.1 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 38.1 167.64 0)
 			(show_name no)
@@ -12478,6 +12022,17 @@
 			)
 		)
 		(property "LCSC" "C51205"
+			(at 38.1 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
 			(at 38.1 167.64 0)
 			(hide yes)
 			(show_name no)

@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Extracellular Electrophysiology Test Board")
-		(rev "G")
+		(rev "H")
 		(company "Open Ephys, Inc")
 		(comment 1 "Jonathan P. Newman")
 	)
@@ -1175,7 +1175,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:RotaryEncoder_Switch"
+		(symbol "Device:RotaryEncoder_Switch_MP"
 			(pin_names
 				(offset 0.254)
 				(hide yes)
@@ -1185,8 +1185,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 6.604 0)
+			(property "Reference" "SW4"
+				(at 0 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1195,8 +1195,8 @@
 					)
 				)
 			)
-			(property "Value" "RotaryEncoder_Switch"
-				(at 0 -6.604 0)
+			(property "Value" "PEC12R-4220F-S0024"
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1205,7 +1205,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Rotary_Encoder:RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx"
 				(at -3.81 4.064 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1217,7 +1217,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 6.604 0)
+				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1227,7 +1227,83 @@
 					)
 				)
 			)
-			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet1" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part No." ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PEC12R-4220F-S0024"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "OEPSPN" "OEPS100076"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C18164805"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1260,7 +1336,7 @@
 					)
 				)
 			)
-			(symbol "RotaryEncoder_Switch_0_1"
+			(symbol "RotaryEncoder_Switch_MP_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -1485,7 +1561,7 @@
 					)
 				)
 			)
-			(symbol "RotaryEncoder_Switch_1_1"
+			(symbol "RotaryEncoder_Switch_MP_1_1"
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -1569,6 +1645,24 @@
 						)
 					)
 					(number "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2477,7 +2571,7 @@
 	)
 	(text "Knob:\nACCKMR1316NLT14"
 		(exclude_from_sim no)
-		(at 139.7 142.24 0)
+		(at 139.7 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2592,6 +2686,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "efb90c32-e82d-43fa-b78b-2b428c00a628")
+	)
+	(no_connect
+		(at 139.7 140.97)
+		(uuid "09c4f186-acd9-4154-b808-1b599bef1113")
 	)
 	(bus_entry
 		(at 171.45 55.88)
@@ -3809,17 +3907,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 77.47 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 77.47 54.61 0)
 			(show_name no)
@@ -3854,6 +3941,17 @@
 		)
 		(property "LCSC" "C93943"
 			(at 77.47 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 47kΩ ±1% 0.100W   [ERJ-2RKF4702X] [SMD]"
+			(at 77.47 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4044,17 +4142,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 87.63 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 87.63 121.92 0)
 			(show_name no)
@@ -4089,6 +4176,17 @@
 		)
 		(property "LCSC" "C60490"
 			(at 87.63 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 87.63 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4212,17 +4310,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 109.22 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 109.22 158.75 0)
 			(show_name no)
@@ -4256,6 +4343,17 @@
 			)
 		)
 		(property "LCSC" "C60133"
+			(at 109.22 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
 			(at 109.22 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -4372,17 +4470,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 82.55 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 82.55 63.5 0)
 			(show_name no)
@@ -4416,6 +4503,17 @@
 			)
 		)
 		(property "LCSC" "C151026"
+			(at 82.55 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "TRANSISTOR:   MOSFET N-CH 30 V 4A   [DMG3418L-7] [SOT-23-3]"
 			(at 82.55 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4623,17 +4721,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 128.27 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 128.27 49.53 0)
 			(show_name no)
@@ -4667,6 +4754,17 @@
 			)
 		)
 		(property "LCSC" "C51205"
+			(at 128.27 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
 			(at 128.27 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4779,17 +4877,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 109.22 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 109.22 121.92 0)
 			(show_name no)
@@ -4824,6 +4911,17 @@
 		)
 		(property "LCSC" "C60490"
 			(at 109.22 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 109.22 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5342,17 +5440,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 160.02 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 160.02 39.37 0)
 			(show_name no)
@@ -5386,6 +5473,17 @@
 			)
 		)
 		(property "LCSC" "C5673"
+			(at 160.02 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
 			(at 160.02 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -5655,18 +5753,7 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 142.24 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
 			(at 142.24 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5700,6 +5787,17 @@
 		)
 		(property "LCSC" "C2909377"
 			(at 142.24 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 680kΩ ±1% 0.063W   [RC0402FR-13680KL] [SMD]"
+			(at 142.24 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5982,17 +6080,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 139.7 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 139.7 49.53 0)
 			(show_name no)
@@ -6026,6 +6113,17 @@
 			)
 		)
 		(property "LCSC" "C5673"
+			(at 139.7 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
 			(at 139.7 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6230,17 +6328,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 168.91 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 168.91 74.93 0)
 			(show_name no)
@@ -6274,6 +6361,17 @@
 			)
 		)
 		(property "LCSC" "C51205"
+			(at 168.91 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
 			(at 168.91 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -6386,17 +6484,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 153.67 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 153.67 121.92 0)
 			(show_name no)
@@ -6431,6 +6518,17 @@
 		)
 		(property "LCSC" "C60490"
 			(at 153.67 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 153.67 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6554,17 +6652,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 175.26 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 175.26 137.16 0)
 			(show_name no)
@@ -6599,6 +6686,17 @@
 		)
 		(property "LCSC" "C105883"
 			(at 175.26 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
+			(at 175.26 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6802,17 +6900,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 180.34 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 180.34 74.93 0)
 			(show_name no)
@@ -6846,6 +6933,17 @@
 			)
 		)
 		(property "LCSC" "C5673"
+			(at 180.34 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
 			(at 180.34 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7115,17 +7213,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 194.31 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 194.31 130.81 0)
 			(show_name no)
@@ -7159,6 +7246,17 @@
 			)
 		)
 		(property "LCSC" "C7835"
+			(at 194.31 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   BUFFER INVERT 1CH 3-STATE   [SN74LVC1G14DBVR] [SOT-23-5]"
 			(at 194.31 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -7437,17 +7535,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 163.83 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "0.1%"
 			(at 163.83 130.81 0)
 			(hide yes)
@@ -7483,6 +7570,17 @@
 		)
 		(property "LCSC" "C2073397"
 			(at 163.83 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]"
+			(at 163.83 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7685,17 +7783,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 154.94 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 154.94 74.93 0)
 			(show_name no)
@@ -7729,6 +7816,17 @@
 			)
 		)
 		(property "LCSC" "C51205"
+			(at 154.94 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
 			(at 154.94 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7853,17 +7951,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 173.99 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 173.99 34.29 0)
 			(show_name no)
@@ -7897,6 +7984,17 @@
 			)
 		)
 		(property "LCSC" "C5673"
+			(at 173.99 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
 			(at 173.99 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8014,17 +8112,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 97.79 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 97.79 54.61 0)
 			(show_name no)
@@ -8058,6 +8145,17 @@
 			)
 		)
 		(property "LCSC" "C155244"
+			(at 97.79 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "TRANSISTOR:   MOSFET P-CH 30V 3.8A   [DMP3099L-7] [SOT-23-3]"
 			(at 97.79 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -8264,17 +8362,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 87.63 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 87.63 158.75 0)
 			(show_name no)
@@ -8308,6 +8395,17 @@
 			)
 		)
 		(property "LCSC" "C60133"
+			(at 87.63 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
 			(at 87.63 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -8589,17 +8687,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 181.61 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 181.61 115.57 0)
 			(show_name no)
@@ -8634,6 +8721,17 @@
 		)
 		(property "LCSC" "C105883"
 			(at 181.61 115.57 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
+			(at 181.61 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8902,17 +9000,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 109.22 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 109.22 144.78 0)
 			(show_name no)
@@ -8947,6 +9034,17 @@
 		)
 		(property "LCSC" "C60490"
 			(at 109.22 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 109.22 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9049,17 +9147,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 193.04 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 193.04 55.88 0)
 			(show_name no)
@@ -9093,6 +9180,17 @@
 			)
 		)
 		(property "LCSC" "C262665"
+			(at 193.04 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   CONN FFC BOTTOM 16POS 0.5MM R/A   [FH12-16S-0.5SH(55)] [SMD]"
 			(at 193.04 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9250,17 +9348,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 87.63 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 87.63 144.78 0)
 			(show_name no)
@@ -9295,6 +9382,17 @@
 		)
 		(property "LCSC" "C60490"
 			(at 87.63 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 87.63 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9419,17 +9517,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 109.22 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 109.22 74.93 0)
 			(show_name no)
@@ -9463,6 +9550,17 @@
 			)
 		)
 		(property "LCSC" "C5673"
+			(at 109.22 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
 			(at 109.22 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9574,17 +9672,6 @@
 				)
 			)
 		)
-		(property "Part No." ""
-			(at 72.39 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" ""
 			(at 72.39 71.12 0)
 			(show_name no)
@@ -9628,6 +9715,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 47kΩ ±1% 0.100W   [ERJ-2RKF4702X] [SMD]"
+			(at 72.39 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d527a7db-745b-43d5-9800-4a4e3a373caa")
 		)
@@ -9644,7 +9742,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:RotaryEncoder_Switch")
+		(lib_id "Device:RotaryEncoder_Switch_MP")
 		(at 139.7 133.35 0)
 		(unit 1)
 		(body_style 1)
@@ -9687,7 +9785,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 126.746 0)
+			(at 139.7 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9697,8 +9795,8 @@
 				)
 			)
 		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
-			(at 139.7 133.35 0)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+			(at 139.7 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9720,17 +9818,6 @@
 			)
 		)
 		(property "Datasheet1" ""
-			(at 139.7 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part No." ""
 			(at 139.7 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -9784,6 +9871,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "OTHER:   ROTARY ENCODER MECHANICAL 24PPR   [PEC12R-4220F-S0024] [TH]"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "S1"
 			(uuid "222c6772-ea69-4105-af91-65749be942ef")
 		)
@@ -9798,6 +9896,9 @@
 		)
 		(pin "S2"
 			(uuid "f1a3d8e3-db2e-4437-b56d-384670f9b239")
+		)
+		(pin "SH"
+			(uuid "3213325f-dd6c-438c-9c05-c851ba1488cb")
 		)
 		(instances
 			(project "ephys-test-board"

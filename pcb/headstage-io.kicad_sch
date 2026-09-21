@@ -9188,6 +9188,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 100kΩ ±1% 0.063W   [AC0402FR-07100KL] [SMD]"
+			(at 68.58 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5a6cb3c9-5c9c-4d2a-87a7-5943a664c9d7")
 		)
@@ -9202,8 +9213,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 100kΩ ±1% 0.063W   [AC0402FR-07100KL] [SMD]" (at 68.58 148.59 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -9403,6 +9412,17 @@
 			)
 		)
 		(property "LCSC" "C6135791"
+			(at 194.31 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   CONN HDR 80POS SMD GOLD   [BTE-040-03-L-D-A] [SMD]"
 			(at 194.31 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -9661,8 +9681,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CONNECTOR:   CONN HDR 80POS SMD GOLD   [BTE-040-03-L-D-A] [SMD]" (at 194.31 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9952,6 +9970,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CONNECTOR:   CONN HDR 80POS SMD GOLD   [BTE-040-03-L-D-A] [SMD]"
+			(at 88.9 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "945981b7-8642-4a26-be8d-545489343c39")
 		)
@@ -10200,7 +10229,5 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CONNECTOR:   CONN HDR 80POS SMD GOLD   [BTE-040-03-L-D-A] [SMD]" (at 88.9 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 )

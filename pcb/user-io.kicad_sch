@@ -3950,6 +3950,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 47kΩ ±1% 0.100W   [ERJ-2RKF4702X] [SMD]"
+			(at 77.47 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5676ea6f-1486-46bf-ab96-1bdf84838f8f")
 		)
@@ -3964,8 +3975,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 47kΩ ±1% 0.100W   [ERJ-2RKF4702X] [SMD]" (at 77.47 54.61 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4176,6 +4185,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 87.63 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a5803cec-08e5-4893-a138-045a2457fa1d")
 		)
@@ -4190,8 +4210,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]" (at 87.63 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -4335,6 +4353,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
+			(at 109.22 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fe968f03-13b9-4217-a5f2-710969c202bc")
 		)
@@ -4349,8 +4378,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]" (at 109.22 158.75 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMG3414U")
@@ -4486,6 +4513,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   MOSFET N-CH 30 V 4A   [DMG3418L-7] [SOT-23-3]"
+			(at 82.55 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "801180e1-04f4-4a26-a2ed-f1547f0c142c")
 		)
@@ -4503,8 +4541,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "TRANSISTOR:   MOSFET N-CH 30 V 4A   [DMG3418L-7] [SOT-23-3]" (at 82.55 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4728,6 +4764,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
+			(at 128.27 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fe8145ce-021a-445c-891a-00d4fd0aef2e")
 		)
@@ -4742,8 +4789,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]" (at 128.27 49.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -4875,6 +4920,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 109.22 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a77220ee-29d6-4c5b-8e1f-0926dd52af2e")
 		)
@@ -4889,8 +4945,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]" (at 109.22 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5429,6 +5483,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
+			(at 160.02 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "458c236c-ef59-44f6-98ac-5ada110d1984")
 		)
@@ -5443,8 +5508,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]" (at 160.02 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5733,6 +5796,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 680kΩ ±1% 0.063W   [RC0402FR-13680KL] [SMD]"
+			(at 142.24 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "42703985-c631-46e9-8a9a-997b2322cc15")
 		)
@@ -5747,8 +5821,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 680kΩ ±1% 0.063W   [RC0402FR-13680KL] [SMD]" (at 142.24 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6051,6 +6123,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
+			(at 139.7 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4ed706af-080e-405a-82ee-38fba7739286")
 		)
@@ -6065,8 +6148,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]" (at 139.7 49.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6290,6 +6371,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
+			(at 168.91 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b1d093e0-27e3-4104-9882-d32cb60954bd")
 		)
@@ -6304,8 +6396,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]" (at 168.91 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -6437,6 +6527,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 153.67 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "39e6dbba-90fb-4bee-b396-842c713b8f03")
 		)
@@ -6451,8 +6552,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]" (at 153.67 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -6596,6 +6695,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
+			(at 175.26 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8f1c57e3-5a5e-4172-8ee8-21a1a246c34a")
 		)
@@ -6610,8 +6720,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 175.26 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6835,6 +6943,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
+			(at 180.34 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "42d4f504-521f-44fc-96d7-5884a82d8d30")
 		)
@@ -6849,8 +6968,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]" (at 180.34 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7139,6 +7256,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   BUFFER INVERT 1CH 3-STATE   [SN74LVC1G14DBVR] [SOT-23-5]"
+			(at 194.31 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "273e2154-5bd7-4efe-a613-c5e7bd75ed82")
 		)
@@ -7162,8 +7290,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   BUFFER INVERT 1CH 3-STATE   [SN74LVC1G14DBVR] [SOT-23-5]" (at 194.31 130.81 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -7453,6 +7579,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]"
+			(at 163.83 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f5eb1b3b-65ab-4286-97c7-8a89dba89532")
 		)
@@ -7467,8 +7604,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±0.1% 0.063W   [RG1005P-102-B-T5] [SMD]" (at 163.83 130.81 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -7691,6 +7826,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]"
+			(at 154.94 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8fd41b34-3402-4b1d-b642-f32da1304195")
 		)
@@ -7705,8 +7851,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 1206 4.7uF 16V ±10% X7R   [CL31B475KOHNNNE] [SMD]" (at 154.94 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -7850,6 +7994,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
+			(at 173.99 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ba1d78e5-2683-4359-b9ae-b91564780aca")
 		)
@@ -7864,8 +8019,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]" (at 173.99 34.29 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMG2301L")
@@ -8002,6 +8155,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   MOSFET P-CH 30V 3.8A   [DMP3099L-7] [SOT-23-3]"
+			(at 97.79 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "24f96fed-1a94-4945-b9b4-abc5a9c60fa1")
 		)
@@ -8019,8 +8183,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "TRANSISTOR:   MOSFET P-CH 30V 3.8A   [DMP3099L-7] [SOT-23-3]" (at 97.79 54.61 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8243,6 +8405,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
+			(at 87.63 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "29734270-5bff-4df2-b1c3-580730c9dd28")
 		)
@@ -8257,8 +8430,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]" (at 87.63 158.75 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8559,6 +8730,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
+			(at 181.61 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "45ed8bf5-b87f-4d28-8a3d-5d8eea90db0a")
 		)
@@ -8573,8 +8755,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 181.61 115.57 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8863,6 +9043,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 109.22 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b4a85678-8f18-49ed-b143-9e523d2f6a74")
 		)
@@ -8877,8 +9068,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]" (at 109.22 144.78 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x16_MountingPin")
@@ -9001,6 +9190,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CONNECTOR:   CONN FFC BOTTOM 16POS 0.5MM R/A   [FH12-16S-0.5SH(55)] [SMD]"
+			(at 193.04 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "12"
 			(uuid "e4597241-adff-433f-ba31-331a5ce865df")
 		)
@@ -9060,8 +9260,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CONNECTOR:   CONN FFC BOTTOM 16POS 0.5MM R/A   [FH12-16S-0.5SH(55)] [SMD]" (at 193.04 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -9193,6 +9391,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 87.63 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b2cd6165-a7a1-4276-a2a0-ef38cef47b55")
 		)
@@ -9207,8 +9416,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]" (at 87.63 144.78 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -9353,6 +9560,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]"
+			(at 109.22 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "00650c5d-522a-4a4f-aa6e-a07f123bc4e5")
 		)
@@ -9367,8 +9585,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0603 1uF 25V ±10% X5R   [CL10A105KA8NNNC] [SMD]" (at 109.22 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -9499,6 +9715,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 47kΩ ±1% 0.100W   [ERJ-2RKF4702X] [SMD]"
+			(at 72.39 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d527a7db-745b-43d5-9800-4a4e3a373caa")
 		)
@@ -9513,8 +9740,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 47kΩ ±1% 0.100W   [ERJ-2RKF4702X] [SMD]" (at 72.39 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch_MP")
@@ -9646,6 +9871,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "OTHER:   ROTARY ENCODER MECHANICAL 24PPR   [PEC12R-4220F-S0024] [TH]"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "S1"
 			(uuid "222c6772-ea69-4105-af91-65749be942ef")
 		)
@@ -9672,7 +9908,5 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "OTHER:   ROTARY ENCODER MECHANICAL 24PPR   [PEC12R-4220F-S0024] [TH]" (at 139.7 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 )

@@ -2367,7 +2367,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "0e1b46d1-25be-49f5-97d4-fa401611a4a7")
 		(property "Reference" "H5"
@@ -2618,6 +2618,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CONNECTOR:   HEADER VERT 2x5POS 2.54MM   [10129383-910002ALF] [SMD]"
+			(at 251.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a4dc9c08-95e8-4770-bfde-33719d1d01ed")
 		)
@@ -2650,8 +2661,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CONNECTOR:   HEADER VERT 2x5POS 2.54MM   [10129383-910002ALF] [SMD]" (at 251.46 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
@@ -2661,7 +2670,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17c6e29d-7dfa-43fa-90e3-b1dd2eec512a")
@@ -2803,7 +2812,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "239a3a4f-63b6-47d0-ab61-954ddc100f93")
 		(property "Reference" "H1"
@@ -3102,7 +3111,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "3ee9ef92-a2b8-426a-8340-a46bd8f9421e")
 		(property "Reference" "H8"
@@ -3400,7 +3409,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "477814a9-9b73-4d2b-baed-22f322001283")
 		(property "Reference" "H6"
@@ -3541,7 +3550,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "549b8dc2-8ef3-49ed-af48-249f56cde17d")
 		(property "Reference" "H2"
@@ -3919,7 +3928,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "a1b019c9-c5dd-4525-aac3-f0fdc939e007")
 		(property "Reference" "H7"
@@ -4184,6 +4193,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CONNECTOR:   HEADER VERT 3POS 1MM   [BM03B-SRSS-TB] [SMD]"
+			(at 252.73 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8d115c7a-02b4-4a39-a73d-681b2dfc070e")
 		)
@@ -4204,8 +4224,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CONNECTOR:   HEADER VERT 3POS 1MM   [BM03B-SRSS-TB] [SMD]" (at 252.73 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
@@ -4215,7 +4233,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bafa3c84-64c3-466d-9cc7-429fe829d7de")

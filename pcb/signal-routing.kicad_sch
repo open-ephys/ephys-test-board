@@ -3127,6 +3127,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
+			(at 152.4 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "030a44ca-3bf3-4412-a18a-41a8e8e3bed4")
 		)
@@ -3222,8 +3233,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 152.4 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -3462,6 +3471,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
+			(at 77.47 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "bd7e8e15-5415-4d78-8e7d-b805dd42be19")
 		)
@@ -3557,8 +3577,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 77.47 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -3691,6 +3709,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]"
+			(at 135.89 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6b09c93d-dad7-49c2-b1cd-17b8e03c7a8b")
 		)
@@ -3765,8 +3794,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]" (at 135.89 167.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4185,6 +4212,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
+			(at 83.82 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9b9f9e18-5d64-4f88-a141-cd7819e29ec8")
 		)
@@ -4259,8 +4297,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]" (at 83.82 22.86 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -4393,6 +4429,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]"
+			(at 55.88 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "612fad88-99f4-43c6-ba8e-3589cb6e1ac0")
 		)
@@ -4467,8 +4514,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]" (at 55.88 173.99 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -4601,6 +4646,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]"
+			(at 62.23 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0f362573-c97c-4749-b8c3-6e939bae8228")
 		)
@@ -4675,8 +4731,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]" (at 62.23 83.82 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -4809,6 +4863,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]"
+			(at 62.23 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c35543d8-ee0b-4c9b-a07e-080c375ed45b")
 		)
@@ -4883,8 +4948,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]" (at 62.23 41.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -5017,6 +5080,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]"
+			(at 55.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eab0dd1d-d243-4a4f-9984-53ae1b5a350e")
 		)
@@ -5091,8 +5165,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]" (at 55.88 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5234,6 +5306,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]"
+			(at 245.11 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4cbca1cf-74ff-40ab-9afb-72176023dedf")
 		)
@@ -5308,8 +5391,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 25V ±10% X7R (OEPS H02 001)   [C1005X7R1E104K050BB] [SMD]" (at 245.11 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -5442,6 +5523,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]"
+			(at 129.54 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a7b8f7bd-a58e-4429-b71e-e7c38464ff8f")
 		)
@@ -5516,8 +5608,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]" (at 129.54 173.99 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5659,6 +5749,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
+			(at 83.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e6c8a17e-e662-4a91-a564-0f0e661138b4")
 		)
@@ -5733,8 +5834,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]" (at 83.82 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6144,6 +6243,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]"
+			(at 129.54 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4c9f85f7-95ff-4375-a76b-2858f54c26cc")
 		)
@@ -6218,8 +6328,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]" (at 129.54 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "open-ephys:FSA553")
@@ -6309,6 +6417,17 @@
 			)
 		)
 		(property "LCSC" "C605183 "
+			(at 77.47 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
 			(at 77.47 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -6414,8 +6533,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 77.47 125.73 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -6557,6 +6674,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
+			(at 158.75 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "898192af-5a72-4ee9-acb9-612f1a8c7bf4")
 		)
@@ -6631,8 +6759,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]" (at 158.75 22.86 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7320,6 +7446,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   8-BIT SHIFT REGISTER   [SN74HC595PWR] [16-TSSOP]"
+			(at 215.9 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7ce1c8d7-7fe9-464f-89cd-0e495b7e6a19")
 		)
@@ -7436,8 +7573,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   8-BIT SHIFT REGISTER   [SN74HC595PWR] [16-TSSOP]" (at 215.9 90.17 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -7579,6 +7714,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]"
+			(at 158.75 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dfa447e3-8fed-4f30-aec6-5847c55c897c")
 		)
@@ -7653,8 +7799,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 10nF 25V ±10% X7R (OEPS H1 002)   [GRM155R71E103KA01D] [SMD]" (at 158.75 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -7787,6 +7931,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]"
+			(at 135.89 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "edd8d25c-b1eb-4ef3-bfb9-6009e659385d")
 		)
@@ -7861,8 +8016,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]" (at 135.89 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8134,6 +8287,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]"
+			(at 62.23 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4b344cb7-ee1f-42c7-bf86-b1b58398a208")
 		)
@@ -8208,8 +8372,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]" (at 62.23 167.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -8896,6 +9058,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]"
+			(at 62.23 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c2cac51a-4dee-499b-917a-b86c630bd44b")
 		)
@@ -8970,8 +9143,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]" (at 62.23 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -9242,6 +9413,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]"
+			(at 129.54 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "735f1336-3c96-474c-88de-d5be424d3f9f")
 		)
@@ -9316,8 +9498,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]" (at 129.54 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -9450,6 +9630,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]"
+			(at 55.88 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5db3cee1-91c9-482e-a3be-a5979850f0dd")
 		)
@@ -9524,8 +9715,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]" (at 55.88 90.17 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9764,6 +9953,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
+			(at 152.4 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "030a44ca-3bf3-4412-a18a-41a8e8e3bed5")
 		)
@@ -9859,8 +10059,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 152.4 125.73 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -9993,6 +10191,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]"
+			(at 135.89 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9ebdbdd0-d442-4850-a1fe-8ad53c428b89")
 		)
@@ -10067,8 +10276,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]" (at 135.89 41.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10308,6 +10515,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
+			(at 77.47 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "e8406868-6df0-4e6a-a940-81a93c27dc3e")
 		)
@@ -10403,8 +10621,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 77.47 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -11059,6 +11275,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
+			(at 152.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "98cf2cb4-4d8e-4386-a34f-5f3ebe70bb69")
 		)
@@ -11154,8 +11381,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 152.4 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "open-ephys:FSA553")
@@ -11245,6 +11470,17 @@
 			)
 		)
 		(property "LCSC" "C605183 "
+			(at 77.47 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
 			(at 77.47 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11350,8 +11586,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 77.47 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -11623,6 +11857,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]"
+			(at 55.88 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "509a3b94-c6c3-4d10-924b-d57892bc7ea9")
 		)
@@ -11697,8 +11942,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]" (at 55.88 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -11831,6 +12074,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]"
+			(at 135.89 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dcf5c70d-ef22-4bf7-9480-0358cbd7edec")
 		)
@@ -11905,8 +12159,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 29.8kΩ ±0.1% 0.063W   [RN73R1ETTP2982B25] [SMD]" (at 135.89 83.82 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "open-ephys:FSA553")
@@ -11997,6 +12249,17 @@
 			)
 		)
 		(property "LCSC" "C605183 "
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]"
 			(at 152.4 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -12102,8 +12365,6 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "IC:   AUDIO SWITCH SPST DUAL   [FSA553UCX] [9-WLCSP]" (at 152.4 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -12375,6 +12636,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]"
+			(at 129.54 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f6295532-a359-45a6-b0db-285732465d4d")
 		)
@@ -12449,7 +12721,5 @@
 				)
 			)
 		)
-	
-		(property "OEPS Description" "RESISTOR:   SMD 0402 301Ω ±0.1% 0.063W   [RT0402BRD07301RL] [SMD]" (at 129.54 90.17 0) (effects (font (size 1.27 1.27)) (hide yes)))
 	)
 )

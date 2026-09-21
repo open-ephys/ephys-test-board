@@ -8195,7 +8195,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "731000105"
+		(property "Value" "0731000105"
 			(at 252.73 35.8532 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8271,7 +8271,7 @@
 				)
 			)
 		)
-		(property "MPN" "731000105"
+		(property "MPN" "0731000105"
 			(at 248.92 34.29 0)
 			(hide yes)
 			(show_name no)

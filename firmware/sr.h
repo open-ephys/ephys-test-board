@@ -12,16 +12,6 @@ int sr_init();
 int sr_source(signal_source_t source);
 int sr_update(sr_bit_arr_t const *bit_arr);
 
-inline bool sr_equal(sr_bit_arr_t *bit_arr_0, sr_bit_arr_t *bit_arr_1)
-{
-    for (int i = 0; i < sizeof(sr_bit_arr_t); i++)
-    {
-        if (bit_arr_0->bits[i] != bit_arr_1->bits[i]) return false;
-    }
-
-    return true;
-}
-
 inline void sr_clear(sr_bit_arr_t *bit_arr)
 {
     for (int i = 0; i < sizeof(sr_bit_arr_t) / sizeof(bit_arr->bits[0]); i++)

@@ -37,6 +37,7 @@
  */
 
 #include "Adafruit_SH110X.h"
+#include "ephys-tester.h"
 #include "oe-splash.h"
 #include "algorithm"
 #include "pico/stdlib.h"

@@ -2,6 +2,14 @@
 
 #include "pico/stdlib.h"
 
+// Firmware version
+#define VERSION_MAJOR       1
+#define VERSION_MINOR       0
+#define VERSION_PATCH       0
+
+// Operating voltage
+#define VCC_VOLTAGE         3.0f
+
 // Pin definitions
 #define MODULE_I2C          i2c1
 #define MODULE_SDA          2
@@ -48,16 +56,26 @@
 #define SCREEN_HEIGHT       64
 
 // Signal constants
+#define DAC_MIDSCALE        32767
+#define DAC_FULLSCALE       65535
 #define MAX_AMPLITUDE_UV    5000.0f
 #define DAC_MAX_SHIFT       10 // Max bit shift for DAC attenuation
+#define SIG_MAX_AMP_SCALE   20.0f   // Maximum scale multiplier (displayed as 100.0f * scale, max = 2000%)
+
+// Dac clipping stated
+typedef enum {
+    CLIP_NONE = 0,
+    CLIP_LOW = -1,
+    CLIP_HIGH = -2,
+} signal_clip_t;
 
 // Automatic channel increment dwell time in milliseconds
 #define AUTO_CHAN_SDWELL_S 1 // Used to print value
 #define AUTO_CHAN_SDWELL_MS (AUTO_CHAN_SDWELL_S * 1000)  // Derive milliseconds
 #define AUTO_CHAN_FDWELL_MS 100
 
-// Battery monitor period in milliseconds
-#define BATT_MON_PERIOD_MS  1000
+// System monitor period in milliseconds
+#define SYS_MON_PERIOD_MS   1000
 #define BATT_MON_AVGS       30
 
 // EEPROM constants (see eeprom.h for specification)
